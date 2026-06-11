@@ -90,8 +90,12 @@
     .philosophy .snap.s2 { right: -44px; }
   }
   .contact .snap { opacity: 0.85; border-color: #fff; box-shadow: 0 8px 24px rgba(31,42,68,0.18); }
-  .contact .snap.s1 { width: 215px; left: 4%; top: 90px; transform: rotate(-6deg); }
-  .contact .snap.s2 { width: 230px; right: 4%; top: 70px; transform: rotate(5deg); }
+  .contact .snap.s1 { width: 215px; left: calc(50% - 620px); top: 90px; transform: rotate(-6deg); }
+  .contact .snap.s2 { width: 230px; right: calc(50% - 630px); top: 70px; transform: rotate(5deg); }
+  @media (max-width: 1280px) {
+    .contact .snap.s1 { left: 2%; }
+    .contact .snap.s2 { right: 2%; }
+  }
   @media (max-width: 1100px) {
     .contact .snap { display: none; }
   }
@@ -240,7 +244,7 @@
   <svg class="swirl-bg" viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
   <div class="kicker">AI that makes life better</div>
   <h1>Your memories, your stories, your life. <em>Kept close.</em></h1>
-  <p class="sub">Spirantix builds AI companions that help people remember the faces they love, stay on top of their calendar, events, and daily to-do lists, and preserve the stories behind their photos for the next generation. Designed for your parents, your grandparents, and someday you. All of it stays on hardware your family owns.</p>
+  <p class="sub">Spirantix builds AI companions that help people get through each day with confidence: remembering the faces they love, staying on top of appointments and daily to-dos, and preserving the stories behind their photos for the next generation. Designed for your parents, your grandparents, and someday you. All of it stays on hardware your family owns.</p>
   <a href="#products" class="btn btn-lg">Meet the Agents</a>
 </header>
 
@@ -298,7 +302,7 @@
     </div>
     <div class="body">
       <div class="desc">
-      <p>AI-powered memory support for people living with dementia, Alzheimer's, or everyday short-term memory loss. Emery helps with the things that slip: what's happening today, what needs doing, and who's who. The name is its own mnemonic: one sound away from "memory," easy to call out when you need it.</p>
+      <p>For someone living with dementia, Alzheimer's, or short-term memory loss, the real challenge is getting through a normal day. Emery is AI-powered memory support built for exactly that: what's happening today, what needs doing, and who's who. The name is its own mnemonic: one sound away from "memory," easy to call out when you need it.</p>
       <p>Emery keeps each day on track. She manages your calendar and task list, <strong>builds you a simple daily plan</strong>, and gives gentle reminders so nothing falls through the cracks: appointments, medications, birthdays, the kettle you put on.</p>
       <p>She also helps you hold on to people and moments. Take or upload a photo and simply ask: <strong>"Who is this?"</strong> Emery recognizes family and friends from a private knowledge base built from your own photo library, and answers warmly and conversationally.</p>
       <p>Family members or caregivers set it up once with the photos, names, and routines that matter; from then on it's as simple as asking. Everything stays on the family's own infrastructure. Nothing is shared, sold, or used for training.</p>
