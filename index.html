@@ -47,7 +47,6 @@
   }
   .nav-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 13px 24px; max-width: 1080px; margin: 0 auto; }
   .nav-inner .logo { justify-self: start; }
-  .nav-inner .nav-cta { justify-self: end; }
   .logo { display: flex; align-items: center; gap: 10px; }
   .logo svg { width: 38px; height: 38px; }
   .logo .word { font-weight: 600; font-size: 1.3rem; letter-spacing: 0.01em; color: var(--navy); }
@@ -64,14 +63,14 @@
   .btn-lg { padding: 14px 34px; font-size: 1.02rem; }
 
   /* Hero */
-  .hero { padding: 92px 0 84px; text-align: center; position: relative; overflow: hidden; }
+  .hero { padding: 92px 0 72px; text-align: center; position: relative; overflow: hidden; }
   .hero .swirl-bg {
     position: absolute; width: 470px; height: 470px; right: 0; top: 50%;
     transform: translateY(-50%); opacity: 0.09; pointer-events: none;
   }
   .hero h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); max-width: 860px; margin: 0 auto 22px; font-weight: 700; }
   .hero h1 em { font-style: normal; color: var(--teal-dark); }
-  .hero p.sub { font-size: 1.13rem; color: var(--ink-soft); max-width: 760px; margin: 0 auto 36px; text-wrap: pretty; }
+  .hero p.sub { font-size: 1.13rem; color: var(--ink-soft); max-width: 760px; margin: 0 auto; text-wrap: pretty; }
   .kicker {
     display: inline-block; font-family: "Caveat", cursive; font-weight: 600;
     font-size: clamp(2.1rem, 4.5vw, 2.8rem); line-height: 1.2;
@@ -199,7 +198,10 @@
     .product { grid-template-columns: 1fr; padding: 28px; }
     .seal-inner { grid-template-columns: 1fr; text-align: center; }
     .seal-mark { margin: 0 auto; }
-    .nav-links a:not(.btn) { display: none; }
+    .nav-inner { grid-template-columns: 1fr; row-gap: 6px; padding: 12px 16px; }
+    .nav-inner .logo { justify-self: center; }
+    .nav-links { justify-content: center; gap: 18px; }
+    .nav-links a { font-size: 0.85rem; }
   }
 </style>
 </head>
@@ -238,9 +240,6 @@
       <a href="#philosophy">What We Believe</a>
       <a href="#tessera">Tessera Protocol</a>
     </div>
-    <div class="nav-cta">
-      <a href="mailto:hello@spirantix.ai" class="btn">Contact Us</a>
-    </div>
   </div>
 </nav>
 
@@ -248,7 +247,7 @@
   <svg class="swirl-bg" viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
   <div class="kicker">AI that makes life better</div>
   <h1>Your memories, your stories, your life. <em>Kept close.</em></h1>
-  <p class="sub">Spirantix builds AI companions that help people get through each day with confidence: remembering the faces they love, staying on top of appointments and daily to-dos, and preserving the stories behind their photos for the next generation. Designed especially for seniors and their families. All of it stays on hardware you own.</p>
+  <p class="sub">Spirantix builds AI companions that help people get through each day with confidence: remembering the faces they love, staying on top of appointments and daily to-dos, and preserving the stories behind their photos for the next generation. Designed especially for seniors and their families.</p>
 </header>
 
 <section class="philosophy" id="philosophy">
