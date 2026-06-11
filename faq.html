@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions &amp; Answers | Spirantix.ai</title>
+<meta name="description" content="Frequently asked questions about Spirantix, Emery, Capsa, Addie, and how your data stays private on hardware you own.">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="50" fill="%23ffffff"/%3E%3Cg%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%238FE0C6"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%234FC9B5" transform="rotate(60 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%232BAE9E" transform="rotate(120 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%232E8FB8" transform="rotate(180 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%232368A8" transform="rotate(240 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%231B4E82" transform="rotate(300 50 50)"/%3E%3C/g%3E%3Ccircle cx="50" cy="50" r="7" fill="%23ffffff"/%3E%3Ccircle cx="50" cy="50" r="3.2" fill="%232BAE9E"/%3E%3C/svg%3E'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1f2a44;
+    --ink: #1f2a44;
+    --ink-soft: #4a5570;
+    --bg: #f7fafa;
+    --card: #ffffff;
+    --teal: #2bae9e;
+    --teal-dark: #1d8f82;
+    --teal-soft: #e4f5f2;
+    --line: #e2e9ec;
+    --radius: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.65;
+  }
+  a { color: var(--teal-dark); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 13px 24px; max-width: 1080px; margin: 0 auto; }
+  .nav-inner .logo { justify-self: start; }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo svg { width: 38px; height: 38px; }
+  .logo .word { font-weight: 600; font-size: 1.3rem; letter-spacing: 0.01em; color: var(--navy); }
+  .logo .word span { color: var(--teal); }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a { color: var(--ink-soft); font-size: 0.93rem; font-weight: 500; }
+  .nav-links a:hover { color: var(--teal-dark); text-decoration: none; }
+
+  .doc { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  .doc h1 { font-size: 2.1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .doc .lead { color: var(--ink-soft); margin-bottom: 36px; }
+  .doc h2 { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-dark); margin: 40px 0 8px; }
+
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    margin-bottom: 12px; overflow: hidden;
+  }
+  details summary {
+    cursor: pointer; list-style: none; padding: 16px 48px 16px 20px;
+    font-weight: 600; color: var(--navy); font-size: 0.99rem; position: relative;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after {
+    content: "+"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);
+    font-size: 1.3rem; font-weight: 400; color: var(--teal-dark);
+  }
+  details[open] summary::after { content: "\2212"; }
+  details .answer { padding: 0 20px 18px; color: var(--ink-soft); font-size: 0.95rem; }
+  details .answer p { margin-bottom: 10px; }
+  details .answer p:last-child { margin-bottom: 0; }
+
+  .still { margin-top: 48px; text-align: center; background: var(--teal-soft); border-radius: var(--radius); padding: 28px 24px; }
+  .still h3 { color: var(--navy); font-size: 1.15rem; margin-bottom: 6px; }
+  .still p { color: var(--ink-soft); font-size: 0.95rem; }
+
+  footer { border-top: 1px solid var(--line); padding: 36px 0; background: #fff; }
+  .foot-inner { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; color: var(--ink-soft); font-size: 0.88rem; }
+
+  @media (max-width: 760px) {
+    .nav-inner { grid-template-columns: 1fr; row-gap: 6px; padding: 12px 16px; }
+    .nav-inner .logo { justify-self: center; }
+    .nav-links { justify-content: center; gap: 18px; }
+    .nav-links a { font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="spirantix-mark">
+      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#8FE0C6"/>
+      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#4FC9B5" transform="rotate(60 50 50)"/>
+      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2BAE9E" transform="rotate(120 50 50)"/>
+      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2E8FB8" transform="rotate(180 50 50)"/>
+      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2368A8" transform="rotate(240 50 50)"/>
+      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#1B4E82" transform="rotate(300 50 50)"/>
+      <circle cx="50" cy="50" r="7" fill="#ffffff"/>
+      <circle cx="50" cy="50" r="3.2" fill="#2BAE9E"/>
+    </g>
+  </defs>
+</svg>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
+        <div class="word">Spirantix<span>.ai</span></div>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html#products">Products</a>
+      <a href="index.html#philosophy">Vision</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#tessera">Technology</a>
+    </div>
+  </div>
+</nav>
+
+<main class="doc">
+  <h1>Questions &amp; Answers</h1>
+  <p class="lead">Everything you might want to know about Spirantix and our AI companions. Don't see your question? <a href="contact.html">Ask us directly</a>.</p>
+
+  <h2>About Spirantix</h2>
+
+  <details>
+    <summary>What is Spirantix?</summary>
+    <div class="answer"><p>Spirantix builds AI companions that make everyday life better, designed especially for seniors and their families. Our agents help people get through each day with confidence: remembering the faces they love, staying on top of appointments and daily to-dos, and preserving the stories behind their photos for the next generation. Spirantix.ai is a division of FutureInSites, LLC.</p></div>
+  </details>
+
+  <details>
+    <summary>Who are Emery, Capsa, and Addie?</summary>
+    <div class="answer">
+      <p>They're our three AI agents, each with a distinct role:</p>
+      <p><strong><a href="emery.html">Emery</a>, the Companion.</strong> Day-to-day memory support: a daily plan, gentle reminders, appointments, tasks, and help recognizing familiar faces. Built especially for people living with dementia or Alzheimer's and the families who care for them.</p>
+      <p><strong><a href="capsa.html">Capsa</a>, the Curator.</strong> She organizes your photos and keeps the stories behind them, turning a lifetime of pictures into albums and narrated memories your family can pass down.</p>
+      <p><strong><a href="addie.html">Addie</a>, the Guardian.</strong> She certifies that your photos and memories are authentic and unaltered, so future generations know what's real.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>When can I use them?</summary>
+    <div class="answer"><p>Emery is in beta now. Capsa and Addie are coming soon. The agents run on Claude and ChatGPT, with downloadable mobile apps to follow. <a href="contact.html">Get in touch</a> if you'd like to join the Emery beta or be notified when Capsa and Addie arrive.</p></div>
+  </details>
+
+  <details>
+    <summary>What do I need to get started?</summary>
+    <div class="answer"><p>A ChatGPT (OpenAI) or Claude (Anthropic) account: the same account you may already use today. Our agents work through your own AI account, which is part of how we keep your data in your hands.</p></div>
+  </details>
+
+  <h2>Privacy &amp; your data</h2>
+
+  <details>
+    <summary>Where is my data stored?</summary>
+    <div class="answer"><p>On hardware you own. Your photos, names, relationships, calendars, and stories stay on your own devices and in storage you control. Spirantix does not keep copies on our servers.</p></div>
+  </details>
+
+  <details>
+    <summary>Can Spirantix see my photos or conversations?</summary>
+    <div class="answer"><p>No. The AI processing happens inside your own ChatGPT or Claude account, under the privacy terms of the provider you chose. We never sit in the middle, and nothing is shared with us, sold, or used to train AI models. See our <a href="privacy.html">Privacy Policy</a> for the full picture.</p></div>
+  </details>
+
+  <details>
+    <summary>How does face recognition work?</summary>
+    <div class="answer"><p>Some features help recognize the faces of family and friends in your photos, and that recognition is designed to run on your own hardware with the results stored locally by you. We're finalizing the specific technology and will publish full details before those features reach general availability.</p></div>
+  </details>
+
+  <h2>Emery &amp; care</h2>
+
+  <details>
+    <summary>Who is Emery for?</summary>
+    <div class="answer"><p>Emery is for anyone who wants steady, kind, day-to-day memory support, and she was designed especially for people living with dementia or Alzheimer's and the family members who care for them. The real challenge of memory loss is getting through a normal day; Emery helps with exactly that.</p></div>
+  </details>
+
+  <details>
+    <summary>Is Emery a medical device or treatment?</summary>
+    <div class="answer"><p>No. Emery is a supportive companion, not a medical device, and she does not diagnose, treat, or replace professional medical care. Always consult a qualified clinician for medical decisions.</p></div>
+  </details>
+
+  <h2>Tessera Protocol</h2>
+
+  <details>
+    <summary>What is the Tessera Protocol?</summary>
+    <div class="answer"><p>Tessera is the open verification standard behind Addie. It lets a photo carry a verifiable seal proving it's authentic and unaltered, built on open standards so what you preserve stays readable and verifiable decades from now, even beyond any one company.</p></div>
+  </details>
+
+  <div class="still">
+    <h3>Still have a question?</h3>
+    <p>We'd love to hear it. <a href="contact.html">Send us a message</a> or email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>&copy; 2026 <a href="https://www.futureinsites.com" target="_blank" rel="noopener">FutureInSites</a>, LLC.</div>
+    <a href="privacy.html">Privacy</a>
+    <a href="faq.html">Questions</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
