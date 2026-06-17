@@ -92,8 +92,14 @@
   /* Hero */
   .hero { padding: 92px 0 72px; text-align: center; position: relative; overflow: hidden; }
   .hero .swirl-bg {
-    position: absolute; width: 470px; height: 470px; right: 0; top: 50%;
+    position: absolute; width: 470px; height: 470px; right: -20px; top: 50%;
     transform: translateY(-50%); opacity: 0.09; pointer-events: none;
+  }
+  .hero .hero-photo {
+    position: absolute; left: -30px; top: 50%;
+    transform: translateY(-50%) rotate(-4deg);
+    width: 290px; height: auto; opacity: 0.28; pointer-events: none;
+    filter: saturate(0.7);
   }
   .hero h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); max-width: 860px; margin: 0 auto 22px; font-weight: 700; }
   .hero h1 em { font-style: normal; color: var(--teal-dark); }
@@ -275,6 +281,7 @@
 </nav>
 
 <header class="hero wrap">
+  <img class="hero-photo" src="assets/grandfather.grandson.story.png" alt="" aria-hidden="true">
   <svg class="swirl-bg" viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
   <div class="kicker">AI that makes life better</div>
   <h1>Your life, your memories, your legacy. <em>Kept safe.</em></h1>
