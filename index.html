@@ -218,6 +218,14 @@
   .seal-mark { width: 160px; height: 160px; border-radius: 50%; }
   .seal h2 { font-size: 1.6rem; margin-bottom: 10px; color: var(--navy); }
   .seal p { color: var(--ink-soft); }
+  .seal-infographic { text-align: center; margin-top: 32px; padding-bottom: 8px; }
+  .seal-infographic img { max-width: 900px; width: 100%; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 6px 24px rgba(31,42,68,0.10); cursor: zoom-in; }
+  .seal-infographic p { margin-top: 14px; font-size: 0.92rem; color: var(--ink-soft); }
+  .lightbox { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(31,42,68,0.88); padding: 64px 18px 32px; overflow: auto; text-align: center; }
+  .lightbox.open { display: block; }
+  .lightbox img { max-width: min(1280px, 96vw); width: 100%; border-radius: 8px; background: #fff; }
+  .lb-close { position: fixed; top: 16px; right: 20px; z-index: 101; background: var(--orange); color: #fff; border: none; border-radius: 999px; padding: 10px 24px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 0.95rem; cursor: pointer; }
+  .lb-close:hover { background: var(--orange-dark); }
 
   /* Contact */
   .contact { padding: 88px 0; text-align: center; position: relative; overflow: hidden; }
@@ -451,7 +459,19 @@
       <p>Every seal Addie creates can be read without us. Tessera is an open, published standard for verifying a sealed file: the method is documented, the tools are open source, and no one needs our permission to confirm that a photo is genuine and unchanged. In ancient Rome, a tessera hospitalis was a token split between two families; decades later, the matching halves could be rejoined to prove the bond. Tessera works the same way for your photos and stories, and it will keep working long after us.</p>
     </div>
   </div>
+  <div class="wrap seal-infographic">
+    <img src="assets/Tessera Protocol.png" alt="Tessera Protocol infographic: how verification works, what's inside the QR code, two independent verification paths, and authenticated details" loading="lazy" onclick="document.getElementById('tessera-lightbox').classList.add('open')">
+    <p>Click to enlarge</p>
+  </div>
 </section>
+
+<div id="tessera-lightbox" class="lightbox" onclick="if(event.target===this)this.classList.remove('open')">
+  <button class="lb-close" onclick="document.getElementById('tessera-lightbox').classList.remove('open')">&#10005; Close</button>
+  <img src="assets/Tessera Protocol.png" alt="Tessera Protocol infographic, enlarged">
+</div>
+<script>
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') document.getElementById('tessera-lightbox').classList.remove('open'); });
+</script>
 
 <section class="contact" id="contact">
   <img class="snap s1" src="assets/snap-capsa-album.webp" alt="" aria-hidden="true">
