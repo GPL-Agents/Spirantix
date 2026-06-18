@@ -90,20 +90,21 @@
   .btn-lg { padding: 14px 34px; font-size: 1.02rem; }
 
   /* Hero */
-  .hero { padding: 92px 0 72px; text-align: center; position: relative; }
+  .hero { padding: 72px 0 72px; position: relative; overflow: hidden; }
   .hero .swirl-bg {
     position: absolute; width: 470px; height: 470px; right: -15px; top: 50%;
-    transform: translateY(-50%); opacity: 0.09; pointer-events: none;
+    transform: translateY(-50%); opacity: 0.06; pointer-events: none;
   }
+  .hero-editorial { display: flex; align-items: flex-start; gap: 36px; margin-bottom: 28px; }
   .hero .hero-photo {
-    position: absolute; left: -50px; top: 50%;
-    transform: translateY(-50%);
-    width: 360px; height: auto; opacity: 0.30; pointer-events: none;
-    filter: saturate(0.7);
+    width: 240px; height: auto; flex-shrink: 0;
+    border-radius: 5px; border: 9px solid #fff; border-bottom-width: 26px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
   }
-  .hero h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); max-width: 860px; margin: 0 auto 22px; font-weight: 700; }
+  .hero .hero-copy { text-align: left; padding-top: 8px; }
+  .hero h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); margin: 0 0 0; font-weight: 700; }
   .hero h1 em { font-style: normal; color: var(--teal-dark); }
-  .hero p.sub { font-size: 1.13rem; color: var(--ink-soft); max-width: 760px; margin: 0 auto; text-wrap: pretty; }
+  .hero p.sub { font-size: 1.13rem; color: var(--ink-soft); text-wrap: pretty; }
   .kicker {
     display: inline-block; font-family: "Caveat", cursive; font-weight: 600;
     font-size: clamp(2.1rem, 4.5vw, 2.8rem); line-height: 1.2;
@@ -281,10 +282,14 @@
 </nav>
 
 <header class="hero wrap">
-  <img class="hero-photo" src="assets/grandfather.grandson.story.png" alt="" aria-hidden="true">
   <svg class="swirl-bg" viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
-  <div class="kicker">AI that makes life better</div>
-  <h1>Your life, your memories, your legacy. <em>Kept safe.</em></h1>
+  <div class="hero-editorial">
+    <img class="hero-photo" src="assets/grandfather.grandson.story.png" alt="Grandfather and grandson sharing stories">
+    <div class="hero-copy">
+      <div class="kicker">AI that makes life better</div>
+      <h1>Your life, your memories, your legacy. <em>Kept safe.</em></h1>
+    </div>
+  </div>
   <p class="sub">Designed especially for seniors and their families. Spirantix builds AI companions that help people get through each day with confidence: remembering the faces they love, staying on top of appointments and daily to-dos, and preserving the stories behind their photos for the next generation.</p>
 </header>
 
