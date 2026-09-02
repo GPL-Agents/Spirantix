@@ -271,7 +271,7 @@ const classesBody = `${pageHero('Classes & Talks', 'Bring practical AI learning 
     <div><p class="eyebrow">What the host provides</p><h2>A simple room setup</h2><ul><li>A room appropriate for the expected group</li><li>A screen or projector</li><li>Reliable internet access</li><li>An estimate of group size</li><li>A point of contact for scheduling and attendance questions</li></ul></div>
   </div>
 </section>
-<section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Start a conversation</p><h2>Tell us about your community</h2><p>Share your location, group size, preferred timing, and the kind of program you have in mind.</p><a class="btn" href="contact.html?type=speaking">Request information</a></div></section>`;
+<section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Start a conversation</p><h2>Tell us about your community</h2><p>Share your location, group size, preferred timing, and program ideas.</p><a class="btn" href="contact.html?type=speaking">Request information</a></div></section>`;
 
 const productsBody = `${pageHero('Products', 'AI support that begins with one conversation', 'Spirantix is developing a family of agents for memory, stories, planning, and family possessions. You will not need to learn four different systems or decide where to begin.', '<a class="btn" href="contact.html?type=product">Ask about early access</a>')}
 <section class="section section-white">

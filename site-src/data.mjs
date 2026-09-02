@@ -17,7 +17,7 @@ export const events = [
     time: 'During the 1:00 to 3:00 PM course session',
     title: 'Artificial Intelligence in Our Lives Today',
     host: 'Taconic Learning Center',
-    location: 'Noble Horizons',
+    location: 'Noble Horizons, Salisbury, Connecticut',
     context: 'A guest session within a four-session course exploring large language models, everyday uses of AI, ethics, policy, and personal experience.',
     hostUrl: 'https://taconiclearningcenter.org/courses.php?season=Fall&year=2026',
     hostAction: 'Contact the Taconic Learning Center for attendance information',
