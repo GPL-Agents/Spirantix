@@ -52,8 +52,9 @@ for (const file of files) {
   let html = await readFile(target, 'utf8');
 
   if (!html.includes('assets/site.css')) {
-    html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="assets/site.css">');
+    html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="assets/site.css?v=20260902-3">');
   }
+  html = html.replace(/assets\/site\.css(?:\?v=[^"']+)?/g, 'assets/site.css?v=20260902-3');
 
   if (html.includes('class="site-header"')) {
     html = html.replace(/<a class="skip-link"[\s\S]*?<\/header>/, header);

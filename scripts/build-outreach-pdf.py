@@ -220,7 +220,7 @@ def build_pdf():
     pdf.setFont("Helvetica-Bold", 14.5)
     pdf.drawString(56, 118, "Let's plan a session for your community")
     pdf.setFont("Helvetica", 10)
-    pdf.drawString(56, 96, "spirantix.ai/contact.html?type=speaking")
+    pdf.drawString(56, 96, "Visit spirantix.ai and choose Request a Session")
     contact = "hello@spirantix.ai"
     contact_width = stringWidth(contact, "Helvetica-Bold", 10)
     pdf.setFont("Helvetica-Bold", 10)

@@ -176,7 +176,8 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
   border-radius: 50%;
   background: var(--teal-soft);
 }
-.hero-visual img { width: 100%; border-radius: 28px; box-shadow: var(--shadow); }
+.hero-visual picture { display: block; }
+.hero-visual img { display: block; width: 100%; height: auto !important; object-fit: contain; border-radius: 28px; box-shadow: var(--shadow); }
 
 .btn {
   min-height: 50px;
