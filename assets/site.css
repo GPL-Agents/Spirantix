@@ -110,9 +110,12 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .nav-inner {
   min-height: 78px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  max-width: none;
+  padding: 0;
 }
 .brand {
   display: inline-flex;
@@ -370,19 +373,21 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 
 @media (max-width: 980px) {
   .nav-toggle { display: block; }
-  .nav-links {
+  .site-header .nav-links {
     position: absolute;
-    top: 78px;
+    z-index: 2;
+    top: 100%;
     left: 0;
     right: 0;
     display: none;
+    grid-template-columns: 1fr;
+    gap: 4px;
     padding: 18px 20px 24px;
     border-bottom: 1px solid var(--line);
     background: #fff;
     box-shadow: 0 12px 24px rgba(31, 42, 68, 0.1);
   }
-  .site-header .nav-links { position: absolute; }
-  .nav-links.open { display: grid; }
+  .site-header .nav-links.open { display: grid; }
   .nav-links a { width: 100%; padding: 8px 4px; }
   .nav-links .nav-cta { justify-content: center; margin-top: 4px; }
   .hero-grid { grid-template-columns: 1fr; }

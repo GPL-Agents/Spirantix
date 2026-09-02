@@ -26,7 +26,11 @@ function eventCards(limit = events.length) {
 }
 
 function lessonCards(includePlanned = false) {
-  const lessons = includePlanned ? lessonIndex : lessonIndex.filter(lesson => lesson.status === 'published');
+  const lessons = includePlanned === 'planned'
+    ? lessonIndex.filter(lesson => lesson.status === 'planned')
+    : includePlanned
+      ? lessonIndex
+      : lessonIndex.filter(lesson => lesson.status === 'published');
   return `<div class="grid-3">${lessons.map(lesson => {
     const published = lesson.status === 'published';
     const content = `<p class="lesson-number">Lesson ${lesson.number}</p>
@@ -63,7 +67,10 @@ const homeBody = `<section class="hero">
       <p class="hero-note">No technical background needed. Start with one simple lesson or join us in person.</p>
     </div>
     <div class="hero-visual">
-      <img src="assets/grandfather.grandson.story.png" alt="A grandfather and grandson learning together with a tablet">
+      <picture>
+        <source srcset="assets/grandfather-grandson-learning.webp" type="image/webp">
+        <img src="assets/grandfather.grandson.story.png" width="1200" height="848" fetchpriority="high" alt="A grandfather and grandson learning together with a tablet">
+      </picture>
     </div>
   </div>
 </section>
@@ -158,7 +165,7 @@ const learnBody = `${pageHero('Learning hub', 'Learn AI one useful step at a tim
 <section class="section section-white">
   <div class="wrap">
     <div class="section-heading"><p class="eyebrow">Coming next</p><h2>The complete introductory path</h2><p>Six more lessons will expand the library with search, Projects, agents, AI history, privacy, and scam awareness.</p></div>
-    ${lessonCards(true)}
+    ${lessonCards('planned')}
   </div>
 </section>
 <section class="section section-soft"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Prefer to learn with a group?</p><h2>Join a class or invite Spirantix to your community</h2><p>Sessions can be shaped for a single introduction, an existing course, or a multi-week learning program.</p></div><div class="button-row"><a class="btn btn-teal" href="classes.html">See upcoming sessions</a><a class="btn btn-secondary" href="contact.html?type=speaking">Request a session</a></div></div></section>`;
@@ -234,6 +241,7 @@ const classesBody = `${pageHero('Classes & Talks', 'Bring practical AI learning 
       <h2>A session shaped around your residents or members</h2>
       <p>Programs can begin with the basics, concentrate on everyday uses, focus on safety, or fit into a course already underway.</p>
       <p>In-person learning is preferred because questions and conversation are an important part of the experience. Video sessions are also available when distance or scheduling makes them a better choice.</p>
+      <p><a class="text-link" href="output/pdf/spirantix-classes-and-talks.pdf">Download the one-page classes and talks overview (PDF)</a></p>
     </div>
     <div class="callout callout-light">
       <h3>Cost</h3>
@@ -265,7 +273,7 @@ const productsBody = `${pageHero('Products', 'AI support that begins with one co
 <section class="section section-white">
   <div class="wrap">
     <div class="callout agent-intro">
-      <div class="icon" style="width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:var(--teal);font-size:3rem;font-weight:700" aria-hidden="true">S</div>
+      <div class="icon" style="width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:var(--teal)" aria-hidden="true"><svg viewBox="0 0 100 100" width="86" height="86"><path d="M50 47 24 25M50 47 76 25M50 53 24 75M50 53 76 75" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="50" r="15" fill="#fff"/><circle cx="24" cy="25" r="9" fill="#8fe0c6"/><circle cx="76" cy="25" r="9" fill="#8fe0c6"/><circle cx="24" cy="75" r="9" fill="#8fe0c6"/><circle cx="76" cy="75" r="9" fill="#8fe0c6"/><circle cx="50" cy="50" r="6" fill="#2368a8"/></svg></div>
       <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Your AI concierge</h2><p>The beta experience is being designed around one primary point of contact. Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p><p>The concierge’s public name and personality are still being developed. Spirantix remains the company name.</p></div>
     </div>
   </div>
@@ -279,7 +287,7 @@ const productsBody = `${pageHero('Products', 'AI support that begins with one co
 <section class="section section-blue"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Built around your control</p><h2>The Tessera Protocol</h2><p>Tessera is the open foundation behind Spirantix products. It is designed so personal stories, memories, documents, and other private knowledge stay in accounts and storage the user controls.</p></div><div class="callout callout-light"><h3>Why it matters</h3><p>AI can be more useful when it understands personal context. That should not require giving up control of the information that makes the experience personal.</p><a class="text-link" href="privacy.html">Read the privacy approach</a></div></div></section>`;
 
 const aboutBody = `${pageHero('About', 'Spirantix connects AI learning, safety, and practical tools', 'We believe seniors should have clear explanations, respectful instruction, and meaningful choices about how artificial intelligence fits into their lives.')}
-<section class="section section-white"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Why Spirantix exists</p><h2>Technology should meet people where they are</h2><p>AI has moved quickly from research laboratories into search, writing, planning, health information, entertainment, and everyday communication. The pace can make useful tools feel harder to approach than they need to be.</p><p>Spirantix exists to make that transition clearer. Education comes first: understand what the tool is doing, practice with ordinary tasks, protect your information, and know when to verify an answer somewhere else.</p></div><img src="assets/3generations.doll.png" alt="Three generations of a family sharing the story of a treasured doll" style="border-radius:var(--radius);box-shadow:var(--shadow)"></div></section>
+<section class="section section-white"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Why Spirantix exists</p><h2>Technology should meet people where they are</h2><p>AI has moved quickly from research laboratories into search, writing, planning, health information, entertainment, and everyday communication. The pace can make useful tools feel harder to approach than they need to be.</p><p>Spirantix exists to make that transition clearer. Education comes first: understand what the tool is doing, practice with ordinary tasks, protect your information, and know when to verify an answer somewhere else.</p></div><picture><source srcset="assets/three-generations-story.webp" type="image/webp"><img src="assets/3generations.doll.png" width="1200" height="800" loading="lazy" alt="Three generations of a family sharing the story of a treasured doll" style="border-radius:var(--radius);box-shadow:var(--shadow)"></picture></div></section>
 <section class="section"><div class="wrap"><div class="section-heading center"><p class="eyebrow">One mission, three forms of support</p><h2>Learn, practice, and use tools designed with care</h2></div><div class="grid-3"><div class="card"><h3>Plain-language education</h3><p>Free introductory lessons explain AI without assuming technical experience.</p></div><div class="card"><h3>Community learning</h3><p>In-person and video sessions make space for questions, practice, and discussion.</p></div><div class="card"><h3>Purpose-built products</h3><p>Developing agents focus on memory, stories, planning, and family possessions.</p></div></div></div></section>
 <section class="section section-blue"><div class="narrow"><p class="eyebrow">Connected to FutureInSites</p><h2>Grounded in practical AI work</h2><p>Spirantix is a division of FutureInSites. Research and technical material developed for business audiences is adapted into shorter, clearer lessons for seniors, with practical activities and safety guidance.</p><p><a class="text-link" href="https://www.futureinsites.com" target="_blank" rel="noopener">Visit FutureInSites</a></p></div></section>
 <section class="section section-dark"><div class="narrow" style="text-align:center"><h2>Interested in a class, a product, or the mission?</h2><p>Use the single contact form and choose the kind of conversation you would like to start.</p><a class="btn" href="contact.html">Contact Spirantix</a></div></section>`;

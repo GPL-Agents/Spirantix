@@ -20,3 +20,16 @@ The generator has no external package dependencies. It does not change the Verce
 - `assets/site.js` contains mobile navigation and contact-form behavior.
 
 The four detailed agent pages remain independent pages because each has a specialized design and established content. They still use the shared site navigation links after this expansion.
+
+## Agent page and outreach updates
+
+- Run `node scripts/refresh-agent-shells.mjs` after changing the shared agent-page header, footer, or metadata.
+- Run `python scripts/build-outreach-pdf.py` after changing the one-page classes and talks handout. The public PDF is written to `output/pdf/spirantix-classes-and-talks.pdf`.
+
+## Checks before publishing
+
+1. Run `node scripts/build-site.mjs`.
+2. Run `node scripts/refresh-agent-shells.mjs`.
+3. Run `node scripts/validate-site.mjs` to check page structure and local links.
+4. Run `node scripts/test-contact.mjs` to check the contact endpoint validation and spam trap.
+5. Preview the site at desktop and mobile sizes before committing.

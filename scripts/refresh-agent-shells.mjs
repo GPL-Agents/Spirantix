@@ -20,7 +20,7 @@ const header = `<a class="skip-link" href="#main-content">Skip to main content</
 <header class="site-header">
   <div class="wrap nav-inner">
     <a class="brand" href="index.html" aria-label="Spirantix home">${logo}<span>Spirantix<span>.ai</span></span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
       <span class="visually-hidden">Open menu</span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
@@ -53,16 +53,29 @@ for (const file of files) {
     html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="assets/site.css">');
   }
 
-  html = html.replace(/<nav>[\s\S]*?<\/nav>/, header);
-  html = html.replace(/<footer>[\s\S]*?<\/footer>/, footer);
+  if (!html.includes('class="site-header"')) {
+    html = html.replace(/<nav>[\s\S]*?<\/nav>/, header);
+  }
+  if (!html.includes('class="site-footer"')) {
+    html = html.replace(/<footer>[\s\S]*?<\/footer>/, footer);
+  }
   html = html.replaceAll('index.html#products', 'products.html');
+  html = html.replaceAll('assets/og-image.png', 'assets/og-image-mission.png');
   html = html.replace(/href="mailto:hello@spirantix\.ai\?subject=[^"]+"/g, 'href="contact.html?type=product"');
-  html = html.replace('<main class="wrap">', '<main id="main-content" class="wrap">');
+  if (!html.includes('id="main-content"')) {
+    html = html.replace('<main class="wrap">', '<main id="main-content" class="wrap">');
+  }
+  html = html.replace(/<\/main>\r?\n\r?\n<section class="how">/, '\n\n<section class="how">');
+  html = html.replace(/\r?\n<main(?: id="main-content")? class="wrap">\r?\n\r?\n  <div class="twocol">/, '\n<div class="wrap">\n\n  <div class="twocol">');
+  html = html.replace(/<\/main>\r?\n\r?\n<!-- Lightbox/, '</div>\n</main>\n\n<!-- Lightbox');
   html = html.replace(
     /<img (src="assets\/[^"]*onepager\.webp" alt="[^"]+" loading="lazy") onclick="document\.getElementById\('lightbox'\)\.classList\.add\('open'\)">/i,
     '<button class="onepager-trigger" type="button" aria-label="Enlarge agent overview" onclick="document.getElementById(\'lightbox\').classList.add(\'open\')"><img $1></button>'
   );
-  html = html.replace('<div id="lightbox" class="lightbox"', '<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged agent overview"');
+  html = html.replace(
+    /<div id="lightbox" class="lightbox"(?: role="dialog" aria-modal="true" aria-label="Enlarged agent overview")*/,
+    '<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged agent overview"'
+  );
 
   if (!html.includes('assets/site.js')) {
     html = html.replace('</body>', '<script src="assets/site.js" defer></script>\n</body>');

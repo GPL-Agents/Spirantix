@@ -6,12 +6,14 @@
     toggle.addEventListener('click', function () {
       const open = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
       menu.classList.toggle('open', !open);
     });
 
     menu.addEventListener('click', function (event) {
       if (event.target.closest('a')) {
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
         menu.classList.remove('open');
       }
     });
@@ -19,6 +21,7 @@
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
         menu.classList.remove('open');
         toggle.focus();
       }

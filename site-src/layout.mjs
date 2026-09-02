@@ -32,7 +32,7 @@ function header(active, base) {
         ${logo()}
         <span>Spirantix<span>.ai</span></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
         <span class="visually-hidden">Open menu</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
@@ -95,7 +95,7 @@ export function renderPage({
 }) {
   const base = depth ? '../'.repeat(depth) : '';
   const canonical = `https://spirantix.ai/${path === 'index.html' ? '' : path}`;
-  const socialImage = 'https://spirantix.ai/assets/og-image.png';
+  const socialImage = 'https://spirantix.ai/assets/og-image-mission.png';
   const json = jsonLd ? `\n<script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>` : '';
   return `<!DOCTYPE html>
 <html lang="en">

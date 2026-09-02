@@ -36,6 +36,7 @@ for (const file of htmlFiles) {
   if (!/<meta\s+name="description"\s+content="[^"]+"/i.test(html)) errors.push(`${relative}: missing description`);
   if (relative !== '404.html' && !/<link\s+rel="canonical"\s+href="https:\/\/spirantix\.ai\//i.test(html)) errors.push(`${relative}: missing canonical URL`);
   if ((html.match(/<h1\b/gi) || []).length !== 1) errors.push(`${relative}: expected exactly one h1`);
+  if ((html.match(/<main\b/gi) || []).length !== 1) errors.push(`${relative}: expected exactly one main landmark`);
 
   const ids = [...html.matchAll(/\sid="([^"]+)"/gi)].map(match => match[1]);
   for (const id of new Set(ids)) {
