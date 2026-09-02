@@ -294,6 +294,17 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .agent-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
 .agent-card { padding: 24px; text-align: center; }
 .agent-card img { width: 150px; aspect-ratio: 1; object-fit: cover; margin: 0 auto 18px; border-radius: 50%; }
+.onepager-trigger {
+  display: block;
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  cursor: zoom-in;
+}
+.onepager-trigger img { width: 100%; }
 .status {
   display: inline-block;
   margin-bottom: 12px;

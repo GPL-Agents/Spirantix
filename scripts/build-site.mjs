@@ -14,4 +14,20 @@ for (const output of outputs) {
   await writeFile(target, output.html, 'utf8');
 }
 
-console.log(`Generated ${outputs.length} pages.`);
+const sitemapPaths = [
+  ...outputs.map(output => output.path).filter(path => path !== '404.html'),
+  'emery.html',
+  'capsa.html',
+  'addie.html',
+  'heri.html'
+];
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapPaths.map(path => `  <url><loc>https://spirantix.ai/${path === 'index.html' ? '' : path}</loc><lastmod>2026-09-02</lastmod></url>`).join('\n')}
+</urlset>
+`;
+
+await writeFile(resolve(root, 'sitemap.xml'), sitemap, 'utf8');
+
+console.log(`Generated ${outputs.length} pages and sitemap.xml.`);
