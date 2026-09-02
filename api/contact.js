@@ -42,6 +42,31 @@ module.exports = async function handler(req, res) {
   const email   = (body.email   || '').toString().trim().slice(0, 200);
   const message = (body.message || '').toString().trim().slice(0, 4000);
 
+  const inquiryLabels = {
+    support: 'Product support',
+    product: 'Product interest',
+    speaking: 'Class or speaking inquiry',
+    general: 'General question',
+  };
+  const inquiryType = inquiryLabels[body.inquiryType] ? body.inquiryType : 'general';
+
+  const details = {
+    product: body.product,
+    preferredReply: body.preferredReply,
+    productInterest: body.productInterest,
+    relationship: body.relationship,
+    community: body.community,
+    location: body.location,
+    role: body.role,
+    groupSize: body.groupSize,
+    formatInterest: body.formatInterest,
+    timing: body.timing,
+  };
+
+  Object.keys(details).forEach((key) => {
+    details[key] = (details[key] || '').toString().trim().slice(0, 300);
+  });
+
   if (!name)           return res.status(400).json({ ok: false, error: 'Name is required.' });
   if (!isEmail(email)) return res.status(400).json({ ok: false, error: 'A valid email is required.' });
 
@@ -54,11 +79,31 @@ module.exports = async function handler(req, res) {
     return res.status(500).json({ ok: false, error: 'Server is not configured to send mail yet.' });
   }
 
+  const detailLabels = {
+    product: 'Product',
+    preferredReply: 'Preferred reply',
+    productInterest: 'Product interest',
+    relationship: 'Relationship',
+    community: 'Community or organization',
+    location: 'Location',
+    role: 'Role',
+    groupSize: 'Approximate group size',
+    formatInterest: 'Format interest',
+    timing: 'Preferred timing',
+  };
+
+  const detailRows = Object.entries(details)
+    .filter(([, value]) => value)
+    .map(([key, value]) => `<tr><td><strong>${detailLabels[key]}</strong></td><td>${escapeHtml(value)}</td></tr>`)
+    .join('');
+
   const html = `
     <h2>New message from spirantix.ai</h2>
     <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px;">
       <tr><td><strong>Name</strong></td><td>${escapeHtml(name)}</td></tr>
       <tr><td><strong>Email</strong></td><td>${escapeHtml(email)}</td></tr>
+      <tr><td><strong>Inquiry type</strong></td><td>${escapeHtml(inquiryLabels[inquiryType])}</td></tr>
+      ${detailRows}
       <tr><td valign="top"><strong>Message</strong></td><td>${escapeHtml(message).replace(/\n/g, '<br>') || '<em>(none)</em>'}</td></tr>
     </table>
   `;
@@ -74,7 +119,7 @@ module.exports = async function handler(req, res) {
         from: CONTACT_FROM,
         to: [CONTACT_TO],
         reply_to: email,
-        subject: `Spirantix contact: ${name}`,
+        subject: `Spirantix ${inquiryLabels[inquiryType]}: ${name}`,
         html,
       }),
     });

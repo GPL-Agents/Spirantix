@@ -1,481 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spirantix.ai | AI That Makes Life Better</title>
-<meta name="description" content="Spirantix builds AI that makes life better. Emery memory support for dementia and Alzheimer's, Capsa photo albums with narrated stories, and Addie photo certification.">
-<link rel="canonical" href="https://spirantix.ai/">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Spirantix.ai">
-<meta property="og:title" content="Spirantix.ai | AI That Makes Life Better">
-<meta property="og:description" content="AI companions for seniors and their families. Your life, your memories, your legacy. Kept safe.">
-<meta property="og:url" content="https://spirantix.ai/">
-<meta property="og:image" content="https://spirantix.ai/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spirantix.ai | AI Learning and Tools for Seniors</title>
+  <meta name="description" content="Plain-language AI lessons, safety guidance, community classes, and developing products designed for seniors.">
+  
+  <link rel="canonical" href="https://spirantix.ai/">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Spirantix.ai">
+  <meta property="og:title" content="Spirantix.ai | AI Learning and Tools for Seniors">
+  <meta property="og:description" content="Plain-language AI lessons, safety guidance, community classes, and developing products designed for seniors.">
+  <meta property="og:url" content="https://spirantix.ai/">
+  <meta property="og:image" content="https://spirantix.ai/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Spirantix.ai",
+  "name": "Spirantix",
   "url": "https://spirantix.ai/",
-  "logo": "https://spirantix.ai/assets/apple-touch-icon.png",
-  "description": "Spirantix builds AI companions that help seniors and their families get through each day with confidence and preserve their memories for the next generation.",
-  "email": "hello@spirantix.ai",
+  "logo": "https://spirantix.ai/assets/og-image.png",
+  "description": "AI education, safety guidance, community learning, and developing AI products for seniors.",
   "parentOrganization": {
     "@type": "Organization",
-    "name": "FutureInSites, LLC",
-    "url": "https://www.futureinsites.com"
+    "name": "FutureInSites",
+    "url": "https://www.futureinsites.com/"
   }
-}
-</script>
-<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="50" fill="%23ffffff"/%3E%3Cg%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%238FE0C6"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%234FC9B5" transform="rotate(60 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%232BAE9E" transform="rotate(120 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%232E8FB8" transform="rotate(180 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%232368A8" transform="rotate(240 50 50)"/%3E%3Cpath d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="%231B4E82" transform="rotate(300 50 50)"/%3E%3C/g%3E%3Ccircle cx="50" cy="50" r="7" fill="%23ffffff"/%3E%3Ccircle cx="50" cy="50" r="3.2" fill="%232BAE9E"/%3E%3C/svg%3E'>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --navy: #1f2a44;
-    --ink: #1f2a44;
-    --ink-soft: #4a5570;
-    --bg: #f7fafa;
-    --card: #ffffff;
-    --teal: #2bae9e;
-    --teal-dark: #1d8f82;
-    --teal-soft: #e4f5f2;
-    --blue: #2368a8;
-    --orange: #f15a24;
-    --orange-dark: #d44a18;
-    --orange-soft: #fdeadf;
-    --mint: #8fe0c6;
-    --line: #e2e9ec;
-    --radius: 14px;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.65;
-  }
-  h1, h2, h3 { font-family: "Poppins", sans-serif; font-weight: 600; line-height: 1.25; }
-  a { color: var(--teal-dark); text-decoration: none; }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-
-  /* Nav */
-  nav {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(255,255,255,0.94); backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 13px 24px; max-width: 1080px; margin: 0 auto; }
-  .nav-inner .logo { justify-self: start; }
-  .logo { display: flex; align-items: center; gap: 10px; }
-  .logo svg { width: 38px; height: 38px; }
-  .logo .word { font-weight: 600; font-size: 1.3rem; letter-spacing: 0.01em; color: var(--navy); }
-  .logo .word span { color: var(--teal); }
-  .nav-links { display: flex; gap: 28px; align-items: center; }
-  .nav-links a { color: var(--ink-soft); font-size: 0.93rem; font-weight: 500; }
-  .nav-links a:hover { color: var(--teal-dark); }
-  .btn {
-    display: inline-block; background: var(--orange); color: #fff !important;
-    padding: 10px 24px; border-radius: 999px; font-size: 0.93rem; font-weight: 600;
-    border: none; cursor: pointer; transition: background 0.2s, transform 0.15s;
-  }
-  .btn:hover { background: var(--orange-dark); transform: translateY(-1px); }
-  .btn-lg { padding: 14px 34px; font-size: 1.02rem; }
-
-  /* Hero */
-  .hero { padding: 72px 0 72px; position: relative; overflow: hidden; }
-  .hero .swirl-bg {
-    position: absolute; width: 470px; height: 470px; right: -15px; top: 50%;
-    transform: translateY(-50%); opacity: 0.06; pointer-events: none;
-  }
-  .hero-editorial { display: flex; align-items: center; gap: 24px; margin-bottom: 28px; }
-  .hero .hero-photo {
-    width: 290px; height: auto; flex-shrink: 0;
-    border-radius: 10px;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.15);
-    margin-top: 20px; margin-left: 20px;
-  }
-  .hero .hero-copy { text-align: center; display: flex; flex-direction: column; justify-content: center; }
-  .hero h1 { font-size: clamp(2.1rem, 5vw, 3.3rem); margin: 0 0 0; font-weight: 700; }
-  .hero h1 em { font-style: normal; color: var(--teal-dark); }
-  .hero p.sub { font-size: 1.13rem; color: var(--ink-soft); text-wrap: pretty; text-align: center; }
-  .kicker {
-    display: inline-block; font-family: "Caveat", cursive; font-weight: 600;
-    font-size: clamp(2.1rem, 4.5vw, 2.8rem); line-height: 1.2;
-    color: #2e8fb8; margin-bottom: 18px; transform: rotate(-2deg);
-  }
-
-  /* Photo snapshots */
-  .snap {
-    position: absolute; pointer-events: none; border-radius: 5px;
-    border: 9px solid #fff; border-bottom-width: 26px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  }
-  .philosophy .snap { opacity: 0.16; filter: saturate(0.75); }
-  .philosophy .snap.s1 { width: 250px; left: calc(50% - 670px); top: 60px; transform: rotate(-7deg); }
-  .philosophy .snap.s2 { width: 270px; right: calc(50% - 680px); top: 60px; transform: rotate(6deg); }
-  @media (max-width: 1380px) {
-    .philosophy .snap.s1 { left: -34px; }
-    .philosophy .snap.s2 { right: -44px; }
-  }
-  .contact .snap { opacity: 0.85; border-color: #fff; box-shadow: 0 8px 24px rgba(31,42,68,0.18); }
-  .contact .snap.s1 { width: 215px; left: calc(50% - 620px); top: 90px; transform: rotate(-6deg); }
-  .contact .snap.s2 { width: 230px; right: calc(50% - 630px); top: 70px; transform: rotate(5deg); }
-  @media (max-width: 1280px) {
-    .contact .snap.s1 { left: 2%; }
-    .contact .snap.s2 { right: 2%; }
-  }
-  @media (max-width: 1100px) {
-    .contact .snap { display: none; }
-  }
-
-  /* Beliefs */
-  .philosophy { padding: 76px 0; background: var(--navy); color: #e8edf5; position: relative; overflow: hidden; }
-  .philosophy .wrap { position: relative; }
-  .philosophy h2 { text-align: center; font-size: 2rem; margin-bottom: 12px; color: #fff; }
-  .philosophy p.lead { text-align: center; color: #aeb9cf; max-width: 620px; margin: 0 auto 48px; }
-  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 44px; position: relative; }
-  .pillars::before {
-    content: ""; position: absolute; top: 36px; left: 16.67%; right: 16.67%;
-    border-top: 2px dashed rgba(143,224,198,0.35);
-  }
-  .pillar { text-align: center; position: relative; padding: 0 8px; }
-  .pillar .medallion {
-    width: 72px; height: 72px; margin: 0 auto 22px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; position: relative;
-    background: var(--navy);
-  }
-  .pillar .medallion svg { width: 30px; height: 30px; position: relative; }
-  .pillar:nth-child(1) .medallion { box-shadow: 0 0 0 2px #a78bfa, 0 0 26px rgba(167,139,250,0.45); }
-  .pillar:nth-child(1) .medallion svg { stroke: #c4b5fd; }
-  .pillar:nth-child(2) .medallion { box-shadow: 0 0 0 2px #2bae9e, 0 0 26px rgba(43,174,158,0.4); }
-  .pillar:nth-child(2) .medallion svg { stroke: #4fc9b5; }
-  .pillar:nth-child(3) .medallion { box-shadow: 0 0 0 2px #2e8fb8, 0 0 26px rgba(46,143,184,0.4); }
-  .pillar:nth-child(3) .medallion svg { stroke: #6db9da; }
-  .pillar h3 { font-size: 1.15rem; margin-bottom: 10px; color: #fff; }
-  .pillar p { font-size: 0.94rem; color: #aeb9cf; max-width: 320px; margin: 0 auto; }
-
-  /* Products */
-  .products { padding: 84px 0 0; }
-  .section-head { text-align: center; margin-bottom: 52px; scroll-margin-top: 84px; }
-  .section-head h2 { font-size: 2rem; margin-bottom: 10px; }
-  .section-head p { color: var(--ink-soft); max-width: 900px; margin: 0 auto; }
-
-  /* Three roles, one mission */
-  .trio { text-align: center; margin: 48px auto 48px; max-width: 560px; }
-  .trio h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; color: var(--navy); line-height: 1.2; margin-bottom: 22px; letter-spacing: 0.02em; }
-  .trio .icons { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 22px; }
-  .trio .icons svg { width: 34px; height: 34px; }
-  .trio .icons .i-heart { stroke: var(--blue); }
-  .trio .icons .i-book { stroke: #3e7a4e; }
-  .trio .icons .i-shield { stroke: var(--navy); }
-  .trio .icons .i-key { stroke: #b8780a; }
-  .trio .icons .dash { color: var(--ink-soft); letter-spacing: 2px; font-weight: 600; }
-  .trio .line { font-style: italic; color: var(--ink-soft); font-size: 1.05rem; }
-  .product {
-    display: grid; grid-template-columns: 1fr 1.6fr; gap: 36px;
-    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 40px; margin-bottom: 28px; align-items: start;
-    box-shadow: 0 2px 10px rgba(31,42,68,0.04);
-  }
-  .product .avatar { width: 170px; height: 170px; border-radius: 50%; display: block; margin-bottom: 18px; box-shadow: 0 8px 24px rgba(31,42,68,0.14); transition: transform 0.2s; }
-  .product .avatar:hover { transform: scale(1.04); }
-  .product .archetype { font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--ink-soft); margin-bottom: 10px; }
-  .product .meet { display: inline-block; margin-top: 14px; font-weight: 600; font-size: 0.93rem; }
-  .product .meet::after { content: " \2192"; }
-  .product .badge {
-    display: inline-block; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
-    padding: 5px 13px; border-radius: 999px; margin-bottom: 14px;
-  }
-  .badge.building { background: var(--orange-soft); color: var(--orange-dark); }
-  .badge.preview { background: var(--teal-soft); color: var(--teal-dark); }
-  .product h3 { font-size: 1.55rem; margin-bottom: 6px; color: var(--navy); }
-  .product .tagline { color: var(--teal-dark); font-size: 0.98rem; font-weight: 500; margin-bottom: 0; }
-  .product .body p { margin-bottom: 14px; color: var(--ink-soft); font-size: 0.97rem; }
-  .product .body strong { color: var(--navy); }
-  .product .desc { border-radius: 12px; padding: 24px 26px; margin-bottom: 18px; }
-  .product .desc p:last-child { margin-bottom: 0; }
-  .product.emery .desc { background: #e9eef9; }
-  .product.capsa .desc { background: #eef2e6; }
-  .product.addie .desc { background: #e4eaf5; }
-  .product.heri .desc { background: #f5e8c8; }
-  .uses { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
-  .uses span {
-    font-size: 0.81rem; background: var(--bg); border: 1px solid var(--line);
-    padding: 5px 13px; border-radius: 999px; color: var(--ink-soft);
-  }
-
-  /* PhotoSeal strip */
-  .seal { padding: 40px 0; background: var(--teal-soft); }
-  .seal-inner { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; }
-  .seal-mark { width: 160px; height: 160px; border-radius: 50%; }
-  .seal h2 { font-size: 1.6rem; margin-bottom: 10px; color: var(--navy); }
-  .seal p { color: var(--ink-soft); }
-  .seal-infographic { text-align: center; margin-top: 32px; padding-bottom: 8px; }
-  .seal-infographic img { max-width: 900px; width: 100%; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 6px 24px rgba(31,42,68,0.10); cursor: zoom-in; }
-  .seal-infographic p { margin-top: 14px; font-size: 0.92rem; color: var(--ink-soft); }
-  .lightbox { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(31,42,68,0.88); padding: 64px 18px 32px; overflow: auto; text-align: center; }
-  .lightbox.open { display: block; }
-  .lightbox img { max-width: min(1280px, 96vw); width: 100%; border-radius: 8px; background: #fff; }
-  .lb-close { position: fixed; top: 16px; right: 20px; z-index: 101; background: var(--orange); color: #fff; border: none; border-radius: 999px; padding: 10px 24px; font-family: "Poppins", sans-serif; font-weight: 600; font-size: 0.95rem; cursor: pointer; }
-  .lb-close:hover { background: var(--orange-dark); }
-
-  /* Contact */
-  .contact { padding: 88px 0; text-align: center; position: relative; overflow: hidden; }
-  .contact h2 { font-size: 2rem; margin-bottom: 12px; }
-  .contact p { color: var(--ink-soft); max-width: 540px; margin: 0 auto; }
-
-  /* Footer */
-  footer { border-top: 1px solid var(--line); padding: 36px 0; background: #fff; }
-  .foot-inner { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; color: var(--ink-soft); font-size: 0.88rem; }
-  .foot-copy { text-align: center; margin-top: 12px; font-size: 0.76rem; font-weight: 300; color: #a8b0c0; }
-  .foot-copy a { color: inherit; }
-
-  @media (max-width: 760px) {
-    .hero .swirl-bg { display: none; }
-    .hero-editorial { flex-direction: column; }
-    .hero .hero-photo { width: 100%; max-width: 320px; margin: 0 auto; }
-    .hero p.sub { padding: 0 16px; }
-    .pillars { grid-template-columns: 1fr; }
-    .pillars::before { display: none; }
-    .product { grid-template-columns: 1fr; padding: 28px; }
-    .seal-inner { grid-template-columns: 1fr; text-align: center; }
-    .seal-mark { margin: 0 auto; }
-    .nav-inner { grid-template-columns: 1fr; row-gap: 6px; padding: 12px 16px; }
-    .nav-inner .logo { justify-self: center; }
-    .nav-links { justify-content: center; gap: 18px; }
-    .nav-links a { font-size: 0.85rem; }
-  }
-</style>
+}</script>
 </head>
 <body>
-
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <g id="spirantix-mark">
-      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#8FE0C6"/>
-      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#4FC9B5" transform="rotate(60 50 50)"/>
-      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2BAE9E" transform="rotate(120 50 50)"/>
-      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2E8FB8" transform="rotate(180 50 50)"/>
-      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2368A8" transform="rotate(240 50 50)"/>
-      <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#1B4E82" transform="rotate(300 50 50)"/>
-      <circle cx="50" cy="50" r="7" fill="#ffffff"/>
-      <circle cx="50" cy="50" r="3.2" fill="#2BAE9E"/>
-    </g>
-    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0L12 5.2l-.6-.6a5.5 5.5 0 0 0-7.8 7.8l.6.6L12 20.8 19.8 13l.6-.6a5.5 5.5 0 0 0 0-7.8z" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H2zM22 4h-7a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H22z" fill="none" stroke-width="2" stroke-linejoin="round"/></symbol>
-    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke-width="2" stroke-linejoin="round"/><path d="M9 11.5l2 2 4-4" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l2-5.2a8.4 8.4 0 1 1 16-4.3z" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M18.2 8.2a4 4 0 1 1 0 7.6C15.5 16.7 13.4 14 12 12c-1.4-2-3.5-4.7-6.2-3.8a4 4 0 1 0 0 7.6C8.5 16.7 10.6 14 12 12c1.4-2 3.5-4.7 6.2-3.8z" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="4.5" fill="none" stroke-width="2"/><path d="M21 2l-9.6 9.6M19 4l2 2M17 6l2 2" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  </defs>
-</svg>
-
-<nav>
-  <div class="nav-inner">
-    <div class="logo">
-      <a href="index.html" style="display:flex;align-items:center;gap:10px;">
-        <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
-        <div class="word">Spirantix<span>.ai</span></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Spirantix home">
+        <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#8FE0C6"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#4FC9B5" transform="rotate(60 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2BAE9E" transform="rotate(120 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2E8FB8" transform="rotate(180 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2368A8" transform="rotate(240 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#1B4E82" transform="rotate(300 50 50)"/>
+    <circle cx="50" cy="50" r="7" fill="#ffffff"/>
+    <circle cx="50" cy="50" r="3.2" fill="#2BAE9E"/>
+  </svg>
+        <span>Spirantix<span>.ai</span></span>
       </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
+        <span class="visually-hidden">Open menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="site-menu" class="nav-links" aria-label="Primary" data-nav-menu>
+        <a href="learn.html">Learn</a>
+        <a href="safety.html">Stay Safe</a>
+        <a href="classes.html">Classes & Talks</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a class="nav-cta" href="contact.html?type=speaking">Request a Session</a>
+      </nav>
     </div>
-    <div class="nav-links">
-      <a href="#philosophy">Mission</a>
-      <a href="#team">Team</a>
-      <a href="#tessera">Technology</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero wrap">
-  <svg class="swirl-bg" viewBox="0 0 100 100" aria-hidden="true"><use href="#spirantix-mark"/></svg>
-  <div class="hero-editorial">
-    <img class="hero-photo" src="assets/grandfather.grandson.story.png" alt="Grandfather and grandson sharing stories">
+  </header>
+  <main id="main-content"><section class="hero">
+  <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="kicker">AI that makes life better</div>
-      <h1>Your life, your memories, your legacy. <em>Kept safe.</em></h1>
+      <p class="eyebrow">AI education and tools for seniors</p>
+      <h1>Understand AI. Use it with confidence. <span class="accent-script">Stay safe.</span></h1>
+      <p class="lede">Spirantix makes artificial intelligence easier to understand and more useful in everyday life, with plain-language lessons, practical safety guidance, community classes, and tools designed around you.</p>
+      <div class="hero-actions">
+        <a class="btn" href="learn.html">Start learning</a>
+        <a class="btn btn-secondary" href="contact.html?type=speaking">Request a session</a>
+      </div>
+      <p class="hero-note">No technical background needed. Start with one simple lesson or join us in person.</p>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/grandfather.grandson.story.png" alt="A grandfather and grandson learning together with a tablet">
     </div>
   </div>
-  <p class="sub">AI designed especially for seniors and their families. Spirantix builds AI companions that help people live each day with confidence: remembering the faces they love, staying on top of appointments and daily to-dos, preserving the stories behind their photos, and building an inventory of the possessions that carry their family's history.</p>
-</header>
+</section>
 
-<section class="philosophy" id="philosophy">
-  <img class="snap s1" src="assets/snap-emery-tablet.webp" alt="" aria-hidden="true">
-  <img class="snap s2" src="assets/snap-addie-family.webp" alt="" aria-hidden="true">
+<section class="section section-white">
   <div class="wrap">
-    <h2>Our Mission</h2>
-    <p class="lead">To help families preserve the memories, stories, authenticity, and treasured possessions that define a life, so they can be protected, shared, and passed on for generations to come.</p>
-    <div class="pillars">
-      <div class="pillar">
-        <div class="medallion"><svg aria-hidden="true"><use href="#i-heart"/></svg></div>
-        <h3>Helping people comes first</h3>
-        <p>Most AI is built to make work more efficient. Ours is built to make life better: easing the weight of memory loss, keeping families connected, and saving the stories that matter before they slip away.</p>
-      </div>
-      <div class="pillar">
-        <div class="medallion"><svg aria-hidden="true"><use href="#i-chat"/></svg></div>
-        <h3>Easy for everyone</h3>
-        <p>Designed for seniors and for people who don't think of themselves as technical. No manuals, no menus to memorize. If you can have a conversation, you can use a Spirantix agent.</p>
-      </div>
-      <div class="pillar">
-        <div class="medallion"><svg aria-hidden="true"><use href="#i-infinity"/></svg></div>
-        <h3>Made to outlast us</h3>
-        <p>Memories should outlive any company, ours included. Everything is built on open standards, so what you keep and pass down stays readable and verifiable decades from now.</p>
-      </div>
+    <div class="section-heading center">
+      <p class="eyebrow">A clear place to begin</p>
+      <h2>AI should feel useful, not overwhelming</h2>
+      <p>Choose the path that fits what you want to do today.</p>
+    </div>
+    <div class="grid-3">
+      <a class="card card-link" href="learn.html"><div class="icon">1</div><h3>Understand AI</h3><p>Learn what AI is, how it reached today’s tools, and what it can and cannot do.</p><span class="text-link">Visit the learning hub</span></a>
+      <a class="card card-link" href="learn/better-prompts.html"><div class="icon">2</div><h3>Use it with confidence</h3><p>Practice asking useful questions and turn AI into a patient helper for everyday tasks.</p><span class="text-link">Learn how to ask</span></a>
+      <a class="card card-link" href="safety.html"><div class="icon">3</div><h3>Protect what matters</h3><p>Keep important information private and learn how to slow down when something looks suspicious.</p><span class="text-link">Explore Stay Safe</span></a>
     </div>
   </div>
 </section>
 
-<section class="products wrap" id="products">
-  <div class="section-head" id="team">
-    <h2>Meet the Spirantix Agent Team</h2>
-    <p>Four AI companions, each with a specialized role, working together to preserve your memories, stories, authenticity, and treasured possessions. Built with older adults in mind: simple to talk to, easy for family to set up, and private by design. Available first on Claude and ChatGPT, with mobile apps to follow.</p>
-  </div>
-
-  <div class="product emery">
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Upcoming in-person learning</p>
+      <h2>Join a Spirantix session</h2>
+      <p>Attendance is managed by each host. Contact the location directly for availability and other details.</p>
+    </div>
+    <div class="event-list"><article class="event-card">
+    <div class="event-date"><span class="day">Sep 18</span><span>10:00 AM</span></div>
     <div>
-      <a href="emery.html"><img class="avatar" src="assets/emery-avatar.png" alt="Emery, the Companion"></a>
-      <div class="badge building">Beta Release</div>
-      <h3>Emery</h3>
-      <div class="archetype">The Companion &middot; She remembers.</div>
-      <p class="tagline">Memory care, powered by your own life</p>
-      <a class="meet" href="emery.html">Meet Emery</a>
+      <h3>AI Learning Session</h3>
+      <p class="event-meta">Town Village of Leawood · 4400 W 115th St, Leawood, Kansas</p>
+      <p>An in-person learning session at the independent living community.</p>
+      <p class="small"><strong>Host phone:</strong> (913) 491-3681</p>
+      <a class="text-link" href="https://www.pegasusseniorliving.com/town-village-of-leawood/activities/" target="_blank" rel="noopener">Contact Town Village of Leawood for attendance information</a>
     </div>
-    <div class="body">
-      <div class="desc">
-      <p>For someone living with dementia, Alzheimer's, or short-term memory loss, the real challenge is getting through a normal day. Emery is AI-powered memory support built for exactly that: what's happening today, what needs doing, and who's who. The name is its own mnemonic: one sound away from "memory," easy to call out when you need it.</p>
-      <p>Emery keeps each day on track. She manages your calendar and task list, <strong>builds you a simple daily plan</strong>, and gives gentle reminders so nothing falls through the cracks: appointments, medications, birthdays, the kettle you put on.</p>
-      <p>She also helps you hold on to people and moments. Take or upload a photo and simply ask: <strong>"Who is this?"</strong> Emery recognizes family and friends from a private knowledge base built from your own photo library, and answers warmly and conversationally.</p>
-      <p>Family members or caregivers set it up once with the photos, names, and routines that matter; from then on it's as simple as asking. Everything stays on the family's own infrastructure. Nothing is shared, sold, or used for training.</p>
-      </div>
-      <div class="uses">
-        <span>"What's my plan for today?"</span>
-        <span>"What's happening tomorrow?"</span>
-        <span>"Who is this?"</span>
-        <span>"Show me pictures of Sophie"</span>
-        <span>"Remind me to take my pills at 8"</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="product capsa">
+  </article><article class="event-card">
+    <div class="event-date"><span class="day">Oct 7</span><span>During the 1:00 to 3:00 PM course session</span></div>
     <div>
-      <a href="capsa.html"><img class="avatar" src="assets/capsa-avatar.png" alt="Capsa, the Curator"></a>
-      <div class="badge preview">Coming Soon</div>
-      <h3>Capsa</h3>
-      <div class="archetype">The Curator &middot; She keeps the stories.</div>
-      <p class="tagline">Your photos, your albums, your stories. In one place you control.</p>
-      <a class="meet" href="capsa.html">Meet Capsa</a>
+      <h3>Artificial Intelligence in Our Lives Today</h3>
+      <p class="event-meta">Taconic Learning Center · Noble Horizons</p>
+      <p>A guest session within a four-session course exploring large language models, everyday uses of AI, ethics, policy, and personal experience.</p>
+      
+      <a class="text-link" href="https://taconiclearningcenter.org/courses.php?season=Fall&year=2026" target="_blank" rel="noopener">Contact the Taconic Learning Center for attendance information</a>
     </div>
-    <div class="body">
-      <div class="desc">
-      <p>Your photos are scattered across Google Photos, iCloud, Dropbox, old laptops, and external drives. Capsa, named for the case Romans used to protect the scrolls they cared enough to keep, gathers all of them into one organized collection on hardware you own, sorted by year, event, and the people in them.</p>
-      <p>Then comes the part no shoebox of prints could do. Build albums the way you once did by hand, and add the piece no photo can capture: <strong>record yourself telling the story</strong>. The Slideshow feature plays your pictures with your own voice narrating, in your words, for your grandchildren and theirs.</p>
-      <p>The AI sees only small thumbnails, just enough to sort intelligently. <strong>Your full-resolution photos never leave your machine</strong>, with optional cloud backup as a second copy, never the master.</p>
-      </div>
-      <div class="uses">
-        <span>Family albums</span>
-        <span>Narrated slideshows</span>
-        <span>Google Photos, iCloud &amp; Dropbox</span>
-        <span>Local folders &amp; NAS</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="product addie">
-    <div>
-      <a href="addie.html"><img class="avatar" src="assets/addie-avatar.png" alt="Addie, the Guardian"></a>
-      <div class="badge preview">Coming Soon</div>
-      <h3>Addie</h3>
-      <div class="archetype">The Guardian &middot; She knows what's real.</div>
-      <p class="tagline">Prove it's real. Prove it's yours.</p>
-      <a class="meet" href="addie.html">Meet Addie</a>
-    </div>
-    <div class="body">
-      <div class="desc">
-      <p>In a world filling up with AI-generated images, Addie certifies what's genuine. Hand her a photo or document and she seals it: a visible code, woven into the picture itself, that proves who created it, when it existed, and that <strong>it hasn't been altered since</strong>.</p>
-      <p>The seal carries your story with it: who is in the picture, where it was taken, what it meant. Addie, <strong>A</strong>uthenticated <strong>D</strong>igital <strong>D</strong>ocument and <strong>I</strong>mage <strong>E</strong>ncoder, locks that context and a Tessera seal into the image itself. Both the story and the proof travel with the photo wherever it goes, across copies, devices, and generations.</p>
-      <p>Use Addie on her own to certify a single precious photo, or let her quietly certify everything in your Capsa collection, so the pictures you pass down can be <strong>proven real by your great-grandchildren</strong>.</p>
-      </div>
-      <div class="uses">
-        <span>Certify a photo or document</span>
-        <span>Survives copies, posts &amp; print</span>
-        <span>Your story travels inside</span>
-        <span>Verifiable for generations</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="product heri">
-    <div>
-      <a href="heri.html"><img class="avatar" src="assets/heri-avatar.png" alt="Heri, the Steward"></a>
-      <div class="badge preview">Coming Soon</div>
-      <h3>Heri</h3>
-      <div class="archetype">The Steward &middot; He guards the family legacy.</div>
-      <p class="tagline">Your possessions. Their history. Preserved for generations.</p>
-      <a class="meet" href="heri.html">Meet Heri</a>
-    </div>
-    <div class="body">
-      <div class="desc">
-      <p>Every possession has a past: a grandfather's watch, a military medal, a piece of jewelry whose story was never written down. Heri helps you capture the history, value, and meaning of everything that tells your family's story.</p>
-      <p>Heri creates a <strong>searchable inventory</strong> of your furniture, jewelry, collectibles, artwork, documents, and family heirlooms. It tracks who owned each item, when it was acquired, and how it passed through generations, building a provenance record that gives each piece meaning beyond its price.</p>
-      <p>Attach your appraisals, receipts, and insurance records so the right documentation is always where it needs to be. And when the time comes to think about what goes to whom, <strong>Heri helps families have that conversation</strong> with clarity and intention.</p>
-      </div>
-      <div class="uses">
-        <span>Heirloom &amp; furniture catalog</span>
-        <span>Ownership &amp; provenance records</span>
-        <span>Appraisals &amp; insurance docs</span>
-        <span>Estate &amp; family guidance</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="trio">
-    <h2>Four agents.<br>One mission.</h2>
-    <div class="icons" aria-hidden="true">
-      <svg class="i-heart"><use href="#i-heart"/></svg>
-      <span class="dash">- - -</span>
-      <svg class="i-book"><use href="#i-book"/></svg>
-      <span class="dash">- - -</span>
-      <svg class="i-shield"><use href="#i-shield-check"/></svg>
-      <span class="dash">- - -</span>
-      <svg class="i-key"><use href="#i-key"/></svg>
-    </div>
-    <p class="line">Your memories. Your legacy. Across generations.</p>
+  </article></div>
+    <div class="button-row" style="margin-top:30px"><a class="btn btn-teal" href="classes.html">See classes and talks</a><a class="text-link" href="contact.html?type=speaking">Bring a session to your community</a></div>
   </div>
 </section>
 
-<section class="seal" id="tessera">
-  <div class="wrap seal-inner">
-    <img class="seal-mark" src="assets/tessera-sample.svg" alt="Sample photo with Tessera verification seal in the corner">
+<section class="section">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Start here</p>
+      <h2>Four friendly introductions to AI</h2>
+      <p>Each lesson focuses on one idea, uses ordinary language, and ends with something you can try.</p>
+    </div>
+    <div class="grid-3"><a class="card card-link lesson-card" href="learn/what-is-ai.html"><p class="lesson-number">Lesson 1</p>
+      <h3>What AI is, and what it is not</h3>
+      <p>A plain-language introduction to artificial intelligence, generative AI, and the limits that matter.</p>
+      <p class="lesson-meta">7 minute read · <span class="text-link">Read the lesson</span></p></a><a class="card card-link lesson-card" href="learn/chatgpt-basics.html"><p class="lesson-number">Lesson 2</p>
+      <h3>Getting started with ChatGPT</h3>
+      <p>Begin a conversation, ask a useful question, and improve the answer one step at a time.</p>
+      <p class="lesson-meta">8 minute read · <span class="text-link">Read the lesson</span></p></a><a class="card card-link lesson-card" href="learn/claude-basics.html"><p class="lesson-number">Lesson 3</p>
+      <h3>Getting started with Claude</h3>
+      <p>Learn the basic conversation flow and where Claude can be especially helpful.</p>
+      <p class="lesson-meta">8 minute read · <span class="text-link">Read the lesson</span></p></a><a class="card card-link lesson-card" href="learn/better-prompts.html"><p class="lesson-number">Lesson 4</p>
+      <h3>How to ask AI a useful question</h3>
+      <p>A simple four-part method for writing prompts that produce clearer, more useful answers.</p>
+      <p class="lesson-meta">7 minute read · <span class="text-link">Read the lesson</span></p></a></div>
+    <div class="button-row" style="margin-top:30px"><a class="btn btn-secondary" href="learn.html">See the full learning plan</a></div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="wrap grid-2" style="align-items:center">
     <div>
-      <h2>Tessera Protocol</h2>
-      <p>Every seal Addie creates can be read without us. Tessera is the open standard behind Addie's seals: a sealed photo carries proof it's genuine and unaltered, and anyone can check that proof with any tool, in any decade. In ancient Rome, a tessera hospitalis was a token split between two families; decades later, the matching halves could be rejoined to prove the bond. Tessera works the same way for your photos and stories, and it will keep working long after us.</p>
+      <p class="eyebrow">Stay safe</p>
+      <h2>Pause, check, and protect your information</h2>
+      <p class="lede">Scammers use urgency, secrecy, and familiar names to push people into acting before they have time to think. A few simple habits can make a real difference.</p>
+      <a class="btn" href="safety.html">Learn the warning signs</a>
+    </div>
+    <div class="callout callout-light">
+      <h3>The most useful first step</h3>
+      <p>If a message asks for money, passwords, codes, account numbers, or immediate action, stop. Contact the person or organization using a number or website you already trust.</p>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <img class="snap s1" src="assets/snap-capsa-album.webp" alt="" aria-hidden="true">
-  <img class="snap s2" src="assets/3generations.doll.png" alt="" aria-hidden="true">
-  <h2>Questions?</h2>
-  <p>Whether it's for you or someone you love, we'd be glad to hear from you. <a href="contact.html">Send us a message</a> or email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a>.</p>
+<section class="section section-blue">
+  <div class="wrap">
+    <div class="section-heading center">
+      <p class="eyebrow">Spirantix products</p>
+      <h2>AI tools designed around real lives</h2>
+      <p>Our developing product family helps with memory, stories, planning, and family possessions. The experience begins with one concierge, so you do not need to decide which specialist to ask.</p>
+    </div>
+    <div class="callout" style="max-width:840px;margin:0 auto 34px">
+      <p class="eyebrow" style="color:var(--mint)">Your starting point</p>
+      <h3>Your AI concierge</h3>
+      <p>You explain what you need once. The concierge listens, guides the conversation, and brings in Emery, Capsa, Addie, or Heri when their specialty can help.</p>
+    </div>
+    <div class="agent-grid"><a class="card card-link agent-card" href="emery.html">
+    <picture><source srcset="assets/emery-avatar.webp" type="image/webp"><img src="assets/emery-avatar.png" alt="Illustrated portrait of Emery, The Companion" loading="lazy"></picture>
+    <span class="status beta">Beta</span>
+    <h3>Emery</h3>
+    <p><strong>The Companion</strong></p>
+    <p>Memory support, daily planning, gentle reminders, and familiar moments for people living with memory loss.</p>
+    <span class="text-link">Meet Emery</span>
+  </a><a class="card card-link agent-card" href="capsa.html">
+    <picture><source srcset="assets/capsa-avatar.webp" type="image/webp"><img src="assets/capsa-avatar.png" alt="Illustrated portrait of Capsa, The Storyteller" loading="lazy"></picture>
+    <span class="status ">Coming Soon</span>
+    <h3>Capsa</h3>
+    <p><strong>The Storyteller</strong></p>
+    <p>Helps families capture the stories, memories, and experiences that deserve to be carried forward.</p>
+    <span class="text-link">Meet Capsa</span>
+  </a><a class="card card-link agent-card" href="addie.html">
+    <picture><source srcset="assets/addie-avatar.webp" type="image/webp"><img src="assets/addie-avatar.png" alt="Illustrated portrait of Addie, The Planner" loading="lazy"></picture>
+    <span class="status ">Coming Soon</span>
+    <h3>Addie</h3>
+    <p><strong>The Planner</strong></p>
+    <p>Helps organize important information and prepare the practical details families need.</p>
+    <span class="text-link">Meet Addie</span>
+  </a><a class="card card-link agent-card" href="heri.html">
+    <picture><source srcset="assets/heri-avatar.png" type="image/webp"><img src="assets/heri-avatar.png" alt="Illustrated portrait of Heri, The Steward" loading="lazy"></picture>
+    <span class="status ">Coming Soon</span>
+    <h3>Heri</h3>
+    <p><strong>The Steward</strong></p>
+    <p>Catalogs, documents, and protects the possessions and history that make up a family legacy.</p>
+    <span class="text-link">Meet Heri</span>
+  </a></div>
+    <div class="button-row" style="margin-top:30px;justify-content:center"><a class="btn btn-secondary" href="products.html">Explore Spirantix products</a></div>
+  </div>
 </section>
 
-<footer>
-  <div class="wrap foot-inner">
-    <a href="privacy.html">Privacy</a>
-    <a href="faq.html">Questions</a>
-    <a href="contact.html">Contact</a>
+<section class="section section-dark">
+  <div class="narrow" style="text-align:center">
+    <p class="eyebrow" style="color:var(--mint)">Learning for your community</p>
+    <h2>Bring an approachable AI session to your residents or members</h2>
+    <p class="lede">Single talks, guest sessions, and multi-week courses are available. In-person learning is preferred, with video sessions available when needed.</p>
+    <a class="btn" href="contact.html?type=speaking">Request information</a>
   </div>
-  <div class="wrap foot-copy">&copy; 2026 <a href="https://www.futureinsites.com" target="_blank" rel="noopener">FutureInSites</a></div>
-</footer>
-
+</section></main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Spirantix home"><svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#8FE0C6"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#4FC9B5" transform="rotate(60 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2BAE9E" transform="rotate(120 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2E8FB8" transform="rotate(180 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#2368A8" transform="rotate(240 50 50)"/>
+    <path d="M50,50 C50,25 60,13 83,13 C72,24 73,37 50,50Z" fill="#1B4E82" transform="rotate(300 50 50)"/>
+    <circle cx="50" cy="50" r="7" fill="#ffffff"/>
+    <circle cx="50" cy="50" r="3.2" fill="#2BAE9E"/>
+  </svg><span>Spirantix<span>.ai</span></span></a>
+        <p class="small muted" style="margin-top:16px;max-width:360px">Helping seniors understand AI, use it with confidence, and protect what matters.</p>
+      </div>
+      <div>
+        <h2>Learn</h2>
+        <div class="footer-links">
+          <a href="learn.html">Learning hub</a>
+          <a href="safety.html">Stay Safe</a>
+          <a href="classes.html">Classes & Talks</a>
+        </div>
+      </div>
+      <div>
+        <h2>Spirantix</h2>
+        <div class="footer-links">
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">Questions</a>
+        </div>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <div class="footer-links">
+          <a href="contact.html">Contact us</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>&copy; 2026 Spirantix, a division of <a href="https://www.futureinsites.com" target="_blank" rel="noopener">FutureInSites</a>.</span>
+      <span>Designed for clarity, privacy, and confidence.</span>
+    </div>
+  </footer>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
