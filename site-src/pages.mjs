@@ -31,7 +31,7 @@ function lessonCards(includePlanned = false) {
     : includePlanned
       ? lessonIndex
       : lessonIndex.filter(lesson => lesson.status === 'published');
-  return `<div class="grid-3">${lessons.map(lesson => {
+  return `<div class="lesson-grid">${lessons.map(lesson => {
     const published = lesson.status === 'published';
     const content = `<p class="lesson-number">Lesson ${lesson.number}</p>
       <h3>${lesson.title}</h3>
@@ -110,8 +110,8 @@ const homeBody = `<section class="hero home-hero">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">Start here</p>
-      <h2>Four friendly introductions to AI</h2>
-      <p>Each lesson focuses on one idea, uses ordinary language, and ends with something you can try.</p>
+      <h2>Friendly introductions to AI</h2>
+      <p>Each lesson explains one idea in ordinary language and includes a practical activity.</p>
     </div>
     ${lessonCards(false)}
     <div class="button-row" style="margin-top:30px"><a class="btn btn-secondary" href="learn.html">See the full learning plan</a></div>
