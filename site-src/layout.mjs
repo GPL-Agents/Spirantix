@@ -37,7 +37,9 @@ function header(active, base) {
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
       <nav id="site-menu" class="nav-links" aria-label="Primary" data-nav-menu>
-        ${links}
+        <div class="nav-primary-links">
+          ${links}
+        </div>
         <a class="nav-cta" href="${base}contact.html?type=speaking">Request a Session</a>
       </nav>
     </div>

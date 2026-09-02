@@ -25,11 +25,13 @@ const header = `<a class="skip-link" href="#main-content">Skip to main content</
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
     <nav id="site-menu" class="nav-links" aria-label="Primary" data-nav-menu>
-      <a href="learn.html">Learn</a>
-      <a href="safety.html">Stay Safe</a>
-      <a href="classes.html">Classes & Talks</a>
-      <a href="products.html" aria-current="page">Products</a>
-      <a href="about.html">About</a>
+      <div class="nav-primary-links">
+        <a href="learn.html">Learn</a>
+        <a href="safety.html">Stay Safe</a>
+        <a href="classes.html">Classes & Talks</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="about.html">About</a>
+      </div>
       <a class="nav-cta" href="contact.html?type=speaking">Request a Session</a>
     </nav>
   </div>
@@ -53,7 +55,9 @@ for (const file of files) {
     html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="assets/site.css">');
   }
 
-  if (!html.includes('class="site-header"')) {
+  if (html.includes('class="site-header"')) {
+    html = html.replace(/<a class="skip-link"[\s\S]*?<\/header>/, header);
+  } else {
     html = html.replace(/<nav>[\s\S]*?<\/nav>/, header);
   }
   if (!html.includes('class="site-footer"')) {

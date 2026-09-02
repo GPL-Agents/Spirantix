@@ -54,23 +54,29 @@ function agentCards() {
   </a>`).join('')}</div>`;
 }
 
-const homeBody = `<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
+const homeBody = `<section class="hero home-hero">
+  <div class="wrap">
+    <div class="home-hero-heading">
       <p class="eyebrow">AI education and tools for seniors</p>
       <h1>Understand AI. Use it with confidence. <span class="accent-script">Stay safe.</span></h1>
-      <p class="lede">Spirantix makes artificial intelligence easier to understand and more useful in everyday life, with plain-language lessons, practical safety guidance, community classes, and tools designed around you.</p>
-      <div class="hero-actions">
-        <a class="btn" href="learn.html">Start learning</a>
-        <a class="btn btn-secondary" href="contact.html?type=speaking">Request a session</a>
-      </div>
-      <p class="hero-note">No technical background needed. Start with one simple lesson or join us in person.</p>
     </div>
-    <div class="hero-visual">
-      <picture>
-        <source srcset="assets/grandfather-grandson-learning.webp" type="image/webp">
-        <img src="assets/grandfather.grandson.story.png" width="1200" height="848" fetchpriority="high" alt="A grandfather and grandson learning together with a tablet">
-      </picture>
+    <div class="home-hero-grid">
+      <div class="hero-copy">
+      <p class="lede">Spirantix makes artificial intelligence easier to understand and more useful in everyday life, with plain-language lessons, practical safety guidance, community classes, and tools designed around you.</p>
+      </div>
+      <div class="hero-visual-block">
+        <div class="hero-visual">
+          <picture>
+            <source srcset="assets/grandfather-grandson-learning.webp" type="image/webp">
+            <img src="assets/grandfather.grandson.story.png" width="1200" height="848" fetchpriority="high" alt="A grandfather and grandson learning together with a tablet">
+          </picture>
+        </div>
+        <div class="hero-actions">
+          <a class="btn" href="learn.html">Start learning</a>
+          <a class="btn btn-secondary" href="contact.html?type=speaking">Request a session</a>
+        </div>
+        <p class="hero-note">No technical background needed. Start with one simple lesson or join us in person.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -85,7 +91,7 @@ const homeBody = `<section class="hero">
     <div class="grid-3">
       <a class="card card-link" href="learn.html"><div class="icon">1</div><h3>Understand AI</h3><p>Learn what AI is, how it reached today’s tools, and what it can and cannot do.</p><span class="text-link">Visit the learning hub</span></a>
       <a class="card card-link" href="learn/better-prompts.html"><div class="icon">2</div><h3>Use it with confidence</h3><p>Practice asking useful questions and turn AI into a patient helper for everyday tasks.</p><span class="text-link">Learn how to ask</span></a>
-      <a class="card card-link" href="safety.html"><div class="icon">3</div><h3>Protect what matters</h3><p>Keep important information private and learn how to slow down when something looks suspicious.</p><span class="text-link">Explore Stay Safe</span></a>
+      <a class="card card-link" href="safety.html"><div class="icon">3</div><h3>Protect what matters</h3><p>Spot scams, false AI answers, and misinformation, then learn how to respond.</p><span class="text-link">Explore Stay Safe</span></a>
     </div>
   </div>
 </section>

@@ -172,13 +172,13 @@ def build_pdf():
         "A clear explanation of what AI is and where it can help",
         "Practice asking ChatGPT, Claude, and similar tools useful questions",
         "Simple habits for protecting private and financial information",
-        "Ways to slow down and examine messages that may be scams",
+        "How to spot scams, false AI answers, and misinformation",
         "Confidence to keep learning after the session ends",
     ]:
         item_height = draw_check_item(pdf, text, right_x, y, right_w)
         y -= max(34, item_height + 12)
 
-    box_y = 170
+    box_y = 156
     pdf.setFillColor(NAVY)
     pdf.roundRect(38, box_y, width - 76, 143, 16, fill=1, stroke=0)
     pdf.setFillColor(MINT)
