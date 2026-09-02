@@ -122,7 +122,7 @@ export const agents = [
     image: 'assets/addie-avatar.webp',
     fallback: 'assets/addie-avatar.png',
     page: 'addie.html',
-    description: 'Certifies photos and documents with a tamper-evident record, preserving their authenticity and provenance across copies and generations.'
+    description: 'Certifies photos and documents with tamper-evident proof of their authenticity and provenance.'
   },
   {
     name: 'Heri',
