@@ -117,12 +117,12 @@ export const agents = [
   },
   {
     name: 'Addie',
-    role: 'The Planner',
+    role: 'The Guardian',
     status: 'Coming Soon',
     image: 'assets/addie-avatar.webp',
     fallback: 'assets/addie-avatar.png',
     page: 'addie.html',
-    description: 'Helps organize important information and prepare the practical details families need.'
+    description: 'Certifies photos and documents with a tamper-evident record, preserving their authenticity and provenance across copies and generations.'
   },
   {
     name: 'Heri',
