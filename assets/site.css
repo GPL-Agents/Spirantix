@@ -160,7 +160,8 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .hero-copy { max-width: 740px; }
 .hero h1 { margin-bottom: 22px; }
 .hero .lede { margin-bottom: 32px; }
-.home-hero { padding-top: 56px; }
+.home-hero { padding-top: 56px; padding-bottom: 32px; }
+.home-hero + .section { padding-top: 48px; }
 .home-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 540px); gap: 60px; align-items: start; }
 .home-hero .hero-copy { max-width: 620px; padding-top: 0; }
 .home-hero .hero-copy h1 { margin-bottom: 22px; font-size: clamp(2.8rem, 5.2vw, 4.6rem); line-height: 1.03; }
