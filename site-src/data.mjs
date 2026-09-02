@@ -109,7 +109,7 @@ export const agents = [
   {
     name: 'Capsa',
     role: 'The Storyteller',
-    status: 'Coming Soon',
+    status: 'Beta',
     image: 'assets/capsa-avatar.webp',
     fallback: 'assets/capsa-avatar.png',
     page: 'capsa.html',
@@ -118,7 +118,7 @@ export const agents = [
   {
     name: 'Addie',
     role: 'The Guardian',
-    status: 'Coming Soon',
+    status: 'Beta',
     image: 'assets/addie-avatar.webp',
     fallback: 'assets/addie-avatar.png',
     page: 'addie.html',
@@ -127,7 +127,7 @@ export const agents = [
   {
     name: 'Heri',
     role: 'The Steward',
-    status: 'Coming Soon',
+    status: 'Beta',
     image: 'assets/heri-avatar.png',
     fallback: 'assets/heri-avatar.png',
     page: 'heri.html',
