@@ -177,7 +177,19 @@ const homeBody = `<section class="hero home-hero">
   </div>
 </section>`;
 
-const learnBody = `${pageHero('Learning hub', 'Learn AI one useful step at a time', 'You do not need a technical background. Begin with a short lesson, try one example, and return whenever you are ready for the next step.', '<a class="btn" href="learn/what-is-ai.html">Start with lesson one</a><a class="btn btn-secondary" href="classes.html">Learn in person</a>')}
+const learnBody = `<section class="page-hero media-page-hero">
+  <div class="wrap media-page-hero-grid">
+    <div class="media-page-hero-copy">
+      <p class="eyebrow">Learning hub</p>
+      <h1>Learn AI one useful step at a time</h1>
+      <p class="lede">You do not need a technical background. Begin with a short lesson, try one example, and return whenever you are ready for the next step.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="learn/what-is-ai.html">Start with lesson one</a><a class="btn btn-secondary" href="classes.html">Learn in person</a></div>
+    </div>
+    <div class="media-page-hero-image">
+      <img src="assets/senior.learn.png" alt="Older woman taking notes while learning on a laptop" width="1122" height="1402">
+    </div>
+  </div>
+</section>
 <section class="section">
   <div class="wrap">
     <div class="section-heading"><p class="eyebrow">Available now</p><h2>Begin with the basics</h2><p>These first four lessons give you a practical foundation for using ChatGPT, Claude, and other AI assistants.</p></div>
