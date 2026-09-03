@@ -464,6 +464,7 @@ const aboutBody = `<section class="page-hero media-page-hero">
       <p class="eyebrow">About</p>
       <h1>Spirantix connects AI learning, safety, and practical tools</h1>
       <p class="lede">We believe seniors should have clear explanations, respectful instruction, and meaningful choices about how artificial intelligence fits into their lives.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="contact.html">Contact Spirantix</a></div>
     </div>
     <div class="media-page-hero-image">
       <img src="assets/founder.family.webp" alt="Greg, founder of Spirantix, with his two children by the sea" width="864" height="1080">
