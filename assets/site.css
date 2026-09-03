@@ -274,6 +274,8 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .callout-light { background: var(--teal-soft); color: var(--ink); }
 .callout-light h2, .callout-light h3 { color: var(--navy); }
 .callout-light p { color: var(--ink-soft); }
+.tessera-section { padding-bottom: 52px; }
+.tessera-callout { border: 2px solid var(--teal); }
 .privacy-safety-section { padding-bottom: 40px; }
 .privacy-safety-section .grid-2 { align-items: start; }
 .privacy-checklist h3 { margin-bottom: 24px; font-size: 1.7rem; }
@@ -598,6 +600,7 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   body { font-size: 17px; }
   .wrap, .narrow, .lesson-body { width: min(100% - 30px, var(--wrap)); }
   .section { padding: 64px 0; }
+  .tessera-section { padding-bottom: 40px; }
   .section-white + .section-white,
   .section-soft + .section-soft,
   .section-blue + .section-blue,
