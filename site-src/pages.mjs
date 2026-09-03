@@ -423,7 +423,7 @@ const productsBody = `<section class="page-hero media-page-hero">
 <section class="section section-blue tessera-section"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Built around your control</p><h2>The Tessera Protocol</h2><p>Tessera is the open foundation behind Spirantix products. It is designed so personal stories, memories, documents, and other private knowledge stay in accounts and storage the user controls.</p></div><div class="callout callout-light tessera-callout"><h3>Why it matters</h3><p>AI can be more useful when it understands personal context. That should not require giving up control of the information that makes the experience personal.</p><a class="text-link" href="privacy.html">Read the privacy approach</a></div></div></section>`;
 
 const originStoryBody = `<section class="section section-soft origin-story">
-  <div class="narrow">
+  <div class="wrap"><div class="origin-story-copy">
     <div class="section-heading">
       <p class="eyebrow">How it started</p>
       <h2>A book from Christmas, 2003</h2>
@@ -433,17 +433,17 @@ const originStoryBody = `<section class="section section-soft origin-story">
       <picture><source srcset="assets/note.to.grandma.webp" type="image/webp"><img src="assets/note.to.grandma.jpeg" alt="Greg's handwritten note to his grandmother inside the front cover of her memory book, dated Christmas, December 25, 2003, Kansas City, Missouri" loading="lazy"></picture>
       <figcaption class="figure-caption">The note Greg wrote inside the book, Christmas 2003</figcaption>
     </figure>
-    <p>The book was over 145 pages long, and she spent the better part of two years filling it in, including dates, through page 30, where she left the ribbon marking the page. Her eyesight had grown poor, and it became harder for her to write. I often wondered how great it would be if I could have captured the stories in her own words and recorded them. Instead of a photo album that just has a date, and maybe a place on the back or some names, I could know the story behind each photo — where she was, what she was doing, what she was thinking about. It would be amazing to have those photos and stories collected to pass along for generations to come.</p>
+    <p>The book was over 145 pages long, and she spent the better part of two years filling it in, including dates, through page 30, where she left the ribbon marking the page. Her eyesight had grown poor, and it became harder for her to write. I often wondered how great it would be if I could have captured the stories in her own words and recorded them. Instead of a photo album where each picture might have just a date, and maybe a place or some names written on the back, or on a slip of paper tucked in with it, I could know the story behind each photo — where she was, what she was doing, what she was thinking about. It would be amazing to have those photos and stories collected to pass along for generations to come.</p>
     <figure class="story-figure float-left">
       <picture><source srcset="assets/grandma.story.webp" type="image/webp"><img src="assets/grandma.story.jpeg" alt="A page from Greg's grandmother's memory book, in her own handwriting, describing where her parents lived and what they did for fun" loading="lazy"></picture>
-      <figcaption class="figure-caption">One of the pages she filled in, in her own hand</figcaption>
+      <figcaption class="figure-caption">One of the pages his grandmother completed, in her own handwriting</figcaption>
     </figure>
     <p>I've also had close family members — some passed and some still with us today — who have had issues dealing with day-to-day life due to Alzheimer's, dementia, and early memory loss. As well as parents of close friends and family who have passed unexpectedly, leaving behind heirlooms and possessions with no stories behind them, in some cases not even a known value. This leaves family members trying to figure out which were prized possessions with sentimental value, what medal was from what country, or why a coin was kept. Which paintings or furniture are of great value, and which aren't. Sometimes family members don't know what to do with these possessions — which to hold onto and which to sell.</p>
     <p>This is why I created Spirantix. Because there is so much today that AI can do to help pass along and record the stories and memories behind photos and possessions — truly living photo albums, tools one can still interact with and be helped by, even though they may be having issues with memory, the ability to write by hand or even type, or even their eyesight.</p>
     <p>My goal, and the goal of Spirantix, is to help our most important members of our communities: the seniors, who have lived through so much — from wars to depressions to changing technology. In my grandmother's story about her parents, she talks about how her father delivered bread by horse and carriage in Peru, IL. That's just one way technology has changed, and it will continue to change.</p>
     <p>My hope is that through our online resources, AI tools, and in-person learning sessions, we can help many, many families to be able to learn from and cherish those memories for generations to come.</p>
     <p class="origin-story-signature">— Greg, founder of Spirantix</p>
-  </div>
+  </div></div>
 </section>`;
 
 const aboutBody = `${pageHero('About', 'Spirantix connects AI learning, safety, and practical tools', 'We believe seniors should have clear explanations, respectful instruction, and meaningful choices about how artificial intelligence fits into their lives.')}
