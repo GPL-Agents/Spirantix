@@ -389,9 +389,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .figure-caption { color: var(--ink-soft); font-size: 0.84rem; text-align: center; }
 .origin-story { overflow: hidden; }
 .origin-story-copy { max-width: none; overflow: hidden; }
-.story-figure { margin: 6px 0 24px 0; width: min(300px, 42%); text-align: center; }
-.story-figure.float-right { float: right; margin-left: 32px; }
-.story-figure.float-left { float: left; margin-right: 32px; }
+.story-figure { margin: 24px auto; width: min(420px, 100%); text-align: center; }
 .story-figure img { width: 100%; border-radius: var(--radius-sm); border: 1px solid var(--line); box-shadow: var(--shadow); }
 .story-figure figcaption { margin-top: 10px; font-size: 0.82rem; }
 .origin-story-signature { clear: both; padding-top: 8px; margin-top: 4px; color: var(--teal-dark); font-family: "Caveat", cursive; font-size: 1.7rem; font-weight: 600; }
@@ -631,7 +629,6 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   .stop-hand svg { width: 34px; height: 34px; }
   .safety-response-heading { grid-template-columns: 60px 1fr; gap: 18px; }
   .real-story-card { grid-template-columns: 1fr; }
-  .story-figure { float: none; width: min(320px, 100%); margin: 24px auto; }
   .real-story-image img { min-height: 0; aspect-ratio: 16 / 9; }
   .real-story-copy { padding: 28px 22px; }
   .concierge-callout { grid-template-columns: 92px 1fr; gap: 20px; padding: 24px; }
