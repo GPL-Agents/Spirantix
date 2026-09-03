@@ -16,8 +16,9 @@ The generator has no external package dependencies. It does not change the Verce
 - `site-src/data.mjs` contains event, lesson-index, and product-card information.
 - `site-src/pages.mjs` contains the main public pages.
 - `site-src/lessons.mjs` contains the published tutorials.
-- `assets/site.css` contains the shared visual system.
-- `assets/site.js` contains mobile navigation and contact-form behavior.
+- `css/site.css` contains the shared visual system.
+- `js/site.js` contains mobile navigation and contact-form behavior.
+- `assets/` holds images only.
 
 The four detailed agent pages remain independent pages because each has a specialized design and established content. They still use the shared site navigation links after this expansion.
 

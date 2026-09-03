@@ -51,10 +51,10 @@ for (const file of files) {
   const target = resolve(root, file);
   let html = await readFile(target, 'utf8');
 
-  if (!html.includes('assets/site.css')) {
-    html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="assets/site.css?v=20260902-3">');
+  html = html.replace(/(?:assets|css)\/site\.css(?:\?v=[^"']+)?/g, 'css/site.css?v=20260903-7');
+  if (!html.includes('css/site.css')) {
+    html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="css/site.css?v=20260903-7">');
   }
-  html = html.replace(/assets\/site\.css(?:\?v=[^"']+)?/g, 'assets/site.css?v=20260902-3');
 
   if (html.includes('class="site-header"')) {
     html = html.replace(/<a class="skip-link"[\s\S]*?<\/header>/, header);
@@ -82,8 +82,9 @@ for (const file of files) {
     '<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged agent overview"'
   );
 
-  if (!html.includes('assets/site.js')) {
-    html = html.replace('</body>', '<script src="assets/site.js" defer></script>\n</body>');
+  html = html.replaceAll('<script src="assets/site.js" defer></script>', '<script src="js/site.js" defer></script>');
+  if (!html.includes('js/site.js')) {
+    html = html.replace('</body>', '<script src="js/site.js" defer></script>\n</body>');
   }
 
   await writeFile(target, html, 'utf8');
