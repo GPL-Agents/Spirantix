@@ -51,9 +51,9 @@ for (const file of files) {
   const target = resolve(root, file);
   let html = await readFile(target, 'utf8');
 
-  html = html.replace(/(?:assets|css)\/site\.css(?:\?v=[^"']+)?/g, 'css/site.css?v=20260903-8');
+  html = html.replace(/(?:assets|css)\/site\.css(?:\?v=[^"']+)?/g, 'css/site.css?v=20260903-9');
   if (!html.includes('css/site.css')) {
-    html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="css/site.css?v=20260903-8">');
+    html = html.replace('</style>', '</style>\n<link rel="stylesheet" href="css/site.css?v=20260903-9">');
   }
 
   if (html.includes('class="site-header"')) {

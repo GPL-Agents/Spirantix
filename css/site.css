@@ -388,7 +388,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .lesson-body img { margin: 32px auto 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); }
 .figure-caption { color: var(--ink-soft); font-size: 0.84rem; text-align: center; }
 .origin-story { overflow: hidden; }
-.origin-story-copy { max-width: 980px; overflow: hidden; }
+.origin-story-copy { max-width: none; overflow: hidden; }
 .story-figure { margin: 6px 0 24px 0; width: min(300px, 42%); text-align: center; }
 .story-figure.float-right { float: right; margin-left: 32px; }
 .story-figure.float-left { float: left; margin-right: 32px; }

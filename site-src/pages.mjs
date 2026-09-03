@@ -454,7 +454,7 @@ const originStoryBody = `<section class="section section-soft origin-story">
     <p>This is why I created Spirantix. There is so much today that AI can do to help pass along and record the stories and memories behind photos and possessions: truly living photo albums, and tools that can still help someone even when memory, handwriting, typing, or eyesight become difficult.</p>
     <p>My goal, and the goal of Spirantix, is to help the most important members of our communities: the seniors who have lived through so much, from wars to depressions to changing technology. In my grandmother's story about her parents, she talks about how her father delivered bread by horse and carriage in Peru, IL. That's just one way technology has changed, and it will continue to change.</p>
     <p>My hope is that through our online resources, AI tools, and in-person learning sessions, we can help many, many families to be able to learn from and cherish those memories for generations to come.</p>
-    <p class="origin-story-signature">— Greg, founder of Spirantix</p>
+    <p class="origin-story-signature">— Greg</p>
   </div></div>
 </section>`;
 
