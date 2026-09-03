@@ -428,7 +428,7 @@ const productsBody = `<section class="page-hero media-page-hero">
 </section>
 <section class="section">
   <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Specialists working together</p><h2>Meet the Spirantix agent team</h2><p>The existing roles remain distinct. The concierge makes them easier to reach.</p></div>
+    <div class="section-heading center"><p class="eyebrow">Specialists working together</p><h2>Meet the Spirantix agent team</h2><p>Emery, Capsa, Addie, and Heri are the four specialists in beta. The concierge is the entry point being designed to bring them together.</p></div>
     ${agentCards()}
   </div>
 </section>
