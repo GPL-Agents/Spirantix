@@ -369,7 +369,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .media-page-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 430px); gap: 56px; align-items: start; }
 .media-page-hero-copy { padding-top: 18px; }
 .media-page-hero-image { align-self: start; }
-.media-page-hero-image img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 28px; box-shadow: var(--shadow); }
+.media-page-hero-image img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 28px; box-shadow: var(--shadow); }
 .breadcrumb { margin-bottom: 20px; font-size: 0.9rem; }
 .breadcrumb a { color: var(--blue-dark); }
 
