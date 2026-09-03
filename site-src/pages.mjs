@@ -458,7 +458,18 @@ const originStoryBody = `<section class="section section-soft origin-story">
   </div></div>
 </section>`;
 
-const aboutBody = `${pageHero('About', 'Spirantix connects AI learning, safety, and practical tools', 'We believe seniors should have clear explanations, respectful instruction, and meaningful choices about how artificial intelligence fits into their lives.')}
+const aboutBody = `<section class="page-hero media-page-hero">
+  <div class="wrap media-page-hero-grid">
+    <div class="media-page-hero-copy">
+      <p class="eyebrow">About</p>
+      <h1>Spirantix connects AI learning, safety, and practical tools</h1>
+      <p class="lede">We believe seniors should have clear explanations, respectful instruction, and meaningful choices about how artificial intelligence fits into their lives.</p>
+    </div>
+    <div class="media-page-hero-image">
+      <img src="assets/founder.family.webp" alt="Greg, founder of Spirantix, with his two children by the sea" width="864" height="1080">
+    </div>
+  </div>
+</section>
 ${originStoryBody}
 <section class="section"><div class="wrap"><div class="section-heading center"><p class="eyebrow">One mission, three forms of support</p><h2>Learn, practice, and use tools designed with care</h2></div><div class="grid-3"><div class="card"><h3>Plain-language education</h3><p>Free introductory lessons explain AI without assuming technical experience.</p></div><div class="card"><h3>Community learning</h3><p>In-person and video sessions make space for questions, practice, and discussion.</p></div><div class="card"><h3>Purpose-built products</h3><p>Developing agents focus on memory, stories, authenticity, and family possessions.</p></div></div></div></section>
 <section class="section section-dark"><div class="narrow" style="text-align:center;width:min(880px, calc(100% - 40px))"><h2>Interested in a class, a product, or the mission?</h2><p>Use the single contact form and choose the kind of conversation you would like to start.</p><a class="btn" href="contact.html">Contact Spirantix</a></div></section>`;
