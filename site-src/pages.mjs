@@ -351,7 +351,19 @@ const safetyBody = `<section class="page-hero media-page-hero">
   </div>
 </section>`;
 
-const classesBody = `${pageHero('Classes & Talks', 'Bring practical AI learning to your community', 'Spirantix offers approachable sessions for seniors who want to understand today’s AI tools, use them in everyday life, and protect their important information.', '<a class="btn" href="contact.html?type=speaking">Request a session</a><a class="btn btn-secondary" href="#upcoming">See upcoming sessions</a>')}
+const classesBody = `<section class="page-hero media-page-hero">
+  <div class="wrap media-page-hero-grid">
+    <div class="media-page-hero-copy">
+      <p class="eyebrow">Classes & Talks</p>
+      <h1>Bring practical AI learning to your community</h1>
+      <p class="lede">Spirantix offers approachable sessions for seniors who want to understand today’s AI tools, use them in everyday life, and protect their important information.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="contact.html?type=speaking">Request a session</a><a class="btn btn-secondary" href="#upcoming">See upcoming sessions</a></div>
+    </div>
+    <div class="media-page-hero-image">
+      <img src="assets/senior.classes.png" alt="Older adults in a technology class taking notes with laptops and tablets" width="1122" height="1402">
+    </div>
+  </div>
+</section>
 <section class="section section-white" id="upcoming">
   <div class="wrap">
     <div class="section-heading"><p class="eyebrow">Upcoming</p><h2>In-person learning</h2><p>Contact the host directly for attendance requirements, availability, and other event details.</p></div>
