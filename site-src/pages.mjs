@@ -442,22 +442,22 @@ const originStoryBody = `<section class="section section-soft origin-story">
     </div>
     <p>When I was 25 years old, for Christmas in 2003, I gave my grandmother a book called <em>One of a Kind: The Story of My Life</em>, which I found at the Nordstrom's store. It wasn't a book of stories already written — it was full of questions meant to help her write her own, about growing up, her parents and family, and the family she created. She lived to the ripe age of 98, in a life that carried her from Peru, Illinois, to Queens, NY, to Wichita, KS, and finally to a senior living center in Phoenix, AZ.</p>
     <figure class="story-figure float-right">
-      <button type="button" class="story-figure-trigger" data-lightbox data-full="assets/note.to.grandma.jpeg" aria-label="View larger image of Greg's handwritten note to his grandmother">
+      <button type="button" class="story-figure-trigger" data-lightbox data-full="assets/note.to.grandma.jpeg" aria-label="View larger image of Greg's handwritten note to his grandmother" title="Tap to enlarge">
         <picture><source srcset="assets/note.to.grandma.webp" type="image/webp"><img src="assets/note.to.grandma.jpeg" alt="Greg's handwritten note to his grandmother inside the front cover of her memory book, dated Christmas, December 25, 2003, Kansas City, Missouri" loading="lazy"></picture>
       </button>
-      <figcaption class="figure-caption">The note Greg wrote inside the book, Christmas 2003 &mdash; tap to enlarge</figcaption>
+      <figcaption class="figure-caption">The note Greg wrote inside the book, Christmas 2003</figcaption>
     </figure>
     <p>The book was over 145 pages long. She spent the better part of two years filling it in, dating her entries as she went, and made it through page 30 before her eyesight grew too poor to keep writing, leaving the ribbon marking her place. I often wondered how great it would be if I could have captured those stories in her own words and recorded them instead. A photo album usually just has a date, and maybe a place or a name written on the back of each picture, or on a slip of paper tucked in with it. What I wanted was to know the real story behind each photo — where she was, what she was doing, what she was thinking about. It would be amazing to have those photos and stories collected to pass along for generations to come.</p>
     <figure class="story-figure float-left">
-      <button type="button" class="story-figure-trigger" data-lightbox data-full="assets/grandma.story.jpeg" aria-label="View larger image of a page from Greg's grandmother's memory book">
+      <button type="button" class="story-figure-trigger" data-lightbox data-full="assets/grandma.story.jpeg" aria-label="View larger image of a page from Greg's grandmother's memory book" title="Tap to enlarge">
         <picture><source srcset="assets/grandma.story.webp" type="image/webp"><img src="assets/grandma.story.jpeg" alt="A page from Greg's grandmother's memory book, in her own handwriting, describing where her parents lived and what they did for fun" loading="lazy"></picture>
       </button>
-      <figcaption class="figure-caption">One of the pages his grandmother completed, in her own handwriting &mdash; tap to enlarge</figcaption>
+      <figcaption class="figure-caption">One of the pages his grandmother completed, in her own handwriting</figcaption>
     </figure>
     <p>I've also had close family members, some who have passed and some still with us, struggling with day-to-day life because of Alzheimer's, dementia, or early memory loss, along with parents of close friends who passed away unexpectedly and left behind heirlooms and possessions with no stories attached to them, in some cases with no known value. That leaves family members trying to figure out which pieces held real sentimental value, what war a medal was from, why a particular coin was kept, or which paintings and furniture are actually valuable and which aren't. Sometimes family members simply don't know what to do with these possessions, what to hold onto and what to sell.</p>
     <p>This is why I created Spirantix. There is so much today that AI can do to help pass along and record the stories and memories behind photos and possessions: truly living photo albums, and tools that can still help someone even when memory, handwriting, typing, or eyesight become difficult.</p>
     <p>My goal, and the goal of Spirantix, is to help the most important members of our communities: the seniors who have lived through so much, from wars to depressions to changing technology. In my grandmother's story about her parents, she talks about how her father delivered bread by horse and carriage in Peru, IL. That's just one way technology has changed, and it will continue to change.</p>
-    <p>My hope is that through our online resources, AI tools, and in-person learning sessions, we can help many, many families to be able to learn from and cherish those memories for generations to come.</p>
+    <p>My hope is that through our online resources, AI tools, and in-person learning sessions, we can help many families to be able to learn from and cherish those memories for generations to come.</p>
     <p class="origin-story-signature">— Greg Loeffelholz, Founder of Spirantix</p>
   </div></div>
 </section>`;
@@ -519,7 +519,7 @@ const faqBody = `${pageHero('Questions', 'Common questions about learning and Sp
 </div></section>`;
 
 const privacyBody = `${pageHero('Privacy', 'Clear information about what this website collects', 'This page explains the Spirantix website and contact form. Individual products may provide additional privacy information as they enter testing and release.')}
-<section class="lesson-shell"><div class="lesson-body">
+<section class="lesson-shell"><div class="wrap"><div class="lesson-body privacy-body">
   <p><strong>Effective date:</strong> September 2, 2026</p>
   <h2>The Spirantix approach</h2><p>Spirantix is a division of FutureInSites. We provide AI education for seniors and are developing AI products focused on memory, stories, authenticity, and family possessions. We believe personal information should remain under the user’s control.</p>
   <h2>Information collected through the contact form</h2><p>When you contact Spirantix, the form collects your name, email address, inquiry type, message, and any optional details you choose to provide. Depending on your inquiry, those details may include a product name, organization, location, role, group size, format interest, or preferred timing.</p><p>The form sends this information to the Spirantix inbox through an email delivery provider. It is used to respond to your inquiry, provide support, discuss early access, or discuss a class or speaking engagement.</p>
@@ -529,7 +529,7 @@ const privacyBody = `${pageHero('Privacy', 'Clear information about what this we
   <h2>Third-party services</h2><p>The website may link to ChatGPT, Claude, host organizations, FutureInSites, and government or educational resources. Their privacy practices are governed by their own policies.</p>
   <h2>Analytics and marketing</h2><p>Spirantix does not currently use contact-form information for unrelated marketing. If optional product updates or a mailing list are added, consent and removal choices will be explained at the point of collection.</p>
   <h2>Questions</h2><p>For privacy questions, email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=general">contact form</a>.</p>
-</div></section>`;
+</div></div></section>`;
 
 const notFoundBody = `<section class="page-hero"><div class="narrow" style="text-align:center"><p class="eyebrow">Page not found</p><h1>That page is not here</h1><p class="lede">The address may have changed, or the link may be incomplete.</p><div class="button-row" style="justify-content:center;margin-top:28px"><a class="btn" href="index.html">Go to the homepage</a><a class="btn btn-secondary" href="learn.html">Visit the learning hub</a></div></div></section>`;
 

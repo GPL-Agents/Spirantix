@@ -386,6 +386,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .lesson-body p, .lesson-body li { color: #303a53; }
 .lesson-body li { margin-bottom: 10px; }
 .lesson-body img { margin: 32px auto 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.lesson-body.privacy-body { width: min(760px, 100%); margin-inline: 0; }
 .figure-caption { color: var(--ink-soft); font-size: 0.84rem; text-align: center; }
 .origin-story { overflow: hidden; }
 .origin-story-copy { max-width: none; overflow: hidden; }
