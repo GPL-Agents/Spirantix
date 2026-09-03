@@ -159,7 +159,7 @@ const homeBody = `<section class="hero home-hero">
       </picture>
       <div>
         <p class="eyebrow" style="color:var(--mint)">Your starting point</p>
-        <h3>Your AI concierge</h3>
+        <h3>Spirantix Concierge</h3>
         <p>You explain what you need once. The concierge listens, guides the conversation, and brings in Emery, Capsa, Addie, or Heri when their specialty can help.</p>
       </div>
     </div>
@@ -422,7 +422,7 @@ const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap">
     <div class="callout agent-intro">
       <div class="icon" style="width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:var(--teal)" aria-hidden="true"><svg viewBox="0 0 100 100" width="86" height="86"><path d="M50 47 24 25M50 47 76 25M50 53 24 75M50 53 76 75" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="50" r="15" fill="#fff"/><circle cx="24" cy="25" r="9" fill="#8fe0c6"/><circle cx="76" cy="25" r="9" fill="#8fe0c6"/><circle cx="24" cy="75" r="9" fill="#8fe0c6"/><circle cx="76" cy="75" r="9" fill="#8fe0c6"/><circle cx="50" cy="50" r="6" fill="#2368a8"/></svg></div>
-      <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Your AI concierge</h2><p>The beta experience is being designed around one primary point of contact. Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p><p>The concierge’s public name and personality are still being developed. Spirantix remains the company name.</p></div>
+      <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Spirantix Concierge</h2><p>The beta experience is being designed around one primary point of contact. Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p><p>The concierge’s public name and personality are still being developed. Spirantix remains the company name.</p></div>
     </div>
   </div>
 </section>
