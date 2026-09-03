@@ -96,3 +96,60 @@
     });
   }
 })();
+
+(function () {
+  var triggers = document.querySelectorAll('[data-lightbox]');
+  if (!triggers.length) return;
+
+  var overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.setAttribute('role', 'dialog');
+  overlay.setAttribute('aria-modal', 'true');
+  overlay.setAttribute('aria-label', 'Enlarged image');
+  overlay.innerHTML =
+    '<button type="button" class="lightbox-close" aria-label="Close enlarged image">\u00d7</button>' +
+    '<div class="lightbox-content"><img alt=""><p class="lightbox-caption"></p></div>';
+  document.body.appendChild(overlay);
+
+  var lightboxImg = overlay.querySelector('img');
+  var caption = overlay.querySelector('.lightbox-caption');
+  var closeBtn = overlay.querySelector('.lightbox-close');
+  var lastFocused = null;
+
+  function openLightbox(trigger) {
+    var fullSrc = trigger.getAttribute('data-full');
+    var triggerImg = trigger.querySelector('img');
+    var figure = trigger.closest('figure');
+    var figcaption = figure ? figure.querySelector('figcaption') : null;
+
+    lightboxImg.src = fullSrc || (triggerImg ? triggerImg.src : '');
+    lightboxImg.alt = triggerImg ? triggerImg.alt : '';
+    caption.textContent = figcaption ? figcaption.textContent : '';
+
+    lastFocused = document.activeElement;
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+    if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+  }
+
+  triggers.forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      openLightbox(trigger);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', function (event) {
+    if (event.target === overlay) closeLightbox();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && overlay.classList.contains('open')) closeLightbox();
+  });
+})();
