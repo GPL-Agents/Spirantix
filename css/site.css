@@ -571,7 +571,7 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .footer-links a { color: var(--ink-soft); }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; margin-top: 38px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.8rem; }
 
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .nav-toggle { display: block; }
   .site-header .nav-links {
     position: absolute;
@@ -591,6 +591,9 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   .site-header .nav-links.open { display: grid; }
   .nav-links a { width: 100%; padding: 8px 4px; }
   .nav-links .nav-cta { justify-content: center; margin-top: 4px; }
+}
+
+@media (max-width: 980px) {
   .hero-grid { grid-template-columns: 1fr; }
   .home-hero-grid { grid-template-columns: 1fr; gap: 32px; }
   .media-page-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(280px, 360px); gap: 34px; }
