@@ -192,7 +192,19 @@ const learnBody = `${pageHero('Learning hub', 'Learn AI one useful step at a tim
 </section>
 <section class="section section-soft"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Prefer to learn with a group?</p><h2>Join a class or invite Spirantix to your community</h2><p>Sessions can be shaped for a single introduction, an existing course, or a multi-week learning program.</p></div><div class="button-row"><a class="btn btn-teal" href="classes.html">See upcoming sessions</a><a class="btn btn-secondary" href="contact.html?type=speaking">Request a session</a></div></div></section>`;
 
-const safetyBody = `${pageHero('Stay Safe', 'Use AI with curiosity and good judgment', 'AI can be helpful, but it can make mistakes. It can also help scammers create convincing messages, voices, images, and video. Slow down and verify unexpected requests before you respond.', '<a class="btn" href="#warning-signs">See the warning signs</a>')}
+const safetyBody = `<section class="page-hero media-page-hero">
+  <div class="wrap media-page-hero-grid">
+    <div class="media-page-hero-copy">
+      <p class="eyebrow">Stay Safe</p>
+      <h1>Use AI with curiosity and good judgment</h1>
+      <p class="lede">AI can be helpful, but it can make mistakes. It can also help scammers create convincing messages, voices, images, and video. Slow down and verify unexpected requests before you respond.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="#warning-signs">See the warning signs</a></div>
+    </div>
+    <div class="media-page-hero-image">
+      <img src="assets/senior.stay.safe.png" alt="Older man reviewing a document beside a laptop" width="1122" height="1402">
+    </div>
+  </div>
+</section>
 <section class="section section-white real-story-section" aria-labelledby="real-story-title">
   <div class="wrap">
     <div class="real-story-intro">
@@ -369,15 +381,15 @@ const classesBody = `${pageHero('Classes & Talks', 'Bring practical AI learning 
 </section>
 <section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Start a conversation</p><h2>Tell us about your community</h2><p>Share your location, group size, preferred timing, and program ideas.</p><a class="btn" href="contact.html?type=speaking">Request information</a></div></section>`;
 
-const productsBody = `<section class="page-hero product-hero">
-  <div class="wrap product-hero-grid">
-    <div class="product-hero-copy">
+const productsBody = `<section class="page-hero media-page-hero">
+  <div class="wrap media-page-hero-grid">
+    <div class="media-page-hero-copy">
       <p class="eyebrow">Products</p>
       <h1>AI support that begins with one conversation</h1>
       <p class="lede">Spirantix is developing a family of agents for memory, stories, authenticity, and family possessions. You will not need to learn four different systems or decide where to begin.</p>
       <div class="button-row" style="margin-top:28px"><a class="btn" href="contact.html?type=product">Ask about early access</a></div>
     </div>
-    <div class="product-hero-image">
+    <div class="media-page-hero-image">
       <img src="assets/woman.on.phone.png" alt="Older woman using a smartphone" width="1122" height="1402">
     </div>
   </div>
