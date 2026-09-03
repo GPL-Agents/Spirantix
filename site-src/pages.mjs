@@ -89,7 +89,7 @@ const homeBody = `<section class="hero home-hero">
 
 <section class="section section-white">
   <div class="wrap">
-    <div class="section-heading center">
+    <div class="section-heading center begin-heading">
       <p class="eyebrow">A clear place to begin</p>
       <h2>AI should feel useful, not overwhelming</h2>
       <p>Choose the path that fits what you want to do today.</p>

@@ -98,6 +98,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 }
 .section-heading { max-width: 1000px; margin-bottom: 38px; }
 .section-heading h2 { max-width: 760px; }
+.section-heading.begin-heading h2 { max-width: 920px; }
 .section-heading.center { margin-inline: auto; text-align: center; }
 .section-heading.center h2 { margin-inline: auto; }
 .section-heading p { color: var(--ink-soft); font-size: 1.18rem; }
