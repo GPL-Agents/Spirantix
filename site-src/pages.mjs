@@ -422,7 +422,7 @@ const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap">
     <div class="callout agent-intro">
       <div class="icon" style="width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:var(--teal)" aria-hidden="true"><svg viewBox="0 0 100 100" width="86" height="86"><path d="M50 47 24 25M50 47 76 25M50 53 24 75M50 53 76 75" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="50" r="15" fill="#fff"/><circle cx="24" cy="25" r="9" fill="#8fe0c6"/><circle cx="76" cy="25" r="9" fill="#8fe0c6"/><circle cx="24" cy="75" r="9" fill="#8fe0c6"/><circle cx="76" cy="75" r="9" fill="#8fe0c6"/><circle cx="50" cy="50" r="6" fill="#2368a8"/></svg></div>
-      <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Spirantix Concierge</h2><p>Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p><p>The Spirantix Concierge is the single point of contact for all Spirantix products.</p></div>
+      <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Spirantix Concierge</h2><p>Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p></div>
     </div>
   </div>
 </section>
@@ -510,7 +510,7 @@ const faqBody = `${pageHero('Questions', 'Common questions about learning and Sp
   <details><summary>Can AI tell me whether something is a scam?</summary><div><p>AI may help identify warning signs or questions to ask, but it can be wrong. Do not treat an AI response as a guarantee. Verify important information using a trusted person or contact information you found independently.</p></div></details>
   <details><summary>Who are Emery, Capsa, Addie, and Heri?</summary><div><p>They are four developing Spirantix specialist agents. Emery focuses on memory support, Capsa on personal stories, Addie on photo and document authenticity and provenance, and Heri on family possessions and their history.</p></div></details>
   <details><summary>What is the concierge?</summary><div><p>The Spirantix Concierge is the primary point of contact for Spirantix products. A user explains what they need once, and the concierge involves the right specialist.</p></div></details>
-  <details><summary>Which products are available?</summary><div><p>The Spirantix Concierge is available in beta now, inside ChatGPT or Claude. It covers memory support, personal stories, planning, and family possessions. You ask the concierge -- it brings in the right specialist when needed.</p></div></details>
+  <details><summary>Which products are available?</summary><div><p>The Spirantix Concierge is available in beta now, inside ChatGPT or Claude. It covers memory support, personal stories, planning, and family possessions. You ask the concierge, and it takes it from there.</p></div></details>
   <details><summary>Where does my personal information go?</summary><div><p>Spirantix products are being designed around user-controlled accounts and storage. The website contact form sends the information you enter to the Spirantix inbox so the team can reply. Read the Privacy page for details.</p></div></details>
 </div></section>`;
 
