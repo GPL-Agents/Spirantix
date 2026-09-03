@@ -122,7 +122,7 @@ export function renderPage({
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${base}assets/site.css?v=20260903-3">${json}
+  <link rel="stylesheet" href="${base}assets/site.css?v=20260903-5">${json}
 </head>
 <body>
   ${header(active, base)}
