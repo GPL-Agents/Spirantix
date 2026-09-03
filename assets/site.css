@@ -79,6 +79,13 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .section-dark { background: var(--navy); color: #fff; }
 .section-dark h2, .section-dark h3 { color: #fff; }
 .section-dark p { color: #d8dfeb; }
+.section-white + .section-white,
+.section-soft + .section-soft,
+.section-blue + .section-blue,
+.section-dark + .section-dark,
+.section:not(.section-white):not(.section-soft):not(.section-blue):not(.section-dark) + .section:not(.section-white):not(.section-soft):not(.section-blue):not(.section-dark) {
+  padding-top: 28px;
+}
 .eyebrow {
   margin-bottom: 10px;
   color: var(--teal-dark);
@@ -585,6 +592,13 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   body { font-size: 17px; }
   .wrap, .narrow, .lesson-body { width: min(100% - 30px, var(--wrap)); }
   .section { padding: 64px 0; }
+  .section-white + .section-white,
+  .section-soft + .section-soft,
+  .section-blue + .section-blue,
+  .section-dark + .section-dark,
+  .section:not(.section-white):not(.section-soft):not(.section-blue):not(.section-dark) + .section:not(.section-white):not(.section-soft):not(.section-blue):not(.section-dark) {
+    padding-top: 24px;
+  }
   .hero { padding: 58px 0; }
   .hero-grid { gap: 38px; }
   .hero-actions .btn { width: 100%; }
