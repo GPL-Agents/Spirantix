@@ -22,7 +22,7 @@ function stopHandIcon() {
 
 function eventCards(limit = events.length) {
   return `<div class="event-list">${events.slice(0, limit).map(event => `<article class="event-card">
-    <div class="event-date"><span class="day">${event.shortDate}</span><span>${event.time}</span></div>
+    <div class="event-date"><span class="day">${event.shortDate}</span> <span>${event.time}</span></div>
     <div>
       <h3>${event.title}</h3>
       <p class="event-meta">${event.host} · ${event.location}</p>
