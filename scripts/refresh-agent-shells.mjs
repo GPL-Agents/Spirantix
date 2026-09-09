@@ -42,9 +42,9 @@ const footer = `<footer class="site-footer">
     <div><a class="brand" href="index.html" aria-label="Spirantix home">${logo}<span>Spirantix<span>.ai</span></span></a><p class="small muted" style="margin-top:16px;max-width:360px">Helping seniors understand AI, use it with confidence, and protect what matters.</p></div>
     <div><h2>Learn</h2><div class="footer-links"><a href="learn.html">Learning hub</a><a href="safety.html">Stay Safe</a><a href="classes.html">Classes & Talks</a></div></div>
     <div><h2>Spirantix</h2><div class="footer-links"><a href="products.html">Products</a><a href="about.html">About</a><a href="faq.html">Questions</a></div></div>
-    <div><h2>Contact</h2><div class="footer-links"><a href="contact.html">Contact us</a><a href="privacy.html">Privacy</a><a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a></div></div>
+    <div><h2>Contact</h2><div class="footer-links"><a href="contact.html">Contact us</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a></div></div>
   </div>
-  <div class="wrap footer-bottom"><span>&copy; 2026 Spirantix, a division of <a href="https://www.futureinsites.com" target="_blank" rel="noopener">FutureInSites</a>.</span><span>Designed for clarity, privacy, and confidence.</span></div>
+  <div class="wrap footer-bottom"><span>&copy; 2026 Spirantix AI. Spirantix AI operates this website and its products.</span><span>Designed for clarity, privacy, and confidence.</span></div>
 </footer>`;
 
 for (const file of files) {
@@ -61,7 +61,9 @@ for (const file of files) {
   } else {
     html = html.replace(/<nav>[\s\S]*?<\/nav>/, header);
   }
-  if (!html.includes('class="site-footer"')) {
+  if (html.includes('class="site-footer"')) {
+    html = html.replace(/<footer class="site-footer">[\s\S]*?<\/footer>/, footer);
+  } else {
     html = html.replace(/<footer>[\s\S]*?<\/footer>/, footer);
   }
   html = html.replaceAll('index.html#products', 'products.html');

@@ -7,7 +7,7 @@ function pageHero(eyebrow, title, lede, actions = '') {
       <p class="eyebrow">${eyebrow}</p>
       <h1>${title}</h1>
       <p class="lede">${lede}</p>
-      ${actions ? `<div class="button-row" style="margin-top:28px">${actions}</div>` : ''}
+${actions ? `      <div class="button-row" style="margin-top:28px">${actions}</div>` : ''}
     </div>
   </section>`;
 }
@@ -432,7 +432,7 @@ const productsBody = `<section class="page-hero media-page-hero">
     ${agentCards()}
   </div>
 </section>
-<section class="section section-blue tessera-section"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Built around your control</p><h2>The Tessera Protocol</h2><p>Tessera is the open foundation behind Spirantix products. It is designed so personal stories, memories, documents, and other private knowledge stay in accounts and storage the user controls.</p></div><div class="callout callout-light tessera-callout"><h3>Why it matters</h3><p>AI can be more useful when it understands personal context. That should not require giving up control of the information that makes the experience personal.</p><a class="text-link" href="privacy.html">Read the privacy approach</a></div></div></section>`;
+<section class="section section-blue tessera-section"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Built around your control</p><h2>The Tessera Protocol</h2><p>Tessera is the open foundation behind Spirantix products. It is designed so personal stories, memories, documents, and other private knowledge stay in accounts and storage the user controls.</p></div><div class="callout callout-light tessera-callout"><h3>Why it matters</h3><p>AI can be more useful when it understands personal context. That should not require giving up control of the information that makes the experience personal.</p><a class="text-link" href="privacy.html">Read the privacy approach</a><br><a class="text-link" href="terms.html#product-terms">Read the product terms</a></div></div></section>`;
 
 const originStoryBody = `<section class="section section-soft origin-story">
   <div class="wrap"><div class="origin-story-copy">
@@ -518,17 +518,39 @@ const faqBody = `${pageHero('Questions', 'Common questions about learning and Sp
   <details><summary>Where does my personal information go?</summary><div><p>Spirantix products are being designed around user-controlled accounts and storage. The website contact form sends the information you enter to the Spirantix inbox so the team can reply. Read the Privacy page for details.</p></div></details>
 </div></section>`;
 
-const privacyBody = `${pageHero('Privacy', 'Clear information about what this website collects', 'This page explains the Spirantix website and contact form. Individual products may provide additional privacy information as they enter testing and release.')}
+const privacyBody = `${pageHero('Privacy', 'Clear information about how Spirantix AI handles information', 'This policy applies to this website, its contact form, and Spirantix AI products unless a product provides a separate notice.')}
 <section class="lesson-shell"><div class="wrap"><div class="lesson-body privacy-body">
-  <p><strong>Effective date:</strong> September 2, 2026</p>
-  <h2>The Spirantix approach</h2><p>Spirantix is a division of FutureInSites. We provide AI education for seniors and are developing AI products focused on memory, stories, authenticity, and family possessions. We believe personal information should remain under the user’s control.</p>
-  <h2>Information collected through the contact form</h2><p>When you contact Spirantix, the form collects your name, email address, inquiry type, message, and any optional details you choose to provide. Depending on your inquiry, those details may include a product name, organization, location, role, group size, format interest, or preferred timing.</p><p>The form sends this information to the Spirantix inbox through an email delivery provider. It is used to respond to your inquiry, provide support, discuss early access, or discuss a class or speaking engagement.</p>
+  <p><strong>Effective date:</strong> September 9, 2026</p>
+  <h2>Who operates Spirantix</h2><p>Spirantix AI operates spirantix.ai, provides AI education, and develops Spirantix products focused on memory, stories, authenticity, and family possessions. In this policy, “Spirantix AI,” “we,” “us,” and “our” refer to the operator responsible for these services.</p>
+  <h2>Information we collect</h2><p>When you contact Spirantix AI, the form collects your name, email address, inquiry type, message, and any optional details you choose to provide. Depending on your inquiry, those details may include a product name, organization, location, role, group size, format interest, or preferred timing.</p><p>The form sends this information to the Spirantix AI inbox through an email delivery provider. We use it to respond to your inquiry, provide support, discuss early access, or discuss a class or speaking engagement.</p>
   <h2>Information you should not send</h2><p>Do not submit passwords, verification codes, complete financial account numbers, medical records, Social Security numbers, or copies of identity documents through the contact form.</p>
-  <h2>Website hosting information</h2><p>The hosting provider may process standard technical information such as an IP address, browser type, requested page, and timestamp for security, reliability, and operational logs.</p>
-  <h2>AI product information</h2><p>Spirantix products are being designed so personal photos, stories, documents, and conversations remain in accounts and storage controlled by the user. Specific product behavior may depend on the AI provider and account selected by the user. Product pages and testing materials will describe those details before personal information is added.</p>
-  <h2>Third-party services</h2><p>The website may link to ChatGPT, Claude, host organizations, FutureInSites, and government or educational resources. Their privacy practices are governed by their own policies.</p>
-  <h2>Analytics and marketing</h2><p>Spirantix does not currently use contact-form information for unrelated marketing. If optional product updates or a mailing list are added, consent and removal choices will be explained at the point of collection.</p>
-  <h2>Questions</h2><p>For privacy questions, email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=general">contact form</a>.</p>
+  <h2>Technical information</h2><p>Our hosting and security providers may process standard technical information such as your IP address, browser type, requested page, referring page, device information, and timestamp in order to deliver the website, prevent abuse, and maintain reliable operational logs.</p>
+  <h2>How we use information</h2><p>Spirantix AI uses information to operate and secure the website and products, answer requests, provide support, improve services, manage testing and early access, and comply with applicable obligations. We do not currently use contact-form information for unrelated marketing. If we add optional product updates or a mailing list, we will explain consent and removal choices when you subscribe.</p>
+  <h2>AI product information</h2><p>Spirantix AI products are designed around user-controlled accounts and storage. Specific behavior, storage, and data use may depend on the AI provider and account you select. Product pages, testing materials, and any product-specific notice will explain those details before you add personal information. Do not use a developing product for emergencies or as a substitute for professional medical, legal, financial, or safety advice.</p>
+  <h2>Service providers and third parties</h2><p>We may share information with service providers that help us host the website, deliver email, secure services, and provide requested product functions. They may process information only for those purposes and subject to their own service terms. The website and products may also link to or operate through third-party services such as ChatGPT or Claude. Those services are operated by others, and their privacy policies govern information they process.</p>
+  <h2>Retention and security</h2><p>We keep information only as long as reasonably needed for the purposes described here, including support, security, recordkeeping, and applicable legal obligations. We use reasonable safeguards, but no website, email system, or online service can guarantee complete security.</p>
+  <h2>Your choices</h2><p>You may ask Spirantix AI to provide, correct, or delete personal information you submitted directly to us. Some information may need to be retained for security, recordkeeping, or legal reasons. Privacy rights vary by location, and we will respond as required by applicable law.</p>
+  <h2>Children</h2><p>The website and products are not directed to children under 13, and Spirantix AI does not knowingly collect their personal information. If you believe a child has provided personal information, contact us so we can review and remove it where appropriate.</p>
+  <h2>Changes to this policy</h2><p>We may update this policy as the website and products change. The effective date at the top will show when the latest version took effect.</p>
+  <h2>Questions</h2><p>Spirantix AI is responsible for this policy. For privacy questions or requests, email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=general">contact form</a>.</p>
+</div></div></section>`;
+
+const termsBody = `${pageHero('Terms of Use', 'Terms for the Spirantix AI website and products', 'These terms explain the rules that apply when you access spirantix.ai, use its materials, or test or use a Spirantix AI product.')}
+<section class="lesson-shell"><div class="wrap"><div class="lesson-body privacy-body">
+  <p><strong>Effective date:</strong> September 9, 2026</p>
+  <h2>Operator and agreement</h2><p>Spirantix AI operates spirantix.ai and the Spirantix products described on this website. In these terms, “Spirantix AI,” “we,” “us,” and “our” refer to that operator. By accessing the website or using a Spirantix AI product, you agree to these terms. If you do not agree, do not use the website or product.</p>
+  <h2>Website information and education</h2><p>The website provides general educational information. It is not medical, legal, financial, emergency, or other professional advice. AI systems can produce incomplete or incorrect results. Check important information with authoritative sources or qualified professionals before acting on it.</p>
+  <h2>Acceptable use</h2><p>You may use the website and products only lawfully and in a way that does not harm others or interfere with their operation. You may not attempt unauthorized access, introduce malicious code, evade security measures, misuse another person’s information, impersonate others, or use the services to violate rights or applicable law.</p>
+  <h2>Accounts and third-party services</h2><p>Some products may work through an account you maintain with a third-party AI, storage, or communications provider. You are responsible for that account, its security, and compliance with the provider’s terms. Spirantix AI does not control and is not responsible for third-party services, availability, outputs, or data practices.</p>
+  <h2 id="product-terms">Product and beta terms</h2><p>Spirantix products may be experimental, offered in beta, or changed or withdrawn without notice. Features may be incomplete and outputs may be inaccurate. You remain responsible for reviewing outputs and deciding whether and how to use them. Do not rely on a product for emergencies, diagnosis, treatment, legal or financial decisions, identity verification, authenticity determinations, or other high-impact decisions.</p><p>Product instructions or a product-specific agreement may add to these terms. If a product-specific agreement directly conflicts with these general terms, the product-specific agreement controls for that product.</p>
+  <h2>Your content and privacy</h2><p>You retain ownership of content you provide. You give Spirantix AI permission to process that content only as needed to provide, secure, support, and improve the service you request, subject to the <a href="privacy.html">Privacy Policy</a> and any product-specific notice. You represent that you have the rights and permissions needed to provide the content.</p>
+  <h2>Spirantix AI materials</h2><p>The website, product names, designs, text, graphics, software, and other materials provided by Spirantix AI are owned by Spirantix AI or its licensors and are protected by applicable intellectual property laws. You may use public educational materials for personal, noncommercial learning unless a page states otherwise. No other rights are granted except as expressly stated.</p>
+  <h2>Feedback</h2><p>If you voluntarily provide ideas or feedback, Spirantix AI may use them without restriction or compensation, provided we do not publicly identify you without permission.</p>
+  <h2>Availability and changes</h2><p>We may update, suspend, limit, or discontinue any part of the website or a product. We may also update these terms. The effective date will identify the current version. Continued use after updated terms take effect means you accept the updated terms.</p>
+  <h2>Disclaimers</h2><p>To the fullest extent permitted by law, the website, products, and materials are provided “as is” and “as available.” Spirantix AI disclaims warranties of accuracy, reliability, availability, fitness for a particular purpose, merchantability, and noninfringement. Some laws do not allow certain disclaimers, so parts of this section may not apply to you.</p>
+  <h2>Limitation of liability</h2><p>To the fullest extent permitted by law, Spirantix AI will not be liable for indirect, incidental, special, consequential, or punitive damages, or for lost data, profits, opportunities, or goodwill arising from use of or inability to use the website or products. Nothing in these terms excludes liability that cannot legally be excluded.</p>
+  <h2>Suspension and termination</h2><p>Spirantix AI may restrict or end access if you violate these terms, create risk or harm, or if a service is discontinued. Provisions that by their nature should continue after termination will remain in effect.</p>
+  <h2>Questions</h2><p>For questions about these terms or Spirantix AI products, email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=general">contact form</a>.</p>
 </div></div></section>`;
 
 const notFoundBody = `<section class="page-hero"><div class="narrow" style="text-align:center"><p class="eyebrow">Page not found</p><h1>That page is not here</h1><p class="lede">The address may have changed, or the link may be incomplete.</p><div class="button-row" style="justify-content:center;margin-top:28px"><a class="btn" href="index.html">Go to the homepage</a><a class="btn btn-secondary" href="learn.html">Visit the learning hub</a></div></div></section>`;
@@ -536,11 +558,10 @@ const notFoundBody = `<section class="page-hero"><div class="narrow" style="text
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Spirantix',
+  name: 'Spirantix AI',
   url: 'https://spirantix.ai/',
   logo: 'https://spirantix.ai/assets/og-image.png',
-  description: 'AI education, safety guidance, community learning, and developing AI products for seniors.',
-  parentOrganization: { '@type': 'Organization', name: 'FutureInSites', url: 'https://www.futureinsites.com/' }
+  description: 'AI education, safety guidance, community learning, and developing AI products for seniors.'
 };
 
 export const pages = [
@@ -553,6 +574,7 @@ export const pages = [
   { path: 'contact.html', title: 'Contact Spirantix | Support, Products, and Classes', description: 'Contact Spirantix about product support, early access, AI classes for senior communities, or another question.', active: '', body: contactBody },
   { path: 'faq.html', title: 'Spirantix Questions | Learning, Safety, and Products', description: 'Answers about Spirantix AI lessons, community sessions, safety guidance, privacy, and developing products.', active: '', body: faqBody },
   { path: 'privacy.html', title: 'Privacy | Spirantix.ai', description: 'How the Spirantix website and contact form handle information, plus the privacy approach behind developing Spirantix products.', active: '', body: privacyBody },
+  { path: 'terms.html', title: 'Terms of Use | Spirantix.ai', description: 'Terms for using the Spirantix AI website, educational materials, beta services, and products.', active: '', body: termsBody },
   { path: '404.html', title: 'Page Not Found | Spirantix.ai', description: 'The requested Spirantix page could not be found.', active: '', body: notFoundBody, noindex: true }
 ];
 

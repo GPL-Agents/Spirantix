@@ -74,12 +74,13 @@ function footer(base) {
         <div class="footer-links">
           <a href="${base}contact.html">Contact us</a>
           <a href="${base}privacy.html">Privacy</a>
+          <a href="${base}terms.html">Terms</a>
           <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a>
         </div>
       </div>
     </div>
     <div class="wrap footer-bottom">
-      <span>&copy; 2026 Spirantix, a division of <a href="https://www.futureinsites.com" target="_blank" rel="noopener">FutureInSites</a>.</span>
+      <span>&copy; 2026 Spirantix AI. Spirantix AI operates this website and its products.</span>
       <span>Designed for clarity, privacy, and confidence.</span>
     </div>
   </footer>`;
@@ -106,7 +107,7 @@ export function renderPage({
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}</title>
   <meta name="description" content="${description}">
-  ${noindex ? '<meta name="robots" content="noindex">' : ''}
+${noindex ? '  <meta name="robots" content="noindex">' : ''}
   <link rel="canonical" href="${canonical}">
   <link rel="apple-touch-icon" href="${base}assets/apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="${base}assets/favicon.svg">
