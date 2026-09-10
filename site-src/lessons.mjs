@@ -53,7 +53,7 @@ const whatIsAi = `${lessonHero(1, 'What AI is, and what it is not', 'A plain-lan
 
   <div class="try-box"><h2>Try this today</h2><p>Open ChatGPT or Claude and ask:</p><p><strong>“Explain generative AI in five short sentences. Use one everyday example and avoid technical terms.”</strong></p><p>Then follow up with: <strong>“What is one important limitation I should remember?”</strong></p></div>
 
-  ${sourceNote('Adapted in part from <a href="https://www.futureinsites.com/ai-for-executives.html" target="_blank" rel="noopener">FutureInSites research on artificial intelligence</a>.')}
+  ${sourceNote('Part of the free Spirantix AI learning series.')}
 </div></article>`;
 
 const chatgptBasics = `${lessonHero(2, 'Getting started with ChatGPT', 'Begin a conversation, ask a useful question, and improve the answer one step at a time.', '8 minute read')}

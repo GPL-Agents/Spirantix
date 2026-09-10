@@ -1,11 +1,10 @@
 // Vercel Serverless Function: POST /api/contact
 // Receives the contact form on contact.html and emails it via Resend.
-// Same pattern as the FutureInSites /api/inquire function.
 //
 // Required env vars (set in Vercel → Project → Settings → Environment Variables):
 //   RESEND_API_KEY   e.g. re_xxxxxxxxxxxxxxxx
-//   CONTACT_TO       hello@spirantix.ai (or any inbox you want submissions delivered to)
-//   CONTACT_FROM     Spirantix <forms@spirantix.ai>   (sender must be on a verified Resend domain)
+//   CONTACT_TO       hello@spirantix.ai
+//   CONTACT_FROM     Spirantix <hello@spirantix.ai>   (sender must be on a verified Resend domain)
 
 const escapeHtml = (str) =>
   String(str ?? '')
@@ -71,8 +70,8 @@ module.exports = async function handler(req, res) {
   if (!isEmail(email)) return res.status(400).json({ ok: false, error: 'A valid email is required.' });
 
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  const CONTACT_TO     = process.env.CONTACT_TO   || 'spirantix@futureinsites.com';
-  const CONTACT_FROM   = process.env.CONTACT_FROM || 'Spirantix <forms@futureinsites.com>';
+  const CONTACT_TO     = process.env.CONTACT_TO   || 'hello@spirantix.ai';
+  const CONTACT_FROM   = process.env.CONTACT_FROM || 'Spirantix <hello@spirantix.ai>';
 
   if (!RESEND_API_KEY) {
     console.error('contact: RESEND_API_KEY is not set');

@@ -229,7 +229,7 @@ def build_pdf():
     pdf.setFillColor(SOFT)
     pdf.setFont("Helvetica", 7.8)
     pdf.drawString(48, 49, "Spirantix helps seniors understand AI, use it with confidence, and protect what matters.")
-    footer = "A division of FutureInSites"
+    footer = "Spirantix AI"
     pdf.drawString(width - 48 - stringWidth(footer, "Helvetica", 7.8), 49, footer)
 
     pdf.showPage()

@@ -141,7 +141,10 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
   text-decoration: none;
 }
 .brand svg { width: 42px; height: 42px; }
-.brand span span { color: var(--teal); }
+.brand-lockup { display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; }
+.brand-name { color: var(--navy); line-height: 1; }
+.brand-name > span { color: var(--teal); }
+.brand-tagline { color: var(--muted); font-size: 0.53rem; font-weight: 700; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
 .nav-toggle {
   display: none;
   min-width: 48px;

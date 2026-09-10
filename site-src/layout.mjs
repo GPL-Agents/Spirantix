@@ -30,7 +30,7 @@ function header(active, base) {
     <div class="wrap nav-inner">
       <a class="brand" href="${base}index.html" aria-label="Spirantix home">
         ${logo()}
-        <span>Spirantix<span>.ai</span></span>
+        <span class="brand-lockup"><span class="brand-name">Spirantix<span>.ai</span></span><span class="brand-tagline">Educational Non-Profit</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
         <span class="visually-hidden">Open menu</span>
@@ -50,7 +50,7 @@ function footer(base) {
   return `<footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <a class="brand" href="${base}index.html" aria-label="Spirantix home">${logo()}<span>Spirantix<span>.ai</span></span></a>
+        <a class="brand" href="${base}index.html" aria-label="Spirantix home">${logo()}<span class="brand-lockup"><span class="brand-name">Spirantix<span>.ai</span></span><span class="brand-tagline">Educational Non-Profit</span></span></a>
         <p class="small muted" style="margin-top:16px;max-width:360px">Helping seniors understand AI, use it with confidence, and protect what matters.</p>
       </div>
       <div>

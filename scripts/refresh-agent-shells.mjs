@@ -19,7 +19,7 @@ const logo = `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
 const header = `<a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
   <div class="wrap nav-inner">
-    <a class="brand" href="index.html" aria-label="Spirantix home">${logo}<span>Spirantix<span>.ai</span></span></a>
+    <a class="brand" href="index.html" aria-label="Spirantix home">${logo}<span class="brand-lockup"><span class="brand-name">Spirantix<span>.ai</span></span><span class="brand-tagline">Educational Non-Profit</span></span></a>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
       <span class="visually-hidden">Open menu</span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -39,7 +39,7 @@ const header = `<a class="skip-link" href="#main-content">Skip to main content</
 
 const footer = `<footer class="site-footer">
   <div class="wrap footer-grid">
-    <div><a class="brand" href="index.html" aria-label="Spirantix home">${logo}<span>Spirantix<span>.ai</span></span></a><p class="small muted" style="margin-top:16px;max-width:360px">Helping seniors understand AI, use it with confidence, and protect what matters.</p></div>
+    <div><a class="brand" href="index.html" aria-label="Spirantix home">${logo}<span class="brand-lockup"><span class="brand-name">Spirantix<span>.ai</span></span><span class="brand-tagline">Educational Non-Profit</span></span></a><p class="small muted" style="margin-top:16px;max-width:360px">Helping seniors understand AI, use it with confidence, and protect what matters.</p></div>
     <div><h2>Learn</h2><div class="footer-links"><a href="learn.html">Learning hub</a><a href="safety.html">Stay Safe</a><a href="classes.html">Classes & Talks</a></div></div>
     <div><h2>Spirantix</h2><div class="footer-links"><a href="products.html">Products</a><a href="about.html">About</a><a href="faq.html">Questions</a></div></div>
     <div><h2>Contact</h2><div class="footer-links"><a href="contact.html">Contact us</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a></div></div>
