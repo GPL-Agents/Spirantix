@@ -45,6 +45,8 @@ module.exports = async function handler(req, res) {
     support: 'Product support',
     product: 'Product interest',
     speaking: 'Class or speaking inquiry',
+    donate: 'Donation or contribution inquiry',
+    partner: 'Partnership or sponsorship inquiry',
     general: 'General question',
   };
   const inquiryType = inquiryLabels[body.inquiryType] ? body.inquiryType : 'general';
@@ -60,6 +62,11 @@ module.exports = async function handler(req, res) {
     groupSize: body.groupSize,
     formatInterest: body.formatInterest,
     timing: body.timing,
+    donorType: body.donorType,
+    donorOrg: body.donorOrg,
+    partnerOrg: body.partnerOrg,
+    partnerRole: body.partnerRole,
+    partnerInterest: body.partnerInterest,
   };
 
   Object.keys(details).forEach((key) => {
@@ -89,6 +96,11 @@ module.exports = async function handler(req, res) {
     groupSize: 'Approximate group size',
     formatInterest: 'Format interest',
     timing: 'Preferred timing',
+    donorType: 'Donor type',
+    donorOrg: 'Organization or fund',
+    partnerOrg: 'Company or organization',
+    partnerRole: 'Role',
+    partnerInterest: 'Partnership interest',
   };
 
   const detailRows = Object.entries(details)
