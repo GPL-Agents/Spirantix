@@ -406,6 +406,7 @@ const classesBody = `<section class="page-hero media-page-hero">
 <section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Start a conversation</p><h2>Tell us about your community</h2><p>Share your location, group size, preferred timing, and program ideas.</p><a class="btn" href="contact.html?type=speaking">Request information</a></div></section>`;
 
 const seniorWebsites = [
+  ['HumanGood', 'https://www.humangood.org/resources', 'Guides, podcasts, videos, and articles about senior living, wellness, financial planning, downsizing, caregiving, and memory support.'],
   ['AARP', 'https://www.aarp.org/', 'Articles, tools, discounts, and programs covering health, money, work, travel, caregiving, and everyday life.'],
   ['New York Times Games', 'https://www.nytimes.com/crosswords', 'Daily word and logic games, including Wordle, the Crossword, Connections, and Spelling Bee. Some games require a subscription.'],
   ['TED', 'https://www.ted.com/', 'Talks and educational videos from speakers around the world on science, culture, health, technology, and personal growth.'],
@@ -440,7 +441,7 @@ const seniorWebsitesSection = `<section class="section section-soft" id="website
     <div class="section-heading">
       <p class="eyebrow">Websites for older adults</p>
       <h2>Helpful places across the web</h2>
-      <p>This collection begins with the websites featured in HumanGood’s <a href="https://www.humangood.org/resources/senior-living-blog/best-websites-for-seniors" target="_blank" rel="noopener">Best Websites for Seniors</a> roundup. Spirantix has checked the destinations, updated changed links, and added plain-language context.</p>
+      <p>A growing collection of useful websites for older adults and their families. Spirantix reviews and updates these recommendations regularly as helpful new resources emerge and existing ones change.</p>
     </div>
     <div class="grid-3">${seniorWebsiteCards()}</div>
   </div>
