@@ -374,7 +374,8 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .media-page-hero-copy { padding-top: 18px; }
 .media-page-hero-image { align-self: start; }
 .media-page-hero-image img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 28px; box-shadow: var(--shadow); }
-.resource-image-placeholder { display: grid; width: 100%; aspect-ratio: 4 / 5; place-items: center; border: 2px dashed rgba(35, 104, 168, 0.35); border-radius: 28px; background: rgba(255, 255, 255, 0.55); color: var(--blue-dark); text-align: center; font-weight: 600; line-height: 1.5; box-shadow: var(--shadow); }
+.resource-hero-image img { aspect-ratio: 4 / 3; object-position: center; }
+.resources-page-hero + .section { padding-top: 56px; }
 .breadcrumb { margin-bottom: 20px; font-size: 0.9rem; }
 .breadcrumb a { color: var(--blue-dark); }
 
