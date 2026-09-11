@@ -1,7 +1,8 @@
 const navItems = [
   ['learn', 'Learn', 'learn.html'],
-  ['safety', 'Stay Safe', 'safety.html'],
-  ['classes', 'Classes & Talks', 'classes.html'],
+  ['classes', 'Classes', 'classes.html'],
+  ['safety', 'Safety', 'safety.html'],
+  ['resources', 'Resources', 'resources.html'],
   ['products', 'Products', 'products.html'],
   ['about', 'About', 'about.html']
 ];
@@ -57,8 +58,9 @@ function footer(base) {
         <h2>Learn</h2>
         <div class="footer-links">
           <a href="${base}learn.html">Learning hub</a>
-          <a href="${base}safety.html">Stay Safe</a>
-          <a href="${base}classes.html">Classes & Talks</a>
+          <a href="${base}classes.html">Classes</a>
+          <a href="${base}safety.html">Safety</a>
+          <a href="${base}resources.html">Resources</a>
         </div>
       </div>
       <div>

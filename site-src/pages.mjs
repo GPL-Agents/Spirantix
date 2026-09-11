@@ -354,7 +354,7 @@ const safetyBody = `<section class="page-hero media-page-hero">
 const classesBody = `<section class="page-hero media-page-hero">
   <div class="wrap media-page-hero-grid">
     <div class="media-page-hero-copy">
-      <p class="eyebrow">Classes & Talks</p>
+      <p class="eyebrow">Classes</p>
       <h1>Bring practical AI learning to your community</h1>
       <p class="lede">Spirantix offers approachable sessions for seniors who want to understand today’s AI tools, use them in everyday life, and protect their important information.</p>
       <div class="button-row" style="margin-top:28px"><a class="btn" href="contact.html?type=speaking">Request a session</a><a class="btn btn-secondary" href="#upcoming">See upcoming sessions</a></div>
@@ -404,6 +404,77 @@ const classesBody = `<section class="page-hero media-page-hero">
   </div>
 </section>
 <section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Start a conversation</p><h2>Tell us about your community</h2><p>Share your location, group size, preferred timing, and program ideas.</p><a class="btn" href="contact.html?type=speaking">Request information</a></div></section>`;
+
+const resourcesBody = `<section class="page-hero media-page-hero">
+  <div class="wrap media-page-hero-grid">
+    <div class="media-page-hero-copy">
+      <p class="eyebrow">Resources</p>
+      <h1>Helpful places to explore online</h1>
+      <p class="lede">A growing collection of useful websites for health information, technology help, fraud prevention, learning, travel, and everyday life.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="#trusted-sites">Explore trusted sites</a></div>
+    </div>
+    <div class="media-page-hero-image resource-image-placeholder" role="img" aria-label="Placeholder for the Resources page hero image">
+      <span>Hero image<br>coming soon</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trusted-sites">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Trusted sites</p>
+      <h2>Useful websites we have reviewed</h2>
+      <p>These links lead to government agencies and established organizations. Each offers practical information or services for older adults and their families.</p>
+    </div>
+    <div class="grid-3">
+      <a class="card card-link" href="https://www.nia.nih.gov/" target="_blank" rel="noopener"><h3>National Institute on Aging</h3><p>Research-based information about healthy aging, health conditions, caregiving, and clinical research.</p><span class="text-link">Visit NIA</span></a>
+      <a class="card card-link" href="https://www.medicare.gov/" target="_blank" rel="noopener"><h3>Medicare</h3><p>Official information about Medicare coverage, plans, providers, cards, premiums, and fraud reporting.</p><span class="text-link">Visit Medicare.gov</span></a>
+      <a class="card card-link" href="https://consumer.ftc.gov/scams" target="_blank" rel="noopener"><h3>FTC Consumer Advice</h3><p>Current guidance for recognizing, avoiding, and reporting scams, including scams aimed at older adults.</p><span class="text-link">Visit FTC Consumer Advice</span></a>
+      <a class="card card-link" href="https://seniorplanet.org/" target="_blank" rel="noopener"><h3>Senior Planet</h3><p>Free technology classes, articles, and community programs designed for older adults.</p><span class="text-link">Visit Senior Planet</span></a>
+      <a class="card card-link" href="https://www.aarp.org/" target="_blank" rel="noopener"><h3>AARP</h3><p>Articles, tools, programs, and member services covering health, money, work, travel, and daily life.</p><span class="text-link">Visit AARP</span></a>
+      <a class="card card-link" href="https://www.roadscholar.org/" target="_blank" rel="noopener"><h3>Road Scholar</h3><p>Educational travel programs and learning adventures created primarily for adults over 50.</p><span class="text-link">Visit Road Scholar</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">App highlights</p>
+      <h2>Apps that can make everyday life easier</h2>
+      <p>These apps stand out for making books, information, or visual assistance easier to access.</p>
+    </div>
+    <div class="grid-2">
+      <a class="card card-link" href="https://www.overdrive.com/apps/libby" target="_blank" rel="noopener"><h3>Libby</h3><p>Borrow ebooks, audiobooks, and magazines using a library card from a participating public library.</p><span class="text-link">Learn about Libby</span></a>
+      <a class="card card-link" href="https://www.bemyeyes.com/" target="_blank" rel="noopener"><h3>Be My Eyes</h3><p>Connect with volunteers or AI-powered visual assistance for help describing objects, reading labels, and completing visual tasks.</p><span class="text-link">Learn about Be My Eyes</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-blue">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">AI tool highlights</p>
+      <h2>Helpful places to begin with AI</h2>
+      <p>General-purpose AI assistants can explain ideas, help with writing, organize plans, and answer follow-up questions in a conversational way.</p>
+    </div>
+    <div class="grid-2">
+      <a class="card card-link" href="https://chatgpt.com/overview/" target="_blank" rel="noopener"><h3>ChatGPT</h3><p>Use text or voice to ask questions, explore ideas, draft writing, compare options, and get everyday help.</p><span class="text-link">Explore ChatGPT</span></a>
+      <a class="card card-link" href="https://claude.com/product/overview" target="_blank" rel="noopener"><h3>Claude</h3><p>Ask questions, work through ideas, simplify complex information, analyze documents, and create written material.</p><span class="text-link">Explore Claude</span></a>
+    </div>
+    <div class="callout" style="margin-top:28px"><h3>Use AI as a helper, not a final authority</h3><p>AI tools can make mistakes. Verify important health, legal, financial, and safety information with a qualified professional or an authoritative source, and avoid sharing sensitive personal information.</p></div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="narrow">
+    <p class="eyebrow">How we choose</p>
+    <h2>Clear, useful, and worth your time</h2>
+    <p>We favor reliable organizations, clear information, accessible experiences, and resources that offer genuine value. A listing is not a guarantee of every page, product, or service offered by an outside organization.</p>
+    <p class="small"><strong>Last reviewed:</strong> September 11, 2026</p>
+    <div class="button-row" style="margin-top:24px"><a class="btn btn-secondary" href="contact.html">Suggest a resource</a></div>
+  </div>
+</section>`;
 
 const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap media-page-hero-grid">
@@ -585,8 +656,9 @@ const organizationSchema = {
 export const pages = [
   { path: 'index.html', title: 'Spirantix.ai | AI Learning and Tools for Seniors', description: 'Plain-language AI lessons, safety guidance, community classes, and developing products designed for seniors.', active: '', body: homeBody, jsonLd: organizationSchema },
   { path: 'learn.html', title: 'Learn AI in Plain Language | Spirantix.ai', description: 'Friendly, practical lessons that help seniors understand ChatGPT, Claude, prompts, AI safety, and everyday uses.', active: 'learn', body: learnBody },
-  { path: 'safety.html', title: 'AI Safety and Scam Awareness for Seniors | Spirantix.ai', description: 'Practical steps for protecting personal information, recognizing scam warning signs, and using AI as a cautious second opinion.', active: 'safety', body: safetyBody },
   { path: 'classes.html', title: 'AI Classes and Talks for Senior Communities | Spirantix.ai', description: 'Approachable in-person and video AI learning sessions for senior living communities and lifelong-learning centers.', active: 'classes', body: classesBody },
+  { path: 'safety.html', title: 'AI Safety and Scam Awareness for Seniors | Spirantix.ai', description: 'Practical steps for protecting personal information, recognizing scam warning signs, and using AI as a cautious second opinion.', active: 'safety', body: safetyBody },
+  { path: 'resources.html', title: 'Helpful Online Resources for Seniors | Spirantix.ai', description: 'A reviewed collection of useful websites for older adults covering health, technology, fraud prevention, learning, travel, and everyday life.', active: 'resources', body: resourcesBody },
   { path: 'products.html', title: 'Spirantix AI Products | One Concierge, Four Specialists', description: 'Meet the developing Spirantix concierge and specialist agents for memory, stories, authenticity, and family possessions.', active: 'products', body: productsBody },
   { path: 'about.html', title: 'About Spirantix | AI Learning and Products for Seniors', description: 'Learn why Spirantix brings together plain-language AI education, practical safety guidance, community instruction, and thoughtful products.', active: 'about', body: aboutBody },
   { path: 'contact.html', title: 'Contact Spirantix | Support, Products, and Classes', description: 'Contact Spirantix about product support, early access, AI classes for senior communities, or another question.', active: '', body: contactBody },
