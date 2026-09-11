@@ -405,13 +405,54 @@ const classesBody = `<section class="page-hero media-page-hero">
 </section>
 <section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Start a conversation</p><h2>Tell us about your community</h2><p>Share your location, group size, preferred timing, and program ideas.</p><a class="btn" href="contact.html?type=speaking">Request information</a></div></section>`;
 
+const seniorWebsites = [
+  ['AARP', 'https://www.aarp.org/', 'Articles, tools, discounts, and programs covering health, money, work, travel, caregiving, and everyday life.'],
+  ['New York Times Games', 'https://www.nytimes.com/crosswords', 'Daily word and logic games, including Wordle, the Crossword, Connections, and Spelling Bee. Some games require a subscription.'],
+  ['TED', 'https://www.ted.com/', 'Talks and educational videos from speakers around the world on science, culture, health, technology, and personal growth.'],
+  ['Medicare', 'https://www.medicare.gov/', 'The official federal source for Medicare coverage, plans, providers, cards, premiums, and fraud reporting.'],
+  ['Rest Less', 'https://restless.co.uk/', 'The current destination of OlderIsWiser, with articles and resources about work, money, health, learning, and life after 50.'],
+  ['The Chicago Financial Planner', 'https://thechicagofinancialplanner.com/', 'Detailed articles about financial planning, investments, retirement accounts, and decisions that can affect retirement.'],
+  ['Sixty and Me', 'https://sixtyandme.com/', 'A lifestyle publication for women over 60 covering travel, relationships, health, money, beauty, and retirement.'],
+  ['Alliance for Retired Americans', 'https://retiredamericans.org/', 'News and advocacy from a politically active organization focused on retirees, health care, pensions, and public policy.'],
+  ['Pogo', 'https://www.pogo.com/', 'A collection of free online card, puzzle, board, word, and matching games, with optional accounts and purchases.'],
+  ['Suddenly Senior', 'https://www.suddenlysenior.com/', 'Humor, nostalgia, articles, and resources written for older adults and longtime readers.'],
+  ['thirdAGE', 'https://thirdage.com/', 'Lifestyle articles about health, relationships, money, beauty, travel, and other aspects of life after midlife.'],
+  ["Senior's Guide to Computers", 'https://seniorsguidetocomputers.com/', 'Beginner-friendly computer tutorials covering hardware, software, email, accessibility, security, and backups.'],
+  ['LoveToKnow Aging', 'https://www.lovetoknow.com/life/aging', 'Practical articles about retirement, activities, caregiving, wellness, housing, relationships, and daily life.'],
+  ['Evergreen Club', 'https://www.evergreenclub.com/', 'A membership-based network of economical homestays in the United States and Canada for travelers age 50 and older.'],
+  ['Facebook', 'https://www.facebook.com/', 'A social network for keeping up with family, friends, organizations, and interest groups. Review privacy settings and be cautious with unexpected messages.'],
+  ['Reddit', 'https://www.reddit.com/', 'Discussion communities covering thousands of interests. Advice comes from other users, so verify important claims elsewhere.'],
+  ['Road Scholar', 'https://www.roadscholar.org/', 'Educational travel programs and learning adventures created primarily for adults over 50.'],
+  ['National Alliance for Caregiving', 'https://www.caregiving.org/', 'Research, advocacy, and practical resources supporting family caregivers and the people they care for.'],
+  ['Grandkids Matter', 'https://grandkidsmatter.org/', 'Ideas and guidance for grandparents about communication, relationships, activities, and supporting grandchildren.'],
+  ['Workforce50', 'https://www.workforce50.com/', 'Job listings and career information for experienced workers, people over 50, and those making a career change.'],
+  ['StatPearls', 'https://www.statpearls.com/', 'Clinical reference material about medical conditions, symptoms, and treatments. Use it to inform conversations, not replace medical care.'],
+  ['National Institute on Aging', 'https://www.nia.nih.gov/', 'Research-based information from the National Institutes of Health about aging, health conditions, caregiving, and clinical research.'],
+  ['Where You Live Matters', 'https://www.whereyoulivematters.org/', 'Information and planning tools for comparing senior living choices and understanding different community options.']
+];
+
+function seniorWebsiteCards() {
+  return seniorWebsites.map(([name, url, description]) => `<a class="card card-link" href="${url}" target="_blank" rel="noopener"><h3>${name}</h3><p>${description}</p><span class="text-link">Visit website</span></a>`).join('');
+}
+
+const seniorWebsitesSection = `<section class="section section-soft" id="websites">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Websites for older adults</p>
+      <h2>Helpful places across the web</h2>
+      <p>This collection begins with the websites featured in HumanGood’s <a href="https://www.humangood.org/resources/senior-living-blog/best-websites-for-seniors" target="_blank" rel="noopener">Best Websites for Seniors</a> roundup. Spirantix has checked the destinations, updated changed links, and added plain-language context.</p>
+    </div>
+    <div class="grid-3">${seniorWebsiteCards()}</div>
+  </div>
+</section>`;
+
 const resourcesBody = `<section class="page-hero media-page-hero resources-page-hero">
   <div class="wrap media-page-hero-grid">
     <div class="media-page-hero-copy">
       <p class="eyebrow">Resources</p>
-      <h1>AI tools and apps worth exploring</h1>
-      <p class="lede">A growing collection of practical AI assistants and useful apps, with plain-language guidance about what each one does and where to begin.</p>
-      <div class="button-row" style="margin-top:28px"><a class="btn" href="#ai-tools">Explore AI tools</a><a class="btn btn-secondary" href="#app-highlights">Explore apps</a></div>
+      <h1>Useful resources for life online</h1>
+      <p class="lede">Explore helpful websites, practical AI assistants, and useful apps, with plain-language guidance about what each one offers.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="#websites">Explore websites</a><a class="btn btn-secondary" href="#ai-tools">Explore AI tools</a></div>
     </div>
     <div class="media-page-hero-image resource-hero-image">
       <picture>
@@ -421,6 +462,8 @@ const resourcesBody = `<section class="page-hero media-page-hero resources-page-
     </div>
   </div>
 </section>
+
+${seniorWebsitesSection}
 
 <section class="section" id="ai-tools">
   <div class="wrap">
@@ -455,26 +498,11 @@ const resourcesBody = `<section class="page-hero media-page-hero resources-page-
   </div>
 </section>
 
-<section class="section section-soft">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Supporting resources</p>
-      <h2>Reliable help when accuracy matters</h2>
-      <p>AI is not the right source for every question. These official websites are better starting points for health coverage, aging information, and scam guidance.</p>
-    </div>
-    <div class="grid-3">
-      <a class="card card-link" href="https://www.nia.nih.gov/" target="_blank" rel="noopener"><h3>National Institute on Aging</h3><p>Research-based information about healthy aging, health conditions, caregiving, and clinical research.</p><span class="text-link">Visit NIA</span></a>
-      <a class="card card-link" href="https://www.medicare.gov/" target="_blank" rel="noopener"><h3>Medicare</h3><p>Official information about Medicare coverage, plans, providers, cards, premiums, and fraud reporting.</p><span class="text-link">Visit Medicare.gov</span></a>
-      <a class="card card-link" href="https://consumer.ftc.gov/scams" target="_blank" rel="noopener"><h3>FTC Consumer Advice</h3><p>Current guidance for recognizing, avoiding, and reporting scams, including scams aimed at older adults.</p><span class="text-link">Visit FTC Consumer Advice</span></a>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="narrow">
     <p class="eyebrow">How we choose</p>
     <h2>Clear, useful, and worth your time</h2>
-    <p>We favor tools and apps with clear everyday uses, approachable experiences, responsible privacy practices, and genuine value for older adults. A listing is not a guarantee of every feature, answer, product, or service offered by an outside organization.</p>
+    <p>We favor websites, tools, and apps with clear everyday uses, approachable experiences, responsible practices, and genuine value for older adults. A listing is not a guarantee of every article, feature, answer, product, or service offered by an outside organization.</p>
     <p class="small"><strong>Last reviewed:</strong> September 11, 2026</p>
     <div class="button-row" style="margin-top:24px"><a class="btn btn-secondary" href="contact.html">Suggest a resource</a></div>
   </div>
@@ -662,7 +690,7 @@ export const pages = [
   { path: 'learn.html', title: 'Learn AI in Plain Language | Spirantix.ai', description: 'Friendly, practical lessons that help seniors understand ChatGPT, Claude, prompts, AI safety, and everyday uses.', active: 'learn', body: learnBody },
   { path: 'classes.html', title: 'AI Classes and Talks for Senior Communities | Spirantix.ai', description: 'Approachable in-person and video AI learning sessions for senior living communities and lifelong-learning centers.', active: 'classes', body: classesBody },
   { path: 'safety.html', title: 'AI Safety and Scam Awareness for Seniors | Spirantix.ai', description: 'Practical steps for protecting personal information, recognizing scam warning signs, and using AI as a cautious second opinion.', active: 'safety', body: safetyBody },
-  { path: 'resources.html', title: 'AI Tools and Apps for Seniors | Spirantix.ai', description: 'A reviewed collection of practical AI tools and useful apps, explained in plain language for older adults.', active: 'resources', body: resourcesBody },
+  { path: 'resources.html', title: 'Helpful Websites, AI Tools, and Apps for Seniors | Spirantix.ai', description: 'A growing collection of helpful websites, practical AI tools, and useful apps, explained in plain language for older adults.', active: 'resources', body: resourcesBody },
   { path: 'products.html', title: 'Spirantix AI Products | One Concierge, Four Specialists', description: 'Meet the developing Spirantix concierge and specialist agents for memory, stories, authenticity, and family possessions.', active: 'products', body: productsBody },
   { path: 'about.html', title: 'About Spirantix | AI Learning and Products for Seniors', description: 'Learn why Spirantix brings together plain-language AI education, practical safety guidance, community instruction, and thoughtful products.', active: 'about', body: aboutBody },
   { path: 'contact.html', title: 'Contact Spirantix | Support, Products, and Classes', description: 'Contact Spirantix about product support, early access, AI classes for senior communities, or another question.', active: '', body: contactBody },
