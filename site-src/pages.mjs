@@ -509,6 +509,153 @@ ${seniorWebsitesSection}
   </div>
 </section>`;
 
+const supportBody = `<section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Concierge Guide</p>
+      <h1>Get the most from your Spirantix Concierge</h1>
+      <p class="lede">This page is written to be read aloud and copied into a chat. It explains how to talk with the Spirantix Concierge and what it can do for you today.</p>
+
+    </div>
+  </section>
+<section class="section section-white" id="how-to-use">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">How to use</p>
+      <h2>The shortest path from "I have the link" to "it is helping me"</h2>
+      <p>You do not need to learn any special words. Ask the way you would ask a friend.</p>
+    </div>
+    <div class="grid-2" style="align-items:start;margin-bottom:28px">
+      <div class="card">
+        <h3>What it is</h3>
+        <p>The Spirantix Concierge is a helper you talk with in a chat. It remembers the people, photos, stories, and belongings your family tells it about, and it answers your questions about them.</p>
+      </div>
+      <div class="card">
+        <h3>What to say first</h3>
+        <ol style="padding-left:1.2em;margin:0">
+          <li>Open the link you were given. It opens a chat.</li>
+          <li>Say hello, then ask your question in your own words.</li>
+          <li>If you are not sure where to begin, tap one of the four buttons, or simply say what you need.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="callout callout-light" style="margin-bottom:28px">
+      <h3>One concierge, four kinds of help</h3>
+      <p>You never have to choose who you are talking to. There is only one helper, and it takes you where you need to go.</p>
+      <ul style="padding-left:1.2em;margin:0">
+        <li><strong>Remember</strong> -- ask about a person, a day, a trip, a reminder, or an item you already told it about.</li>
+        <li><strong>Capture</strong> -- give it something new to keep: a story, a reminder, a calendar event, or an item.</li>
+        <li><strong>Photos</strong> -- show, organize, and label photos and albums. Your full pictures stay in your own library.</li>
+        <li><strong>Update</strong> -- mark a reminder done, remove one, or change its time or wording.</li>
+      </ul>
+    </div>
+    <div class="grid-2" style="align-items:start;margin-bottom:28px">
+      <div class="card">
+        <h3>What it remembers</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>The people in your family and what you tell it about them</li>
+          <li>Photos and albums, labeled with the names you give them</li>
+          <li>Voice stories attached to a photo, an album, or an item</li>
+          <li>Reminders you set</li>
+          <li>Items you record, along with their story</li>
+          <li>Events you add to your calendar</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What it will not do yet</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>It does not give medical or legal advice. It will ask you to speak with a doctor or a lawyer.</li>
+          <li>It does not recognize faces in this first release. It can only use names and notes you have already given it.</li>
+          <li>It cannot start a conversation on its own. It waits for you to speak first.</li>
+          <li>It cannot record audio inside the chat. You record a voice story on your own phone or on our page, and it helps you attach it.</li>
+          <li>It does not seal a document in this first release. Sealing comes later, in the web app.</li>
+          <li>It cannot change or cancel a calendar event yet. It can add a new one.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="notice"><strong>A second way to reach your concierge is on the way.</strong> Spirantix is building a second assistant surface. This page will be updated with details when it is ready.</div>
+  </div>
+</section>
+<section class="section section-soft" id="prompts">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Supported prompts</p>
+      <h2>Copy, paste, and change the details to match your family</h2>
+      <p>These are real examples the Concierge understands today.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Remember a person</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>"Tell me about my daughter Sophie."</li>
+          <li>"Who is in my family?"</li>
+          <li>"What did we do last Thanksgiving?"</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Remember an item</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>"Keep track of this watch. My grandmother gave it to me."</li>
+          <li>"What did my grandfather own?"</li>
+          <li>"What do you know about the wooden clock?"</li>
+          <li>"Add my grandmother's ring to my list."</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Set a reminder</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>"Remind me to take my pills at eight tonight."</li>
+          <li>"Remind me to call my brother tomorrow morning."</li>
+          <li>"I took my pills, you can mark that done."</li>
+          <li>"Add my hair appointment to my calendar."</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Ask about a photo or album</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>"Show me pictures of Sophie."</li>
+          <li>"What albums do I have?"</li>
+          <li>"Make an album of our trip."</li>
+          <li>"This is my daughter Sophie in this photo."</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Find something you stored</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>"What is on my calendar today?"</li>
+          <li>"What reminders do I have?"</li>
+          <li>"What documents do I have for the painting?"</li>
+          <li>"Make me a list of everything I have recorded."</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="support-faq">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Questions about using the Concierge</p>
+      <h2>Answers for a first-time user or their family</h2>
+      <p>Looking for a question about lessons, classes, or the website instead? Visit the <a href="faq.html">Questions page</a>.</p>
+    </div>
+    <div class="narrow accordion">
+      <details><summary>Do I need a ChatGPT account to use the Concierge?</summary><div><p>Yes. You will need a ChatGPT account and a Spirantix account, and the Concierge asks you to connect the two the first time you use it.</p></div></details>
+      <details><summary>Is there a cost to use the Concierge?</summary><div><p>There is no charge to use the Concierge today.</p></div></details>
+      <details><summary>Can it change or cancel something already on my calendar?</summary><div><p>Not yet. It can add a new event, but changing or cancelling one is not part of this first release. It will say so plainly and point you to another way to make the change.</p></div></details>
+      <details><summary>Will it recognize people in my photos automatically?</summary><div><p>No. It does not identify a person from a photo in this first release. It can only use the names and notes you have already given it.</p></div></details>
+      <details><summary>Is a document sealed or certified when I add it?</summary><div><p>No. Nothing is sealed when you add a document in this first release, and there is no seal yet to check. Sealing comes later, in the web app.</p></div></details>
+      <details><summary>Can someone else help me use my account?</summary><div><p>Yes. On your Spirantix web account, you can add a named helper by email. That person can add reminders and add calendar events for you, and you can remove them at any time.</p></div></details>
+      <details><summary>Can the helper see everything I have stored?</summary><div><p>No. A helper can only add reminders and add calendar events. Looking at your library is not part of this first release.</p></div></details>
+      <details><summary>How will a reminder actually reach me?</summary><div><p>As a calendar notification. You reply to acknowledge it. A text message reminder is planned for a later release.</p></div></details>
+      <details><summary>Can I add a voice story?</summary><div><p>Yes. You record it on your own phone or on the Spirantix page, and the Concierge walks you through attaching it to a photo, an album, or an item. It cannot record audio inside the chat itself.</p></div></details>
+      <details><summary>Does it give medical or legal advice?</summary><div><p>No. It will ask you to speak with a doctor or a lawyer.</p></div></details>
+      <details><summary>What happens if it does not know the answer?</summary><div><p>It says so plainly and lets the Spirantix team know, so the answer can be added later.</p></div></details>
+      <details><summary>Is my information private?</summary><div><p>Your conversation is processed through ChatGPT's infrastructure. Read the <a href="privacy.html">Spirantix privacy policy</a> for details on how information is handled.</p></div></details>
+      <details><summary>Does it work when I am offline?</summary><div><p>Not yet. Offline mode is not available in this first release.</p></div></details>
+    </div>
+  </div>
+</section>
+<section class="section section-dark"><div class="narrow" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Still have a question</p><h2>We are glad to help</h2><p>For help with your Concierge account, use the contact form. General questions about Spirantix lessons, classes, and the website are on the <a href="faq.html">Questions page</a>.</p><a class="btn" href="contact.html?type=support">Contact support</a></div></section>`;
+
 const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap media-page-hero-grid">
     <div class="media-page-hero-copy">
@@ -526,7 +673,7 @@ const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap">
     <div class="callout agent-intro">
       <div class="icon" style="width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:var(--teal)" aria-hidden="true"><svg viewBox="0 0 100 100" width="86" height="86"><path d="M50 47 24 25M50 47 76 25M50 53 24 75M50 53 76 75" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="50" r="15" fill="#fff"/><circle cx="24" cy="25" r="9" fill="#8fe0c6"/><circle cx="76" cy="25" r="9" fill="#8fe0c6"/><circle cx="24" cy="75" r="9" fill="#8fe0c6"/><circle cx="76" cy="75" r="9" fill="#8fe0c6"/><circle cx="50" cy="50" r="6" fill="#2368a8"/></svg></div>
-      <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Spirantix Concierge</h2><p>Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p></div>
+      <div><p class="eyebrow" style="color:var(--mint)">In development</p><h2>Spirantix Concierge</h2><p>Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p><a class="text-link" href="support.html">Read the concierge guide</a></div>
     </div>
   </div>
 </section>
@@ -693,6 +840,7 @@ export const pages = [
   { path: 'safety.html', title: 'AI Safety and Scam Awareness for Seniors | Spirantix.ai', description: 'Practical steps for protecting personal information, recognizing scam warning signs, and using AI as a cautious second opinion.', active: 'safety', body: safetyBody },
   { path: 'resources.html', title: 'Helpful Websites, AI Tools, and Apps for Seniors | Spirantix.ai', description: 'A growing collection of helpful websites, practical AI tools, and useful apps, explained in plain language for older adults.', active: 'resources', body: resourcesBody },
   { path: 'products.html', title: 'Spirantix AI Products | One Concierge, Four Specialists', description: 'Meet the developing Spirantix concierge and specialist agents for memory, stories, authenticity, and family possessions.', active: 'products', body: productsBody },
+  { path: 'support.html', title: 'Spirantix Concierge Guide | How to Use, Prompts, and Questions', description: 'How to start with the Spirantix Concierge, example prompts you can copy and paste, and answers to common questions about this first release.', active: '', body: supportBody },
   { path: 'about.html', title: 'About Spirantix | AI Learning and Products for Seniors', description: 'Learn why Spirantix brings together plain-language AI education, practical safety guidance, community instruction, and thoughtful products.', active: 'about', body: aboutBody },
   { path: 'contact.html', title: 'Contact Spirantix | Support, Products, and Classes', description: 'Contact Spirantix about product support, early access, AI classes for senior communities, or another question.', active: '', body: contactBody },
   { path: 'faq.html', title: 'Spirantix Questions | Learning, Safety, and Products', description: 'Answers about Spirantix AI lessons, community sessions, safety guidance, privacy, and developing products.', active: '', body: faqBody },
