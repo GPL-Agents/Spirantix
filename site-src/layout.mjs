@@ -67,6 +67,7 @@ function footer(base) {
         <h2>Spirantix</h2>
         <div class="footer-links">
           <a href="${base}products.html">Products</a>
+          <a href="${base}support.html">Concierge Guide</a>
           <a href="${base}about.html">About</a>
           <a href="${base}faq.html">Questions</a>
         </div>
