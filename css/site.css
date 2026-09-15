@@ -573,6 +573,18 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); outline: 
 .form-status { min-height: 28px; margin-top: 18px; font-weight: 700; }
 .form-status.success { color: #11665e; }
 .form-status.error { color: #a52f0b; }
+.products-hero-actions { margin-top: 28px; }
+.early-access-form-shell {
+  width: min(100%, 620px);
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 40px);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.products-early-access input { min-height: 58px; font-size: 1rem; }
+.products-early-access .btn { width: 100%; margin-top: 8px; }
 
 .accordion { display: grid; gap: 14px; }
 details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; }

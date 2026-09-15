@@ -40,6 +40,8 @@ module.exports = async function handler(req, res) {
   const name    = (body.name    || '').toString().trim().slice(0, 200);
   const email   = (body.email   || '').toString().trim().slice(0, 200);
   const message = (body.message || '').toString().trim().slice(0, 4000);
+  const ageText = (body.age || '').toString().trim().slice(0, 3);
+  const age = Number(ageText);
 
   const inquiryLabels = {
     support: 'Product support',
@@ -47,6 +49,7 @@ module.exports = async function handler(req, res) {
     speaking: 'Class or speaking inquiry',
     donate: 'Donation or contribution inquiry',
     partner: 'Partnership or sponsorship inquiry',
+    early_access: 'BETA tester request',
     general: 'General question',
   };
   const inquiryType = inquiryLabels[body.inquiryType] ? body.inquiryType : 'general';
@@ -75,6 +78,9 @@ module.exports = async function handler(req, res) {
 
   if (!name)           return res.status(400).json({ ok: false, error: 'Name is required.' });
   if (!isEmail(email)) return res.status(400).json({ ok: false, error: 'A valid email is required.' });
+  if (inquiryType === 'early_access' && (!Number.isInteger(age) || age < 1 || age > 120)) {
+    return res.status(400).json({ ok: false, error: 'Please enter a valid age.' });
+  }
 
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
   const CONTACT_TO     = process.env.CONTACT_TO   || 'hello@spirantix.ai';
@@ -113,6 +119,7 @@ module.exports = async function handler(req, res) {
     <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px;">
       <tr><td><strong>Name</strong></td><td>${escapeHtml(name)}</td></tr>
       <tr><td><strong>Email</strong></td><td>${escapeHtml(email)}</td></tr>
+      ${inquiryType === 'early_access' ? `<tr><td><strong>Age</strong></td><td>${escapeHtml(ageText)}</td></tr>` : ''}
       <tr><td><strong>Inquiry type</strong></td><td>${escapeHtml(inquiryLabels[inquiryType])}</td></tr>
       ${detailRows}
       <tr><td valign="top"><strong>Message</strong></td><td>${escapeHtml(message).replace(/\n/g, '<br>') || '<em>(none)</em>'}</td></tr>
@@ -141,7 +148,7 @@ module.exports = async function handler(req, res) {
       return res.status(502).json({ ok: false, error: 'Mail service error. Please email hello@spirantix.ai directly.' });
     }
 
-    return res.status(200).json({ ok: true });
+    return res.status(200).json({ ok: true, eligible: inquiryType === 'early_access' ? age >= 65 : undefined });
   } catch (err) {
     console.error('contact: unexpected error', err);
     return res.status(500).json({ ok: false, error: 'Unexpected server error. Please email hello@spirantix.ai directly.' });

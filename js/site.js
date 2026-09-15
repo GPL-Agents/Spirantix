@@ -95,6 +95,45 @@
       }
     });
   }
+
+  const earlyAccessForm = document.querySelector('[data-early-access-form]');
+  if (earlyAccessForm) {
+    const GPT_LINK = '[GPT_LINK]';
+
+    earlyAccessForm.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const status = earlyAccessForm.querySelector('[data-form-status]');
+      const submit = earlyAccessForm.querySelector('button[type="submit"]');
+      status.className = 'form-status';
+      status.textContent = 'Sending your request...';
+      submit.disabled = true;
+
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(earlyAccessForm).entries()))
+        });
+        const result = await response.json().catch(function () { return {}; });
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.error || 'We could not send your request.');
+        }
+
+        earlyAccessForm.reset();
+        status.className = 'form-status success';
+        status.textContent = result.eligible
+          ? 'Thank you. You have been added to the BETA tester list.'
+          : 'Thank you. We received your request.';
+        void GPT_LINK;
+      } catch (error) {
+        status.className = 'form-status error';
+        status.textContent = error.message + ' You can also email hello@spirantix.ai.';
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  }
 })();
 
 (function () {
