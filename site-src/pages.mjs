@@ -192,13 +192,13 @@ const learnBody = `<section class="page-hero media-page-hero">
 </section>
 <section class="section">
   <div class="wrap">
-    <div class="section-heading"><p class="eyebrow">Available now</p><h2>Begin with the basics</h2><p>These first four lessons give you a practical foundation for using ChatGPT, Claude, and other AI assistants.</p></div>
+    <div class="section-heading"><p class="eyebrow">Available now</p><h2>Begin with the basics</h2><p>These lessons give you a practical foundation for using ChatGPT, Claude, and other AI assistants.</p></div>
     ${lessonCards(false)}
   </div>
 </section>
 <section class="section section-white">
   <div class="wrap">
-    <div class="section-heading"><p class="eyebrow">Coming next</p><h2>The complete introductory path</h2><p>Six more lessons will expand the library with search, Projects, agents, AI history, privacy, and scam awareness.</p></div>
+    <div class="section-heading"><p class="eyebrow">Coming next</p><h2>The complete introductory path</h2><p>Five more lessons will expand the library with search, Projects, agents, privacy, and scam awareness.</p></div>
     ${lessonCards('planned')}
   </div>
 </section>

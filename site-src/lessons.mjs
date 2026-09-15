@@ -11,8 +11,8 @@ function lessonHero(number, title, description, time) {
   </div></section>`;
 }
 
-function sourceNote(text) {
-  return `<div class="lesson-footer"><p><strong>Last reviewed:</strong> ${reviewed}</p><p>${text}</p><p>AI products change frequently. If a button or menu looks different, use the product’s Help area or official documentation for the newest instructions.</p></div>`;
+function sourceNote(text, date) {
+  return `<div class="lesson-footer"><p><strong>Last reviewed:</strong> ${date || reviewed}</p><p>${text}</p><p>AI products change frequently. If a button or menu looks different, use the product’s Help area or official documentation for the newest instructions.</p></div>`;
 }
 
 const whatIsAi = `${lessonHero(1, 'What AI is, and what it is not', 'A plain-language introduction to artificial intelligence, generative AI, and the limits that matter.', '7 minute read')}
@@ -192,11 +192,41 @@ const betterPrompts = `${lessonHero(4, 'How to ask AI a useful question', 'A sim
   ${sourceNote('This lesson follows the <a href="https://learn.chatgpt.com/docs/prompting" target="_blank" rel="noopener">official ChatGPT prompting framework</a>, adapted into a practical exercise for Spirantix learners.')}
 </div></article>`;
 
+const historyOfAi = `${lessonHero(8, 'How AI developed into generative AI', 'Follow the major steps that led from early AI systems to today’s tools.', '4 minute read')}
+<article class="lesson-shell"><div class="lesson-body">
+  <p>AI did not appear overnight. It grew slowly, over about sixty years. Today’s tools are built on old ideas that finally had enough information to work well.</p>
+  <p>Here is the short story.</p>
+
+  <h2>It started by counting words</h2>
+  <p>The first programs treated words as simple counts. They did not know what the words meant.</p>
+
+  <h2>Then they learned what words mean</h2>
+  <p>A big step came in 2013. Computers learned to turn words into numbers. Words with similar meaning ended up close together. A word like “doctor” could sit near “nurse.”</p>
+
+  <h2>Then they learned about context</h2>
+  <p>In 2017 came another big step. A computer could read a word by the words around it. So “bank” could mean a place for money, or the side of a river, depending on the sentence.</p>
+
+  <h2>Then they could create</h2>
+  <p>That led to the tools we use today, such as ChatGPT, Gemini, and Claude. They guess the next word, then the next, and build an answer one piece at a time. They seem smart because they learned patterns from an enormous amount of writing.</p>
+
+  <h2>What they are not</h2>
+  <p>They are not alive and not aware. They are prediction machines. They can sound very sure and still be wrong, so check anything that matters.</p>
+  <div class="notice"><strong>Remember:</strong> a confident answer is not proof that it is correct.</div>
+
+  <h2>What comes next</h2>
+  <p>The next step is tools that do more than answer. They can plan and take actions for you. That leaves a simple question for families: where is AI helpful, and where should a person stay in charge?</p>
+
+  <div class="try-box"><h2>Try this today</h2><p>Ask ChatGPT or Claude:</p><p><strong>“Explain how computers learned to write, in five short sentences, with one simple example.”</strong></p><p>Then ask: <strong>“What is one thing I should not trust you to do?”</strong></p></div>
+
+  ${sourceNote('Adapted from the FutureInSites article <a href="https://www.futureinsites.com/history-of-generative-ai" target="_blank" rel="noopener">History of Generative AI</a>, rewritten in plainer language for Spirantix learners.', 'September 15, 2026')}
+</div></article>`;
+
 const lessons = [
   { slug: 'what-is-ai', title: 'What AI Is, and What It Is Not | Spirantix.ai', description: 'A plain-language introduction to artificial intelligence, generative AI, and important limits.', body: whatIsAi },
   { slug: 'chatgpt-basics', title: 'Getting Started with ChatGPT | Spirantix.ai', description: 'A beginner-friendly guide to starting a ChatGPT conversation, using follow-up questions, checking answers, and protecting private information.', body: chatgptBasics },
   { slug: 'claude-basics', title: 'Getting Started with Claude | Spirantix.ai', description: 'A beginner-friendly guide to starting with Claude, refining answers, using documents carefully, and understanding Projects.', body: claudeBasics },
-  { slug: 'better-prompts', title: 'How to Write a Useful AI Prompt | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts }
+  { slug: 'better-prompts', title: 'How to Write a Useful AI Prompt | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts },
+  { slug: 'history-of-generative-ai', title: 'How AI Developed into Generative AI | Spirantix.ai', description: 'A short, plain-language story of how AI grew from counting words to writing and speaking, and what comes next.', datePublished: '2026-09-15', dateModified: '2026-09-15', body: historyOfAi }
 ];
 
 function articleSchema(lesson) {
@@ -205,8 +235,8 @@ function articleSchema(lesson) {
     '@type': 'Article',
     headline: lesson.title.replace(' | Spirantix.ai', ''),
     description: lesson.description,
-    datePublished: '2026-09-02',
-    dateModified: '2026-09-02',
+    datePublished: lesson.datePublished || '2026-09-02',
+    dateModified: lesson.dateModified || '2026-09-02',
     author: { '@type': 'Organization', name: 'Spirantix', url: 'https://spirantix.ai/' },
     publisher: { '@type': 'Organization', name: 'Spirantix', url: 'https://spirantix.ai/' },
     mainEntityOfPage: `https://spirantix.ai/learn/${lesson.slug}.html`

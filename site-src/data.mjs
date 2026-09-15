@@ -78,9 +78,11 @@ export const lessonIndex = [
   },
   {
     number: 8,
+    slug: 'history-of-generative-ai',
     title: 'How AI developed into generative AI',
     description: 'Follow the major steps that led from early AI systems to today’s tools.',
-    status: 'planned'
+    time: '4 minute read',
+    status: 'published'
   },
   {
     number: 9,
