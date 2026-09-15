@@ -510,21 +510,23 @@ ${seniorWebsitesSection}
 </section>`;
 
 const supportBody = `<section class="page-hero media-page-hero support-page-hero">
-    <div class="wrap media-page-hero-grid">
-      <div class="media-page-hero-copy">
-        <p class="eyebrow">Concierge Guide</p>
-        <h1>Get the most from your Spirantix Concierge</h1>
-        <p class="lede">Ask in your own words. Use these quick links to go directly to the help you need.</p>
-        <nav class="support-quick-links" aria-label="Concierge guide sections">
-          <a href="#how-to-use">How to use</a>
-          <a href="#prompts">Example prompts</a>
-          <a href="#support-faq">Common questions</a>
-          <a href="#contact-support">Contact support</a>
-        </nav>
+    <div class="wrap">
+      <div class="media-page-hero-grid">
+        <div class="media-page-hero-copy">
+          <p class="eyebrow">Concierge Guide</p>
+          <h1>Get the most from your Spirantix Concierge</h1>
+          <p class="lede">Ask in your own words. Use these quick links to go directly to the help you need.</p>
+        </div>
+        <div class="media-page-hero-image">
+          <img src="assets/caregiver-showing-senior-lady-tablet.jpg" alt="A woman helping an older adult use a tablet" width="800" height="533">
+        </div>
       </div>
-      <div class="media-page-hero-image">
-        <img src="assets/caregiver-showing-senior-lady-tablet.jpg" alt="A woman helping an older adult use a tablet" width="800" height="533">
-      </div>
+      <nav class="support-quick-links" aria-label="Concierge guide sections">
+        <a href="#how-to-use">How to use</a>
+        <a href="#prompts">Example prompts</a>
+        <a href="#support-faq">Common questions</a>
+        <a href="#contact-support">Contact support</a>
+      </nav>
     </div>
   </section>
 <section class="section section-white support-guide-section" id="how-to-use">
