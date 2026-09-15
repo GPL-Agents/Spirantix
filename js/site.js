@@ -99,6 +99,9 @@
   const earlyAccessForm = document.querySelector('[data-early-access-form]');
   if (earlyAccessForm) {
     const GPT_LINK = '[GPT_LINK]';
+    const successPanel = document.querySelector('[data-early-access-success]');
+    const successMessage = successPanel.querySelector('[data-early-access-message]');
+    const submitAnother = successPanel.querySelector('[data-submit-another]');
 
     earlyAccessForm.addEventListener('submit', async function (event) {
       event.preventDefault();
@@ -121,10 +124,13 @@
         }
 
         earlyAccessForm.reset();
-        status.className = 'form-status success';
-        status.textContent = result.eligible
-          ? 'Thank you. You have been added to the BETA tester list.'
-          : 'Thank you. We received your request.';
+        status.textContent = '';
+        successMessage.textContent = result.eligible
+          ? 'You have been added to the Spirantix Early Access Community.'
+          : 'We received your request. The Spirantix team will review it.';
+        earlyAccessForm.hidden = true;
+        successPanel.hidden = false;
+        successPanel.focus();
         void GPT_LINK;
       } catch (error) {
         status.className = 'form-status error';
@@ -132,6 +138,12 @@
       } finally {
         submit.disabled = false;
       }
+    });
+
+    submitAnother.addEventListener('click', function () {
+      successPanel.hidden = true;
+      earlyAccessForm.hidden = false;
+      earlyAccessForm.querySelector('[name="name"]').focus();
     });
   }
 })();

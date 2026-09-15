@@ -702,6 +702,12 @@ const productsBody = `<section class="page-hero media-page-hero">
         <button class="btn" type="submit">Submit my request</button>
         <div class="form-status" role="status" aria-live="polite" data-form-status></div>
       </form>
+      <div class="early-access-success" data-early-access-success hidden tabindex="-1">
+        <p class="eyebrow">Request received</p>
+        <h3>Thank you</h3>
+        <p data-early-access-message></p>
+        <button class="btn btn-secondary" type="button" data-submit-another>Submit another email</button>
+      </div>
     </div>
   </div>
 </section>

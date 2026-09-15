@@ -590,6 +590,10 @@ input:focus, select:focus, textarea:focus { border-color: var(--blue); outline: 
 }
 .products-early-access input { min-height: 58px; font-size: 1rem; }
 .products-early-access .btn { width: 100%; margin-top: 8px; }
+.early-access-success { min-height: 360px; align-content: center; text-align: center; }
+.early-access-success[hidden] { display: none; }
+.early-access-success h3 { margin-bottom: 14px; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+.early-access-success p:not(.eyebrow) { max-width: 480px; margin: 0 auto 24px; font-size: 1.1rem; }
 
 .accordion { display: grid; gap: 14px; }
 details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; }
