@@ -29,60 +29,60 @@ export const lessonIndex = [
   {
     number: 1,
     slug: 'what-is-ai',
-    title: 'What AI is, and what it is not',
+    title: 'What AI is',
     description: 'A plain-language introduction to artificial intelligence, generative AI, and the limits that matter.',
     time: '7 minute read',
     status: 'published'
   },
   {
     number: 2,
+    slug: 'history-of-generative-ai',
+    title: 'How AI got here',
+    description: 'Follow the major steps that led from early AI systems to today’s tools.',
+    time: '4 minute read',
+    status: 'published'
+  },
+  {
+    number: 3,
     slug: 'chatgpt-basics',
-    title: 'Getting started with ChatGPT',
+    title: 'ChatGPT basics',
     description: 'Begin a conversation, ask a useful question, and improve the answer one step at a time.',
     time: '8 minute read',
     status: 'published'
   },
   {
-    number: 3,
+    number: 4,
     slug: 'claude-basics',
-    title: 'Getting started with Claude',
+    title: 'Claude basics',
     description: 'Learn the basic conversation flow and where Claude can be especially helpful.',
     time: '8 minute read',
     status: 'published'
   },
   {
-    number: 4,
+    number: 5,
     slug: 'better-prompts',
-    title: 'How to ask AI a useful question',
+    title: 'Asking better questions',
     description: 'A simple four-part method for writing prompts that produce clearer, more useful answers.',
     time: '7 minute read',
     status: 'published'
   },
   {
-    number: 5,
+    number: 6,
     title: 'AI or a search engine: which should you use?',
     description: 'Choose the right tool when you need facts, ideas, comparisons, or current information.',
     status: 'planned'
   },
   {
-    number: 6,
+    number: 7,
     title: 'Keeping ongoing work together with Projects',
     description: 'Organize instructions, files, and conversations for a continuing task.',
     status: 'planned'
   },
   {
-    number: 7,
+    number: 8,
     title: 'What an AI agent is',
     description: 'Understand how an agent differs from a normal chatbot and what it can do on your behalf.',
     status: 'planned'
-  },
-  {
-    number: 8,
-    slug: 'history-of-generative-ai',
-    title: 'How AI developed into generative AI',
-    description: 'Follow the major steps that led from early AI systems to today’s tools.',
-    time: '4 minute read',
-    status: 'published'
   },
   {
     number: 9,

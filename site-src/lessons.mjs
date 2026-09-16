@@ -15,10 +15,17 @@ function sourceNote(text, date) {
   return `<div class="lesson-footer"><p><strong>Last reviewed:</strong> ${date || reviewed}</p><p>${text}</p><p>AI products change frequently. If a button or menu looks different, use the product’s Help area or official documentation for the newest instructions.</p></div>`;
 }
 
-const whatIsAi = `${lessonHero(1, 'What AI is, and what it is not', 'A plain-language introduction to artificial intelligence, generative AI, and the limits that matter.', '7 minute read')}
+const whatIsAi = `${lessonHero(1, 'What AI is', 'A plain-language introduction to artificial intelligence, generative AI, and the limits that matter.', '7 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>Artificial intelligence is a broad name for computer systems that perform tasks we normally associate with human abilities. Those tasks can include recognizing speech, identifying objects in a photograph, recommending a route, translating a sentence, or finding patterns in a large collection of information.</p>
   <p>AI is not one machine or one kind of program. It is a collection of methods that has developed over many decades.</p>
+
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the practical AI example">
+      <img src="../assets/lesson-ai-plain-language.png" alt="People reviewing an AI-created briefing that organizes priorities, risks, opportunities, and customer feedback" width="1672" height="941" loading="eager">
+    </button>
+    <figcaption>AI is most useful when it helps people organize information, see patterns, and prepare a first draft. People still make the decisions.</figcaption>
+  </figure>
 
   <h2>What makes generative AI different?</h2>
   <p>Many familiar AI systems sort, predict, or recommend. Generative AI creates something new in response to a request. It can produce text, images, audio, computer code, summaries, and other material.</p>
@@ -39,6 +46,13 @@ const whatIsAi = `${lessonHero(1, 'What AI is, and what it is not', 'A plain-lan
     <li>Helping you think of questions to ask a professional</li>
   </ul>
 
+  <div class="lesson-visual-grid" aria-label="A simple guide to common AI tasks">
+    <div><span aria-hidden="true">💬</span><strong>Explain</strong><p>Turn a difficult idea into plain language.</p></div>
+    <div><span aria-hidden="true">📝</span><strong>Draft</strong><p>Create a first version you can revise.</p></div>
+    <div><span aria-hidden="true">🧩</span><strong>Organize</strong><p>Sort notes, choices, or steps into order.</p></div>
+    <div><span aria-hidden="true">🔎</span><strong>Compare</strong><p>Lay out options using details you provide.</p></div>
+  </div>
+
   <h2>What needs extra care</h2>
   <ul>
     <li><strong>Current facts:</strong> schedules, prices, laws, product features, and public roles can change.</li>
@@ -51,12 +65,14 @@ const whatIsAi = `${lessonHero(1, 'What AI is, and what it is not', 'A plain-lan
   <p>A useful way to approach AI is as a patient assistant that can help you explore, draft, and organize. Give it a clear task, review what it produces, and ask follow-up questions. When the answer matters, check it against a trustworthy source.</p>
   <p>You remain responsible for deciding what to believe, share, or act on.</p>
 
+  <details class="lesson-check"><summary>Quick check: Which task is safest to give AI?</summary><div><p><strong>A good choice:</strong> asking for a first draft of a birthday invitation that you will review.</p><p><strong>Use extra care:</strong> asking AI to make a final medical, legal, or financial decision for you.</p></div></details>
+
   <div class="try-box"><h2>Try this today</h2><p>Open ChatGPT or Claude and ask:</p><p><strong>“Explain generative AI in five short sentences. Use one everyday example and avoid technical terms.”</strong></p><p>Then follow up with: <strong>“What is one important limitation I should remember?”</strong></p></div>
 
   ${sourceNote('Part of the free Spirantix AI learning series.')}
 </div></article>`;
 
-const chatgptBasics = `${lessonHero(2, 'Getting started with ChatGPT', 'Begin a conversation, ask a useful question, and improve the answer one step at a time.', '8 minute read')}
+const chatgptBasics = `${lessonHero(3, 'ChatGPT basics', 'Begin a conversation, ask a useful question, and improve the answer one step at a time.', '8 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>ChatGPT is an AI assistant from OpenAI. You can use it for explanations, planning, writing, brainstorming, and many other tasks through an ordinary conversation.</p>
   <p>You do not need special commands. Begin in your own words.</p>
@@ -102,7 +118,7 @@ const chatgptBasics = `${lessonHero(2, 'Getting started with ChatGPT', 'Begin a 
   ${sourceNote('Instructions were checked against the <a href="https://learn.chatgpt.com/docs/use-chatgpt" target="_blank" rel="noopener">official ChatGPT getting-started guide</a> and <a href="https://learn.chatgpt.com/docs/prompting" target="_blank" rel="noopener">official prompting guidance</a>.')}
 </div></article>`;
 
-const claudeBasics = `${lessonHero(3, 'Getting started with Claude', 'Learn the basic conversation flow and where Claude can be especially helpful.', '8 minute read')}
+const claudeBasics = `${lessonHero(4, 'Claude basics', 'Learn the basic conversation flow and where Claude can be especially helpful.', '8 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>Claude is an AI assistant from Anthropic. Like ChatGPT, it can explain, draft, compare, organize, and work through a task with you in a conversation.</p>
   <p>Claude is available on the web and through official desktop and mobile applications. Features and limits can differ by account and plan.</p>
@@ -147,7 +163,7 @@ const claudeBasics = `${lessonHero(3, 'Getting started with Claude', 'Learn the 
   ${sourceNote('Instructions were checked against Anthropic’s <a href="https://support.claude.com/en/articles/8114491-get-started-with-claude" target="_blank" rel="noopener">official guide to getting started with Claude</a> and <a href="https://support.claude.com/en/articles/9517075-what-are-projects" target="_blank" rel="noopener">official Projects explanation</a>.')}
 </div></article>`;
 
-const betterPrompts = `${lessonHero(4, 'How to ask AI a useful question', 'A simple four-part method for writing prompts that produce clearer, more useful answers.', '7 minute read')}
+const betterPrompts = `${lessonHero(5, 'Asking better questions', 'A simple four-part method for writing prompts that produce clearer, more useful answers.', '7 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>A prompt is simply what you ask an AI assistant to do. It can be one sentence or several paragraphs. You do not need a secret vocabulary or a perfect formula.</p>
   <p>Start with your own words. When the task matters or the first answer is not useful enough, add four kinds of information.</p>
@@ -192,7 +208,7 @@ const betterPrompts = `${lessonHero(4, 'How to ask AI a useful question', 'A sim
   ${sourceNote('This lesson follows the <a href="https://learn.chatgpt.com/docs/prompting" target="_blank" rel="noopener">official ChatGPT prompting framework</a>, adapted into a practical exercise for Spirantix learners.')}
 </div></article>`;
 
-const historyOfAi = `${lessonHero(8, 'How AI developed into generative AI', 'Follow the major steps that led from early AI systems to today’s tools.', '4 minute read')}
+const historyOfAi = `${lessonHero(2, 'How AI got here', 'Follow the major steps that led from early AI systems to today’s tools.', '4 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>AI did not appear overnight. It grew slowly, over about sixty years. Today’s tools are built on old ideas that finally had enough information to work well.</p>
   <p>Here is the short story.</p>
@@ -206,12 +222,20 @@ const historyOfAi = `${lessonHero(8, 'How AI developed into generative AI', 'Fol
   <h2>Then they learned about context</h2>
   <p>In 2017 came another big step. A computer could read a word by the words around it. So “bank” could mean a place for money, or the side of a river, depending on the sentence.</p>
 
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the detailed road to generative AI chart">
+      <img src="../assets/lesson-road-to-generative-ai.png" alt="Detailed chart showing five stages on the road to generative AI, with examples and real-world applications" width="1183" height="1000" loading="lazy">
+    </button>
+    <figcaption>This chart shows the five connected stages and familiar examples from each one. Select it to enlarge and explore.</figcaption>
+  </figure>
+
   <h2>Then they could create</h2>
   <p>That led to the tools we use today, such as ChatGPT, Gemini, and Claude. They guess the next word, then the next, and build an answer one piece at a time. They seem smart because they learned patterns from an enormous amount of writing.</p>
 
   <h2>What they are not</h2>
-  <p>They are not alive and not aware. They are prediction machines. They can sound very sure and still be wrong, so check anything that matters.</p>
-  <div class="notice"><strong>Remember:</strong> a confident answer is not proof that it is correct.</div>
+  <p>They are not alive and not aware. They build responses from learned patterns, so check anything that matters.</p>
+
+  <details class="lesson-check"><summary>Try the “bank” test</summary><div><p>Which meaning of <strong>bank</strong> fits each sentence?</p><ol><li>“We sat on the bank and watched the river.”</li><li>“I called the bank about my account.”</li></ol><p>An AI system uses the surrounding words to choose between the riverbank and the financial institution. That ability to use context was a major step toward today’s assistants.</p></div></details>
 
   <h2>What comes next</h2>
   <p>The next step is tools that do more than answer. They can plan and take actions for you. That leaves a simple question for families: where is AI helpful, and where should a person stay in charge?</p>
@@ -222,11 +246,11 @@ const historyOfAi = `${lessonHero(8, 'How AI developed into generative AI', 'Fol
 </div></article>`;
 
 const lessons = [
-  { slug: 'what-is-ai', title: 'What AI Is, and What It Is Not | Spirantix.ai', description: 'A plain-language introduction to artificial intelligence, generative AI, and important limits.', body: whatIsAi },
-  { slug: 'chatgpt-basics', title: 'Getting Started with ChatGPT | Spirantix.ai', description: 'A beginner-friendly guide to starting a ChatGPT conversation, using follow-up questions, checking answers, and protecting private information.', body: chatgptBasics },
-  { slug: 'claude-basics', title: 'Getting Started with Claude | Spirantix.ai', description: 'A beginner-friendly guide to starting with Claude, refining answers, using documents carefully, and understanding Projects.', body: claudeBasics },
-  { slug: 'better-prompts', title: 'How to Write a Useful AI Prompt | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts },
-  { slug: 'history-of-generative-ai', title: 'How AI Developed into Generative AI | Spirantix.ai', description: 'A short, plain-language story of how AI grew from counting words to writing and speaking, and what comes next.', datePublished: '2026-09-15', dateModified: '2026-09-15', body: historyOfAi }
+  { slug: 'what-is-ai', title: 'What AI Is | Spirantix.ai', description: 'A plain-language introduction to artificial intelligence, generative AI, and important limits.', body: whatIsAi },
+  { slug: 'history-of-generative-ai', title: 'How AI Got Here | Spirantix.ai', description: 'A short, plain-language story of how AI grew from counting words to writing and speaking, and what comes next.', datePublished: '2026-09-15', dateModified: '2026-09-16', body: historyOfAi },
+  { slug: 'chatgpt-basics', title: 'ChatGPT Basics | Spirantix.ai', description: 'A beginner-friendly guide to starting a ChatGPT conversation, using follow-up questions, checking answers, and protecting private information.', body: chatgptBasics },
+  { slug: 'claude-basics', title: 'Claude Basics | Spirantix.ai', description: 'A beginner-friendly guide to starting with Claude, refining answers, using documents carefully, and understanding Projects.', body: claudeBasics },
+  { slug: 'better-prompts', title: 'Asking Better Questions | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts }
 ];
 
 function articleSchema(lesson) {

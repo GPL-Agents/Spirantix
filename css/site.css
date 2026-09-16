@@ -396,6 +396,21 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .lesson-body p, .lesson-body li { color: #303a53; }
 .lesson-body li { margin-bottom: 10px; }
 .lesson-body img { margin: 32px auto 12px; border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.lesson-figure { margin: 34px 0; }
+.lesson-figure-wide { width: min(1040px, calc(100vw - 40px)); margin-left: 50%; transform: translateX(-50%); }
+.lesson-image-trigger { display: block; width: 100%; padding: 0; border: 0; border-radius: var(--radius); background: #fff; cursor: zoom-in; box-shadow: var(--shadow); }
+.lesson-image-trigger img { display: block; width: 100%; height: auto; margin: 0; border-radius: var(--radius); }
+.lesson-image-trigger:focus-visible { outline: 4px solid var(--orange); outline-offset: 4px; }
+.lesson-figure figcaption { max-width: 820px; margin: 12px auto 0; color: var(--ink-soft); font-size: 0.92rem; text-align: center; }
+.lesson-visual-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 28px 0 10px; }
+.lesson-visual-grid > div { padding: 22px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--teal-soft); }
+.lesson-visual-grid span { display: block; margin-bottom: 8px; font-size: 2rem; }
+.lesson-visual-grid strong { display: block; color: var(--navy); font-size: 1.1rem; }
+.lesson-visual-grid p { margin: 6px 0 0; }
+.lesson-check { margin: 34px 0; border: 2px solid var(--teal); background: #fff; }
+.lesson-check summary { font-size: 1.05rem; }
+.lesson-check[open] summary { border-bottom: 1px solid var(--line); background: var(--teal-soft); }
+.lesson-check > div { padding-top: 20px; }
 .lesson-body.privacy-body { width: 100%; max-width: none; margin-inline: 0; }
 .figure-caption { color: var(--ink-soft); font-size: 0.84rem; text-align: center; }
 .origin-story { overflow: hidden; }
@@ -671,6 +686,7 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   .safety-response-heading { grid-template-columns: 60px 1fr; gap: 18px; }
   .real-story-card { grid-template-columns: 1fr; }
   .story-figure { float: none; width: min(320px, 100%); margin: 24px auto; }
+  .lesson-visual-grid { grid-template-columns: 1fr; }
   .real-story-image img { min-height: 0; aspect-ratio: 16 / 9; }
   .real-story-copy { padding: 28px 22px; }
   .concierge-callout { grid-template-columns: 92px 1fr; gap: 20px; padding: 24px; }
