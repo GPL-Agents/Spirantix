@@ -1,0 +1,75 @@
+From 2126ced12e5e4b122c68c51561d413b11f5f928b Mon Sep 17 00:00:00 2001
+From: FutureInSites <gloeff@yahoo.com>
+Date: Wed, 16 Sep 2026 07:07:09 -0400
+Subject: [PATCH 1/2] Add memory and story demo prompts
+
+---
+ site-src/pages.mjs | 31 ++++++++++++++++++++-----------
+ support.html       |  9 +++++++++
+ 2 files changed, 29 insertions(+), 11 deletions(-)
+
+diff --git a/site-src/pages.mjs b/site-src/pages.mjs
+index 60b8fbd..5fe633b 100644
+--- a/site-src/pages.mjs
++++ b/site-src/pages.mjs
+@@ -602,17 +602,26 @@ const supportBody = `<section class="page-hero media-page-hero support-page-hero
+           <li>"What did we do last Thanksgiving?"</li>
+         </ul>
+       </div>
+-      <div class="card">
+-        <h3>Remember an item</h3>
+-        <ul style="padding-left:1.2em;margin:0">
+-          <li>"Keep track of this watch. My grandmother gave it to me."</li>
+-          <li>"What did my grandfather own?"</li>
+-          <li>"What do you know about the wooden clock?"</li>
+-          <li>"Add my grandmother's ring to my list."</li>
+-        </ul>
+-      </div>
+-      <div class="card">
+-        <h3>Set a reminder</h3>
++      <div class="card">
++        <h3>Remember an item</h3>
++        <ul style="padding-left:1.2em;margin:0">
++          <li>"Keep track of this watch. My grandmother gave it to me."</li>
++          <li>"What did my grandfather own?"</li>
++          <li>"What do you know about the wooden clock?"</li>
++          <li>"Add my grandmother's ring to my list."</li>
++        </ul>
++      </div>
++      <div class="card">
++        <h3>Capture a memory or story</h3>
++        <ul style="padding-left:1.2em;margin:0">
++          <li>"Remember that Sophie learned to ride her bike at the lake."</li>
++          <li>"Save the story of how we met."</li>
++          <li>"What stories have I told you about our trip to Maine?"</li>
++          <li>"Add a note that this recipe came from Aunt Rosa."</li>
++        </ul>
++      </div>
++      <div class="card">
++        <h3>Set a reminder</h3>
+         <ul style="padding-left:1.2em;margin:0">
+           <li>"Remind me to take my pills at eight tonight."</li>
+           <li>"Remind me to call my brother tomorrow morning."</li>
+diff --git a/support.html b/support.html
+index d1fdb0e..8881dd9 100644
+--- a/support.html
++++ b/support.html
+@@ -159,6 +159,15 @@
+           <li>"Add my grandmother's ring to my list."</li>
+         </ul>
+       </div>
++      <div class="card">
++        <h3>Capture a memory or story</h3>
++        <ul style="padding-left:1.2em;margin:0">
++          <li>"Remember that Sophie learned to ride her bike at the lake."</li>
++          <li>"Save the story of how we met."</li>
++          <li>"What stories have I told you about our trip to Maine?"</li>
++          <li>"Add a note that this recipe came from Aunt Rosa."</li>
++        </ul>
++      </div>
+       <div class="card">
+         <h3>Set a reminder</h3>
+         <ul style="padding-left:1.2em;margin:0">
+-- 
+2.55.0.windows.5
+
