@@ -20,31 +20,16 @@ const whatIsAi = `${lessonHero(1, 'What AI is', 'A plain-language introduction t
   <p>Artificial intelligence is a broad name for computer systems that perform tasks we normally associate with human abilities. Those tasks can include recognizing speech, identifying objects in a photograph, recommending a route, translating a sentence, or finding patterns in a large collection of information.</p>
   <p>AI is not one machine or one kind of program. It is a collection of methods that has developed over many decades.</p>
 
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the everyday AI diagram">
+      <img src="../assets/lesson-what-ai-does.svg" alt="Diagram showing five everyday kinds of AI: recognizing speech, identifying objects, recommending a route, translating language, and finding patterns. It also shows that generative AI uses learned patterns to create new text, images, and audio." width="1400" height="820" loading="eager">
+    </button>
+    <figcaption>AI is a family of tools that work with patterns. Generative AI is the part of that family that creates new material.</figcaption>
+  </figure>
+
   <h2>What makes generative AI different?</h2>
   <p>Many familiar AI systems sort, predict, or recommend. Generative AI creates something new in response to a request. It can produce text, images, audio, computer code, summaries, and other material.</p>
   <p>ChatGPT and Claude are examples of generative AI assistants. You communicate with them by typing or speaking a <strong>prompt</strong>, which is simply your question or instruction.</p>
-
-  <div class="ai-compare" aria-label="Comparison of familiar AI and generative AI">
-    <section>
-      <p class="ai-compare-label">Familiar AI</p>
-      <h3>Chooses from what already exists</h3>
-      <ul>
-        <li>Recommends a movie</li>
-        <li>Recognizes a face in a photo</li>
-        <li>Suggests the fastest route</li>
-      </ul>
-    </section>
-    <section class="ai-compare-generative">
-      <p class="ai-compare-label">Generative AI</p>
-      <h3>Creates something new for you</h3>
-      <ul>
-        <li>Drafts a letter</li>
-        <li>Makes an image</li>
-        <li>Summarizes your notes</li>
-      </ul>
-    </section>
-    <p class="ai-compare-shared"><strong>Both learn patterns from many examples.</strong> Neither automatically knows whether every result is correct.</p>
-  </div>
 
   <h2>How can it answer so many questions?</h2>
   <p>A large language model learns patterns from enormous amounts of text and other material. When it responds, it predicts a useful sequence of words based on your prompt and the patterns learned during training.</p>
@@ -237,13 +222,12 @@ const historyOfAi = `${lessonHero(2, 'How AI got here', 'Follow the major steps 
   <h2>Then they learned about context</h2>
   <p>In 2017 came another big step. A computer could read a word by the words around it. So “bank” could mean a place for money, or the side of a river, depending on the sentence.</p>
 
-  <div class="ai-timeline" aria-label="Five steps in the development of generative AI">
-    <div><span>1</span><strong>Count</strong><p>Words were treated as simple totals.</p></div>
-    <div><span>2</span><strong>Weigh</strong><p>Important words received more attention.</p></div>
-    <div><span>3</span><strong>Connect</strong><p>Words with similar meanings were grouped.</p></div>
-    <div><span>4</span><strong>Use context</strong><p>Surrounding words helped determine meaning.</p></div>
-    <div><span>5</span><strong>Create</strong><p>Systems began producing new text and images.</p></div>
-  </div>
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the detailed road to generative AI chart">
+      <img src="../assets/lesson-road-to-generative-ai.png" alt="Detailed chart showing five stages on the road to generative AI, with examples and real-world applications" width="1183" height="1000" loading="lazy">
+    </button>
+    <figcaption>This chart shows the five connected stages and familiar examples from each one. Select it to enlarge and explore.</figcaption>
+  </figure>
 
   <h2>Then they could create</h2>
   <p>That led to the tools we use today, such as ChatGPT, Gemini, and Claude. They guess the next word, then the next, and build an answer one piece at a time. They seem smart because they learned patterns from an enormous amount of writing.</p>
