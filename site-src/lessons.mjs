@@ -20,12 +20,25 @@ const whatIsAi = `${lessonHero(1, 'What AI is', 'A plain-language introduction t
   <p>Artificial intelligence is a broad name for computer systems that perform tasks we normally associate with human abilities. Those tasks can include recognizing speech, identifying objects in a photograph, recommending a route, translating a sentence, or finding patterns in a large collection of information.</p>
   <p>AI is not one machine or one kind of program. It is a collection of methods that has developed over many decades.</p>
 
-  <figure class="lesson-figure lesson-figure-wide">
-    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the practical AI example">
-      <img src="../assets/lesson-ai-plain-language.png" alt="People reviewing an AI-created briefing that organizes priorities, risks, opportunities, and customer feedback" width="1672" height="941" loading="eager">
-    </button>
-    <figcaption>AI is most useful when it helps people organize information, see patterns, and prepare a first draft. People still make the decisions.</figcaption>
-  </figure>
+  <div class="ai-process" role="img" aria-label="You give AI a request, AI uses learned patterns to make a response, and you review the response before using it">
+    <div class="ai-process-step">
+      <span class="ai-process-number">1</span>
+      <strong>You ask</strong>
+      <p>“Make this letter friendlier.”</p>
+    </div>
+    <span class="ai-process-arrow" aria-hidden="true">→</span>
+    <div class="ai-process-step">
+      <span class="ai-process-number">2</span>
+      <strong>AI uses patterns</strong>
+      <p>It predicts words that fit your request.</p>
+    </div>
+    <span class="ai-process-arrow" aria-hidden="true">→</span>
+    <div class="ai-process-step ai-process-review">
+      <span class="ai-process-number">3</span>
+      <strong>You review</strong>
+      <p>Check the draft before you use or share it.</p>
+    </div>
+  </div>
 
   <h2>What makes generative AI different?</h2>
   <p>Many familiar AI systems sort, predict, or recommend. Generative AI creates something new in response to a request. It can produce text, images, audio, computer code, summaries, and other material.</p>
