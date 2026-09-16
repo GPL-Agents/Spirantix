@@ -1,0 +1,135 @@
+Create a polished introduction to Spirantix.ai using only the supplied media files and the exact narration in 01-USE-THIS-SCRIPT-V3-PLAIN-TEXT.txt.
+
+NONNEGOTIABLE AUDIO RULE
+
+The script field contains the complete approved spoken script. Use it verbatim. Never narrate production directions, scene descriptions, filenames, captions, or on-screen text. Do not add, rewrite, paraphrase, summarize, shorten, or repeat narration. Do not introduce come-as-you-are language or claims that the programs are designed with seniors, not just for them.
+
+VOICES
+
+Use Will as the single narrator for the entire video. Do not use Mike Mercer or Adam. Do not use any voice described as youthful, young, energetic, neutral-commercial, announcer-like, or promotional. Do not switch voices during the video.
+
+Will should sound warm, mature, grounded, thoughtful, and natural, with clear American English. The delivery should be calm and conversational, suitable for an audience of adults age 70 and older. Avoid exaggerated enthusiasm, theatrical emotion, a sales-pitch tone, or a synthetic cadence.
+
+If Will is unavailable, stop and request approval for a different mature voice. Do not automatically substitute Mike Mercer, Adam, or another voice.
+
+Read at the natural measured pace used in the approved 2 minute 11 second version. Leave short natural pauses between paragraphs. Keep music at least 18 decibels below speech.
+
+BRAND CONTROL
+
+Follow the color values and design rules written below exactly.
+Use 03-LOGO-PRIMARY.png on pale backgrounds.
+Use 04-LOGO-REVERSED.png on navy backgrounds.
+Use 06-FINAL-TITLE-CARD.png for the final frame.
+Never generate or approximate a new logo.
+Never use brown, orange, gold, beige, purple, neon, or metallic colors in generated slide designs.
+
+MANDATORY SLIDE DESIGN SYSTEM
+
+Every designed slide must use only these Spirantix colors:
+
+Navy #1F2A44 for primary text and dark backgrounds.
+Teal #2BAE9E for primary accents.
+Mint #8FE0C6 for secondary accents on navy.
+Blue #2368A8 for secondary accents.
+Off-white #F7FAFA and white #FFFFFF for most backgrounds.
+Soft teal #E4F5F2 and soft blue #E9F2FA for occasional panels.
+Do not use orange in generated backgrounds, text, rules, icons, borders, overlays, transitions, or accents.
+
+Use only off-white #F7FAFA, white #FFFFFF, or navy #1F2A44 for every designed background. Use navy for headings and teal #2BAE9E, mint #8FE0C6, or blue #2368A8 for short accents. Use one accent color per slide.
+
+Do not derive, sample, extract, or infer a color palette from photographs, furniture, skin tones, wood surfaces, clothing, the brochure, or other uploaded media. Natural brown or orange objects may remain inside photographs, but those colors must never be carried into the slide design. Ignore all automatic template colors and media-matched color suggestions.
+
+Forbidden slide-design colors include orange, rust, terracotta, maroon, burgundy, brown, mustard, gold, tan, cream, beige, purple, and neon colors. Do not use dark brown or orange panels, orange text, yellow or gold text, warm gradient overlays, sepia effects, or warm-toned templates. Do not use the Sorelle visual style or any serif editorial template.
+
+COLOR PRIORITY OVERRIDE
+
+These color rules override every template default, automatic design choice, stock-media palette, uploaded-image palette, and brochure color. If a selected Lumen5 theme introduces brown or orange, replace that theme before rendering. The finished graphic design must read visually as navy, teal, mint, blue, white, and off-white only.
+
+Use Poppins for all designed text. If Poppins is unavailable, use Segoe UI or Arial. Never use a serif font, decorative font, handwritten font, or high-fashion editorial typography.
+
+LAYOUT RULES
+
+Match the Spirantix website: large clean sans-serif headings, generous whitespace, rounded cards, restrained teal and blue accents, and high contrast. Keep text blocks short. Do not place a full narration sentence on screen. Use no more than eight words of designed text per slide.
+
+LOGO AND WORDMARK PROTECTION
+
+Treat every supplied logo file as a fixed graphic. Display it using contain fit, never cover fit. Keep the complete graphic visible with at least 10 percent empty space on all four sides. Never crop, zoom, pan, blur, soften, recolor, redraw, stretch, rotate, mask, place behind another element, or animate individual parts of the logo. Do not apply depth of field, motion blur, glow, shadows, or image enhancement to a logo file. Logos must remain sharp and stationary. Use each logo at its native aspect ratio. Use the full logo lockup only on a clean white, off-white, or navy field.
+
+Limit logo and wordmark appearances to three intentional placements: the opening, one brief transition if needed, and the closing title card. Do not place the logo or wordmark in the middle of ordinary photo or video scenes. Do not use it as a watermark, decorative motif, background texture, corner bug, or repeated slide element. The optional transition may use 05-BRAND-MARK.png for no more than two seconds on a solid navy or off-white background. The full wordmark should appear at the opening and closing, not throughout the video.
+
+VISUAL ASSETS
+
+Files 07 through 17 and 20 through 22 are approved Spirantix website images. Files 23 through 26 are newly created, original senior-learning photographs and should be prioritized to prevent repetition. Spirantix-Brochure-Inside-DosDonts_4.png is a user-approved brochure image. Do not alter faces, hands, screens, documents, or the Spirantix logo.
+
+Only supplied image files 03 through 17, 20 through 26, and Spirantix-Brochure-Inside-DosDonts_4.png may appear visually in the finished video. The instruction and script text files are not visual media. Never show, animate, pan across, crop, or use an image of brand guidelines, color swatches, palettes, written instructions, filenames, prompt text, script pages, or document screenshots as a scene or background. The approved brochure is content, not a brand-guideline image. Its small orange details must not be sampled, expanded, repeated, or used to establish the video palette. Brand-reference material controls the styling but is not video content.
+
+Select four to six suitable stock video clips from the Lumen5 media library to add natural motion and reduce repeated still imagery. Each stock clip should run approximately four to eight seconds. Favor steady, documentary-style footage with natural movement and realistic lighting.
+
+Required stock-video subjects:
+
+1. An older woman who visibly appears at least 70 years old learning independently at home while using a tablet or laptop.
+2. An older man who visibly appears at least 70 years old learning independently while using a computer, tablet, or smartphone.
+3. A small, diverse group of adults who visibly appear at least 70 years old participating in a technology class, workshop, library program, or community learning session.
+4. Two or more adults who visibly appear at least 70 years old discussing or practicing technology together in a real home, classroom, library, or community room.
+5. Optional: an older adult who visibly appears at least 70 years old reviewing a suspicious message carefully before acting.
+6. Optional: a senior who visibly appears at least 70 years old learning with an adult child, grandchild, caregiver, or instructor.
+
+Useful media-library search phrases include: senior woman learning tablet at home, elderly man learning computer, seniors technology class, older adults digital skills workshop, senior community computer class, elderly friends using tablet, and senior checking phone message.
+
+Every stock video must show a complete, believable environment such as a home, classroom, library, community room, or family setting. Never use a person isolated against a blank, transparent, studio, gradient, or solid-color background. Never use floating people, cutout people, portrait stickers, silhouette people, or people composited over a graphic slide.
+
+Any adult presented as a senior must visibly appear to be at least 70 years old. Younger people may appear only when they are clearly children, grandchildren, family members, caregivers, instructors, or community staff interacting naturally with an older adult. Do not use generic footage of adults in their forties, fifties, or early sixties as substitutes for seniors. Favor natural expressions, realistic homes and community spaces, and respectful everyday clothing.
+
+EDIT PLAN
+
+0 to 12 seconds
+Open on 03-LOGO-PRIMARY.png over #F7FAFA for four to five seconds. Keep the logo completely visible and stationary. Dissolve to 07-grandfather-grandson-learning.webp. Show this exact text without quotation marks: Understand AI. Use it with confidence. Stay safe.
+
+12 to 30 seconds
+Use 23-new-senior-woman-learning-laptop.png, then a short stock video of a woman who visibly appears at least 70 years old learning independently at home. Briefly blend into 15-senior-learning-with-family.jpg. Show this exact text without quotation marks: AI education and tools for seniors
+
+30 to 48 seconds
+Use 24-new-senior-man-learning-tablet.png, then a short stock video of a man who visibly appears at least 70 years old learning independently. Blend into 17-senior-using-smartphone.png. Use a restrained website-style card. Show this exact text without quotation marks: Learn. Practice. Ask questions.
+
+48 to 67 seconds
+Use 25-new-senior-group-technology-class.png and 26-new-senior-friends-learning-tablet.png, with a short stock video of a diverse group of adults who visibly appear at least 70 years old participating in a technology class. No additional designed text is required in this section.
+
+67 to 83 seconds
+Use 11-staying-safe.png, 17-senior-using-smartphone.png, and, if available, a short stock video of an adult who visibly appears at least 70 years old carefully reviewing a phone message in a real home setting. Show this exact text without quotation marks: Pause. Check. Protect.
+
+83 to 101 seconds
+Use a different stock video of adults who visibly appear at least 70 years old participating in a friendly group class, library program, or community learning session. Blend into 25-new-senior-group-technology-class.png and 09-senior-class.png. Show this exact text without quotation marks: Learning for your community
+
+101 to 118 seconds
+Use a varied sequence selected from 12-capsa-tablet.webp, 13-emery-tablet.webp, 14-three-generations.webp, 20-family-photo-album.webp, 21-memory-support-phone.webp, and 22-family-authenticity.webp. Do not show the same image twice in this section. Show this exact primary text without quotation marks: Tools designed around real lives
+Show this exact smaller label without quotation marks: Products in development
+
+118 to 124 seconds
+Use 16-three-generations-family-story.png, 14-three-generations.webp, and 20-family-photo-album.webp in a gentle family-legacy sequence. Show this exact text without quotation marks: Understandable. Useful. Human.
+
+124 to 131 seconds
+Hold 06-FINAL-TITLE-CARD.png through the final frame. Keep the entire title card sharp, stationary, and uncropped.
+
+ON-SCREEN TEXT RULES
+
+On-screen text is visual only and must never be added to the narration.
+Use Poppins or Segoe UI, large white or navy type, high contrast, and generous spacing.
+Keep text within the center 80 percent safe area.
+Use no more than eight words on screen at one time.
+Include accurate closed captions at the bottom, separate from designed on-screen text.
+Use sentence case exactly as written in the edit plan. Preserve the capitalization of AI and Spirantix.ai. Do not change approved phrases to title case or all caps.
+Do not display opening or closing quotation marks around any headline, slogan, label, or approved phrase. Quotation marks in the narration indicate a named phrase, but they are not part of the on-screen design.
+Do not invent additional headlines, labels, slogans, calls to action, or capitalization variants. The only designed on-screen text permitted is the exact text listed in the edit plan and text already embedded in the supplied logo and final title-card files.
+
+STYLE
+
+Warm documentary tone, soft natural light, clean editorial composition, slow dissolves, restrained movement, and no rapid cuts. The audience includes seniors, board members, and potential contributors. The result should feel credible enough for a board presentation and welcoming enough to open an in-person seminar.
+
+OUTPUT
+
+Duration: Approximately 2 minutes 11 seconds. Do not shorten the approved narration to meet a 90-second target.
+Aspect ratio: 16:9
+Resolution: 1920 by 1080 or higher
+Frame rate: 24 or 30 frames per second
+Captions: Burned-in captions plus an optional SRT file
+End-card hold: At least 5 seconds

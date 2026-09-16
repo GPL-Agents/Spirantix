@@ -1,0 +1,5 @@
+# Local automation and package-manager working files
+.automation-tmp/
+.codex-automation-temp/
+.codex-automation-tmp/
+.pnpm-store/
