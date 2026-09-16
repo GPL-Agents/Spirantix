@@ -556,7 +556,7 @@ const supportBody = `<section class="page-hero media-page-hero support-page-hero
         <li><strong>Remember</strong> -- ask about a person, a day, a trip, a reminder, or an item you already told it about.</li>
         <li><strong>Capture</strong> -- give it something new to keep: a story, a reminder, a calendar event, or an item.</li>
         <li><strong>Photos</strong> -- show, organize, and label photos and albums. Your full pictures stay in your own library.</li>
-        <li><strong>Update</strong> -- mark a reminder done, remove one, or change its time or wording.</li>
+        <li><strong>Update</strong> -- mark a reminder done, remove one, change its time or wording, or change or cancel a calendar event.</li>
       </ul>
     </div>
     <div class="grid-2" style="align-items:start;margin-bottom:28px">
@@ -579,7 +579,7 @@ const supportBody = `<section class="page-hero media-page-hero support-page-hero
           <li>It cannot start a conversation on its own. It waits for you to speak first.</li>
           <li>It cannot record audio inside the chat. You record a voice story on your own phone or on our page, and it helps you attach it.</li>
           <li>It does not seal a document in this first release. Sealing comes later, in the web app.</li>
-          <li>It cannot change or cancel a calendar event yet. It can add a new one.</li>
+          <li>To add events or activities we need to connect your calendar. Do you want to connect a Google account now?</li>
         </ul>
       </div>
     </div>
@@ -609,6 +609,15 @@ const supportBody = `<section class="page-hero media-page-hero support-page-hero
           <li>"What did my grandfather own?"</li>
           <li>"What do you know about the wooden clock?"</li>
           <li>"Add my grandmother's ring to my list."</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Capture a memory or story</h3>
+        <ul style="padding-left:1.2em;margin:0">
+          <li>"Remember that Sophie learned to ride her bike at the lake."</li>
+          <li>"Save the story of how we met."</li>
+          <li>"What stories have I told you about our trip to Maine?"</li>
+          <li>"Add a note that this recipe came from Aunt Rosa."</li>
         </ul>
       </div>
       <div class="card">
@@ -651,12 +660,12 @@ const supportBody = `<section class="page-hero media-page-hero support-page-hero
     <div class="accordion">
       <details><summary>Do I need a ChatGPT account to use the Concierge?</summary><div><p>Yes. You will need a ChatGPT account and a Spirantix account, and the Concierge asks you to connect the two the first time you use it.</p></div></details>
       <details><summary>Is there a cost to use the Concierge?</summary><div><p>There is no charge to use the Concierge today.</p></div></details>
-      <details><summary>Can it change or cancel something already on my calendar?</summary><div><p>Not yet. It can add a new event, but changing or cancelling one is not part of this first release. It will say so plainly and point you to another way to make the change.</p></div></details>
+      <details><summary>Can it change or cancel something already on my calendar?</summary><div><p>To add events or activities we need to connect your calendar. Do you want to connect a Google account now?</p></div></details>
       <details><summary>Will it recognize people in my photos automatically?</summary><div><p>No. It does not identify a person from a photo in this first release. It can only use the names and notes you have already given it.</p></div></details>
       <details><summary>Is a document sealed or certified when I add it?</summary><div><p>No. Nothing is sealed when you add a document in this first release, and there is no seal yet to check. Sealing comes later, in the web app.</p></div></details>
       <details><summary>Can someone else help me use my account?</summary><div><p>Yes. On your Spirantix web account, you can add a named helper by email. That person can add reminders and add calendar events for you, and you can remove them at any time.</p></div></details>
       <details><summary>Can the helper see everything I have stored?</summary><div><p>No. A helper can only add reminders and add calendar events. Looking at your library is not part of this first release.</p></div></details>
-      <details><summary>How will a reminder actually reach me?</summary><div><p>As a calendar notification. You reply to acknowledge it. A text message reminder is planned for a later release.</p></div></details>
+      <details><summary>How will a reminder actually reach me?</summary><div><p>Reminder delivery is planned through email with a calendar file attached, a Google Calendar event, or a text message. Acknowledging a reminder is a separate action you take with the Concierge.</p></div></details>
       <details><summary>Can I add a voice story?</summary><div><p>Yes. You record it on your own phone or on the Spirantix page, and the Concierge walks you through attaching it to a photo, an album, or an item. It cannot record audio inside the chat itself.</p></div></details>
       <details><summary>Does it give medical or legal advice?</summary><div><p>No. It will ask you to speak with a doctor or a lawyer.</p></div></details>
       <details><summary>What happens if it does not know the answer?</summary><div><p>It says so plainly and lets the Spirantix team know, so the answer can be added later.</p></div></details>
@@ -817,7 +826,7 @@ const faqBody = `${pageHero('Questions', 'Common questions about learning and Sp
   <details><summary>Can AI tell me whether something is a scam?</summary><div><p>AI may help identify warning signs or questions to ask, but it can be wrong. Do not treat an AI response as a guarantee. Verify important information using a trusted person or contact information you found independently.</p></div></details>
   <details><summary>Who are Emery, Capsa, Addie, and Heri?</summary><div><p>They are four developing Spirantix specialist agents. Emery focuses on memory support, Capsa on personal stories, Addie on photo and document authenticity and provenance, and Heri on family possessions and their history.</p></div></details>
   <details><summary>What is the concierge?</summary><div><p>The Spirantix Concierge is the primary point of contact for Spirantix products. A user explains what they need once, and the concierge involves the right specialist.</p></div></details>
-  <details><summary>Which products are available?</summary><div><p>The Spirantix Concierge is available in beta now, inside ChatGPT or Claude. It covers memory support, personal stories, planning, and family possessions. You ask the concierge, and it takes it from there.</p></div></details>
+  <details><summary>Which products are available?</summary><div><p>The Spirantix Concierge is available in beta now through ChatGPT, with a second way to reach your concierge on the way. It covers memory support, personal stories, planning, and family possessions. You ask the concierge, and it takes it from there.</p></div></details>
   <details><summary>Where does my personal information go?</summary><div><p>Spirantix products are being designed around user-controlled accounts and storage. The website contact form sends the information you enter to the Spirantix inbox so the team can reply. Read the Privacy page for details.</p></div></details>
 </div></section>`;
 
