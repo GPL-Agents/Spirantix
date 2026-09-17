@@ -15,6 +15,14 @@ function sourceNote(text, date) {
   return `<div class="lesson-footer"><p><strong>Last reviewed:</strong> ${date || reviewed}</p><p>${text}</p><p>AI products change frequently. If a button or menu looks different, use the product’s Help area or official documentation for the newest instructions.</p></div>`;
 }
 
+function lessonNav(nextSlug, nextTitle) {
+  return `<div class="button-row" style="margin-top:32px"><a class="btn" href="${nextSlug}.html">Next lesson: ${nextTitle}</a></div>`;
+}
+
+function lessonNavEnd() {
+  return `<div class="button-row" style="margin-top:32px"><a class="btn" href="../learn.html">Back to the Learning hub</a><a class="btn btn-secondary" href="../learn.html">See what is coming next</a></div>`;
+}
+
 const whatIsAi = `${lessonHero(1, 'What AI is', 'A plain-language introduction to artificial intelligence, generative AI, and the limits that matter.', '7 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>Artificial intelligence is a broad name for computer systems that perform tasks we normally associate with human abilities. Those tasks can include recognizing speech, identifying objects in a photograph, recommending a route, translating a sentence, or finding patterns in a large collection of information.</p>
@@ -69,6 +77,7 @@ const whatIsAi = `${lessonHero(1, 'What AI is', 'A plain-language introduction t
 
   <div class="try-box"><h2>Try this today</h2><p>Open ChatGPT or Claude and ask:</p><p><strong>“Explain generative AI in five short sentences. Use one everyday example and avoid technical terms.”</strong></p><p>Then follow up with: <strong>“What is one important limitation I should remember?”</strong></p></div>
 
+  ${lessonNav('history-of-generative-ai', 'How AI got here')}
   ${sourceNote('Part of the free Spirantix AI learning series.')}
 </div></article>`;
 
@@ -115,6 +124,7 @@ const chatgptBasics = `${lessonHero(3, 'ChatGPT basics', 'Begin a conversation, 
 
   <div class="try-box"><h2>Try this today</h2><p>Ask ChatGPT:</p><p><strong>“Give me five ideas for a new indoor hobby. I enjoy learning, I have a modest budget, and I would like something I can do for 30 minutes at a time.”</strong></p><p>Choose one idea and ask two follow-up questions about it.</p></div>
 
+  ${lessonNav('claude-basics', 'Claude basics')}
   ${sourceNote('Instructions were checked against the <a href="https://learn.chatgpt.com/docs/use-chatgpt" target="_blank" rel="noopener">official ChatGPT getting-started guide</a> and <a href="https://learn.chatgpt.com/docs/prompting" target="_blank" rel="noopener">official prompting guidance</a>.')}
 </div></article>`;
 
@@ -160,6 +170,7 @@ const claudeBasics = `${lessonHero(4, 'Claude basics', 'Learn the basic conversa
 
   <div class="try-box"><h2>Try this today</h2><p>Ask Claude:</p><p><strong>“Help me create a simple checklist for preparing for a weekend visit from family. Organize it into the day before, the morning of the visit, and just before they arrive.”</strong></p><p>Then ask Claude to shorten the checklist to the items that matter most.</p></div>
 
+  ${lessonNav('better-prompts', 'Asking better questions')}
   ${sourceNote('Instructions were checked against Anthropic’s <a href="https://support.claude.com/en/articles/8114491-get-started-with-claude" target="_blank" rel="noopener">official guide to getting started with Claude</a> and <a href="https://support.claude.com/en/articles/9517075-what-are-projects" target="_blank" rel="noopener">official Projects explanation</a>.')}
 </div></article>`;
 
@@ -205,6 +216,7 @@ const betterPrompts = `${lessonHero(5, 'Asking better questions', 'A simple four
 
   <div class="try-box"><h2>Try this today</h2><p>Choose one task you actually need to do. Write a prompt with:</p><ol><li>Your goal</li><li>Helpful background</li><li>The result format</li><li>One boundary or check</li></ol><p>After the answer, ask one follow-up question that makes it more useful.</p></div>
 
+  ${lessonNav('ai-danger-what-the-news-shows', 'Is AI actually dangerous?')}
   ${sourceNote('This lesson follows the <a href="https://learn.chatgpt.com/docs/prompting" target="_blank" rel="noopener">official ChatGPT prompting framework</a>, adapted into a practical exercise for Spirantix learners.')}
 </div></article>`;
 
@@ -242,7 +254,76 @@ const historyOfAi = `${lessonHero(2, 'How AI got here', 'Follow the major steps 
 
   <div class="try-box"><h2>Try this today</h2><p>Ask ChatGPT or Claude:</p><p><strong>“Explain how computers learned to write, in five short sentences, with one simple example.”</strong></p><p>Then ask: <strong>“What is one thing I should not trust you to do?”</strong></p></div>
 
+  ${lessonNav('chatgpt-basics', 'ChatGPT basics')}
   ${sourceNote('Adapted from the FutureInSites article <a href="https://www.futureinsites.com/history-of-generative-ai" target="_blank" rel="noopener">History of Generative AI</a>, rewritten in plainer language for Spirantix learners.', 'September 15, 2026')}
+</div></article>`;
+
+const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is really reporting about AI risk, data centers, cyberattacks, and calls for regulation.', '9 minute read')}
+<article class="lesson-shell"><div class="lesson-body">
+  <p>Three questions come up often when AI is in the news. Can the companies building these systems actually control them? Is AI about to get out of hand? And can elected leaders do anything about it?</p>
+  <p>No one, not the AI companies, not the researchers who study them, not the lawmakers who regulate them, has a settled answer. That is the honest starting point. This lesson looks at what has actually happened in the news, separates it from what might happen, and gives you the sources so you can check for yourself.</p>
+
+  <h2>Why this has been in the news</h2>
+  <p>On September 8, 2026, a researcher named Jacob Coxon posted that he had resigned from Anthropic, one of the companies that builds AI assistants. He said the leading AI companies were racing ahead faster than they could keep the technology safe.</p>
+  <p>What made this a bigger story is who agreed with him publicly, under their own names. A researcher who monitors AI systems at OpenAI put the odds of a very bad outcome, without stronger safety rules, at 70 percent. A former senior safety researcher who worked at OpenAI, DeepMind, and the UK government's AI safety office estimated a 50 percent chance of serious harm within the next decade. Anthropic's own alignment lead said he believes the risk is real.</p>
+  <p>These are not outside critics. They are, or were, people working inside the companies building the technology, which is why the story traveled the way it did. It does not prove any one number is correct. Estimates like these cannot be tested the way a weather forecast can. What is verifiable is that senior people inside the leading AI companies are now saying this in public.</p>
+  <div class="notice"><strong>Worth knowing:</strong> Concern about advanced AI is not new. A nonprofit called the Machine Intelligence Research Institute has argued for over a decade that AI poses a serious risk, well before this news cycle.</div>
+
+  <h2>The environmental question</h2>
+  <p>You may have heard AI data centers compared to a desert city watering its lawns: using water a region cannot spare. The real picture is more mixed than that.</p>
+
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the chart showing who uses Arizona's Colorado River water">
+      <img src="../assets/lesson-data-center-water.svg" alt="Bar chart showing agriculture uses about 72 percent of Arizona's Colorado River water, all other uses combined including cities and industry make up about 28 percent, and AI data centers use an estimated 1,841 of the 1.9 million acre-feet drawn each year, well under one tenth of one percent." width="1200" height="680" loading="lazy">
+    </button>
+    <figcaption>Data centers are a small slice of Arizona's water use today. That slice is growing fast and is not tracked well, which is the honest complication.</figcaption>
+  </figure>
+
+  <p>On energy, the trend is genuinely improving. New chip designs and cooling methods published in 2026 could cut AI energy use and improve efficiency significantly, though most of this is still moving from the lab toward real-world use. Total AI energy use is still rising as more data centers get built, but each individual task is getting less wasteful, not more.</p>
+
+  <h2>What has actually caused damage</h2>
+  <p>Set aside hypothetical future harms and look at what has actually hurt people and businesses. The honest answer: ordinary cybercrime, most of it not using AI at all.</p>
+  <p>Clorox, the consumer products company, lost an estimated $356 million after attackers tricked its IT help desk into resetting an employee's password in 2023. A UK transport company founded in 1865, employing 700 people, was forced to close in 2025 after a ransomware attack that started with one employee's weak, easily-guessed password.</p>
+  <p>Neither of those required a misbehaving AI system. Both required one weak point in ordinary account security.</p>
+  <div class="notice"><strong>Important:</strong> The single habit that would have stopped both of those attacks is one you already use in earlier lessons: strong, unique passwords and multi-factor authentication wherever it is offered.</div>
+
+  <h2>What AI actually is</h2>
+  <p>It helps to be precise about what a system like ChatGPT, Claude, or the Spirantix Concierge actually is. It is a predictive system, guided at every step by the instructions a person built into it. It does not want anything on its own, and it is not self-aware the way a person is.</p>
+  <p>That does not mean it cannot be misused. It can, the same way any powerful tool can. But the tool is not what is responsible for the misuse, any more than a car is responsible when someone drives it recklessly. The line between a tool and the person using it is worth holding onto.</p>
+
+  <h2>The regulation question, and who benefits</h2>
+  <p>The leading AI labs have started asking government to set safety rules: independent oversight, common safety standards, and coordination between companies. Several well-known industry leaders have backed this idea.</p>
+  <p>Here is the part worth sitting with. A small number of companies, already far ahead of everyone else, are asking government to set rules that mainly companies at their scale can easily meet. Critics have pointed out this can work like a competitive shield: it can be sincerely meant as a safety measure, and it can also make it harder for a new competitor to catch up. Both things can be true about the same proposal.</p>
+
+  <details class="lesson-check"><summary>Quick check: does a real safety worry rule out a business motive?</summary><div><p>No. A company can hold a sincere safety concern and a competitive interest in the same proposal at the same time. Reading one does not require dismissing the other. The useful habit is asking who benefits from a proposed rule, not just what the rule claims to do.</p></div></details>
+
+  <h2>What this means for you</h2>
+  <p>None of this is a reason to panic, and none of it is a reason to stop paying attention either. A few habits hold up regardless of how the bigger questions get resolved:</p>
+  <ul>
+    <li>Treat AI tools the way you would treat any powerful tool operated by a person: useful, worth understanding, and worth double-checking on anything that matters.</li>
+    <li>Keep a human decision in the loop for anything involving money, health, or a legal matter.</li>
+    <li>Practice the same account security habits covered in earlier lessons. That single habit stops nearly all the real-world damage described above.</li>
+    <li>Stay skeptical of both extremes: the version that says AI will end the world tomorrow, and the version that says none of this is worth a second thought.</li>
+  </ul>
+
+  <div class="try-box"><h2>Try this today</h2><p>Ask ChatGPT or Claude:</p><p><strong>"Explain, in plain language, the difference between a real AI safety risk and a company's business interest in regulation. Give me one question I should ask when I read a news story about AI danger."</strong></p></div>
+
+  <h2>Read the original reporting</h2>
+  <p>Every claim above was checked against news reporting from September 2026 at the time this lesson was written. These are some of the original stories, so you can read further and judge for yourself:</p>
+  <ul>
+    <li><a href="https://time.com/article/2026/09/15/ai-anthropic-researcher-quits-coxon-slowdown/" target="_blank" rel="noopener">Time: OpenAI and Anthropic Researchers Are Warning About AI Risks</a> (September 15, 2026)</li>
+    <li><a href="https://www.pbs.org/newshour/science/anthropic-researchers-resignation-sends-warning-about-the-dangers-of-ai-development" target="_blank" rel="noopener">PBS NewsHour: Anthropic researcher's resignation sends warning about the dangers of AI development</a> (September 9, 2026)</li>
+    <li><a href="https://intelligence.org/2025/05/15/yudkowsky-and-soares-announce-major-new-book-if-anyone-builds-it-everyone-dies/" target="_blank" rel="noopener">Machine Intelligence Research Institute: announcing "If Anyone Builds It, Everyone Dies"</a> (May 15, 2025)</li>
+    <li><a href="https://cronkitenews.azpbs.org/2026/09/11/data-centers-water-colorado-river/" target="_blank" rel="noopener">Cronkite News: Don't blame data centers for Arizona's Colorado River cuts, water experts say</a> (September 11, 2026)</li>
+    <li><a href="https://www.cam.ac.uk/research/news/new-computer-chip-material-inspired-by-the-human-brain-could-slash-ai-energy-use" target="_blank" rel="noopener">University of Cambridge: a new chip material that could slash AI energy use</a> (March 30, 2026)</li>
+    <li><a href="https://www.industryweek.com/technology-and-iiot/article/21274431/the-clorox-co-recovers-from-severe-cyberattack" target="_blank" rel="noopener">IndustryWeek: the Clorox cyberattack and its $356 million cost</a></li>
+    <li><a href="https://www.tomshardware.com/tech-industry/cyber-security/158-year-old-company-forced-to-close-after-ransomware-attack-precipitated-by-a-single-guessed-password-700-jobs-lost-after-hackers-demand-unpayable-sum" target="_blank" rel="noopener">Tom's Hardware: a 158-year-old company forced to close after one guessed password</a></li>
+    <li><a href="https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067" target="_blank" rel="noopener">The Register: Big AI sets out its terms for regulatory capture and calls it "Pace the frontier"</a> (September 14, 2026)</li>
+  </ul>
+  <p>A full numbered reference list with every source used for this lesson is available on request.</p>
+
+  ${sourceNote('This lesson summarizes reporting from multiple news outlets, listed above, current as of September 16, 2026. Two examples originally considered could not be verified and were replaced with confirmed cases; see the full reference list for details.')}
+  ${lessonNavEnd()}
 </div></article>`;
 
 const lessons = [
@@ -250,7 +331,8 @@ const lessons = [
   { slug: 'history-of-generative-ai', title: 'How AI Got Here | Spirantix.ai', description: 'A short, plain-language story of how AI grew from counting words to writing and speaking, and what comes next.', datePublished: '2026-09-15', dateModified: '2026-09-16', body: historyOfAi },
   { slug: 'chatgpt-basics', title: 'ChatGPT Basics | Spirantix.ai', description: 'A beginner-friendly guide to starting a ChatGPT conversation, using follow-up questions, checking answers, and protecting private information.', body: chatgptBasics },
   { slug: 'claude-basics', title: 'Claude Basics | Spirantix.ai', description: 'A beginner-friendly guide to starting with Claude, refining answers, using documents carefully, and understanding Projects.', body: claudeBasics },
-  { slug: 'better-prompts', title: 'Asking Better Questions | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts }
+  { slug: 'better-prompts', title: 'Asking Better Questions | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts },
+  { slug: 'ai-danger-what-the-news-shows', title: 'Is AI Actually Dangerous? | Spirantix.ai', description: 'What the news is really reporting about AI risk, data centers, cyberattacks, and calls for regulation, with sources you can check yourself.', datePublished: '2026-09-16', dateModified: '2026-09-16', body: aiDanger }
 ];
 
 function articleSchema(lesson) {
