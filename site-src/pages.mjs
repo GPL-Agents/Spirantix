@@ -44,7 +44,7 @@ function lessonCards(includePlanned = false) {
     const content = `<p class="lesson-number">Lesson ${lesson.number}</p>
       <h3>${lesson.title}</h3>
       <p>${lesson.description}</p>
-      <p class="lesson-meta">${published ? `${lesson.time} · <span class="text-link">Read the lesson</span>` : 'Planned for the learning library'}</p>`;
+      <p class="lesson-meta">${published ? `${lesson.time} · <span class="text-link">Read the lesson</span>` : '<span class="planned-marker">*</span> Planned for the learning library'}</p>`;
     return published
       ? `<a class="card card-link lesson-card" href="learn/${lesson.slug}.html">${content}</a>`
       : `<article class="card lesson-card">${content}</article>`;
@@ -214,7 +214,7 @@ const learnBody = `<section class="page-hero media-page-hero">
 </section>
 <section class="section section-white">
   <div class="wrap">
-    <div class="section-heading"><p class="eyebrow">Coming next</p><h2>The complete introductory path</h2><p>Five more lessons will expand the library with search, Projects, agents, privacy, and scam awareness.</p></div>
+    <div class="section-heading"><p class="eyebrow">Coming next</p><h2>The complete introductory path</h2><p>Six more lessons will expand the library with search, Projects, privacy, scam awareness, agents and connections, and using the Spirantix Concierge.</p></div>
     ${lessonCards('planned')}
   </div>
 </section>

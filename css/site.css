@@ -393,6 +393,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .lesson-grid > :last-child:nth-child(odd):not(:first-child) { grid-column: 1 / -1; width: calc((100% - 26px) / 2); justify-self: center; }
 .lesson-card h3 { margin-top: 8px; }
 .lesson-card .lesson-meta { margin-top: 16px; font-size: 0.86rem; }
+.lesson-card .planned-marker { color: var(--orange-dark); font-weight: 700; }
 .lesson-shell { padding: 64px 0 90px; }
 .lesson-body { width: min(760px, calc(100% - 40px)); margin-inline: auto; }
 .lesson-body h2 { margin-top: 54px; font-size: 1.8rem; }
