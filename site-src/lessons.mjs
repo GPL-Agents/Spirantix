@@ -258,7 +258,7 @@ const historyOfAi = `${lessonHero(2, 'How AI got here', 'Follow the major steps 
   ${sourceNote('Adapted from the FutureInSites article <a href="https://www.futureinsites.com/history-of-generative-ai" target="_blank" rel="noopener">History of Generative AI</a>, rewritten in plainer language for Spirantix learners.', 'September 15, 2026')}
 </div></article>`;
 
-const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is really reporting about AI risk, data centers, cyberattacks, and calls for regulation.', '9 minute read')}
+const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is really reporting about AI risk, data centers, cyberattacks, and calls for regulation.', '11 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
   <p>Three questions come up often when AI is in the news. Can the companies building these systems actually control them? Is AI about to get out of hand? And can elected leaders do anything about it?</p>
   <p>No one, not the AI companies, not the researchers who study them, not the lawmakers who regulate them, has a settled answer. That is the honest starting point. This lesson looks at what has actually happened in the news, separates it from what might happen, and gives you the sources so you can check for yourself.</p>
@@ -272,12 +272,23 @@ const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is
   <h2>The environmental question</h2>
   <p>You may have heard AI data centers compared to a desert city watering its lawns: using water a region cannot spare. The real picture is more mixed than that.</p>
 
+  <h3>Why a data center needs water at all</h3>
+  <p>Computer equipment generates heat, and heat has to go somewhere. Many data centers cool themselves the way your body cools itself when you sweat: water absorbs heat and evaporates, carrying the heat away. It works well, but it uses a lot of water. The International Energy Agency estimates that a large data center can use roughly half a million gallons of water a day, about as much as 6,500 homes. Not every data center uses this much. Newer designs use closed-loop or air cooling that recycles the same water instead of evaporating it, which some companies are now building specifically to avoid this problem.</p>
+
   <figure class="lesson-figure lesson-figure-wide">
     <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the chart showing who uses Arizona's Colorado River water">
       <img src="../assets/lesson-data-center-water.svg" alt="Bar chart showing agriculture uses about 72 percent of Arizona's Colorado River water, all other uses combined including cities and industry make up about 28 percent, and AI data centers use an estimated 1,841 of the 1.9 million acre-feet drawn each year, well under one tenth of one percent." width="1200" height="680" loading="lazy">
     </button>
     <figcaption>Data centers are a small slice of Arizona's water use today. That slice is growing fast and is not tracked well, which is the honest complication.</figcaption>
   </figure>
+
+  <h3>Is this only an Arizona problem?</h3>
+  <p>No. It shows up wherever a data center is built in a place that is already short on water. In Georgia, a drought and a fast-growing cluster of data centers around Atlanta led planners to ask developers to cut back, with water requests for individual projects ranging from about 5,000 gallons a day for efficient closed-loop systems up to 9 million gallons a day for older designs. In central Iowa, a water use ban in 2025 led some people to blame Microsoft's local data centers, but the utility that manages the water supply said the real cause was contamination in two rivers that limited how much could be treated, and that lawn watering used far more water than the data centers did once the ban took effect.</p>
+  <p>Outside the US, it has become a bigger flashpoint. A Chilean court ordered Google to redo its environmental review for a data center project in Santiago after residents objected to a plan that would have used about 2 million gallons of drinking water a day during a drought; Google has since offered to switch to air cooling instead. Data center water use has also drawn public protests in Uruguay and the Netherlands, and both China and India are seeing a larger share of new data centers built in drier regions.</p>
+
+  <h3>Is anyone making the case this is overblown?</h3>
+  <p>Yes, and it is worth reading. A July 2026 report from the Information Technology and Innovation Foundation argued that data centers use less than 1 percent of total water consumption in the United States, that there is no nationwide shortage, and that the real problems are local, in already-dry places like Arizona, rather than a general crisis. It also pointed to newer "zero water" cooling designs that some companies are already building. The Iowa case above is a real example of a local water problem that data centers were blamed for and, on closer look, mostly were not responsible for.</p>
+  <p>Put together, the honest summary is: this is a real and growing issue in specific dry places, not evidence that data centers are draining water everywhere, and the industry has a clear technical path to using much less of it.</p>
 
   <p>On energy, the trend is genuinely improving. New chip designs and cooling methods published in 2026 could cut AI energy use and improve efficiency significantly, though most of this is still moving from the lab toward real-world use. Total AI energy use is still rising as more data centers get built, but each individual task is getting less wasteful, not more.</p>
 
@@ -315,6 +326,12 @@ const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is
     <li><a href="https://www.pbs.org/newshour/science/anthropic-researchers-resignation-sends-warning-about-the-dangers-of-ai-development" target="_blank" rel="noopener">PBS NewsHour: Anthropic researcher's resignation sends warning about the dangers of AI development</a> (September 9, 2026)</li>
     <li><a href="https://intelligence.org/2025/05/15/yudkowsky-and-soares-announce-major-new-book-if-anyone-builds-it-everyone-dies/" target="_blank" rel="noopener">Machine Intelligence Research Institute: announcing "If Anyone Builds It, Everyone Dies"</a> (May 15, 2025)</li>
     <li><a href="https://cronkitenews.azpbs.org/2026/09/11/data-centers-water-colorado-river/" target="_blank" rel="noopener">Cronkite News: Don't blame data centers for Arizona's Colorado River cuts, water experts say</a> (September 11, 2026)</li>
+    <li><a href="https://www.networkworld.com/article/4138052/why-do-data-centers-need-so-much-water.html" target="_blank" rel="noopener">Network World: Why do data centers need so much water?</a></li>
+    <li><a href="https://news.bloomberglaw.com/environment-and-energy/drought-ravaged-georgia-asks-data-centers-to-cut-water-use" target="_blank" rel="noopener">Bloomberg Law: Drought-ravaged Georgia asks data centers to cut water use</a> (June 22, 2026)</li>
+    <li><a href="https://www.axios.com/local/des-moines/2025/06/17/central-iowa-water-ban-data-centers-microsoft" target="_blank" rel="noopener">Axios: Data centers are not to blame for central Iowa's water crisis</a> (June 17, 2025)</li>
+    <li><a href="https://news.yahoo.com/chile-puts-brakes-google-data-174703001.html" target="_blank" rel="noopener">A Chilean court orders Google to redo its environmental review for a Santiago data center</a></li>
+    <li><a href="https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/" target="_blank" rel="noopener">Bloomberg: The AI boom is draining water from the areas that need it most</a></li>
+    <li><a href="https://itif.org/publications/2026/07/06/the-data-center-water-problem-is-soluble/" target="_blank" rel="noopener">ITIF: The data center water problem is soluble</a> (July 6, 2026)</li>
     <li><a href="https://www.cam.ac.uk/research/news/new-computer-chip-material-inspired-by-the-human-brain-could-slash-ai-energy-use" target="_blank" rel="noopener">University of Cambridge: a new chip material that could slash AI energy use</a> (March 30, 2026)</li>
     <li><a href="https://www.industryweek.com/technology-and-iiot/article/21274431/the-clorox-co-recovers-from-severe-cyberattack" target="_blank" rel="noopener">IndustryWeek: the Clorox cyberattack and its $356 million cost</a></li>
     <li><a href="https://www.tomshardware.com/tech-industry/cyber-security/158-year-old-company-forced-to-close-after-ransomware-attack-precipitated-by-a-single-guessed-password-700-jobs-lost-after-hackers-demand-unpayable-sum" target="_blank" rel="noopener">Tom's Hardware: a 158-year-old company forced to close after one guessed password</a></li>
@@ -322,7 +339,7 @@ const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is
   </ul>
   <p>A full numbered reference list with every source used for this lesson is available on request.</p>
 
-  ${sourceNote('This lesson summarizes reporting from multiple news outlets, listed above, current as of September 16, 2026. Two examples originally considered could not be verified and were replaced with confirmed cases; see the full reference list for details.')}
+  ${sourceNote('This lesson summarizes reporting from multiple news outlets, listed above, current as of September 17, 2026, including sources on both sides of the data center water debate. Two examples originally considered could not be verified and were replaced with confirmed cases; see the full reference list for details.', 'September 17, 2026')}
   ${lessonNavEnd()}
 </div></article>`;
 

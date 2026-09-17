@@ -71,7 +71,7 @@ export const lessonIndex = [
     slug: 'ai-danger-what-the-news-shows',
     title: 'Is AI actually dangerous?',
     description: 'What the news is really reporting about AI risk, data centers, cyberattacks, and calls for regulation.',
-    time: '9 minute read',
+    time: '11 minute read',
     status: 'published'
   },
   {
