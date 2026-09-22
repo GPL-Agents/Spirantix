@@ -1,5 +1,6 @@
 export const events = [
   {
+    date: '2026-09-18',
     dateLabel: 'Friday, September 18, 2026',
     shortDate: 'Sep 18',
     time: '10:00 AM',
@@ -9,9 +10,12 @@ export const events = [
     context: 'An in-person learning session at the independent living community.',
     hostUrl: 'https://www.pegasusseniorliving.com/town-village-of-leawood/activities/',
     hostAction: 'Contact Town Village of Leawood for attendance information',
-    phone: '(913) 491-3681'
+    phone: '(913) 491-3681',
+    photo: 'assets/event-leawood-2907.jpg',
+    photoAlt: 'Greg presenting the AI learning session at Town Village of Leawood'
   },
   {
+    date: '2026-10-07',
     dateLabel: 'Wednesday, October 7, 2026',
     shortDate: 'Oct 7',
     time: 'During the 1:00 to 3:00 PM course session',

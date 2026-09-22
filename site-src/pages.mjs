@@ -20,17 +20,32 @@ function stopHandIcon() {
   </div>`;
 }
 
-function eventCards(limit = events.length) {
-  return `<div class="event-list">${events.slice(0, limit).map(event => `<article class="event-card">
+function eventCards(list, { past = false } = {}) {
+  return `<div class="event-list">${list.map(event => `<article class="event-card${past ? ' event-card-past' : ''}">
     <div class="event-date"><span class="day">${event.shortDate}</span> <span>${event.time}</span></div>
     <div>
       <h3>${event.title}</h3>
       <p class="event-meta">${event.host} · ${event.location}</p>
       <p>${event.context}</p>
-      ${event.phone ? `<p class="small"><strong>Host phone:</strong> ${event.phone}</p>` : ''}
-      <a class="text-link" href="${event.hostUrl}" target="_blank" rel="noopener">${event.hostAction}</a>
+      ${!past && event.phone ? `<p class="small"><strong>Host phone:</strong> ${event.phone}</p>` : ''}
+      ${past ? '' : `<a class="text-link" href="${event.hostUrl}" target="_blank" rel="noopener">${event.hostAction}</a>`}
     </div>
+    ${past && event.photo ? `<div class="event-photo"><img src="${event.photo}" alt="${event.photoAlt || ''}" width="320" height="240" loading="lazy"></div>` : ''}
   </article>`).join('')}</div>`;
+}
+
+function todayIso() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function upcomingEvents() {
+  const today = todayIso();
+  return events.filter(event => event.date >= today);
+}
+
+function pastEvents() {
+  const today = todayIso();
+  return events.filter(event => event.date < today).slice().reverse();
 }
 
 function lessonCards(includePlanned = false) {
@@ -125,10 +140,19 @@ const homeBody = `<section class="hero home-hero">
       <h2>Join a Spirantix session</h2>
       <p>Attendance is managed by each host. Contact the location directly for availability and other details.</p>
     </div>
-    ${eventCards(2)}
+    ${eventCards(upcomingEvents().slice(0, 2))}
     <div class="button-row" style="margin-top:30px"><a class="btn btn-teal" href="classes.html">See classes and talks</a><a class="text-link" href="contact.html?type=speaking">Bring a session to your community</a></div>
   </div>
 </section>
+${pastEvents().length ? `<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Past sessions</p>
+      <h2>Recent Spirantix sessions</h2>
+    </div>
+    ${eventCards(pastEvents().slice(0, 2), { past: true })}
+  </div>
+</section>` : ''}
 
 <section class="section">
   <div class="wrap">
@@ -376,16 +400,22 @@ const classesBody = `<section class="page-hero media-page-hero">
       <div class="button-row" style="margin-top:28px"><a class="btn" href="contact.html?type=speaking">Request a session</a><a class="btn btn-secondary" href="#upcoming">See upcoming sessions</a></div>
     </div>
     <div class="media-page-hero-image">
-      <img src="assets/senior.classes.png" alt="Older adults in a technology class taking notes with laptops and tablets" width="1122" height="1402">
+      <img src="assets/classes-hero-leawood.jpg" alt="Greg presenting an AI learning session to residents at Town Village of Leawood" width="1400" height="1050">
     </div>
   </div>
 </section>
 <section class="section section-white" id="upcoming">
   <div class="wrap">
     <div class="section-heading"><p class="eyebrow">Upcoming</p><h2>In-person learning</h2><p>Contact the host directly for attendance requirements, availability, and other event details.</p></div>
-    ${eventCards()}
+    ${eventCards(upcomingEvents())}
   </div>
 </section>
+${pastEvents().length ? `<section class="section section-white" id="past">
+  <div class="wrap">
+    <div class="section-heading"><p class="eyebrow">Past sessions</p><h2>Recent in-person learning</h2></div>
+    ${eventCards(pastEvents(), { past: true })}
+  </div>
+</section>` : ''}
 <section class="section">
   <div class="wrap grid-2" style="align-items:start">
     <div>
