@@ -176,6 +176,7 @@ const claudeBasics = `${lessonHero(4, 'Claude basics', 'Learn the basic conversa
 
 const betterPrompts = `${lessonHero(5, 'Asking better questions', 'A simple four-part method for writing prompts that produce clearer, more useful answers.', '7 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
+  <div class="notice"><strong>You can talk instead of type.</strong> Speaking your question is often easier than typing it. On a Windows computer, click where you type and press the Windows key and the H key together. On a Mac, press the Fn (function) key twice to start Dictation, or press the microphone key on the keyboard. On a phone or tablet, tap the microphone on the keyboard. Press the same keys or tap the microphone again to stop.</div>
   <p>A prompt is simply what you ask an AI assistant to do. It can be one sentence or several paragraphs. You do not need a secret vocabulary or a perfect formula.</p>
   <p>Start with your own words. When the task matters or the first answer is not useful enough, add four kinds of information.</p>
 
