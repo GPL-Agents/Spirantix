@@ -154,6 +154,23 @@ ${pastEvents().length ? `<section class="section section-soft">
   </div>
 </section>` : ''}
 
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-heading center">
+      <p class="eyebrow">Follow along</p>
+      <h2>See recent updates on Facebook</h2>
+      <p>Photos and notes from classes, talks, and community sessions.</p>
+    </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
+    <div class="facebook-embed">
+      <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61594442789361" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+        <blockquote cite="https://www.facebook.com/profile.php?id=61594442789361" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61594442789361">Spirantix</a></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="wrap">
     <div class="section-heading">
