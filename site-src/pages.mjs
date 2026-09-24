@@ -164,7 +164,7 @@ ${pastEvents().length ? `<section class="section section-soft">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
     <div class="facebook-embed">
-      <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61594442789361" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+      <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61594442789361" data-tabs="timeline" data-width="500" data-height="1300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
         <blockquote cite="https://www.facebook.com/profile.php?id=61594442789361" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61594442789361">Spirantix</a></blockquote>
       </div>
     </div>
