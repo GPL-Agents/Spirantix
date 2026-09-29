@@ -400,7 +400,7 @@ const safetyBody = `<section class="page-hero media-page-hero">
   </div>
 </section>
 <section class="section section-soft">
-  <div class="narrow">
+  <div class="wrap">
     <p class="eyebrow">If something already happened</p>
     <h2>Act quickly and do not be embarrassed</h2>
     <p>Scams are designed to be convincing. Contact the company used to send the money, your bank, or the affected account provider immediately. Change exposed passwords and turn on two-factor authentication where available.</p>
