@@ -12,7 +12,8 @@ export const events = [
     hostAction: 'Contact Town Village of Leawood for attendance information',
     phone: '(913) 491-3681',
     photo: 'assets/event-leawood-2907.jpg',
-    photoAlt: 'Greg presenting the AI learning session at Town Village of Leawood'
+    photoAlt: 'Greg presenting the AI learning session at Town Village of Leawood',
+    photoUrl: 'https://www.facebook.com/permalink.php?story_fbid=pfbid0cNGQ6ezFabrmCpx8DbwEq3VucXCiMVjKFcauWYLXaGv8aFcTukhbBtJHsL3uEgNYl&id=61594442789361'
   },
   {
     date: '2026-10-07',

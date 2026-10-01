@@ -30,7 +30,7 @@ function eventCards(list, { past = false } = {}) {
       ${!past && event.phone ? `<p class="small"><strong>Host phone:</strong> ${event.phone}</p>` : ''}
       ${past ? '' : `<a class="text-link" href="${event.hostUrl}" target="_blank" rel="noopener">${event.hostAction}</a>`}
     </div>
-    ${past && event.photo ? `<div class="event-photo"><img src="${event.photo}" alt="${event.photoAlt || ''}" width="320" height="240" loading="lazy"></div>` : ''}
+    ${past && event.photo ? `<div class="event-photo">${event.photoUrl ? `<a href="${event.photoUrl.replace(/&/g, '&amp;')}" target="_blank" rel="noopener" aria-label="See photos from this session on Facebook (opens in a new tab)">` : ''}<img src="${event.photo}" alt="${event.photoAlt || ''}" width="320" height="240" loading="lazy">${event.photoUrl ? '</a>' : ''}</div>` : ''}
   </article>`).join('')}</div>`;
 }
 
@@ -155,8 +155,8 @@ ${pastEvents().length ? `<section class="section section-soft">
 </section>` : ''}
 
 <section class="section section-white">
-  <div class="wrap">
-    <div class="section-heading center">
+  <div class="wrap facebook-layout">
+    <div class="section-heading">
       <p class="eyebrow">Follow along</p>
       <h2>See recent updates on Facebook</h2>
       <p>Photos and notes from classes, talks, and community sessions.</p>
@@ -164,7 +164,7 @@ ${pastEvents().length ? `<section class="section section-soft">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
     <div class="facebook-embed">
-      <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61594442789361" data-tabs="timeline" data-width="500" data-height="1300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+      <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61594442789361" data-tabs="timeline" data-width="500" data-height="560" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
         <blockquote cite="https://www.facebook.com/profile.php?id=61594442789361" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61594442789361">Spirantix</a></blockquote>
       </div>
     </div>
