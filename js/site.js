@@ -204,3 +204,39 @@
     if (event.key === 'Escape' && overlay.classList.contains('open')) closeLightbox();
   });
 })();
+
+(function () {
+  var bar = document.querySelector('[data-resource-filter]');
+  if (!bar) return;
+
+  var buttons = Array.prototype.slice.call(bar.querySelectorAll('[data-filter-target]'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('[data-filter-group]'));
+  var countEl = document.querySelector('[data-filter-count]');
+  var total = groups.reduce(function (sum, group) {
+    return sum + group.querySelectorAll('.card').length;
+  }, 0);
+
+  function applyFilter(target) {
+    var shown = 0;
+    groups.forEach(function (group) {
+      var visible = target === 'all' || group.getAttribute('data-filter-group') === target;
+      group.classList.toggle('is-filter-hidden', !visible);
+      if (visible) shown += group.querySelectorAll('.card').length;
+    });
+    buttons.forEach(function (btn) {
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-filter-target') === target));
+    });
+    if (countEl) {
+      countEl.textContent = target === 'all'
+        ? 'Showing all ' + total + ' listings'
+        : 'Showing ' + shown + (shown === 1 ? ' listing' : ' listings');
+    }
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyFilter(btn.getAttribute('data-filter-target'));
+    });
+  });
+})();
+

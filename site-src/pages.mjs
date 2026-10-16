@@ -525,13 +525,152 @@ const seniorWebsitesSection = `<section class="section section-soft" id="website
   </div>
 </section>`;
 
+const resourceDirectory = [
+  {
+    id: 'ai-learning',
+    eyebrow: 'Keep learning',
+    title: 'AI learning and training',
+    blurb: 'Classes, courses, and free training that help older adults build confidence with AI and everyday technology.',
+    entries: [
+      ['Senior Planet from AARP', 'https://seniorplanet.org/ai', 'Free online and in-person classes from AARP, including courses about AI and everyday technology. Aimed at adults 60 and older.'],
+      ['OATS (Older Adults Technology Services)', 'https://oats.org', 'A nonprofit that runs technology training for older adults and created the Senior Planet program. Offers free and low-cost classes.'],
+      ['GetSetUp', 'https://www.getsetup.io/en-US', 'Live online classes for adults 55 and older, including AI topics. A subscription service that is often free through libraries and Medicare Advantage plans.'],
+      ['Cyber-Seniors', 'https://cyberseniors.org', 'Free technology help from trained volunteer mentors, with lessons and phone support for older adults.'],
+      ['Candoo Tech', 'https://www.candootech.com', 'A paid tech concierge service that offers remote help by phone and screen share, plus training for older adults and their families. Also serves senior living and health plans.'],
+      ['Best Buy / Geek Squad Health', 'https://www.bestbuyhealth.com/geek-squad-tech-support/', 'In-person and in-home technology help and classes from Best Buy. Support is offered through a paid membership or per-session fees.'],
+      ['Boise State University SAS (AI Tools for Seniors)', 'https://broncolearn.boisestate.edu/browse/allcourses/nonbsuaffiliated/sass/courses/ai-tools-for-seniors', 'A free, self-paced online course from Boise State University that introduces AI tools to older adults.'],
+      ['Osher Lifelong Learning Institutes (OLLI)', 'https://www.osherfoundation.org/olli.html', 'University-based lifelong learning programs for adults 50 and older. Course offerings vary by location and may include technology and AI topics.'],
+      ['SeniorNet', 'https://www.seniornetli.org/', 'A nonprofit that offers small-group, in-person technology classes for adults 50 and older, taught by volunteers.'],
+      ['AbilityNet', 'https://abilitynet.org.uk', 'A UK charity that provides free webinars and remote help with technology and accessibility for older adults and people with disabilities.'],
+      ['DigitalLearn / LearnFree (GCFGlobal)', 'https://www.digitallearn.org', 'Free online courses about computers, the internet, and AI basics. DigitalLearn comes from the Public Library Association, and LearnFree comes from GCFGlobal.'],
+      ['Google Applied Digital Skills', 'https://learndigital.withgoogle.com/digital-skills', 'Free, video-based lessons from Google that teach practical digital skills, from spreadsheets to online tools. A company resource.'],
+      ['IBM SkillsBuild', 'https://skillsbuild.org', 'Free online courses from IBM about technology and workplace skills. Some programs include sessions designed for older adults.'],
+      ['OpenAI Academy', "https://academy.openai.com", "OpenAI's own free learning hub with courses and guides about using AI. It is a company resource, so it focuses on OpenAI products."],
+      ['Coursera', 'https://www.coursera.org', 'An online learning platform with many AI and technology courses. Some courses can be audited for free, while certificates and full access require payment.'],
+      ['LinkedIn Learning', 'https://www.linkedin.com/learning', 'A paid subscription library of video courses about technology, business, and creative skills, including AI topics. Part of LinkedIn.'],
+    ]
+  },
+  {
+    id: 'memory-care',
+    eyebrow: 'Memory and care',
+    title: 'Memory, companionship, and care',
+    blurb: 'Companionship, memory support, monitoring, and daily-living services for older adults, families, and care organizations.',
+    entries: [
+      ['NewDays (Sunny)', 'https://www.newdays.ai', 'An AI companion and memory support service for people with mild cognitive impairment or dementia, built around clinician-guided brain training. A paid service, often covered by Medicare.'],
+      ['Intuition Robotics (ElliQ)', 'https://elliq.com', 'A tabletop companion robot that offers conversation, reminders, and family connection for older adults. The device and monthly service are paid, and some state programs offer subsidies.'],
+      ['Meela', 'https://www.meela.ai', 'A screen-free AI companion that calls by phone, with optional help arranging rides. A paid subscription service that is also sold to senior living communities.'],
+      ['Ella AI', 'https://www.ella-ai-care.com', 'An early-stage AI companion app designed for people with dementia and their caregivers. Pricing has not been widely published.'],
+      ['Wonderful Platform (Avadin)', 'https://www.businesswire.com/news/home/20251215591957/en/', 'A care platform for senior living operators that combines software and in-facility hardware. A business-to-business service, not sold directly to families.'],
+      ['Memoryboard', 'https://memoryboard.com', 'An in-room digital message board for senior living communities and families that shows messages, photos, and reminders. Pricing is not widely published.'],
+      ['CarePredict', 'https://www.carepredict.com', 'A wearable and sensor system that tracks daily activity and alerts caregivers to changes. Sold to senior living communities and care organizations.'],
+      ['CareYaya (QuikTok / Yaya Bear)', 'https://www.careyaya.org', 'An organization that connects families with student caregivers and offers a phone-based AI companion and a story-to-autobiography service. Some features require a subscription.'],
+      ['Sensi.AI', 'https://www.sensi.ai', 'An audio-based monitoring service that uses AI to understand activity and safety at home. Sold to home care agencies rather than to individuals.'],
+      ['MapHabit', 'https://maphabit.com', 'An app that helps people with memory or developmental challenges follow daily routines through visual, step-by-step guides. Often provided through health care or state programs.'],
+      ['GrandPad', 'https://www.grandpad.net', 'A simplified tablet designed for older adults, with large buttons, family photo sharing, and video calls. The tablet and a monthly plan are paid.'],
+      ['Amazon (Echo Show, Alexa, Alexa Together)', 'https://www.amazon.com', "Amazon's voice assistant can set reminders, answer questions, and make calls, and Alexa Together adds caregiving features. Hardware and some services are paid."],
+      ['Meta (Muse)', 'https://ai.meta.com/muse/', 'A general-purpose personal AI from Meta that can remember details across conversations, available in some apps and devices. Not designed specifically for older adults.'],
+      ["Alzheimer's Association", 'https://www.alz.org', 'A nonprofit that provides education, support, and a 24-hour helpline for people living with dementia and their caregivers. A free information resource.'],
+    ]
+  },
+  {
+    id: 'photos-stories',
+    eyebrow: 'Photos and stories',
+    title: 'Photos, stories, and legacy',
+    blurb: 'Apps and services for reminiscence, life stories, photo memories, and recording a personal history for family.',
+    entries: [
+      ['GreyMatters', 'https://greymatterstous.com', 'An app that builds life-story albums and reminiscence activities for people with dementia. Often provided through care organizations.'],
+      ['LifeBio', 'https://www.lifebio.org', "A life-story and reminiscence platform that captures memories in a person's own voice. Offered mainly to senior living and health care providers."],
+      ['Memory Lane Games', 'https://www.memorylanegames.com', 'An app with reminiscence games and prompts built around photos and familiar topics. Free and subscription options are available.'],
+      ['MindMate', 'https://www.mindmate-app.com', 'An app with brain-training games, lifestyle tips, and tracking for people with memory concerns and their caregivers. Offered with a free tier and a paid tier.'],
+      ['Lumosity', 'https://www.lumosity.com', 'A brain-training app with games designed to challenge memory, attention, and problem solving. A paid subscription service.'],
+      ['2000 Paces', 'https://www.2000paces.com', 'An app and service that uses photos to prompt memories and conversation with older adults. Pricing is not widely published.'],
+      ['Kodak Memory Shots', 'https://memory-shots.org/en', 'A caregiver-guided tool that creates AI-generated images to spark memories for people with dementia. Free with limited use, from Kodak and an agency partner.'],
+      ['StoryWorth', 'https://welcome.storyworth.com', 'A service that sends a weekly question, collects the answers, and turns them into a printed keepsake book. A paid gift-style product with annual plans.'],
+      ['Remento', 'https://www.remento.co', 'A service that records spoken answers to weekly prompts, adds the related photos, and prints a book. A paid product with an annual plan.'],
+      ['Memory Murals', 'https://www.memorymurals.com', 'An app that displays family photos and memories on a screen for older adults. A paid subscription service.'],
+      ['HereAfter AI', 'https://www.hereafter.ai', "A service that records a person's stories to create an interactive, voice-based life story for family members. A paid subscription."],
+      ['StoryFile', 'https://www.storyfile.com', 'A platform for recording interactive video conversations, often used by museums and institutions as well as families. Pricing is project-based.'],
+      ['Google Photos', 'https://photos.google.com', "Google's photo service can create automatic albums, movies, and highlight reels from your photos. Free with a Google account, with optional storage plans."],
+      ['Apple Photos (Memories)', 'https://www.apple.com/ios/photos/', "Apple's photo app builds automatic memories and highlight reels from your library. Free with iCloud, with optional storage plans."],
+      ['Amazon Photos', 'https://www.amazon.com/photos', 'Photo storage and album sharing from Amazon, included with a Prime membership and available with paid storage plans.'],
+    ]
+  },
+  {
+    id: 'possessions',
+    eyebrow: 'Belongings',
+    title: 'Possessions and heirlooms',
+    blurb: 'Tools for cataloging belongings, recording the stories behind heirlooms, and organizing documents and end-of-life plans.',
+    entries: [
+      ['Artifcts', 'https://artifcts.com', 'An app and website for documenting belongings and heirlooms with written or spoken stories and photos. Free to start, with paid subscription options.'],
+      ['Family Heirloom Archive', 'https://apps.apple.com/us/app/family-heirloom-archive/id6760870342', 'An iPhone app for capturing family heirlooms with photos and details. Free to start, with optional paid features.'],
+      ['Sortly', 'https://www.sortly.com', 'A home inventory app that catalogs belongings with photos, notes, and values. Free to start, with paid plans for larger collections.'],
+      ['Everplans', 'https://www.everplans.com', 'A digital vault and organizer for documents, accounts, and wishes so family members can find what they need. Free to start, with a paid premium tier.'],
+      ['Trust & Will', 'https://trustandwill.com', 'An online service for creating wills and trusts. A paid legal-document product, with an optional ongoing membership.'],
+      ['Cake (now Altogether Funeral)', 'https://www.joincake.com', 'An online service for end-of-life planning, including checklists and document storage. Free to use, with optional paid features.'],
+      ['Google Inactive Account Manager', 'https://support.google.com/accounts/answer/3036546', 'A free Google setting that lets you decide what happens to your account and data if you become inactive, including sharing it with someone you choose.'],
+      ['Apple Digital Legacy', 'https://support.apple.com/en-us/102631', 'A free Apple feature that lets you name people who can access your account data after your death.'],
+    ]
+  },
+  {
+    id: 'authenticity',
+    eyebrow: 'Authenticity',
+    title: 'Document and photo authenticity',
+    blurb: 'Standards and services that help confirm where a photo, video, or document came from and whether it has been changed.',
+    entries: [
+      ['C2PA', 'https://c2pa.org', 'An open technical standard for recording where a photo, video, or document came from and whether it has been changed. Free for anyone to use.'],
+      ['Content Authenticity Initiative', 'https://contentauthenticity.org', 'An industry group that promotes the C2PA standard and tools that show the source and history of digital content.'],
+      ['Truepic', 'https://www.truepic.com', 'A company that authenticates photos and videos at the moment they are captured, using the C2PA standard. Sold mainly to businesses such as insurers and lenders.'],
+      ['Numbers Protocol', 'https://numbersprotocol.io', 'A service that records the origin and history of digital media on a blockchain. Offers free and paid developer plans.'],
+      ['OriginStamp', 'https://originstamp.com', 'A service that creates a verifiable timestamp for documents and files, proving when they existed. Pay per use.'],
+    ]
+  }
+];
+
+function resourceDirectoryCards(entries) {
+  return entries.map(([name, url, description]) => `<a class="card card-link" href="${url}" target="_blank" rel="noopener"><h3>${name}</h3><p>${description}</p><span class="text-link">Visit website</span></a>`).join('');
+}
+
+function resourceFilterBar() {
+  const total = resourceDirectory.reduce((sum, section) => sum + section.entries.length, 0);
+  const buttons = [
+    '<button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all</button>',
+    ...resourceDirectory.map((section) => `<button type="button" class="filter-btn" data-filter-target="${section.id}" aria-pressed="false">${section.title}</button>`)
+  ].join('');
+  return `<div class="resource-filter" data-resource-filter role="group" aria-label="Filter the directory by topic">${buttons}</div>
+      <p class="filter-count" aria-live="polite" data-filter-count>Showing all ${total} listings</p>`;
+}
+
+const resourceDirectorySection = [
+  `<section class="section" id="directory">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">Directory</p>
+      <h2>A broader directory of tools and services</h2>
+      <p>Below the highlights is a wider list of resources grouped by topic, from AI classes and memory support to photo, story, and heirloom services, along with ways to check whether a photo or document is authentic. Some listings are free, some are paid products or services, and some are made for organizations rather than for individuals. Each card says what we know. These listings are provided for information only, and a listing does not mean Spirantix endorses or recommends it.</p>
+      <p>Choose a topic to narrow the list, or choose Show all to see every listing.</p>
+      ${resourceFilterBar()}
+    </div>
+  </div>
+</section>`,
+  ...resourceDirectory.map((section, index) => `<section class="section${index % 2 === 0 ? ' section-soft' : ' section-white'}" id="${section.id}" data-filter-group="${section.id}">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="eyebrow">${section.eyebrow}</p>
+      <h2>${section.title}</h2>
+      <p>${section.blurb}</p>
+    </div>
+    <div class="grid-3">${resourceDirectoryCards(section.entries)}</div>
+  </div>
+</section>`)
+].join('\n\n');
+
 const resourcesBody = `<section class="page-hero media-page-hero resources-page-hero">
   <div class="wrap media-page-hero-grid">
     <div class="media-page-hero-copy">
       <p class="eyebrow">Resources</p>
       <h1>Useful resources for life online</h1>
-      <p class="lede">Explore helpful websites, practical AI assistants, and useful apps, with plain-language guidance about what each one offers.</p>
-      <div class="button-row" style="margin-top:28px"><a class="btn" href="#websites">Explore websites</a><a class="btn btn-secondary" href="#ai-tools">Explore AI tools</a></div>
+      <p class="lede">Explore helpful websites, AI tools, apps, and services for older adults, grouped by topic, with plain-language guidance about what each one offers.</p>
+      <div class="button-row" style="margin-top:28px"><a class="btn" href="#websites">Explore websites</a><a class="btn btn-secondary" href="#ai-tools">Explore AI tools</a><a class="btn btn-secondary" href="#directory">Browse the directory</a></div>
     </div>
     <div class="media-page-hero-image resource-hero-image">
       <picture>
@@ -577,12 +716,14 @@ ${seniorWebsitesSection}
   </div>
 </section>
 
+${resourceDirectorySection}
+
 <section class="section">
   <div class="narrow">
     <p class="eyebrow">How we choose</p>
     <h2>Clear, useful, and worth your time</h2>
     <p>We favor websites, tools, and apps with clear everyday uses, approachable experiences, responsible practices, and genuine value for older adults. A listing is not a guarantee of every article, feature, answer, product, or service offered by an outside organization.</p>
-    <p class="small"><strong>Last reviewed:</strong> September 11, 2026</p>
+    <p class="small"><strong>Last reviewed:</strong> October 8, 2026</p>
     <div class="button-row" style="margin-top:24px"><a class="btn btn-secondary" href="contact.html">Suggest a resource</a></div>
   </div>
 </section>`;
@@ -967,7 +1108,7 @@ export const pages = [
   { path: 'learn.html', title: 'Learn AI in Plain Language | Spirantix.ai', description: 'Friendly, practical lessons that help seniors understand ChatGPT, Claude, prompts, AI safety, and everyday uses.', active: 'learn', body: learnBody },
   { path: 'classes.html', title: 'AI Classes and Talks for Senior Communities | Spirantix.ai', description: 'Approachable in-person and video AI learning sessions for senior living communities and lifelong-learning centers.', active: 'classes', body: classesBody },
   { path: 'safety.html', title: 'AI Safety and Scam Awareness for Seniors | Spirantix.ai', description: 'Practical steps for protecting personal information, recognizing scam warning signs, and using AI as a cautious second opinion.', active: 'safety', body: safetyBody },
-  { path: 'resources.html', title: 'Helpful Websites, AI Tools, and Apps for Seniors | Spirantix.ai', description: 'A growing collection of helpful websites, practical AI tools, and useful apps, explained in plain language for older adults.', active: 'resources', body: resourcesBody },
+  { path: 'resources.html', title: 'Helpful Websites, AI Tools, and Apps for Seniors | Spirantix.ai', description: 'A growing directory of helpful websites, AI tools, apps, and services for older adults, grouped by topic and explained in plain language.', active: 'resources', body: resourcesBody },
   { path: 'products.html', title: 'Spirantix AI Products | One Concierge, Four Specialists', description: 'Meet the developing Spirantix concierge and specialist agents for memory, stories, authenticity, and family possessions.', active: 'products', body: productsBody },
   { path: 'support.html', title: 'Spirantix Concierge Guide | How to Use, Prompts, and Questions', description: 'How to start with the Spirantix Concierge, example prompts you can copy and paste, and answers to common questions about this first release.', active: '', body: supportBody },
   { path: 'about.html', title: 'About Spirantix | AI Learning and Products for Seniors', description: 'Learn why Spirantix brings together plain-language AI education, practical safety guidance, community instruction, and thoughtful products.', active: 'about', body: aboutBody },

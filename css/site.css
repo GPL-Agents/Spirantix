@@ -743,3 +743,13 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .chart-figure img { width: 100%; height: auto; border: 1px solid var(--navy); border-radius: var(--radius-sm); background: #fff; box-shadow: var(--shadow); }
 .chart-figure figcaption { margin-top: 12px; color: var(--ink-soft); font-size: 0.85rem; line-height: 1.55; }
 @media (max-width: 720px) { .charts-grid { grid-template-columns: 1fr; } }
+
+/* Resources page: directory filter (added 2026-10-08) */
+.resource-filter { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 8px; }
+.resource-filter .filter-btn { font: inherit; font-size: 1.05rem; font-weight: 600; padding: 14px 22px; border: 2px solid var(--blue); border-radius: 999px; background: #fff; color: var(--blue-dark); cursor: pointer; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+.resource-filter .filter-btn:hover { background: var(--blue-soft); }
+.resource-filter .filter-btn[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+.filter-count { margin: 0; color: var(--navy); font-weight: 600; }
+.is-filter-hidden { display: none !important; }
+@media (max-width: 720px) { .resource-filter .filter-btn { width: 100%; text-align: center; padding: 16px 20px; } }
+
