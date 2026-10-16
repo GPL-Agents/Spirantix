@@ -81,36 +81,52 @@ export const lessonIndex = [
   },
   {
     number: 7,
+    slug: 'google-inactive-account-manager',
+    title: 'Where your Google account goes when you stop using it',
+    description: 'Set up Google Inactive Account Manager so the right person can find or receive your data if you stop using your account.',
+    time: '8 minute read',
+    status: 'published'
+  },
+  {
+    number: 8,
+    slug: 'apple-digital-legacy',
+    title: 'Where your Apple account goes when you stop using it',
+    description: 'Set up Apple Digital Legacy so a person you trust can reach the photos and files in your Apple account after your death.',
+    time: '8 minute read',
+    status: 'published'
+  },
+  {
+    number: 9,
     title: 'AI or a search engine: which should you use?',
     description: 'Choose the right tool when you need facts, ideas, comparisons, or current information.',
     status: 'planned'
   },
   {
-    number: 8,
+    number: 10,
     title: 'Keeping ongoing work together with Projects',
     description: 'Organize instructions, files, and conversations for a continuing task.',
     status: 'planned'
   },
   {
-    number: 9,
+    number: 11,
     title: 'What personal information not to share',
     description: 'Protect financial, medical, identity, and account information when using an AI assistant.',
     status: 'planned'
   },
   {
-    number: 10,
+    number: 12,
     title: 'Using AI to examine something suspicious',
     description: 'Use AI as one source of questions and warning signs without treating it as a guarantee.',
     status: 'planned'
   },
   {
-    number: 11,
+    number: 13,
     title: 'What an AI agent, plugin, or connection is',
     description: 'Understand how an agent, plugin, or connection differs from a normal chatbot and what it can do on your behalf.',
     status: 'planned'
   },
   {
-    number: 12,
+    number: 14,
     title: 'Using Spirantix Concierge',
     description: 'How to set up and get the most out of the Spirantix AI platform.',
     status: 'planned'
