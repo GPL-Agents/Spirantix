@@ -348,21 +348,28 @@ const aiDanger = `${lessonHero(6, 'Is AI actually dangerous?', 'What the news is
 
 const googleInactiveAccountManager = `${lessonHero(7, 'Where your Google account goes when you stop using it', 'Set up Google Inactive Account Manager so the right person can find or receive your data if you stop using your account.', '8 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
-  <p>Most of us keep a large part of daily life inside a Google account: email, photos, documents, contacts, and years of messages. If you stop using that account, whether you passed away or simply can no longer get to it, the question of what happens next is worth answering in advance. Google gives you a free way to decide. It is called Inactive Account Manager.</p>
+  <p>Many of us keep a large part of daily life inside a Google account: email, photos, documents, contacts, and years of messages. If you stop using that account, whether you passed away or simply can no longer get to it, the question of what happens next is worth answering in advance. Google gives you a free way to decide. It is called Inactive Account Manager.</p>
+
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the illustration of an account waiting period">
+      <img src="../assets/lesson-google-inactive-account-manager.png" alt="Illustration of a desk with a laptop showing a clock and a checklist, a wall clock, a sealed envelope, a key, and a locked box, representing an account that waits a set period before anything is shared." width="1536" height="1024" loading="eager">
+    </button>
+    <figcaption>Inactive Account Manager works on a timer. Your account stays private until the waiting period you chose has passed.</figcaption>
+  </figure>
 
   <h2>What it is</h2>
   <p>Inactive Account Manager is a free Google setting. It lets you decide ahead of time what should happen to your account and your data if the account goes quiet for a set period of time. You can ask Google to do one of two things: notify someone you choose, or share chosen parts of your data with one or more people you trust. You set it up yourself, and you can change it or cancel it at any time.</p>
 
   <h2>How Google decides you are inactive</h2>
-  <p>Google looks at several signals to judge whether you are still using your account. These include your recent sign-ins, your activity in My Activity, your use of Gmail (such as opening the Gmail app on your phone), and regular check-ins from Android devices. The plan you set only starts if the account stays inactive for the full period you chose. Google sends you reminders by email and text before anything happens, so a quiet stretch, such as a long trip, is not a problem.</p>
+  <p>Google looks at several signals to judge whether you are still using your account. These include your recent sign-ins, your activity in My Activity, your use of Gmail (such as opening the Gmail app on your phone), and regular check-ins from Android devices. The plan you set only starts if the account stays inactive for the full period you chose. Google contacts you by email, and by text if you added a phone number, before anything happens. That means a quiet stretch, such as a long trip, is not a problem as long as you sign in again.</p>
 
   <h2>Setting it up, step by step</h2>
   <ol>
     <li><strong>Open the Inactive Account Manager page.</strong> Go to <a href="https://myaccount.google.com/inactive" target="_blank" rel="noopener">myaccount.google.com/inactive</a> and sign in to your Google account. You can also reach it from your Google account settings under Data and privacy.</li>
     <li><strong>Choose your waiting period.</strong> Google offers several choices, from about 3 months to about 18 months of inactivity. The options are 3, 6, 12, or 18 months. A shorter period acts sooner. A longer period gives you more room to stay away without a false start.</li>
     <li><strong>Add your trusted contacts.</strong> You can add up to 10 people. For each person, decide whether Google should only notify them, or also share data with them.</li>
-    <li><strong>Choose which data each person gets.</strong> You can share everything, or pick specific Google products such as Mail, Drive, Photos, and YouTube. Different people can receive different things. A few kinds of information cannot be shared.</li>
-    <li><strong>Add a phone number for each trusted contact.</strong> Google uses the phone number for one purpose only: to confirm that the right person is downloading your data.</li>
+    <li><strong>Choose which data each person gets.</strong> You can share everything, or pick specific Google products such as Mail, Drive, Photos, YouTube, and Blogger. Different people can receive different things. A few kinds of information cannot be shared.</li>
+    <li><strong>Add a phone number for each trusted contact.</strong> Google uses the phone number for one purpose only: to confirm that the right person is downloading your data. It helps stop the wrong person from using the email that was sent.</li>
     <li><strong>Write the message, if you are only notifying someone.</strong> If you choose to notify someone without sharing data, you can write the subject line and the message they will receive.</li>
     <li><strong>Review and turn the plan on.</strong> Google shows you exactly what will happen. After that, you are finished.</li>
   </ol>
@@ -383,23 +390,31 @@ const googleInactiveAccountManager = `${lessonHero(7, 'Where your Google account
   </ul>
   <p>Contacts receive nothing during setup. They are contacted only after the waiting period you set has passed.</p>
 
-  <div class="notice"><strong>What happens if you do nothing:</strong> Google reserves the right to delete an inactive account and its data after two years of inactivity across Google. In many cases, Google can also work with immediate family members or a person's representative to close the account of someone who has died.</div>
+  <div class="notice"><strong>What happens if you do nothing:</strong> Google reserves the right to delete an inactive account and its data after two years of inactivity across Google. If that happens, the Gmail address cannot be used again. In many cases, Google can also work with immediate family members or a person's representative to close the account of someone who has died, and in certain cases it may provide content from that account.</div>
 
   <h2>How this differs from sharing your password</h2>
-  <p>Sharing your password is different, and riskier. A password opens everything, right away, and it keeps working until someone changes it. Inactive Account Manager works the opposite way. Your trusted contact never receives your password. They receive only the data you chose, and only after the account has been quiet for the period you set. You stay in control, and you can change or cancel the plan whenever you like.</p>
-  <p>Google can update these details over time. If a menu or setting looks different, check the official page linked at the bottom of this lesson.</p>
+  <p>Sharing your password is different, and riskier. A password opens everything, right away, and it keeps working until someone changes it. It can also let the other person read your email, which is the key to many other accounts.</p>
+  <p>Inactive Account Manager works the opposite way. Your trusted contact never receives your password. They receive only the data you chose, and only after the account has been quiet for the period you set. You stay in control, and you can change or cancel the plan whenever you like.</p>
+  <p>The waiting-period choices (3, 6, 12, or 18 months) are the options Google shows on the <a href="https://myaccount.google.com/inactive" target="_blank" rel="noopener">Inactive Account Manager page</a> itself. Google can update them over time. If a menu or setting looks different, check that page or the official help page linked at the bottom of this lesson.</p>
 
   <details class="lesson-check"><summary>Quick check: does your trusted contact get your Google password?</summary><div><p><strong>No.</strong> Inactive Account Manager shares only the data you choose, and only after your account has been inactive for the period you set. Your contact never receives your password, and cannot sign in as you.</p></div></details>
 
   <div class="try-box"><h2>Try this today</h2><p>Open <a href="https://myaccount.google.com/inactive" target="_blank" rel="noopener">myaccount.google.com/inactive</a> and do one small thing: choose your waiting period and add one trusted contact. You can adjust it later, so there is no need to get it perfect the first time.</p></div>
 
   ${lessonNav('apple-digital-legacy', 'Where your Apple account goes when you stop using it')}
-  ${sourceNote('Checked against Google\'s official page <a href="https://support.google.com/accounts/answer/3036546" target="_blank" rel="noopener">About Inactive Account Manager</a> and the <a href="https://support.google.com/accounts/answer/12418290" target="_blank" rel="noopener">Inactive Google Account Policy</a>.', 'October 16, 2026')}
+  ${sourceNote('Checked against Google\'s official page <a href="https://support.google.com/accounts/answer/3036546" target="_blank" rel="noopener">About Inactive Account Manager</a> and the <a href="https://support.google.com/accounts/answer/12418290" target="_blank" rel="noopener">Inactive Google Account Policy</a>.', 'October 17, 2026')}
 </div></article>`;
 
 const appleDigitalLegacy = `${lessonHero(8, 'Where your Apple account goes when you stop using it', 'Set up Apple Digital Legacy so a person you trust can reach the photos and files in your Apple account after your death.', '8 minute read')}
 <article class="lesson-shell"><div class="lesson-body">
-  <p>An Apple account holds a great deal: photos, messages, notes, contacts, and the backups of your devices. Apple has a free feature that lets you name someone you trust to reach that data after your death. The feature is called Digital Legacy, and the person you name is your Legacy Contact.</p>
+  <p>An Apple account holds a great deal: photos, messages, notes, contacts, and the backups of your devices. Apple has a free feature, Digital Legacy, that lets you name someone you trust to reach that data after your death. That person is your Legacy Contact.</p>
+
+  <figure class="lesson-figure lesson-figure-wide">
+    <button class="lesson-image-trigger" type="button" data-lightbox aria-label="Enlarge the illustration of an access key being handed to a trusted person">
+      <img src="../assets/lesson-apple-digital-legacy.png" alt="Illustration of one person handing a key and a sealed card to another, beside a phone showing a photo grid with a padlock, a cloud, and a shield with a check mark." width="1536" height="1024" loading="eager">
+    </button>
+    <figcaption>A Legacy Contact does not get your password. They get an access key, and Apple verifies it before anything is released.</figcaption>
+  </figure>
 
   <h2>What it is</h2>
   <p>Digital Legacy is an Apple feature. You choose one or more people as Legacy Contacts. After you pass away, those people can ask Apple for access to the data in your account. They do not need an Apple device or an Apple account of their own. While you are alive, you can add or remove a Legacy Contact at any time.</p>
@@ -407,8 +422,8 @@ const appleDigitalLegacy = `${lessonHero(8, 'Where your Apple account goes when 
   <h2>What you need first</h2>
   <ul>
     <li>An Apple device running iOS 15.2, iPadOS 15.2, or macOS Monterey 12.1 or later. Update the device first if you are not sure.</li>
-    <li>Two-factor authentication turned on for your Apple account.</li>
-    <li>The name and contact details of the person you trust.</li>
+    <li>Two-factor authentication turned on for your Apple account. This is the extra step where Apple sends a six-digit code to a device you trust when you sign in on a new device.</li>
+    <li>Someone you trust, who is over 13 (the age varies by country or region). You will need their phone number or email address.</li>
   </ul>
 
   <h2>Setting it up on iPhone or iPad, step by step</h2>
@@ -418,14 +433,16 @@ const appleDigitalLegacy = `${lessonHero(8, 'Where your Apple account goes when 
     <li>Tap <strong>Sign-In &amp; Security</strong>, then tap <strong>Legacy Contact</strong>.</li>
     <li>Tap <strong>Add Legacy Contact</strong>. You may need Face ID, Touch ID, or your passcode.</li>
     <li><strong>Choose the person.</strong> If you are in a Family Sharing group, you can pick a member. Or tap <strong>Choose Someone Else</strong> and add someone from your contacts by phone number or email.</li>
-    <li><strong>Share the access key.</strong> You can send it by iMessage, or print a copy. The access key is required later, so keep a record of where it is.</li>
+    <li><strong>Share the access key.</strong> Send it by iMessage or print a copy, and keep a record of where it is.</li>
     <li><strong>Confirm.</strong> Apple sends you an email when a Legacy Contact is added. You are done.</li>
   </ol>
   <p>On a Mac, the same setting is under the Apple menu, then <strong>System Settings</strong>, then <strong>your name</strong>, then <strong>Sign-In &amp; Security</strong>, then <strong>Legacy Contact</strong>.</p>
 
   <h2>The access key</h2>
-  <p>When you add a Legacy Contact, Apple creates an access key. This is a special code your Legacy Contact will need. You can send it through iMessage, so it saves automatically on their device if they accept. Or you can print a copy, or make a PDF or a screenshot. Many people also save a copy with their estate planning documents.</p>
-  <p>Treat the access key like a spare house key. Apple cannot replace it if it is lost. Apple also cannot read the data in your account for you, so the key is what makes access possible.</p>
+  <p>When you add a Legacy Contact, Apple creates an access key. This is a special code your Legacy Contact will need. You can send it by iMessage, which stores a copy on their device if they accept, or print a copy, a PDF, or a screenshot. Many people also save a copy with their estate planning documents.</p>
+  <p>The key is needed twice: once to make the request, and again when they sign in to the special Legacy Contact account Apple creates. Apple may also ask for it to open end-to-end encrypted data, such as health data and voice memos.</p>
+  <p>If you need the key again later, you can find it on your device. Open <strong>Settings</strong>, tap <strong>your name</strong>, tap <strong>Sign-In &amp; Security</strong>, then <strong>Legacy Contact</strong>, and tap the person's name. Tap <strong>View Access Key</strong>. If the person is nearby, they can scan the QR code with their own device, or you can print another copy.</p>
+  <p>Treat the access key like a spare house key. Apple cannot replace it if it is lost, and Apple cannot read your data for you, so the key is what makes access possible.</p>
 
   <h2>What your Legacy Contact can and cannot access</h2>
   <p>If Apple approves their request, a Legacy Contact can reach:</p>
@@ -443,22 +460,24 @@ const appleDigitalLegacy = `${lessonHero(8, 'Where your Apple account goes when 
     <li>Movies, music, and books you purchased</li>
     <li>Subscriptions and in-app purchases</li>
     <li>Payment information for your Apple Account or Apple Pay</li>
-    <li>Anything stored in iCloud Keychain, such as saved passwords and Wi-Fi passwords</li>
+    <li>Anything stored in iCloud Keychain, such as saved passwords, passkeys, and Wi-Fi passwords</li>
   </ul>
 
   <h2>How your Legacy Contact requests access after a death</h2>
-  <p>They need two things: the access key and your death certificate. They can begin the request on their own Apple device under Settings, then their name, then Sign-In &amp; Security, then Legacy Contact, then the person's name, then Request Access. Or they can start on the web at Apple's Digital Legacy site, <a href="https://digital-legacy.apple.com" target="_blank" rel="noopener">digital-legacy.apple.com</a>. Apple reviews and verifies each request before approving it.</p>
-  <p>After Apple approves the request, it creates a special Legacy Contact account for them. Your original account no longer works. Devices that used your account have Activation Lock removed, and those devices must be erased before they can be set up again.</p>
+  <p>They need two things: the access key and your death certificate. They can begin the request on their own Apple device: Settings, their name, Sign-In &amp; Security, Legacy Contact, your name, then Request Access. Or they can start on the web at <a href="https://digital-legacy.apple.com" target="_blank" rel="noopener">digital-legacy.apple.com</a>. Apple reviews and verifies each request before approving it. The documents required can vary by country or region.</p>
+  <p>After Apple approves the request, it creates a special Legacy Contact account for them. Your original account no longer works. Devices that used your account have Activation Lock removed, and those devices must be erased before they can be set up again. Activation Lock is Apple's theft protection that ties a device to the account that set it up.</p>
+  <p>They sign in to that Legacy Contact account at <a href="https://icloud.com" target="_blank" rel="noopener">icloud.com</a> to see the data, and they can download a copy of the account data at <a href="https://privacy.apple.com" target="_blank" rel="noopener">privacy.apple.com</a>. If you had Advanced Data Protection turned on, they must also sign in on an Apple device, because that setting keeps the data locked with your own device.</p>
+  <p>If there is no Legacy Contact, family members can still ask Apple for access to a deceased person's account. That path usually needs legal documents, such as a death certificate and sometimes a court order. The Legacy Contact route is simpler, which is why it is worth setting up in advance.</p>
 
   <h2>The time window</h2>
   <p>Access lasts for a limited time: three years from the date Apple approves the first Legacy Contact request. After that, the account is permanently deleted. It is a good idea to download anything worth keeping during those three years, rather than at the last moment. If you named more than one Legacy Contact, any one of them can make decisions, including deleting the account.</p>
 
-  <details class="lesson-check"><summary>Quick check: can a Legacy Contact get your saved passwords?</summary><div><p><strong>No.</strong> Saved passwords, Wi-Fi passwords, and payment information live in iCloud Keychain, which a Legacy Contact cannot open. Purchased movies, music, and books are out of reach too. They can reach things like photos, notes, messages, Mail, and files in iCloud Drive.</p></div></details>
+  <details class="lesson-check"><summary>Quick check: can a Legacy Contact get your saved passwords?</summary><div><p><strong>No.</strong> Saved passwords, passkeys, Wi-Fi passwords, and payment information live in iCloud Keychain, which a Legacy Contact cannot open. Purchased movies, music, and books are out of reach too. They can reach things like photos, notes, messages, Mail, and files in iCloud Drive.</p></div></details>
 
   <div class="try-box"><h2>Try this today</h2><p>On your iPhone, open Settings, tap your name, then Sign-In &amp; Security, then Legacy Contact. Add one person you trust. Then print a copy of the access key and keep it with your estate planning papers, so it is easy to find when it is needed.</p></div>
 
   ${lessonNavEnd()}
-  ${sourceNote('Checked against Apple\'s official pages <a href="https://support.apple.com/en-us/102631" target="_blank" rel="noopener">How to add a Legacy Contact for your Apple Account</a> and <a href="https://support.apple.com/en-us/102678" target="_blank" rel="noopener">Request access to an Apple Account as a Legacy Contact</a>.', 'October 16, 2026')}
+  ${sourceNote('Checked against Apple\'s official pages <a href="https://support.apple.com/en-us/102631" target="_blank" rel="noopener">How to add a Legacy Contact for your Apple Account</a>, <a href="https://support.apple.com/en-us/102678" target="_blank" rel="noopener">Request access to an Apple Account as a Legacy Contact</a>, and <a href="https://support.apple.com/en-us/103128" target="_blank" rel="noopener">Data that a Legacy Contact can access</a>.', 'October 17, 2026')}
 </div></article>`;
 
 const lessons = [
@@ -468,8 +487,8 @@ const lessons = [
   { slug: 'claude-basics', title: 'Claude Basics | Spirantix.ai', description: 'A beginner-friendly guide to starting with Claude, refining answers, using documents carefully, and understanding Projects.', body: claudeBasics },
   { slug: 'better-prompts', title: 'Asking Better Questions | Spirantix.ai', description: 'Use a simple four-part method to ask clearer questions and get more useful answers from ChatGPT, Claude, and other AI assistants.', body: betterPrompts },
   { slug: 'ai-danger-what-the-news-shows', title: 'Is AI Actually Dangerous? | Spirantix.ai', description: 'What the news is really reporting about AI risk, data centers, cyberattacks, and calls for regulation, with sources you can check yourself.', datePublished: '2026-09-16', dateModified: '2026-09-16', body: aiDanger },
-  { slug: 'google-inactive-account-manager', title: 'Where Your Google Account Goes When You Stop Using It | Spirantix.ai', description: 'Set up Google Inactive Account Manager so the right person can find or receive your data if you stop using your account.', datePublished: '2026-10-16', dateModified: '2026-10-16', body: googleInactiveAccountManager },
-  { slug: 'apple-digital-legacy', title: 'Where Your Apple Account Goes When You Stop Using It | Spirantix.ai', description: 'Set up Apple Digital Legacy so a person you trust can reach the photos and files in your Apple account after your death.', datePublished: '2026-10-16', dateModified: '2026-10-16', body: appleDigitalLegacy }
+  { slug: 'google-inactive-account-manager', title: 'Where Your Google Account Goes When You Stop Using It | Spirantix.ai', description: 'Set up Google Inactive Account Manager so the right person can find or receive your data if you stop using your account.', datePublished: '2026-10-16', dateModified: '2026-10-17', body: googleInactiveAccountManager },
+  { slug: 'apple-digital-legacy', title: 'Where Your Apple Account Goes When You Stop Using It | Spirantix.ai', description: 'Set up Apple Digital Legacy so a person you trust can reach the photos and files in your Apple account after your death.', datePublished: '2026-10-16', dateModified: '2026-10-17', body: appleDigitalLegacy }
 ];
 
 function articleSchema(lesson) {
