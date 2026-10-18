@@ -134,10 +134,7 @@ confirm it.
 **Ask about a seal.** Say: "Is my seal still good?" The concierge tells you what is recorded about the
 seal on an item, in plain words. Making a seal happens in the app, later.
 
-**Add a person who can help you.** On your Spirantix account page you can add a person by email. That
-person can do two things on your account: add reminders, and add calendar events. We email them to say
-you added them, and they accept before it starts. You can take them off at any time. The concierge can
-give you the link to that page.
+**Add a person who can help you.** A helper is a family member or caregiver you choose. Permission to add calendar events does not by itself allow that person to view your calendar. You can separately allow the helper to view your full daily event calendar. You can remove access at any time.
 
 **Hear any answer read aloud.** Every answer can be spoken. If your device has voice turned on, the
 answer is read to you. If you want to hear it again, ask: "Read that to me."
@@ -161,11 +158,11 @@ step. It never guesses and it never fills in a likely answer.
 
 **Phase 1, the ChatGPT plugin.** You talk with the concierge in ChatGPT, and you have Spirantix
 account pages for your people, your photos and albums, your voice stories, your reminders and your
-items. Sealing a document and read-only library sharing are not in this phase.
+items. Sealing a document is not in this phase.
 
 **Phase 2, the Claude plugin.** The same concierge and the same records, reachable from Claude. Same
 account, same data, same voice.
 
 **Phase 3, the app.** The app becomes the main place to use Spirantix, on a tablet or a phone. It adds
 reading everything aloud screen by screen, the community sponsor role, paid storage, read-only library
-sharing, and sealing a document.
+sharing, and sealing a document. Sponsor access is separate from helper access: a connected senior living center may add events for its connected members, but must not view their calendars.
