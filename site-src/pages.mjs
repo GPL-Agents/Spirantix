@@ -728,180 +728,7 @@ ${resourceDirectorySection}
   </div>
 </section>`;
 
-const supportBody = `<section class="page-hero media-page-hero support-page-hero">
-    <div class="wrap">
-      <div class="media-page-hero-grid">
-        <div class="media-page-hero-copy">
-          <p class="eyebrow">Concierge Guide</p>
-          <h1>Get the most from your Spirantix Concierge</h1>
-          <p class="lede">Ask in your own words. Use these quick links to go directly to the help you need.</p>
-        </div>
-        <div class="media-page-hero-image">
-          <img src="assets/caregiver-showing-senior-lady-tablet.jpg" alt="A woman helping an older adult use a tablet" width="800" height="533">
-        </div>
-      </div>
-      <nav class="support-quick-links" aria-label="Concierge guide sections">
-        <a href="#how-to-use">How to use</a>
-        <a href="#prompts">Example prompts</a>
-        <a href="#support-faq">Common questions</a>
-        <a href="#contact-support">Contact support</a>
-      </nav>
-      <div class="notice support-voice-note" style="margin-top:22px">
-        <p><strong>You can talk instead of type.</strong> Speak your question and it appears in the box, then send it the way you always do.</p>
-        <ul style="padding-left:1.2em;margin:10px 0 0">
-          <li><strong>On a Windows computer:</strong> click in the box where you type, press the <strong>Windows key</strong> and the <strong>H</strong> key together, and say your question. Press them together again to stop.</li>
-          <li><strong>On a Mac:</strong> press the <strong>Fn</strong> (function) key twice to start Dictation, or press the <strong>microphone</strong> key on the keyboard, and say your question.</li>
-          <li><strong>On a phone or tablet:</strong> tap the <strong>microphone</strong> on your keyboard and say your question.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-<section class="section section-white support-guide-section" id="how-to-use">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">How to use</p>
-      <p>You do not need to learn any special words. Ask the way you would ask a friend.</p>
-    </div>
-    <div class="grid-2" style="align-items:start;margin-bottom:28px">
-      <div class="card">
-        <h3>What it is</h3>
-        <p>The Spirantix Concierge is a helper you talk with in a chat. It remembers the people, photos, stories, and belongings your family tells it about, and it answers your questions about them.</p>
-      </div>
-      <div class="card">
-        <h3>What to say first</h3>
-        <ol style="padding-left:1.2em;margin:0">
-          <li>Open the link you were given. It opens a chat.</li>
-          <li>Say hello, then ask your question in your own words.</li>
-          <li>If you are not sure where to begin, tap one of the four buttons, or simply say what you need.</li>
-        </ol>
-      </div>
-    </div>
-    <div class="callout callout-light" style="margin-bottom:28px">
-      <h3>One concierge, four kinds of help</h3>
-      <p>You never have to choose who you are talking to. There is only one helper, and it takes you where you need to go.</p>
-      <ul style="padding-left:1.2em;margin:0">
-        <li><strong>Remember</strong> -- ask about a person, a day, a trip, a reminder, or an item you already told it about.</li>
-        <li><strong>Capture</strong> -- give it something new to keep: a story, a reminder, a calendar event, or an item.</li>
-        <li><strong>Photos</strong> -- show, organize, and label photos and albums. Your full pictures stay in your own library.</li>
-        <li><strong>Update</strong> -- mark a reminder done, remove one, change its time or wording, or change or cancel a calendar event.</li>
-      </ul>
-    </div>
-    <div class="grid-2" style="align-items:start;margin-bottom:28px">
-      <div class="card">
-        <h3>What it remembers</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>The people in your family and what you tell it about them</li>
-          <li>Photos and albums, labeled with the names you give them</li>
-          <li>Voice stories attached to a photo, an album, or an item</li>
-          <li>Reminders you set</li>
-          <li>Items you record, along with their story</li>
-          <li>Events you add to your calendar</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>What it will not do yet</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>It does not give medical or legal advice. It will ask you to speak with a doctor or a lawyer.</li>
-          <li>It does not recognize faces in this first release. It can only use names and notes you have already given it.</li>
-          <li>It cannot start a conversation on its own. It waits for you to speak first.</li>
-          <li>It cannot record audio inside the chat. You record a voice story on your own phone or on our page, and it helps you attach it.</li>
-          <li>It does not seal a document in this first release. Sealing comes later, in the web app.</li>
-          <li>To add events or activities we need to connect your calendar. Do you want to connect a Google account now?</li>
-        </ul>
-      </div>
-    </div>
-    <div class="notice"><strong>A second way to reach your concierge is on the way.</strong> Spirantix is building a second assistant surface. This page will be updated with details when it is ready.</div>
-  </div>
-</section>
-<section class="section section-soft" id="prompts">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Supported prompts</p>
-      <h2>Copy, paste, and change the details to match your family</h2>
-      <p>These are real examples the Concierge understands today.</p>
-    </div>
-    <div class="grid-2">
-      <div class="card">
-        <h3>Remember a person</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>"Tell me about my daughter Sophie."</li>
-          <li>"Who is in my family?"</li>
-          <li>"What did we do last Thanksgiving?"</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Remember an item</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>"Keep track of this watch. My grandmother gave it to me."</li>
-          <li>"What did my grandfather own?"</li>
-          <li>"What do you know about the wooden clock?"</li>
-          <li>"Add my grandmother's ring to my list."</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Capture a memory or story</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>"Remember that Sophie learned to ride her bike at the lake."</li>
-          <li>"Save the story of how we met."</li>
-          <li>"What stories have I told you about our trip to Maine?"</li>
-          <li>"Add a note that this recipe came from Aunt Rosa."</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Set a reminder</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>"Remind me to take my pills at eight tonight."</li>
-          <li>"Remind me to call my brother tomorrow morning."</li>
-          <li>"I took my pills, you can mark that done."</li>
-          <li>"Add my hair appointment to my calendar."</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Ask about a photo or album</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>"Show me pictures of Sophie."</li>
-          <li>"What albums do I have?"</li>
-          <li>"Make an album of our trip."</li>
-          <li>"This is my daughter Sophie in this photo."</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Find something you stored</h3>
-        <ul style="padding-left:1.2em;margin:0">
-          <li>"What is on my calendar today?"</li>
-          <li>"What reminders do I have?"</li>
-          <li>"What documents do I have for the painting?"</li>
-          <li>"Make me a list of everything I have recorded."</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section" id="support-faq">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Questions about using the Concierge</p>
-      <h2>Answers for a first-time user or their family</h2>
-      <p>Looking for a question about lessons, classes, or the website instead? Visit the <a href="faq.html">Questions page</a>.</p>
-    </div>
-    <div class="accordion">
-      <details><summary>Do I need a ChatGPT account to use the Concierge?</summary><div><p>Yes. You will need a ChatGPT account and a Spirantix account, and the Concierge asks you to connect the two the first time you use it.</p></div></details>
-      <details><summary>Is there a cost to use the Concierge?</summary><div><p>There is no charge to use the Concierge today.</p></div></details>
-      <details><summary>Can it change or cancel something already on my calendar?</summary><div><p>To add events or activities we need to connect your calendar. Do you want to connect a Google account now?</p></div></details>
-      <details><summary>Will it recognize people in my photos automatically?</summary><div><p>No. It does not identify a person from a photo in this first release. It can only use the names and notes you have already given it.</p></div></details>
-      <details><summary>Is a document sealed or certified when I add it?</summary><div><p>No. Nothing is sealed when you add a document in this first release, and there is no seal yet to check. Sealing comes later, in the web app.</p></div></details>
-      <details><summary>Can someone else help me use my account?</summary><div><p>Yes. On your Spirantix web account, you can add a named helper by email. That person can add reminders and add calendar events for you, and you can remove them at any time.</p></div></details>
-      <details><summary>Can the helper see everything I have stored?</summary><div><p>No. A helper can only add reminders and add calendar events. Looking at your library is not part of this first release.</p></div></details>
-      <details><summary>How will a reminder actually reach me?</summary><div><p>Reminder delivery is planned through email with a calendar file attached, a Google Calendar event, or a text message. Acknowledging a reminder is a separate action you take with the Concierge.</p></div></details>
-      <details><summary>Can I add a voice story?</summary><div><p>Yes. You record it on your own phone or on the Spirantix page, and the Concierge walks you through attaching it to a photo, an album, or an item. It cannot record audio inside the chat itself.</p></div></details>
-      <details><summary>Does it give medical or legal advice?</summary><div><p>No. It will ask you to speak with a doctor or a lawyer.</p></div></details>
-      <details><summary>What happens if it does not know the answer?</summary><div><p>It says so plainly and lets the Spirantix team know, so the answer can be added later.</p></div></details>
-      <details><summary>Is my information private?</summary><div><p>Your conversation is processed through ChatGPT's infrastructure. Read the <a href="privacy.html">Spirantix privacy policy</a> for details on how information is handled.</p></div></details>
-      <details><summary>Does it work when I am offline?</summary><div><p>Not yet. Offline mode is not available in this first release.</p></div></details>
-    </div>
-  </div>
-</section>
-<section class="section section-dark" id="contact-support"><div class="wrap" style="text-align:center"><p class="eyebrow" style="color:var(--mint)">Still have a question</p><h2>We are glad to help</h2><p>For help with your Concierge account, use the contact form. General questions about Spirantix lessons, classes, and the website are on the <a href="faq.html">Questions page</a>.</p><a class="btn" href="contact.html?type=support">Contact support</a></div></section>`;
+const supportBody = `<section class="lesson-shell"><div class="wrap"><article class="lesson-body concierge-guide"><h1>Help with Spirantix Concierge</h1><p>For help with your account, sign-in, a connected calendar, photos, reminders, or another Concierge feature, contact Spirantix.</p><h2>Contact support</h2><p>Email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=support">support contact form</a>. Describe what you were trying to do and what happened. Include your account email if it helps us find your account. Do not include a password, account key, sign-in link, or private family records.</p><h2>Using the Concierge</h2><p><a href="guide.html">Read the Concierge guide</a> for example prompts and instructions for talking instead of typing.</p><h2>Privacy and account deletion</h2><p>To request correction or deletion of your Spirantix account information, contact support. We need to verify the account owner before making account changes. Read the <a href="privacy.html">privacy policy</a> for what we store and what account deletion removes.</p><h2>Before you send a request</h2><p>A brief description of the problem and the name of the device or browser you are using can help. You can send a screenshot with private information removed. Spirantix is not an emergency service.</p><p><a href="terms.html">Read the terms of use</a></p></article></div></section>`;
 
 const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap media-page-hero-grid">
@@ -1060,18 +887,18 @@ const faqBody = `${pageHero('Questions', 'Common questions about learning and Sp
 const privacyBody = `${pageHero('Privacy', 'Clear information about how Spirantix AI handles information', 'This policy applies to this website, its contact form, and Spirantix AI products unless a product provides a separate notice.')}
 <section class="lesson-shell"><div class="wrap"><div class="lesson-body privacy-body">
   <p><strong>Effective date:</strong> September 9, 2026</p>
-  <p><strong>Last updated:</strong> October 16, 2026</p>
+  <p><strong>Last updated:</strong> October 18, 2026</p>
   <h2>Who operates Spirantix</h2><p>Spirantix AI operates spirantix.ai, provides AI education, and develops Spirantix products focused on memory, stories, authenticity, and family possessions. In this policy, “Spirantix AI,” “we,” “us,” and “our” refer to the operator responsible for these services.</p>
   <h2>Information we collect</h2><p>When you contact Spirantix AI, the form collects your name, email address, inquiry type, message, and any optional details you choose to provide. Depending on your inquiry, those details may include a product name, organization, location, role, group size, format interest, or preferred timing.</p><p>The form sends this information to the Spirantix AI inbox through an email delivery provider. We use it to respond to your inquiry, provide support, discuss early access, or discuss a class or speaking engagement.</p>
   <h2>Information you should not send</h2><p>Do not submit passwords, verification codes, complete financial account numbers, medical records, Social Security numbers, or copies of identity documents through the contact form.</p>
   <h2>Technical information</h2><p>Our hosting and security providers may process standard technical information such as your IP address, browser type, requested page, referring page, device information, and timestamp in order to deliver the website, prevent abuse, and maintain reliable operational logs.</p>
   <h2>How we use information</h2><p>Spirantix AI uses information to operate and secure the website and products, answer requests, provide support, improve services, manage testing and early access, and comply with applicable obligations. We do not currently use contact-form information for unrelated marketing. If we add optional product updates or a mailing list, we will explain consent and removal choices when you subscribe.</p>
-  <h2>AI product information</h2><p>Spirantix AI products are designed around user-controlled accounts and storage. Specific behavior, storage, and data use may depend on the AI provider and account you select. Product pages, testing materials, and any product-specific notice will explain those details before you add personal information. Do not use a developing product for emergencies or as a substitute for professional medical, legal, financial, or safety advice.</p>
+  <h2>Concierge account information</h2><p>When you use a Spirantix Concierge account, we store the information you add: your name and account email, people and their names and notes, events, reminders, memories, albums, photo previews and labels, voice stories, and information or documents about belongings. Photo uploads are indexed as small previews and metadata; the original photo upload is not kept by this service. Uploaded audio and item documents are stored so you can use them again.</p><p>If you connect Google Calendar, we store the connection credentials in encrypted form and cache calendar records used by the service. You choose which connected calendars to use. We use service providers to run these features. We do not sell your personal information.</p><h2>AI product information</h2><p>Spirantix AI products are designed around user-controlled accounts and storage. Specific behavior, storage, and data use may depend on the AI provider and account you select. Product pages, testing materials, and any product-specific notice will explain those details before you add personal information. Do not use a developing product for emergencies or as a substitute for professional medical, legal, financial, or safety advice.</p>
   <h2>Service providers and third parties</h2><p>We may share information with service providers that help us host the website, deliver email, secure services, and provide requested product functions. They may process information only for those purposes and subject to their own service terms. The website and products may also link to or operate through third-party services such as ChatGPT or Claude. Those services are operated by others, and their privacy policies govern information they process.</p>
   <h2>SMS and text messaging</h2><p>If you give Spirantix AI a mobile number to receive account notifications, sign-in or access confirmations, or service updates, we use that number and your messaging consent only to send those messages. We do not sell or rent mobile numbers. Mobile information and messaging consent are not shared with third parties or affiliates for marketing or promotional purposes. Message frequency varies, and message and data rates may apply. You can reply STOP at any time to stop receiving messages, or reply HELP for help. The <a href="terms.html#sms">SMS and text messaging terms</a> in our Terms of Use describe the program in more detail.</p>
   <h2>Retention and security</h2><p>We keep information only as long as reasonably needed for the purposes described here, including support, security, recordkeeping, and applicable legal obligations. We use reasonable safeguards, but no website, email system, or online service can guarantee complete security.</p>
   <h2>Your choices</h2><p>You may ask Spirantix AI to provide, correct, or delete personal information you submitted directly to us. Some information may need to be retained for security, recordkeeping, or legal reasons. Privacy rights vary by location, and we will respond as required by applicable law.</p>
-  <h2>Children</h2><p>The website and products are not directed to children under 13, and Spirantix AI does not knowingly collect their personal information. If you believe a child has provided personal information, contact us so we can review and remove it where appropriate.</p>
+  <h2>Delete a Concierge account</h2><p>To request account deletion, email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=support">support contact form</a>. Tell us you want to delete your Spirantix account. Do not send a password, sign-in link, or account key. We need to verify that the request comes from the account owner before acting.</p><p>The account deletion function removes the account and its stored records, linked uploaded files, account access credentials, sharing grants, and stored Google Calendar connection. Deleting a Spirantix account does not delete your Google account, your original photo library, or your ChatGPT conversation history. Ask support if you need help managing information held by another service.</p><h2>Children</h2><p>The website and products are not directed to children under 13, and Spirantix AI does not knowingly collect their personal information. If you believe a child has provided personal information, contact us so we can review and remove it where appropriate.</p>
   <h2>Changes to this policy</h2><p>We may update this policy as the website and products change. The effective date at the top will show when the latest version took effect.</p>
   <h2>Questions</h2><p>Spirantix AI is responsible for this policy. For privacy questions or requests, email <a href="mailto:hello@spirantix.ai">hello@spirantix.ai</a> or use the <a href="contact.html?type=general">contact form</a>.</p>
 </div></div></section>`;
@@ -1085,7 +912,7 @@ const termsBody = `${pageHero('Terms of Use', 'Terms for the Spirantix AI websit
   <h2>Acceptable use</h2><p>You may use the website and products only lawfully and in a way that does not harm others or interfere with their operation. You may not attempt unauthorized access, introduce malicious code, evade security measures, misuse another person’s information, impersonate others, or use the services to violate rights or applicable law.</p>
   <h2>Accounts and third-party services</h2><p>Some products may work through an account you maintain with a third-party AI, storage, or communications provider. You are responsible for that account, its security, and compliance with the provider’s terms. Spirantix AI does not control and is not responsible for third-party services, availability, outputs, or data practices.</p>
   <h2 id="product-terms">Product and beta terms</h2><p>Spirantix products may be experimental, offered in beta, or changed or withdrawn without notice. Features may be incomplete and outputs may be inaccurate. You remain responsible for reviewing outputs and deciding whether and how to use them. Do not rely on a product for emergencies, diagnosis, treatment, legal or financial decisions, identity verification, authenticity determinations, or other high-impact decisions.</p><p>Product instructions or a product-specific agreement may add to these terms. If a product-specific agreement directly conflicts with these general terms, the product-specific agreement controls for that product.</p>
-  <h2>Your content and privacy</h2><p>You retain ownership of content you provide. You give Spirantix AI permission to process that content only as needed to provide, secure, support, and improve the service you request, subject to the <a href="privacy.html">Privacy Policy</a> and any product-specific notice. You represent that you have the rights and permissions needed to provide the content.</p>
+  <h2>Concierge account support</h2><p>You may ask for help with your account, request corrections, or request account deletion through <a href="support.html">Spirantix support</a>. Account changes require verification of the account owner. The <a href="privacy.html">privacy policy</a> describes the information stored by the Concierge and the account deletion function.</p><h2>Your content and privacy</h2><p>You retain ownership of content you provide. You give Spirantix AI permission to process that content only as needed to provide, secure, support, and improve the service you request, subject to the <a href="privacy.html">Privacy Policy</a> and any product-specific notice. You represent that you have the rights and permissions needed to provide the content.</p>
   <h2>Spirantix AI materials</h2><p>The website, product names, designs, text, graphics, software, and other materials provided by Spirantix AI are owned by Spirantix AI or its licensors and are protected by applicable intellectual property laws. You may use public educational materials for personal, noncommercial learning unless a page states otherwise. No other rights are granted except as expressly stated.</p>
   <h2>Feedback</h2><p>If you voluntarily provide ideas or feedback, Spirantix AI may use them without restriction or compensation, provided we do not publicly identify you without permission.</p>
   <h2>Availability and changes</h2><p>We may update, suspend, limit, or discontinue any part of the website or a product. We may also update these terms. The effective date will identify the current version. Continued use after updated terms take effect means you accept the updated terms.</p>

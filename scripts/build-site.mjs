@@ -2,11 +2,12 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { renderPages } from '../site-src/pages.mjs';
+import { renderGuide } from '../site-src/guide.mjs';
 import { renderLessons } from '../site-src/lessons.mjs';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const root = resolve(scriptDir, '..');
-const outputs = [...renderPages(), ...renderLessons()];
+const outputs = [...renderPages(), ...renderLessons(), renderGuide()];
 
 for (const output of outputs) {
   const target = resolve(root, output.path);
