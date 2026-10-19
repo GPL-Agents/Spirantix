@@ -753,3 +753,6 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .is-filter-hidden { display: none !important; }
 @media (max-width: 720px) { .resource-filter .filter-btn { width: 100%; text-align: center; padding: 16px 20px; } }
 
+
+.concierge-guide { font-size: 1.25rem; line-height: 1.75; overflow-wrap: anywhere; }
+.concierge-guide h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; }
