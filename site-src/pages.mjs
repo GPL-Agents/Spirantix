@@ -606,6 +606,7 @@ const resourceDirectory = [
       ['Sortly', 'https://www.sortly.com', 'A home inventory app that catalogs belongings with photos, notes, and values. Free to start, with paid plans for larger collections.'],
       ['Everplans', 'https://www.everplans.com', 'A digital vault and organizer for documents, accounts, and wishes so family members can find what they need. Free to start, with a paid premium tier.'],
       ['Trust & Will', 'https://trustandwill.com', 'An online service for creating wills and trusts. A paid legal-document product, with an optional ongoing membership.'],
+      ['Airloom', 'https://www.airloom.co/', 'An online tool for creating a will, recording end-of-life wishes, and sharing them with the people you choose. Pricing is not widely published.'],
       ['Cake (now Altogether Funeral)', 'https://www.joincake.com', 'An online service for end-of-life planning, including checklists and document storage. Free to use, with optional paid features.'],
       ['Google Inactive Account Manager', 'https://support.google.com/accounts/answer/3036546', 'A free Google setting that lets you decide what happens to your account and data if you become inactive, including sharing it with someone you choose.'],
       ['Apple Digital Legacy', 'https://support.apple.com/en-us/102631', 'A free Apple feature that lets you name people who can access your account data after your death.'],
