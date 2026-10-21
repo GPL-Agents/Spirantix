@@ -12,6 +12,10 @@
       "source": "/guide"
     },
     {
+      "source": "/connect",
+      "destination": "/connect.html"
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy.html"
     },
