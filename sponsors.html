@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For Sponsors | Programming That Reaches Every Resident</title>
-  <meta name="description" content="Run one community or seventy. Spirantix puts a plain-spoken AI Concierge in residents' hands, carries your programming out to residents and families, and brings back what actually worked.">
+  <title>For Sponsors | An Honest Comparison of Your Programming Options</title>
+  <meta name="description" content="Your engagement platform, a spreadsheet, or Spirantix: a side-by-side comparison of what each option does today, written by a nonprofit that also teaches residents how to use AI safely.">
 
   <link rel="canonical" href="https://spirantix.ai/sponsors.html">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Spirantix.ai">
-  <meta property="og:title" content="For Sponsors | Programming That Reaches Every Resident">
-  <meta property="og:description" content="A Concierge built for older adults, connected to your programming calendar, with the attendance and engagement data that tells you what worked.">
+  <meta property="og:title" content="For Sponsors | An Honest Comparison of Your Programming Options">
+  <meta property="og:description" content="Three options for resident programming, side by side, including where the other two are stronger. What is live, what is in build, and what is planned.">
   <meta property="og:url" content="https://spirantix.ai/sponsors.html">
   <meta property="og:image" content="https://spirantix.ai/assets/og-image-mission.png">
   <meta property="og:image:width" content="1200">
@@ -22,6 +22,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css?v=20261001-1">
+  <style>
+    .compare-wrap { overflow-x: auto; margin-top: 10px; }
+    .compare { width: 100%; border-collapse: collapse; min-width: 780px; font-size: 15px; background: #fff; border-radius: 14px; box-shadow: 0 1px 3px rgba(16,24,40,.06); }
+    .compare th, .compare td { padding: 12px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid #e7eaee; }
+    .compare thead th { background: #f3f6f8; font-weight: 600; font-size: 13px; letter-spacing: .02em; }
+    .compare thead th.us { background: #e8f6f1; color: #14614a; }
+    .compare .th-sub { font-weight: 400; font-size: 12px; color: #6b7480; }
+    .compare tr.tier td { background: #fafbfc; font-size: 11.5px; letter-spacing: .09em; text-transform: uppercase; color: #66707c; font-weight: 600; }
+    .compare td.us { background: #f7fcfa; }
+    .compare tbody tr:last-child td { border-bottom: 0; }
+    .compare .yes { color: #14614a; font-weight: 600; }
+    .compare .partial { color: #8a5a00; font-weight: 600; }
+    .compare .build { color: #1c4f9c; font-weight: 600; }
+    .compare .plan { color: #5b6470; font-weight: 600; }
+    .compare .manual { color: #5b6470; }
+    .compare .no { color: #8a9099; }
+    .compare .qual { color: #66707c; font-weight: 400; }
+    .compare-legend { display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: center; margin: 6px 0 16px; font-size: 13.5px; color: #5b6470; }
+    .compare-legend .cl { display: inline-flex; align-items: center; gap: 8px; }
+    .compare-legend b { color: #26313d; font-weight: 600; }
+    .compare-legend .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+    .compare-legend .dot.live { background: #14614a; }
+    .compare-legend .dot.build { background: #1c4f9c; }
+    .compare-legend .dot.plan { background: #9aa3ae; }
+    .compare-dayone { max-width: 900px; margin: 0 auto 22px; text-align: center; color: #3c4753; font-size: 15px; }
+    .compare-dayone b { color: #14614a; }
+    .compare-note { margin-top: 18px; color: #5b6470; font-size: 14px; max-width: 900px; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -63,9 +91,9 @@
   <div class="wrap media-page-hero-grid">
     <div class="media-page-hero-copy">
       <p class="eyebrow">For senior living operators</p>
-      <h1>Your programming reaches the resident. Then it comes back with what worked</h1>
-      <p class="lede">You already run the calendar, the family updates, and the programming team. What you cannot see is what happened after the flyer. Spirantix puts a plain-spoken AI Concierge in each resident's hands, carries your programming out to them and their families, and reports back what was used and what was missed.</p>
-      <div class="button-row products-hero-actions"><a class="btn" href="contact.html?type=partner">Talk about a pilot</a><a class="btn btn-secondary" href="products.html">See the Concierge</a></div>
+      <h1>Your three options, compared honestly</h1>
+      <p class="lede">There are three real ways to run resident programming today: the engagement platform you already own, a spreadsheet and Word, or adding something new. This page puts all three side by side, including the places where the other two are stronger than we are. We are a nonprofit. We would rather you make a good decision slowly than a fast one you regret.</p>
+      <div class="button-row products-hero-actions"><a class="btn" href="#compare">See the comparison</a><a class="btn btn-secondary" href="contact.html?type=partner">Talk about a pilot</a></div>
     </div>
     <div class="media-page-hero-image">
       <img src="assets/woman.on.phone.png" alt="Older woman using a smartphone" width="1122" height="1402">
@@ -73,143 +101,138 @@
   </div>
 </section>
 
+<section class="section section-soft" id="compare">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">The comparison</p><h2>Three options, side by side</h2><p>Marks describe what each option does today. Where we are still building, it says so, because you would find out anyway.</p></div>
+    <div class="compare-legend">
+      <span class="cl"><span class="dot live"></span><b>Live today</b> in production, in residents’ hands</span>
+      <span class="cl"><span class="dot build"></span><b>In build</b> being built with our first operators</span>
+      <span class="cl"><span class="dot plan"></span><b>Planned</b> designed and scheduled, not built</span>
+    </div>
+    <p class="compare-dayone"><b>What you get on day one:</b> the resident Concierge, one calendar shared with residents and families, reminders they control, photo albums, and the classes. Everything below that says In build or Planned is work we are doing with the first communities that join, and this page will keep saying so until each line is live.</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col" class="us">Spirantix</th><th scope="col">Engagement platform<br><span class="th-sub">LifeLoop, Touchtown, Sagely</span></th><th scope="col">Spreadsheets and Word</th></tr>
+        </thead>
+        <tbody>
+          <tr class="tier"><td colspan="4">Table stakes: what every option covers</td></tr>
+          <tr><td>Publish the community calendar to residents and families</td><td class="us"><span class="yes">Live</span></td><td><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>Print the calendar by the day, week, or month</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><td>Create a flyer that prints</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="yes">Yes</span></td></tr>
+          <tr><td>Resident sign-up for an event</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>Record who attended</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>Count signed up against attended, per event</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>See attendance by resident</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>Send the family an update</td><td class="us"><span class="yes">Live</span></td><td><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>Resident app or portal</td><td class="us"><span class="yes">Live</span> <span class="qual">in the Concierge</span></td><td><span class="yes">Yes</span></td><td><span class="no">No</span></td></tr>
+          <tr><td>Digital signage and in-room TV</td><td class="us"><span class="no">No</span></td><td><span class="yes">Yes</span></td><td><span class="no">No</span></td></tr>
+          <tr class="tier"><td colspan="4">Where the market is moving</td></tr>
+          <tr><td>AI suggests activities from what residents like</td><td class="us"><span class="build">In build</span></td><td><span class="yes">Yes</span></td><td><span class="no">No</span></td></tr>
+          <tr><td>Recommends what to move, combine, or replace, and says why</td><td class="us"><span class="build">In build</span></td><td><span class="no">Not what it is built for</span></td><td><span class="no">No</span></td></tr>
+          <tr><td>Scheduled report on one resident's activity and involvement</td><td class="us"><span class="plan">Planned</span></td><td><span class="partial">Partial</span></td><td><span class="no">No</span></td></tr>
+          <tr><td>Event photos become a memory the resident can ask for by voice</td><td class="us"><span class="build">In build</span></td><td><span class="partial">Partial</span></td><td><span class="no">No</span></td></tr>
+          <tr><td>Residents plan their own activities, and those ideas reach the programmer</td><td class="us"><span class="plan">Planned</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+          <tr><td>Organization-level insight and recommendations across communities</td><td class="us"><span class="plan">Planned</span></td><td><span class="partial">Partial</span></td><td><span class="manual">Manual</span></td></tr>
+          <tr><td>Runs alongside the system you already own</td><td class="us"><span class="build">In build</span></td><td><span class="no">n/a</span></td><td><span class="no">n/a</span></td></tr>
+          <tr><td>Training: train the trainer, plus an expert visit once or twice a year</td><td class="us"><span class="yes">Running today</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">A dash or a no is not a criticism. It is the edge of what a product is built to do, and every option here is in real use by communities that are happy with it. If you are choosing between us and a platform you already own, the honest answer may be both.</p>
+  </div>
+</section>
+
 <section class="section section-white">
   <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Where you already are</p><h2>You are not starting from nothing</h2><p>Most communities we speak with already have more than they get credit for. This page is not a replacement for any of it.</p></div>
+    <div class="section-heading center"><p class="eyebrow">Start from what works</p><h2>Your current tools are not the problem</h2><p>Whatever you run today got you here. Two of the three options have real strengths, and we would rather name them.</p></div>
     <div class="grid-3">
-      <div class="card"><h3>A family portal</h3><p>Staff write the update, and the family reads it. It works, and it depends on someone having time to write.</p></div>
-      <div class="card"><h3>Life story profiles</h3><p>Something captures who each resident is, so associates can connect with them as individuals.</p></div>
-      <div class="card"><h3>Programming guidelines</h3><p>Standards set at the top, with each community free to tailor the calendar to its own residents.</p></div>
-    </div>
-    <p class="lede" style="margin-top:30px;max-width:900px">What sits underneath all three is the resident, holding a phone, asking a question nobody hears. That is the gap we fill.</p>
-  </div>
-</section>
-
-<section class="section section-soft">
-  <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">What we are solving</p><h2>Four things operators tell us</h2><p>Two are problems today. Two are opportunities you can already see.</p></div>
-    <div class="grid-2">
-      <div class="card">
-        <h3>Residents worry about AI</h3>
-        <p>They hear a lot about it and are not sure what is safe. Voice-cloning calls and fake emergencies aimed at seniors have made that worry reasonable.</p>
-        <p>That worry sits in the way of the good it can do them.</p>
-      </div>
-      <div class="card">
-        <h3>The benefit is being left on the table</h3>
-        <p>Companionship, memory keeping, and connection to family are exactly what a good AI assistant can help with. Most residents never get it, because nobody hands it to them.</p>
-      </div>
-      <div class="card">
-        <h3>Safety is always a risk</h3>
-        <p>Seniors meet AI on their own, in their own browser, with no guardrails and nobody to ask.</p>
-        <p>Tools built for seniors, with guardrails built in and a connection back to the community, give them a safer place to be.</p>
-      </div>
-      <div class="card">
-        <h3>Everyone is out of step</h3>
-        <p>A bulletin board in the dining room and a flyer in the elevator reach some residents and almost no family members.</p>
-        <p>When the calendar, the residents, the families, and the staff share one schedule, engagement goes up.</p>
-      </div>
-    </div>
-    <p class="lede" style="margin-top:32px;max-width:900px">The decision usually starts somewhere specific: a fall, a hospital stay, a spouse's death, a caregiver who is worn out. In that moment the adult child is doing the research, often from another state, and often at night. An easy way to see what a parent is actually doing can help them feel better about the choice, and can help decide it.</p>
-  </div>
-</section>
-
-<section class="section section-white">
-  <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Available now</p><h2>AI with confidence, for residents and for families</h2><p>The fear is half of the problem. A plain-language class answers it, and it gives your community something to invite people to.</p></div>
-    <div class="grid-2">
-      <div class="card">
-        <span class="status beta">Live today</span>
-        <h3>What a session covers</h3>
-        <ul>
-          <li>What generative AI is, and where its answers come from</li>
-          <li>How to begin with ChatGPT or Claude, and how to ask a clearer question</li>
-          <li>When a search engine is the better choice</li>
-          <li>What information should stay private</li>
-          <li>How to slow down and check something that feels suspicious</li>
-        </ul>
-        <p>Single talks, hands-on workshops, guest sessions, or a multi-week course. Many sessions are offered at no cost.</p>
-      </div>
-      <div class="card">
-        <h3>Why it matters to the community</h3>
-        <p>It gives prospects a reason to walk through the door that is not a tour.</p>
-        <p>It gives families a story about the community that sounds different from every other brochure in the market.</p>
-        <p>And it means the residents already using the Concierge know what is safe before they start.</p>
-      </div>
+      <div class="card"><h3>The engagement platform you own</h3><p>Publishes one calendar to every screen, keeps resident profiles, records attendance, and reports participation. LifeLoop, Touchtown, and Sagely have earned their place in thousands of communities, and their teams know this market well.</p></div>
+      <div class="card"><h3>Spreadsheets and Word</h3><p>Cheap, flexible, understood by every staff member, and no training required. A good activity director can run a whole calendar on one tab, and nobody has to approve a purchase.</p></div>
+      <div class="card"><h3>What neither one does</h3><p>Neither forms a view of next week and brings it to you. Neither sits with a resident and answers what is on today in their own words. That is the part we added.</p></div>
     </div>
   </div>
 </section>
 
 <section class="section section-soft">
   <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">What your programming team gets</p><h2>The week your team runs, made easier</h2><p>Your team still runs the program. The platform takes the repeat work and gives back what the data says.</p></div>
+    <div class="section-heading center"><p class="eyebrow">Where we add something new</p><h2>The work that happens after the report</h2><p>Every item here starts from data your community already collects. None of it asks your team to enter anything twice.</p></div>
     <div class="grid-2">
       <div class="card">
-        <span class="status beta">Working today</span>
-        <h3>The basics, handled</h3>
-        <ul>
-          <li>Events you enter become a calendar, without rebuilding it somewhere else</li>
-          <li>Residents ask the Concierge what is coming up, and get an answer in plain words</li>
-          <li>Reminders reach the people who signed up, by text or email once they turn it on</li>
-          <li>Photos, captions, and stories from an event are kept together</li>
-          <li>A family member can be given access to the same calendar and memories</li>
-        </ul>
+        <h3>New programs, suggested before you ask</h3>
+        <p>Each month it reads what residents attended and what they asked the Concierge for, then brings a shortlist of programs you do not run yet. Each one comes with the reason: who it would reach, which hour is open, and what it would replace.</p>
       </div>
       <div class="card">
-        <span class="status beta">In build for sponsors</span>
-        <h3>The work that takes the most hours</h3>
-        <ul>
-          <li>A flyer generated for each event, in your community's style</li>
-          <li>Sign-ups and attendance recorded, per event</li>
-          <li>A plain-language report written for the family, on a schedule you choose</li>
-          <li>An alert when people signed up but did not come</li>
-          <li>Suggestions for new programs, based on what your residents actually attend</li>
-        </ul>
+        <h3>Residents plan their own activities</h3>
+        <p>A resident asks the Concierge to set up a bridge game, a walking group, or a call with a grandchild. What residents plan for themselves is the strongest signal a programmer can get, and it arrives as a suggestion instead of a guess.</p>
+      </div>
+      <div class="card">
+        <h3>Reports on one resident, on your schedule</h3>
+        <p>Pick a resident and a cadence: weekly, monthly, or before a care conference. It writes what they joined, what they declined, what they stuck with, and where involvement changed. For staff, and for family when consent is in place.</p>
+      </div>
+      <div class="card">
+        <h3>Which two programs can share an hour</h3>
+        <p>It compares who attends what. Two activities that draw different people can run in the same slot and reach more residents. Two that draw the same people are competing for them, and it shows which one to move.</p>
+      </div>
+      <div class="card">
+        <h3>A week that repairs itself</h3>
+        <p>A cancellation, a rained-out outing, a room suddenly unavailable. It proposes a replacement that suits the people already signed up, sends the prep notes, and regenerates the flyer.</p>
+      </div>
+      <div class="card">
+        <h3>Answers in a paragraph, not a dashboard</h3>
+        <p>Your programming director can ask why the Tuesday group is shrinking, what changed in memory care this quarter, or what to try in the two o'clock slot. The answer comes back in a paragraph they can act on.</p>
       </div>
     </div>
-    <p class="lede" style="margin-top:30px;max-width:900px">Two events can also run at the same hour when they want different people. Today that decision is a guess. With attendance data it is a comparison.</p>
   </div>
 </section>
 
 <section class="section section-white">
   <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Across the whole organization</p><h2>What one community cannot see alone</h2><p>Seventy communities produce seventy sets of answers nobody has time to compare. A corporate view turns that into one picture.</p></div>
+    <div class="section-heading center"><p class="eyebrow">Memory care, and every resident</p><h2>The event is over. The memory is already there</h2><p>Your manager takes a few pictures and writes a few lines, the way anyone posts to Facebook. That is the whole job.</p></div>
+    <div class="grid-2">
+      <div class="card"><h3>One post, to everyone connected</h3><p>Photos and the write-up go out to the community: residents, families, and staff. No retyping, no separate newsletter, no printing.</p></div>
+      <div class="card"><h3>It lands in each resident's own album</h3><p>Everyone who was there gets the day saved without doing anything, so &quot;what did I do yesterday?&quot; has an answer with a picture next to it.</p></div>
+      <div class="card"><h3>The Concierge hands it back</h3><p>A resident asks what happened on Tuesday, and the Concierge shows the photos and reads the write-up. For memory care, that is a cue, not a file cabinet.</p></div>
+      <div class="card"><h3>It runs inside the app residents already use</h3><p>The post appears in the same Concierge the resident talks to, on the same phone or tablet. There is no second app to install and no second login to remember.</p></div>
+      <div class="card"><h3>The post also collects the feedback</h3><p>Who opened it, who asked for the photos, who said they would come next time. Engagement with a post is another signal about what to program, and it arrives without sending anyone a survey.</p></div>
+      <div class="card"><h3>The family sees it the same day</h3><p>The daughter three states away sees the event without a phone call she does not have time for.</p></div>
+    </div>
+    <p class="lede" style="margin-top:30px;max-width:900px">It builds the community the way a good Facebook group does, and it does something Facebook cannot: the memory belongs to the resident, in their own record, and the Concierge can bring it back to them.</p>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">Not only software</p><h2>The training is part of the offering</h2><p>Software vendors sell software. We also teach, because fear of AI is the other half of the problem, and it spreads through a community that lives together.</p></div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="status beta">Running today</span>
+        <h3>A class residents actually attend</h3>
+        <p>What generative AI is, how to ask a clearer question, what to keep private, and how to spot a scam. Single talks, workshops, or a multi-week course.</p>
+        <p>Many sessions are offered at no cost.</p>
+      </div>
+      <div class="card">
+        <h3>Train the trainer</h3>
+        <p>A staff member at each community takes a short prep course, then delivers the sessions themselves using our materials. Your community stops depending on us to keep teaching, and the person residents already trust is the one standing at the front.</p>
+      </div>
+      <div class="card">
+        <h3>An expert visit, once or twice a year</h3>
+        <p>Someone who knows the material comes to the building, meets residents and staff, and answers the questions that only come up in person.</p>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:30px;max-width:900px">The measure is not attendance. It is a resident who is less afraid, a family that stops worrying, and a community whose shared mood lifts with them.</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">Across the whole organization</p><h2>What one community cannot see alone</h2><p>Ninety residents is a thin sample. Across seventy communities, every community gets a peer baseline: how its programming compares, and what already worked somewhere like it.</p></div>
     <div class="grid-3">
       <div class="card"><h3>What is gaining interest</h3><p>Which programs are filling up across the company, and which ones have stopped pulling people in.</p></div>
       <div class="card"><h3>What can run together</h3><p>Where the audiences differ, two programs can share the hour. Where they compete, the calendar shows it.</p></div>
       <div class="card"><h3>Where to look closer</h3><p>A community whose attendance is slipping shows up in the numbers before it shows up in a conversation.</p></div>
     </div>
-    <p class="lede" style="margin-top:30px;max-width:900px">Every community team sees the same findings, in real time and for any window they choose. The corporate view does not sit above them. It is the same data, shared. Your programming standards stay yours. What changes is that you can see which parts of them are working.</p>
-  </div>
-</section>
-
-<section class="section section-soft">
-  <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Memory care and legacy</p><h2>Yesterday's gardening day, saved by last night</h2><p>A memory is pictures, a story, and a voice, kept together where the family can find it.</p></div>
-    <div class="grid-2">
-      <div class="card">
-        <h3>One memory, three parts</h3>
-        <p>Photos, the story in the resident's own words, and audio recorded in their voice. The Concierge keeps them as one memory, not three separate files.</p>
-        <p>A resident can add it to their own albums. A family member can listen to it again years later.</p>
-      </div>
-      <div class="card">
-        <h3>From a pile of pictures to a short film</h3>
-        <p>A set of photos, a story, and audio can be turned into a short movie of the memory. This is being built now.</p>
-        <p>Later, the same material becomes the record of a life: the story a family returns to, and the one they can read aloud at the end.</p>
-      </div>
-    </div>
-    <p class="lede" style="margin-top:30px;max-width:900px">For memory care, the value is different. Not every resident can describe their day, but almost every family wants to know it was a good one.</p>
-  </div>
-</section>
-
-<section class="section section-white">
-  <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Inside the community</p><h2>A memory posted once, seen by everyone connected</h2><p>Familiar to anyone who uses Facebook, with none of the noise, and only the people connected to your community.</p></div>
-    <div class="grid-3">
-      <div class="card"><h3>The team posts it</h3><p>Photos and a few lines from the activity, posted to the community after the event.</p></div>
-      <div class="card"><h3>Residents and families see it</h3><p>It waits for them on the Spirantix page. They can add it to their own albums, or say they liked it.</p></div>
-      <div class="card"><h3>The people who missed it catch up</h3><p>Someone who stayed in their room sees what happened, and knows about the next one.</p></div>
-    </div>
-    <p class="lede" style="margin-top:30px;max-width:900px">For the resident, it is a reminder of a good day. For the daughter three states away, it is the answer to &quot;what did Mom do this week?&quot; without a phone call she does not have time for.</p>
+    <p class="lede" style="margin-top:30px;max-width:900px">It does not stop at reporting. The organization view recommends what to try next, what to retire, and which two programs can share an hour, and it shows the evidence behind each recommendation. Your programming standards stay yours. What changes is that you can see which parts of them are working.</p>
   </div>
 </section>
 
@@ -218,7 +241,7 @@
     <div class="section-heading center"><p class="eyebrow">A win on three sides</p><h2>Who benefits, and how</h2></div>
     <div class="grid-3">
       <div class="card"><h3>The resident</h3><p>A better day, more of the time. Programs they actually want, a calendar they can ask about, and their memories kept in their own voice.</p></div>
-      <div class="card"><h3>The community team</h3><p>Hours back from flyers and sign-up sheets, and a clear answer on which programs worked instead of a guess.</p></div>
+      <div class="card"><h3>The community team</h3><p>Hours back from flyers and sign-up sheets, and next month's program already drafted from what residents actually attend, with the reasoning behind each suggestion.</p></div>
       <div class="card"><h3>The organization</h3><p>Occupancy, length of stay, and lead flow all move on the same three things: a resident who is happy, a family that trusts the place, and programming that keeps earning its hour.</p></div>
     </div>
   </div>
@@ -229,6 +252,7 @@
     <div class="section-heading begin-heading"><p class="eyebrow">Said plainly</p><h2>What we do not do</h2></div>
     <ul>
       <li>We do not replace your programming team, your family portal, or your life-story tool. We sit next to them.</li>
+      <li>We do not name a competitor in a bad light. Where another product is stronger, this page says so.</li>
       <li>We do not give clinical advice, and we do not touch care records. Care decisions stay with your clinicians.</li>
       <li>We do not identify a person from a photograph.</li>
       <li>We do not train our models on your residents' information.</li>
@@ -254,14 +278,14 @@
         <h3>Being built for sponsors</h3>
         <ul>
           <li>The sponsor layer: a community, its staff, and its calendar as one account</li>
-          <li>Sign-ups, attendance, and engagement reporting</li>
-          <li>Flyer generation and family reports</li>
-          <li>Cross-community insight and scheduling recommendations</li>
+          <li>Sign-ups, attendance, and the reports that come from them</li>
+          <li>Flyer generation, printed calendar views, and family reports</li>
+          <li>Program suggestions, resident-planned ideas, and cross-community insight</li>
           <li>Short memory films from photos, stories, and audio</li>
         </ul>
       </div>
     </div>
-    <p class="lede" style="margin-top:26px;max-width:900px">We would rather you know exactly where the line is. The resident side is running now. The sponsor layer is what we are building with the first operators who join us.</p>
+    <p class="lede" style="margin-top:26px;max-width:900px">We would rather you know exactly where the line is. The resident side is running now. The sponsor layer is what we are building with the first operators who join us, and the comparison table above will keep saying so until each line is live.</p>
   </div>
 </section>
 
