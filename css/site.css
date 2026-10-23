@@ -756,3 +756,16 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 
 .concierge-guide { font-size: 1.25rem; line-height: 1.75; overflow-wrap: anywhere; }
 .concierge-guide h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.2; }
+
+/* Products page, Oct 22 2026: the hero now states the app name and the three
+   setup steps, so the bullets read as a short checklist, not a paragraph. */
+.hero-points-label { margin: 26px 0 10px; font-weight: 700; color: var(--ink); font-size: 1.02rem; letter-spacing: .01em; }
+.hero-points { list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 12px; max-width: 640px; }
+.hero-points li { position: relative; padding-left: 40px; font-size: 1.1rem; line-height: 1.45; color: var(--ink); }
+.hero-points li::before { content: ""; position: absolute; left: 0; top: .12em; width: 26px; height: 26px; border-radius: 50%; background: var(--teal-soft); border: 2px solid var(--teal); }
+.hero-points li::after { content: ""; position: absolute; left: 8px; top: .55em; width: 8px; height: 4px; border-left: 2.5px solid var(--teal-dark); border-bottom: 2.5px solid var(--teal-dark); transform: rotate(-45deg); }
+.hero-early { margin: 18px 0 0; font-size: 1rem; color: var(--ink-soft); }
+.hero-early a { font-weight: 600; }
+.setup-guides { margin-top: 34px; padding-top: 26px; border-top: 1px solid rgba(31, 42, 68, .12); }
+.setup-guides-label { text-align: center; margin: 0 0 16px; font-weight: 700; color: var(--ink-soft); }
+@media (max-width: 640px) { .hero-points li { font-size: 1.05rem; } }
