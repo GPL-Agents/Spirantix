@@ -792,3 +792,10 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
    columns end at roughly the same height. */
 .media-page-hero-image .hero-lede { margin: 20px 0 0; font-size: 1.05rem; line-height: 1.5; color: var(--ink-soft); }
 @media (max-width: 693px) { .media-page-hero-image .hero-lede { margin-top: 16px; } }
+
+/* Products hero: the guide buttons sit under the photo, which balances the
+   column heights and keeps the description next to the headline. */
+.hero-guides { display: grid; gap: 12px; margin-top: 22px; }
+.hero-guides-label { margin: 0 0 2px; font-weight: 700; color: var(--ink-soft); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; }
+.hero-guides .btn { width: 100%; margin: 0; }
+@media (max-width: 720px) { .hero-guides { max-width: 430px; } }
