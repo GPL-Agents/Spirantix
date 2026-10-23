@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css?v=20261001-1">
+  <link rel="stylesheet" href="css/site.css?v=20261023-5">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -73,8 +73,31 @@
     </div>
   </div>
 </section>
+<section class="section resources-tools" id="find-a-resource">
+  <div class="wrap">
+    <label class="resource-search-label" for="resource-search">Search the list</label>
+    <div class="resource-search-row">
+      <input id="resource-search" class="resource-search" type="search" placeholder="Type a name or a word, like photos" autocomplete="off" data-resource-search>
+      <button type="button" class="resource-clear" data-resource-clear>Clear</button>
+    </div>
+    <div class="resource-filter" data-resource-filter role="group" aria-label="Choose a topic">
+      <button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="websites" aria-pressed="false">Websites and reading<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="ai-tools" aria-pressed="false">AI assistants<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="app-highlights" aria-pressed="false">Apps for daily life<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="ai-learning" aria-pressed="false">AI classes and training<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="memory-care" aria-pressed="false">Memory and care<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="photos-stories" aria-pressed="false">Photos and stories<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="possessions" aria-pressed="false">Belongings and heirlooms<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="authenticity" aria-pressed="false">Checking what is real<span class="filter-num" data-filter-num></span></button>
+    </div>
+    <p class="filter-count" aria-live="polite" data-filter-count>Showing all listings</p>
+    <p class="no-results" data-no-results hidden>No listing matches that. Try a simpler word, or choose Show all.</p>
+  </div>
+</section>
 
-<section class="section section-soft" id="websites">
+
+section class="section section-soft" id="websites" data-filter-group="websites">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">Websites for older adults</p>
@@ -85,7 +108,7 @@
   </div>
 </section>
 
-<section class="section" id="ai-tools">
+section class="section" id="ai-tools" data-filter-group="ai-tools">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">AI tool highlights</p>
@@ -102,7 +125,7 @@
   </div>
 </section>
 
-<section class="section section-white" id="app-highlights">
+section class="section section-white" id="app-highlights" data-filter-group="app-highlights">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">App highlights</p>
@@ -124,9 +147,7 @@
       <p class="eyebrow">Directory</p>
       <h2>A broader directory of tools and services</h2>
       <p>Below the highlights is a wider list of resources grouped by topic, from AI classes and memory support to photo, story, and heirloom services, along with ways to check whether a photo or document is authentic. Some listings are free, some are paid products or services, and some are made for organizations rather than for individuals. Each card says what we know. These listings are provided for information only, and a listing does not mean Spirantix endorses or recommends it.</p>
-      <p>Choose a topic to narrow the list, or choose Show all to see every listing.</p>
-      <div class="resource-filter" data-resource-filter role="group" aria-label="Filter the directory by topic"><button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all</button><button type="button" class="filter-btn" data-filter-target="ai-learning" aria-pressed="false">AI learning and training</button><button type="button" class="filter-btn" data-filter-target="memory-care" aria-pressed="false">Memory, companionship, and care</button><button type="button" class="filter-btn" data-filter-target="photos-stories" aria-pressed="false">Photos, stories, and legacy</button><button type="button" class="filter-btn" data-filter-target="possessions" aria-pressed="false">Possessions and heirlooms</button><button type="button" class="filter-btn" data-filter-target="authenticity" aria-pressed="false">Document and photo authenticity</button></div>
-      <p class="filter-count" aria-live="polite" data-filter-count>Showing all 59 listings</p>
+      <p>Search by name or choose a topic to narrow the list.</p>
     </div>
   </div>
 </section>

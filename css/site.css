@@ -826,3 +826,21 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 
 /* A door that is not open yet: visible, plainly not clickable. */
 .btn.is-disabled { opacity: .45; cursor: not-allowed; pointer-events: none; }
+
+/* Resources: search box and topic buttons, sized to be easy to see and hit. */
+.resources-tools { padding: 40px 0 8px; }
+.resource-search-label { display: block; font-size: 1.2rem; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+.resource-search-row { display: flex; gap: 12px; align-items: stretch; }
+.resource-search { flex: 1 1 auto; width: 100%; font: inherit; font-size: 1.3rem; padding: 18px 20px; border: 2px solid var(--blue); border-radius: 14px; background: #fff; color: var(--navy); }
+.resource-search::placeholder { color: #6b7280; }
+.resource-search:focus { outline: 3px solid var(--blue-soft); outline-offset: 2px; border-color: var(--blue); }
+.resource-clear { font: inherit; font-size: 1.1rem; font-weight: 600; padding: 18px 28px; border: 2px solid var(--blue); border-radius: 14px; background: #fff; color: var(--blue-dark); cursor: pointer; }
+.resource-clear:hover { background: var(--blue-soft); }
+.resource-filter .filter-num { font-weight: 600; opacity: .8; }
+.resource-filter .filter-btn[disabled] { opacity: .45; cursor: not-allowed; }
+.is-search-hidden { display: none !important; }
+.no-results { margin: 16px 0 0; font-size: 1.1rem; font-weight: 600; color: var(--navy); }
+@media (max-width: 720px) {
+  .resource-search-row { flex-direction: column; }
+  .resource-clear { width: 100%; text-align: center; }
+}

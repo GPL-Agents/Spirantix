@@ -207,36 +207,94 @@
 
 (function () {
   var bar = document.querySelector('[data-resource-filter]');
-  if (!bar) return;
+  var search = document.querySelector('[data-resource-search]');
+  if (!bar || !search) return;
 
   var buttons = Array.prototype.slice.call(bar.querySelectorAll('[data-filter-target]'));
   var groups = Array.prototype.slice.call(document.querySelectorAll('[data-filter-group]'));
   var countEl = document.querySelector('[data-filter-count]');
-  var total = groups.reduce(function (sum, group) {
-    return sum + group.querySelectorAll('.card').length;
-  }, 0);
+  var emptyEl = document.querySelector('[data-no-results]');
+  var cards = [];
 
-  function applyFilter(target) {
+  groups.forEach(function (group) {
+    var list = Array.prototype.slice.call(group.querySelectorAll('.card'));
+    list.forEach(function (card) {
+      cards.push({
+        el: card,
+        group: group,
+        key: group.getAttribute('data-filter-group'),
+        text: (card.textContent || '').toLowerCase()
+      });
+    });
+  });
+
+  var total = cards.length;
+  var category = 'all';
+  var query = '';
+
+  function countFor(key) {
+    if (key === 'all') return total;
+    return cards.filter(function (card) { return card.key === key; }).length;
+  }
+
+  buttons.forEach(function (btn) {
+    var label = btn.querySelector('[data-filter-num]');
+    if (!label) return;
+    var n = countFor(btn.getAttribute('data-filter-target'));
+    label.textContent = n ? ' (' + n + ')' : '';
+    if (!n) btn.disabled = true;
+  });
+
+  function apply() {
     var shown = 0;
     groups.forEach(function (group) {
-      var visible = target === 'all' || group.getAttribute('data-filter-group') === target;
-      group.classList.toggle('is-filter-hidden', !visible);
-      if (visible) shown += group.querySelectorAll('.card').length;
+      var inCategory = category === 'all' || group.getAttribute('data-filter-group') === category;
+      var visibleHere = 0;
+      cards.forEach(function (card) {
+        if (card.group !== group) return;
+        var match = inCategory && (!query || card.text.indexOf(query) !== -1);
+        card.el.classList.toggle('is-search-hidden', !match);
+        if (match) visibleHere += 1;
+      });
+      group.classList.toggle('is-filter-hidden', visibleHere === 0);
+      shown += visibleHere;
     });
     buttons.forEach(function (btn) {
-      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-filter-target') === target));
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-filter-target') === category));
     });
     if (countEl) {
-      countEl.textContent = target === 'all'
+      countEl.textContent = shown === total
         ? 'Showing all ' + total + ' listings'
-        : 'Showing ' + shown + (shown === 1 ? ' listing' : ' listings');
+        : 'Showing ' + shown + ' of ' + total + ' listings';
     }
+    if (emptyEl) emptyEl.hidden = shown !== 0;
+  }
+
+  function setQuery(value) {
+    query = value.trim().toLowerCase();
+    apply();
   }
 
   buttons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      applyFilter(btn.getAttribute('data-filter-target'));
+      category = btn.getAttribute('data-filter-target');
+      apply();
     });
   });
-})();
 
+  search.addEventListener('input', function () { setQuery(search.value); });
+  search.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') { search.value = ''; setQuery(''); }
+  });
+
+  var clearBtn = document.querySelector('[data-resource-clear]');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      search.value = '';
+      setQuery('');
+      search.focus();
+    });
+  }
+
+  apply();
+})();
