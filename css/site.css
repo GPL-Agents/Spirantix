@@ -823,3 +823,6 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 /* Products hero: support link sits in the small text under the connect buttons. */
 .hero-guides-note { margin: 12px 0 0; font-size: .95rem; color: var(--ink-soft); }
 .hero-guides-note a { font-weight: 600; }
+
+/* A door that is not open yet: visible, plainly not clickable. */
+.btn.is-disabled { opacity: .45; cursor: not-allowed; pointer-events: none; }
