@@ -805,3 +805,11 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 /* Safety page: the operator's own commitments, stated plainly. */
 .our-part-list { margin: 8px 0 0; padding-left: 22px; display: grid; gap: 14px; max-width: 900px; }
 .our-part-list li { font-size: 1.08rem; line-height: 1.5; }
+
+/* Sponsors: life-story budget alternative, sourced claims only. */
+.life-story-alt { align-items: stretch; row-gap: 28px; }
+.life-story-alt .source-list { margin: 10px 0 0; padding-left: 20px; display: grid; gap: 12px; max-width: 560px; }
+.life-story-alt .source-list li { font-size: 1.02rem; line-height: 1.5; }
+.life-story-alt .source-list a { white-space: nowrap; }
+
+.life-story-alt > div > p:last-child { margin-top: 16px; }
