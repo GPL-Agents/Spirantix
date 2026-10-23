@@ -819,3 +819,7 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .feature-columns h3 { margin: 0 0 12px; }
 .feature-columns ul { margin: 0; padding-left: 20px; display: grid; gap: 10px; }
 .feature-columns li { font-size: 1.02rem; line-height: 1.5; }
+
+/* Products hero: support link sits in the small text under the connect buttons. */
+.hero-guides-note { margin: 12px 0 0; font-size: .95rem; color: var(--ink-soft); }
+.hero-guides-note a { font-weight: 600; }
