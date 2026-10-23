@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --navy: #1f2a44;
   --ink: #1f2a44;
   --ink-soft: #4a5570;
@@ -769,3 +769,13 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .setup-guides { margin-top: 34px; padding-top: 26px; border-top: 1px solid rgba(31, 42, 68, .12); }
 .setup-guides-label { text-align: center; margin: 0 0 16px; font-weight: 700; color: var(--ink-soft); }
 @media (max-width: 640px) { .hero-points li { font-size: 1.05rem; } }
+
+/* Numbers, clearly. Greg asked for the setup steps to be numbered, not bulleted. */
+.hero-steps { counter-reset: step; list-style: none; margin: 0 0 26px; padding: 0; display: grid; gap: 14px; max-width: 660px; }
+.hero-steps li { counter-increment: step; position: relative; padding-left: 48px; font-size: 1.1rem; line-height: 1.45; color: var(--ink); }
+.hero-steps li::before { content: counter(step); position: absolute; left: 0; top: -.08em; width: 34px; height: 34px; border-radius: 50%; background: var(--teal); color: #fff; font-weight: 700; font-size: 1.05rem; display: grid; place-items: center; }
+.step-card .step-head { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 12px; }
+.step-card .step-head h3 { margin: 0; }
+.step-card .step-num { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; background: var(--teal); color: #fff; font-weight: 700; font-size: 1.35rem; display: grid; place-items: center; }
+.step-card .text-link { display: inline-block; margin-top: 12px; }
+@media (max-width: 640px) { .hero-steps li { font-size: 1.05rem; } }
