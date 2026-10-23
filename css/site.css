@@ -844,3 +844,9 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   .resource-search-row { flex-direction: column; }
   .resource-clear { width: 100%; text-align: center; }
 }
+
+/* Products hero: the entry points that fill the left column. */
+.hero-points { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
+.hero-points li { position: relative; padding-left: 24px; font-size: 1.08rem; line-height: 1.45; color: var(--navy); }
+.hero-points li::before { content: ""; position: absolute; left: 4px; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--blue); }
+.hero-points strong { color: var(--navy); }
