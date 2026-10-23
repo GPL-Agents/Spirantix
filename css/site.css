@@ -799,3 +799,8 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .hero-guides-label { margin: 0 0 2px; font-weight: 700; color: var(--ink-soft); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; }
 .hero-guides .btn { width: 100%; margin: 0; }
 @media (max-width: 720px) { .hero-guides { max-width: 430px; } }
+
+/* Sponsors: replace vs alongside, so the positioning is one plain statement. */
+.replace-block { margin-top: 26px; padding: 22px 24px; background: #fff; border: 2px solid rgba(31, 42, 68, .12); border-radius: 18px; }
+.replace-block h3 { margin: 0 0 12px; }
+.replace-block ul { margin: 0; }
