@@ -170,6 +170,35 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--teal-dark); }
 .nav-links .nav-cta { padding: 12px 20px; background: var(--orange); color: #fff; border-radius: 999px; }
 .nav-links .nav-cta:hover { background: var(--orange-dark); color: #fff; }
+/* Learn opens to Online Learning and In Person Classes (Greg, 2026-10-26). */
+.nav-item { position: relative; display: flex; align-items: center; }
+.nav-parent::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translate(-2px, -2px);
+}
+.nav-sub {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 6px);
+  left: 50%;
+  display: none;
+  min-width: 232px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 14px 30px rgba(31, 42, 68, 0.16);
+  transform: translateX(-50%);
+}
+.nav-item:hover .nav-sub,
+.nav-item:focus-within .nav-sub { display: grid; gap: 2px; }
+.nav-sub a { width: 100%; padding: 10px 12px; border-radius: 10px; font-size: 1rem; }
+.nav-sub a:hover, .nav-sub a[aria-current="page"] { background: var(--teal-soft); color: var(--teal-dark); }
 .site-header nav { position: static; border: 0; background: transparent; backdrop-filter: none; }
 
 .hero { padding: 84px 0 76px; overflow: hidden; }
@@ -657,6 +686,20 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   }
   .site-header .nav-primary-links { position: static; display: grid; grid-template-columns: 1fr; gap: 4px; transform: none; }
   .site-header .nav-links.open { display: grid; }
+  .site-header .nav-item { display: block; }
+  .site-header .nav-sub {
+    position: static;
+    display: grid;
+    min-width: 0;
+    padding: 0 0 0 16px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+  }
+  .site-header .nav-parent::after { transform: rotate(45deg) translate(-1px, 1px); }
+  .site-header .nav-sub a { padding: 6px 0; font-size: 1rem; font-weight: 500; }
   .nav-links a { width: 100%; padding: 8px 4px; }
   .nav-links .nav-cta { justify-content: center; margin-top: 4px; }
 }

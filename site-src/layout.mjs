@@ -1,9 +1,14 @@
+// Learn holds its two doors, so a visitor does not have to guess which page is
+// "Learn" and which is "Classes". Sponsors sits between Products and About.
 const navItems = [
-  ['learn', 'Learn', 'learn.html'],
-  ['classes', 'Classes', 'classes.html'],
+  ['learn', 'Learn', 'learn.html', [
+    ['learn', 'Online Learning', 'learn.html'],
+    ['classes', 'In Person Classes', 'classes.html']
+  ]],
   ['safety', 'Safety', 'safety.html'],
   ['resources', 'Resources', 'resources.html'],
   ['products', 'Products', 'products.html'],
+  ['sponsors', 'Sponsors', 'sponsors.html'],
   ['about', 'About', 'about.html']
 ];
 
@@ -21,9 +26,18 @@ function logo() {
 }
 
 function header(active, base) {
-  const links = navItems.map(([key, label, href]) => {
-    const current = active === key ? ' aria-current="page"' : '';
-    return `<a href="${base}${href}"${current}>${label}</a>`;
+  const links = navItems.map(([key, label, href, children]) => {
+    const childActive = Array.isArray(children) && children.some(([childKey]) => childKey === active);
+    const current = active === key || childActive ? ' aria-current="page"' : '';
+    if (!Array.isArray(children)) return `<a href="${base}${href}"${current}>${label}</a>`;
+    const sub = children.map(([childKey, childLabel, childHref]) => {
+      const childCurrent = active === childKey ? ' aria-current="page"' : '';
+      return `<a href="${base}${childHref}"${childCurrent}>${childLabel}</a>`;
+    }).join('');
+    return `<div class="nav-item" data-nav-item>` +
+      `<a class="nav-parent" href="${base}${href}"${current} aria-haspopup="true" aria-expanded="false" data-nav-parent>${label}</a>` +
+      `<div class="nav-sub" data-nav-sub>${sub}</div>` +
+      `</div>`;
   }).join('\n        ');
 
   return `<a class="skip-link" href="#main-content">Skip to main content</a>
