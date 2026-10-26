@@ -26,6 +26,10 @@
       "destination": "/connect-chatgpt.html"
     },
     {
+      "source": "/products",
+      "destination": "/products.html"
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy.html"
     },
