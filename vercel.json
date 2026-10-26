@@ -4,6 +4,16 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/connect",
+      "destination": "/connect-chatgpt",
+      "permanent": true
+    },
+    {
+      "source": "/connect.html",
+      "destination": "/connect-chatgpt",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -12,8 +22,8 @@
       "source": "/guide"
     },
     {
-      "source": "/connect",
-      "destination": "/connect.html"
+      "source": "/connect-chatgpt",
+      "destination": "/connect-chatgpt.html"
     },
     {
       "source": "/privacy",
