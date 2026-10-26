@@ -18,6 +18,10 @@
   ],
   "rewrites": [
     {
+      "source": "/demo",
+      "destination": "/demo.html"
+    },
+    {
       "destination": "/guide.html",
       "source": "/guide"
     },
