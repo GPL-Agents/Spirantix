@@ -87,6 +87,18 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .section:not(.section-white):not(.section-soft):not(.section-blue):not(.section-dark) + .section:not(.section-white):not(.section-soft):not(.section-blue):not(.section-dark) {
   padding-top: 28px;
 }
+/* Thin divider between adjacent sections that share a background */
+.section-white + .section-white::before,
+.section-soft + .section-soft::before,
+.section-blue + .section-blue::before {
+  content: "";
+  display: block;
+  width: min(var(--wrap), calc(100% - 40px));
+  height: 1px;
+  margin: -28px auto 72px;
+  background: var(--line);
+}
+.section-soft + .section-soft::before { background: #bfe0d9; }
 .eyebrow {
   margin-bottom: 10px;
   color: var(--teal-dark);
