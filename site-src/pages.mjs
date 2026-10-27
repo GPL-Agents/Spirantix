@@ -514,7 +514,7 @@ function seniorWebsiteCards() {
   return seniorWebsites.map(([name, url, description]) => `<a class="card card-link" href="${url}" target="_blank" rel="noopener"><h3>${name}</h3><p>${description}</p><span class="text-link">Visit website</span></a>`).join('');
 }
 
-const seniorWebsitesSection = `<section class="section section-soft" id="websites">
+const seniorWebsitesSection = `<section class="section section-soft" id="websites" data-filter-group="websites">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">Websites for older adults</p>
@@ -631,29 +631,39 @@ function resourceDirectoryCards(entries) {
   return entries.map(([name, url, description]) => `<a class="card card-link" href="${url}" target="_blank" rel="noopener"><h3>${name}</h3><p>${description}</p><span class="text-link">Visit website</span></a>`).join('');
 }
 
-function resourceFilterBar() {
-  const total = resourceDirectory.reduce((sum, section) => sum + section.entries.length, 0);
+// Search box and topic buttons sit right under the hero. js/site.js wires them up
+// and needs data-resource-search present, or the filter does not run at all.
+const resourceHighlightGroups = [
+  ['websites', 'Websites and reading'],
+  ['ai-tools', 'AI assistants'],
+  ['app-highlights', 'Apps for daily life']
+];
+
+function resourceFinder() {
   const buttons = [
-    '<button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all</button>',
-    ...resourceDirectory.map((section) => `<button type="button" class="filter-btn" data-filter-target="${section.id}" aria-pressed="false">${section.title}</button>`)
-  ].join('');
-  return `<div class="resource-filter" data-resource-filter role="group" aria-label="Filter the directory by topic">${buttons}</div>
-      <p class="filter-count" aria-live="polite" data-filter-count>Showing all ${total} listings</p>`;
+    '<button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all<span class="filter-num" data-filter-num></span></button>',
+    ...resourceHighlightGroups.map(([id, label]) => `<button type="button" class="filter-btn" data-filter-target="${id}" aria-pressed="false">${label}<span class="filter-num" data-filter-num></span></button>`),
+    ...resourceDirectory.map((section) => `<button type="button" class="filter-btn" data-filter-target="${section.id}" aria-pressed="false">${section.title}<span class="filter-num" data-filter-num></span></button>`)
+  ].join('\n      ');
+  return `<section class="section resources-tools" id="find-a-resource">
+  <div class="wrap">
+    <label class="resource-search-label" for="resource-search">Search the list</label>
+    <div class="resource-search-row">
+      <input id="resource-search" class="resource-search" type="search" placeholder="Type a name or a word, like photos" autocomplete="off" data-resource-search>
+      <button type="button" class="resource-clear" data-resource-clear>Clear</button>
+    </div>
+    <div class="resource-filter" data-resource-filter role="group" aria-label="Choose a topic">
+      ${buttons}
+    </div>
+    <p class="filter-count" aria-live="polite" data-filter-count>Showing all listings</p>
+    <p class="no-results" data-no-results hidden>No listing matches that. Try a simpler word, or choose Show all.</p>
+    <p class="small" style="margin-top:16px">Some listings are free, some are paid products or services, and some are made for organizations rather than for individuals. Each card says what we know. These listings are provided for information only, and a listing does not mean Spirantix endorses or recommends it.</p>
+  </div>
+</section>`;
 }
 
 const resourceDirectorySection = [
-  `<section class="section" id="directory">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Directory</p>
-      <h2>A broader directory of tools and services</h2>
-      <p>Below the highlights is a wider list of resources grouped by topic, from AI classes and memory support to photo, story, and heirloom services, along with ways to check whether a photo or document is authentic. Some listings are free, some are paid products or services, and some are made for organizations rather than for individuals. Each card says what we know. These listings are provided for information only, and a listing does not mean Spirantix endorses or recommends it.</p>
-      <p>Choose a topic to narrow the list, or choose Show all to see every listing.</p>
-      ${resourceFilterBar()}
-    </div>
-  </div>
-</section>`,
-  ...resourceDirectory.map((section, index) => `<section class="section${index % 2 === 0 ? ' section-soft' : ' section-white'}" id="${section.id}" data-filter-group="${section.id}">
+    ...resourceDirectory.map((section, index) => `<section class="section${index % 2 === 0 ? ' section-soft' : ' section-white'}" id="${section.id}" data-filter-group="${section.id}">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">${section.eyebrow}</p>
@@ -671,7 +681,6 @@ const resourcesBody = `<section class="page-hero media-page-hero resources-page-
       <p class="eyebrow">Resources</p>
       <h1>Useful resources for life online</h1>
       <p class="lede">Explore helpful websites, AI tools, apps, and services for older adults, grouped by topic, with plain-language guidance about what each one offers.</p>
-      <div class="button-row" style="margin-top:28px"><a class="btn" href="#websites">Explore websites</a><a class="btn btn-secondary" href="#ai-tools">Explore AI tools</a><a class="btn btn-secondary" href="#directory">Browse the directory</a></div>
     </div>
     <div class="media-page-hero-image resource-hero-image">
       <picture>
@@ -682,9 +691,11 @@ const resourcesBody = `<section class="page-hero media-page-hero resources-page-
   </div>
 </section>
 
+${resourceFinder()}
+
 ${seniorWebsitesSection}
 
-<section class="section" id="ai-tools">
+<section class="section" id="ai-tools" data-filter-group="ai-tools">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">AI tool highlights</p>
@@ -701,7 +712,7 @@ ${seniorWebsitesSection}
   </div>
 </section>
 
-<section class="section section-white" id="app-highlights">
+<section class="section section-white" id="app-highlights" data-filter-group="app-highlights">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">App highlights</p>

@@ -63,7 +63,6 @@
       <p class="eyebrow">Resources</p>
       <h1>Useful resources for life online</h1>
       <p class="lede">Explore helpful websites, AI tools, apps, and services for older adults, grouped by topic, with plain-language guidance about what each one offers.</p>
-      <div class="button-row" style="margin-top:28px"><a class="btn" href="#websites">Explore websites</a><a class="btn btn-secondary" href="#ai-tools">Explore AI tools</a><a class="btn btn-secondary" href="#directory">Browse the directory</a></div>
     </div>
     <div class="media-page-hero-image resource-hero-image">
       <picture>
@@ -74,7 +73,31 @@
   </div>
 </section>
 
-<section class="section section-soft" id="websites">
+<section class="section resources-tools" id="find-a-resource">
+  <div class="wrap">
+    <label class="resource-search-label" for="resource-search">Search the list</label>
+    <div class="resource-search-row">
+      <input id="resource-search" class="resource-search" type="search" placeholder="Type a name or a word, like photos" autocomplete="off" data-resource-search>
+      <button type="button" class="resource-clear" data-resource-clear>Clear</button>
+    </div>
+    <div class="resource-filter" data-resource-filter role="group" aria-label="Choose a topic">
+      <button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="websites" aria-pressed="false">Websites and reading<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="ai-tools" aria-pressed="false">AI assistants<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="app-highlights" aria-pressed="false">Apps for daily life<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="ai-learning" aria-pressed="false">AI learning and training<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="memory-care" aria-pressed="false">Memory, companionship, and care<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="photos-stories" aria-pressed="false">Photos, stories, and legacy<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="possessions" aria-pressed="false">Possessions and heirlooms<span class="filter-num" data-filter-num></span></button>
+      <button type="button" class="filter-btn" data-filter-target="authenticity" aria-pressed="false">Document and photo authenticity<span class="filter-num" data-filter-num></span></button>
+    </div>
+    <p class="filter-count" aria-live="polite" data-filter-count>Showing all listings</p>
+    <p class="no-results" data-no-results hidden>No listing matches that. Try a simpler word, or choose Show all.</p>
+    <p class="small" style="margin-top:16px">Some listings are free, some are paid products or services, and some are made for organizations rather than for individuals. Each card says what we know. These listings are provided for information only, and a listing does not mean Spirantix endorses or recommends it.</p>
+  </div>
+</section>
+
+<section class="section section-soft" id="websites" data-filter-group="websites">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">Websites for older adults</p>
@@ -85,7 +108,7 @@
   </div>
 </section>
 
-<section class="section" id="ai-tools">
+<section class="section" id="ai-tools" data-filter-group="ai-tools">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">AI tool highlights</p>
@@ -102,7 +125,7 @@
   </div>
 </section>
 
-<section class="section section-white" id="app-highlights">
+<section class="section section-white" id="app-highlights" data-filter-group="app-highlights">
   <div class="wrap">
     <div class="section-heading">
       <p class="eyebrow">App highlights</p>
@@ -114,19 +137,6 @@
       <a class="card card-link" href="https://www.seeingai.com/" target="_blank" rel="noopener"><h3>Seeing AI</h3><p>Microsoft’s visual-assistance app uses a phone camera and AI to describe text, people, products, currency, and surroundings.</p><span class="text-link">Learn about Seeing AI</span></a>
       <a class="card card-link" href="https://lens.google/" target="_blank" rel="noopener"><h3>Google Lens</h3><p>Use a phone camera or an existing image to identify objects, copy or translate text, and search for related information.</p><span class="text-link">Learn about Google Lens</span></a>
       <a class="card card-link" href="https://www.overdrive.com/apps/libby" target="_blank" rel="noopener"><h3>Libby</h3><p>Borrow ebooks, audiobooks, and magazines using a library card from a participating public library.</p><span class="text-link">Learn about Libby</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="directory">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="eyebrow">Directory</p>
-      <h2>A broader directory of tools and services</h2>
-      <p>Below the highlights is a wider list of resources grouped by topic, from AI classes and memory support to photo, story, and heirloom services, along with ways to check whether a photo or document is authentic. Some listings are free, some are paid products or services, and some are made for organizations rather than for individuals. Each card says what we know. These listings are provided for information only, and a listing does not mean Spirantix endorses or recommends it.</p>
-      <p>Choose a topic to narrow the list, or choose Show all to see every listing.</p>
-      <div class="resource-filter" data-resource-filter role="group" aria-label="Filter the directory by topic"><button type="button" class="filter-btn" data-filter-target="all" aria-pressed="true">Show all</button><button type="button" class="filter-btn" data-filter-target="ai-learning" aria-pressed="false">AI learning and training</button><button type="button" class="filter-btn" data-filter-target="memory-care" aria-pressed="false">Memory, companionship, and care</button><button type="button" class="filter-btn" data-filter-target="photos-stories" aria-pressed="false">Photos, stories, and legacy</button><button type="button" class="filter-btn" data-filter-target="possessions" aria-pressed="false">Possessions and heirlooms</button><button type="button" class="filter-btn" data-filter-target="authenticity" aria-pressed="false">Document and photo authenticity</button></div>
-      <p class="filter-count" aria-live="polite" data-filter-count>Showing all 59 listings</p>
     </div>
   </div>
 </section>
