@@ -884,13 +884,36 @@ const productsBody = `<section class="page-hero media-page-hero">
 </section>
 <section class="section section-soft">
   <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Behind the one Concierge</p><h2>Specialists who help</h2><p>One Concierge. When a question needs another kind of care, it brings that specialist in quietly. You never choose.</p></div>
-    <div class="grid-2" style="max-width:900px;margin-inline:auto">
-      <a class="card card-link" href="emery.html"><h3>Emery</h3><p><strong>Memory and daily life</strong></p><p>People, dates, reminders, and the day ahead.</p></a>
-      <a class="card card-link" href="capsa.html"><h3>Capsa</h3><p><strong>Stories and photos</strong></p><p>Your words, your pictures, and the albums you keep.</p></a>
-      <a class="card card-link" href="addie.html"><h3>Addie</h3><p><strong>Document checks</strong></p><p>A mark that shows a file has not changed.</p></a>
-      <a class="card card-link" href="heri.html"><h3>Heri</h3><p><strong>Belongings and family history</strong></p><p>What you own and who it came from.</p></a>
-    </div>
+    <div class="section-heading center"><p class="eyebrow">Behind the one Concierge</p><h2>Specialists who help</h2><p>These specialist agents handle tasks for you, and the Concierge coordinates them.</p></div>
+    <div class="agent-grid"><a class="card card-link agent-card" href="emery.html">
+    <picture><source srcset="assets/emery-avatar.webp" type="image/webp"><img src="assets/emery-avatar.png" alt="Illustrated portrait of Emery, The Companion" loading="lazy"></picture>
+    <span class="status beta">Beta</span>
+    <h3>Emery</h3>
+    <p><strong>The Companion</strong></p>
+    <p>Memory support, daily planning, gentle reminders, and familiar moments for people living with memory loss.</p>
+    <span class="text-link">Meet Emery</span>
+  </a><a class="card card-link agent-card" href="capsa.html">
+    <picture><source srcset="assets/capsa-avatar.webp" type="image/webp"><img src="assets/capsa-avatar.png" alt="Illustrated portrait of Capsa, The Storyteller" loading="lazy"></picture>
+    <span class="status beta">Beta</span>
+    <h3>Capsa</h3>
+    <p><strong>The Storyteller</strong></p>
+    <p>Helps families capture the stories, memories, and experiences that deserve to be carried forward.</p>
+    <span class="text-link">Meet Capsa</span>
+  </a><a class="card card-link agent-card" href="addie.html">
+    <picture><source srcset="assets/addie-avatar.webp" type="image/webp"><img src="assets/addie-avatar.png" alt="Illustrated portrait of Addie, The Guardian" loading="lazy"></picture>
+    <span class="status beta">Beta</span>
+    <h3>Addie</h3>
+    <p><strong>The Guardian</strong></p>
+    <p>Certifies photos and documents with tamper-evident proof of their authenticity and provenance.</p>
+    <span class="text-link">Meet Addie</span>
+  </a><a class="card card-link agent-card" href="heri.html">
+    <picture><img src="assets/heri-avatar.png" alt="Illustrated portrait of Heri, The Steward" loading="lazy"></picture>
+    <span class="status beta">Beta</span>
+    <h3>Heri</h3>
+    <p><strong>The Steward</strong></p>
+    <p>Catalogs, documents, and protects the possessions and history that make up a family legacy.</p>
+    <span class="text-link">Meet Heri</span>
+  </a></div>
   </div>
 </section>`;
 
