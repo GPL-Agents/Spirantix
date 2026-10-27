@@ -745,54 +745,151 @@ const supportBody = `<section class="lesson-shell"><div class="wrap"><article cl
 const productsBody = `<section class="page-hero media-page-hero">
   <div class="wrap media-page-hero-grid">
     <div class="media-page-hero-copy">
-      <p class="eyebrow">Now available</p>
-      <h1>Meet your Spirantix Concierge</h1>
-      <p class="lede">Begin with one conversation. Your Concierge listens to what you need and guides you to the right kind of help for memories, stories, photos, reminders, and family possessions.</p>
-      <div class="button-row products-hero-actions"><a class="btn" href="#early-access">Request Early Access to Try New Products</a><a class="btn btn-secondary" href="support.html">Read the concierge guide</a></div>
+      <p class="eyebrow">The Spirantix Concierge App</p>
+      <h1>A companion who remembers for you</h1>
+      <p class="lede">Your people and the dates that matter, kept in one place. Reminders by email, text, or a daily phone call with your schedule. Albums for written and spoken memories, and videos made from them.</p>
+        <ul class="hero-points">
+          <li><strong>The app.</strong> Your people, photos, albums, reminders, and calendar in one place.</li>
+          <li><strong>ChatGPT.</strong> Ask inside the chat you already use.</li>
+          <li><strong>Claude.</strong> Coming soon.</li>
+          <li><strong>A phone call.</strong> It calls with your day and reads it aloud.</li>
+        </ul>
+      <div class="button-row products-hero-actions"><a class="btn" href="https://api.spirantix.ai/app">Open the Concierge app</a><a class="btn btn-secondary" href="guide.html">Read the Concierge guide</a></div>
+      <p class="hero-early"><a href="connect-chatgpt.html">Use the Concierge inside ChatGPT</a>, or <a href="support.html">get help</a>.</p>
     </div>
     <div class="media-page-hero-image">
       <img src="assets/woman.on.phone.png" alt="Older woman using a smartphone" width="1122" height="1402">
+      <div class="hero-guides"><p class="hero-guides-label">Connect</p><a class="btn btn-secondary" href="connect-chatgpt.html">Connect ChatGPT</a><span class="btn btn-secondary is-disabled" role="link" aria-disabled="true">Connect Claude</span></div>
     </div>
   </div>
 </section>
-<section class="section section-white">
+<section class="section section-white" id="who-its-for">
   <div class="wrap">
-    <div class="callout agent-intro">
-      <div class="icon" style="width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:var(--teal)" aria-hidden="true"><svg viewBox="0 0 100 100" width="86" height="86"><path d="M50 47 24 25M50 47 76 25M50 53 24 75M50 53 76 75" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="50" r="15" fill="#fff"/><circle cx="24" cy="25" r="9" fill="#8fe0c6"/><circle cx="76" cy="25" r="9" fill="#8fe0c6"/><circle cx="24" cy="75" r="9" fill="#8fe0c6"/><circle cx="76" cy="75" r="9" fill="#8fe0c6"/><circle cx="50" cy="50" r="6" fill="#2368a8"/></svg></div>
-      <div><p class="eyebrow" style="color:var(--mint)">Now available</p><h2>Spirantix Concierge</h2><p>Explain what you need in ordinary language. Your concierge guides the conversation and brings in the right specialist when needed.</p><a class="text-link" href="support.html">Read the concierge guide</a></div>
+    <div class="section-heading center"><p class="eyebrow">Who it is for</p><h2>One Concierge, three ways to use it</h2><p>The Concierge is the same in all three. Pick the one that sounds like you.</p></div>
+    <div class="grid-3">
+      <div class="card"><h3>Spirantix Concierge for Seniors</h3><p>A companion that keeps your people, your dates and your photos, and answers when you ask.</p><ul><li>Ask about anyone in your family and hear back what you saved.</li><li>Keep stories, photos, and albums, and ask for a picture by name.</li><li>Reminders by email, text, or a daily phone call.</li></ul><a class="text-link" style="display:inline-block;margin-top:12px" href="https://api.spirantix.ai/app">Open the Concierge app</a></div>
+      <div class="card"><h3>Spirantix Concierge for Family and Caregivers</h3><p>Help the person you care for without taking over.</p><ul><li>Help with the calendar, only with the resident&rsquo;s permission.</li><li>Permission to add an event does not let you read their calendar.</li><li>The resident can remove it at any time, without asking you.</li></ul><a class="text-link" style="display:inline-block;margin-top:12px" href="guide.html">Read the Concierge guide</a></div>
+      <div class="card"><h3>Spirantix Communities</h3><p>For community program managers and corporate teams: the same Concierge for every resident, plus the tools to run the community.</p><ul><li>A community, its staff, and its calendar as one account. <span class="ui-note">Being built</span></li><li>Sign-ups, attendance, and the reports that come from them. <span class="ui-note">Being built</span></li><li>Cross-community insight at the parent organization. <span class="ui-note">Being built</span></li></ul><a class="text-link" style="display:inline-block;margin-top:12px" href="sponsors.html">See our Sponsors page for additional details for Community and Corporate support</a><p style="margin:8px 0 0"><a href="contact.html?type=partner">Talk about a pilot</a></p></div>
     </div>
   </div>
 </section>
-<section class="section section-soft products-early-access" id="early-access">
+<section class="section section-white" id="setup">
   <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Help shape what comes next</p><h2>Request early access to new Spirantix products</h2><p>Tell us how to reach you. Every request is reviewed by the Spirantix team.</p></div>
-    <div class="early-access-form-shell">
-      <form data-early-access-form>
-        <input type="hidden" name="inquiryType" value="early_access">
-        <div class="field"><label for="early-access-name">Name</label><input id="early-access-name" name="name" autocomplete="name" required></div>
-        <div class="field"><label for="early-access-age">Age</label><input id="early-access-age" name="age" type="number" inputmode="numeric" min="1" max="120" required></div>
-        <div class="field"><label for="early-access-email">Email address</label><input id="early-access-email" name="email" type="email" autocomplete="email" required></div>
-        <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label><label>Fax<input type="text" name="fax" tabindex="-1" autocomplete="off"></label></div>
-        <p class="small muted">We will use this information only to manage product testing and contact you about your request.</p>
-        <button class="btn" type="submit">Submit my request</button>
-        <div class="form-status" role="status" aria-live="polite" data-form-status></div>
-      </form>
-      <div class="early-access-success" data-early-access-success hidden tabindex="-1">
-        <p class="eyebrow">Request received</p>
-        <h3>Thank you</h3>
-        <p data-early-access-message></p>
-        <button class="btn btn-secondary" type="button" data-submit-another>Submit another email</button>
+    <div class="section-heading center"><p class="eyebrow">Setup</p><h2>Three setup steps</h2><p>Step 1 is all you need to start. Steps 2 and 3 can wait.</p></div>
+    <div class="grid-3">
+        <div class="card step-card"><div class="step-head"><span class="step-num">1</span><h3>Create Account</h3></div><p>Type your email and we send you a link. Open it and you are in.</p><ul><li>No password to remember</li><li>Or sign in with Google</li></ul><a class="text-link" href="https://api.spirantix.ai/app">Create your account</a></div>
+        <div class="card step-card"><div class="step-head"><span class="step-num">2</span><h3>Choose AI Agent</h3></div><p>Pick the one you are comfortable with. The same account and the same memories work in each.</p><ul class="ui-choices"><li><strong>ChatGPT</strong><span class="ui-note">Early access members</span></li><li><strong>Claude</strong><span class="ui-note">Coming soon</span></li><li><strong>Spirantix app</strong><span class="ui-note">Chat coming soon</span></li></ul><a class="text-link" href="connect-chatgpt.html">See the setup for ChatGPT</a></div>
+        <div class="card step-card"><div class="step-head"><span class="step-num">3</span><h3>Connect People and Apps</h3></div><p>All of this is optional. Add something only if you want it.</p><ul><li>Family and a caregiver</li><li>Your sponsor Senior Living Community</li><li>Email, calendar, and other apps</li></ul></div>
+      </div>
+      <div class="setup-guides"><p class="setup-guides-label">Not sure where to start?</p><div class="button-row" style="justify-content:center"><a class="btn btn-secondary" href="support.html">Questions and help</a></div></div>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">What it does for you today</p><h2>Six everyday things you can do</h2><p>No special words to learn. Ask the way you would ask a friend.</p></div>
+    <div class="grid-3">
+      <div class="card"><h3>People</h3><p>Names, birthdays, who someone is, how you know them. Ask &quot;Who is my granddaughter?&quot; and it answers from what you told it.</p></div>
+      <div class="card"><h3>Calendar</h3><p>Appointments and a calendar you can ask about: today, this week, what is next.</p></div>
+      <div class="card"><h3>Reminders</h3><p>Reminders for anything you have to do. They arrive by text or email. A phone call that reads your day is on the way.</p></div>
+      <div class="card"><h3>Photos and memories</h3><p>Tell it about the lake, the old house, your first job, and it keeps your words. Ask who is in a picture and it answers from the name you saved. Organize photos into albums and give an album a voice story.</p></div>
+      <div class="card"><h3>Valuables and keepsakes</h3><p>The watch, the rocking chair, the locket. Where it is kept and who it belonged to.</p></div>
+      <div class="card"><h3>Safe, ad-free web search</h3><p>Ask it to look something up. No ads, no sponsored results, and it always names the site the answer came from.</p></div>
+    </div>
+    <div class="grid-2 feature-columns">
+      <div>
+        <h3>Working today</h3>
+        <ul>
+          <li>People: names, birthdays, who someone is, how you know them</li>
+          <li>Keeps your stories in your own words and gives them back when you ask</li>
+          <li>Photos with names saved, albums, and captions you can correct</li>
+          <li>An album can carry a voice story, recorded on the spot</li>
+          <li>A calendar you can ask about: today, this week, what is next</li>
+          <li>Reminders for anything you have to do, with notifications by email, text, or phone call</li>
+          <li>Sends email to your saved contacts for you</li>
+          <li>Reads anything aloud, and takes speech instead of typing</li>
+          <li>Belongings: what you own, who it belonged to, where it is kept</li>
+          <li>Checks before answering: no invented names or dates, and it says when it does not know</li>
+          <li>Safe, ad-free web search that names the site each answer came from</li>
+          <li>Reached from the app, from ChatGPT, and soon Claude, with the same memories in all three</li>
+        </ul>
+      </div>
+      <div>
+        <h3>In build</h3>
+        <ul>
+          
+          <li>A phone call that reads your day, incoming or outgoing</li>
+          <li>Turning an album into a short film</li>
+          <li>Sharing photos and memories with family, with the member deciding who sees what</li>
+          <li>Face matching in Phase 3, against people you already saved</li>
+          <li>Community tools: sign-ups, attendance, flyers, and family reports, in build with our first operators</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
-<section class="section">
-  <div class="wrap">
-    <div class="section-heading center"><p class="eyebrow">Specialists working together</p><h2>Meet the Spirantix agent team</h2><p>The Spirantix Concierge listens to what you need and brings in the specialist whose focus fits.</p></div>
-    ${agentCards()}
   </div>
 </section>
-<section class="section section-blue tessera-section"><div class="wrap grid-2" style="align-items:center"><div><p class="eyebrow">Built around your control</p><h2>The Tessera Protocol</h2><p>Tessera is the open foundation behind Spirantix products. It is designed so personal stories, memories, documents, and other private knowledge stay in accounts and storage the user controls.</p></div><div class="callout callout-light tessera-callout"><h3>Why it matters</h3><p>AI can be more useful when it understands personal context. That should not require giving up control of the information that makes the experience personal.</p><a class="text-link" href="privacy.html">Read the privacy approach</a><br><a class="text-link" href="terms.html#product-terms">Read the product terms</a></div></div></section>`;
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">Three ways to reach it</p><h2>Where you can use the Concierge</h2><p>One account, one set of memories, wherever you use it.</p></div>
+    <div class="grid-3">
+      <div class="card"><span class="status beta">In use now</span><h3>1. The Concierge app</h3><p>Open it in a browser on a tablet, laptop, or phone. Built for older eyes and hands.</p><ul><li>No ChatGPT account needed</li><li>Bigger buttons and one step per screen</li><li>Photos and documents added inside the app</li></ul></div>
+      <div class="card"><span class="status beta">In use now, early access</span><h3>2. Inside ChatGPT</h3><p>Talk with it inside ChatGPT, in a normal chat. Same account, same memories.</p><ul><li>You need a ChatGPT account</li><li>Best if you already use ChatGPT</li><li>Connects in about two minutes</li></ul></div>
+      <div class="card"><span class="status beta">Next</span><h3>3. Claude</h3><p>The same Concierge and the same memories, reached from Claude.</p><ul><li>You need a Claude account</li><li>Same sign-in as ChatGPT</li><li>Answers read aloud by Claude</li></ul></div>
+    </div>
+    <div class="button-row" style="margin-top:30px;justify-content:center"><a class="btn" href="https://api.spirantix.ai/app">Open the Concierge app</a><a class="btn btn-secondary" href="guide.html">Read the Concierge guide</a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">Plug-ins versus the app</p><h2>What is where</h2><p>The plug-ins and the app share one account. The app adds what a chat window cannot do.</p></div>
+    <div class="grid-2">
+      <div class="card"><h3>In the ChatGPT and Claude plug-ins</h3><ul>
+        <li>Everything on the full list, inside the chat you already use</li>
+        <li>One sign-in for both, one set of memories</li>
+        <li>No separate app to open</li>
+      </ul></div>
+      <div class="card"><h3>In the Spirantix Concierge App</h3><ul>
+        <li>Everything above, without ChatGPT or Claude</li>
+        <li>Screens built for a tablet or phone</li>
+        <li>Adding photos and documents inside the app</li>
+        <li>Exporting or deleting your account in the app</li>
+        <li>Choosing where reminders reach you</li>
+      </ul></div>
+    </div>
+    <p style="margin-top:22px;max-width:820px;color:var(--ink-soft);font-size:1.05rem">Reminders go by text and by email, whichever the member turns on.</p>
+  </div>
+</section>
+
+<section class="section section-white">
+  <div class="wrap">
+    <div class="section-heading begin-heading"><p class="eyebrow">Safety first</p><h2>What the Concierge will not do</h2></div>
+    <div class="grid-2">
+      <div><ul>
+        <li>A reminder notifies the member when its time comes. An email is read back to you, recipient and words, before it goes out.</li>
+        <li>It will not make up a photo. If there is none on record, it says so.</li>
+        <li>It will not invent a name or a date. It answers from what you told it, and says when it does not know.</li>
+      </ul></div>
+      <div><ul>
+        <li>It will not change anything without saying the exact item, day, and time back to you first.</li>
+        <li>It is not a doctor and not an emergency service. Call 911 in an emergency.</li>
+        <li>Your records stay in your account, and you can ask for them back or ask for them to be deleted.</li>
+      </ul></div>
+    </div>
+    <div class="button-row" style="margin-top:26px"><a class="btn btn-secondary" href="safety.html">How we keep you safe</a><a class="btn btn-secondary" href="privacy.html">Read the privacy approach</a></div>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-heading center"><p class="eyebrow">Behind the one Concierge</p><h2>Specialists who help</h2><p>One Concierge. When a question needs another kind of care, it brings that specialist in quietly. You never choose.</p></div>
+    <div class="grid-2" style="max-width:900px;margin-inline:auto">
+      <a class="card card-link" href="emery.html"><h3>Emery</h3><p><strong>Memory and daily life</strong></p><p>People, dates, reminders, and the day ahead.</p></a>
+      <a class="card card-link" href="capsa.html"><h3>Capsa</h3><p><strong>Stories and photos</strong></p><p>Your words, your pictures, and the albums you keep.</p></a>
+      <a class="card card-link" href="addie.html"><h3>Addie</h3><p><strong>Document checks</strong></p><p>A mark that shows a file has not changed.</p></a>
+      <a class="card card-link" href="heri.html"><h3>Heri</h3><p><strong>Belongings and family history</strong></p><p>What you own and who it came from.</p></a>
+    </div>
+  </div>
+</section>`;
 
 const originStoryBody = `<section class="section section-soft origin-story">
   <div class="wrap"><div class="origin-story-copy">
@@ -952,7 +1049,7 @@ export const pages = [
   { path: 'classes.html', title: 'AI Classes and Talks for Senior Communities | Spirantix.ai', description: 'Approachable in-person and video AI learning sessions for senior living communities and lifelong-learning centers.', active: 'classes', body: classesBody },
   { path: 'safety.html', title: 'AI Safety and Scam Awareness for Seniors | Spirantix.ai', description: 'Practical steps for protecting personal information, recognizing scam warning signs, and using AI as a cautious second opinion.', active: 'safety', body: safetyBody },
   { path: 'resources.html', title: 'Helpful Websites, AI Tools, and Apps for Seniors | Spirantix.ai', description: 'A growing directory of helpful websites, AI tools, apps, and services for older adults, grouped by topic and explained in plain language.', active: 'resources', body: resourcesBody },
-  { path: 'products.html', title: 'Spirantix AI Products | One Concierge, Four Specialists', description: 'Meet the developing Spirantix concierge and specialist agents for memory, stories, authenticity, and family possessions.', active: 'products', body: productsBody },
+  { path: 'products.html', title: 'Spirantix Concierge | What It Does and Where to Use It', description: 'A friendly companion for memories, photos, reminders, and family history. What the Spirantix Concierge does today, what is in the ChatGPT and Claude plug-ins, and what comes in the Spirantix app.', active: 'products', bodyClass: 'page-products', body: productsBody },
   { path: 'support.html', title: 'Spirantix Concierge Guide | How to Use, Prompts, and Questions', description: 'How to start with the Spirantix Concierge, example prompts you can copy and paste, and answers to common questions about this first release.', active: '', body: supportBody },
   { path: 'about.html', title: 'About Spirantix | AI Learning and Products for Seniors', description: 'Learn why Spirantix brings together plain-language AI education, practical safety guidance, community instruction, and thoughtful products.', active: 'about', body: aboutBody },
   { path: 'contact.html', title: 'Contact Spirantix | Support, Products, and Classes', description: 'Contact Spirantix about product support, early access, AI classes for senior communities, or another question.', active: '', body: contactBody },

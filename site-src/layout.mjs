@@ -51,7 +51,7 @@ function header(active, base) {
         <div class="nav-primary-links">
           ${links}
         </div>
-        <a class="nav-cta" href="${base}contact.html?type=speaking">Request a Session</a>
+        <a class="nav-cta" href="${base}contact.html?type=speaking">Contact</a>
       </nav>
     </div>
   </header>`;
@@ -111,7 +111,8 @@ export function renderPage({
   body,
   depth = 0,
   jsonLd = null,
-  noindex = false
+  noindex = false,
+  bodyClass = ''
 }) {
   const base = depth ? '../'.repeat(depth) : '';
   const canonical = `https://spirantix.ai/${path === 'index.html' ? '' : path}`;
@@ -142,7 +143,7 @@ ${noindex ? '  <meta name="robots" content="noindex">' : ''}
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${base}css/site.css?v=20261001-1">${json}
 </head>
-<body>
+<body${bodyClass ? ` class="${bodyClass}"` : ''}>
   ${header(active, base)}
   <main id="main-content">${body}</main>
   ${footer(base)}
