@@ -1,15 +1,11 @@
-// Learn holds its two doors, so a visitor does not have to guess which page is
-// "Learn" and which is "Classes". Sponsors sits between Products and About.
+// Learn and Classes are separate top-level links (no dropdown). About lives in the footer.
 const navItems = [
-  ['learn', 'Learn', 'learn.html', [
-    ['learn', 'Online Learning', 'learn.html'],
-    ['classes', 'In Person Classes', 'classes.html']
-  ]],
+  ['learn', 'Learn', 'learn.html'],
+  ['classes', 'Classes', 'classes.html'],
   ['safety', 'Safety', 'safety.html'],
   ['resources', 'Resources', 'resources.html'],
   ['products', 'Products', 'products.html'],
-  ['sponsors', 'Sponsors', 'sponsors.html'],
-  ['about', 'About', 'about.html']
+  ['sponsors', 'Sponsors', 'sponsors.html']
 ];
 
 function logo() {

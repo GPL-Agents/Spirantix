@@ -31,7 +31,7 @@ const header = `<a class="skip-link" href="#main-content">Skip to main content</
         <a href="safety.html">Safety</a>
         <a href="resources.html">Resources</a>
         <a href="products.html" aria-current="page">Products</a>
-        <a href="about.html">About</a>
+        <a href="sponsors.html">Sponsors</a>
       </div>
       <a class="nav-cta" href="contact.html?type=speaking">Request a Session</a>
     </nav>

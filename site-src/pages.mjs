@@ -873,7 +873,7 @@ const contactBody = `${pageHero('Contact', 'How can Spirantix help?', 'Choose th
 </div></section>`;
 
 const faqBody = `${pageHero('Questions', 'Common questions about learning and Spirantix products', 'Start here for quick answers. If your question is not covered, use the contact form.')}
-<section class="section"><div class="narrow accordion">
+<section class="section"><div class="wrap accordion">
   <details><summary>Do I need experience with AI?</summary><div><p>No. The learning section and community sessions begin with ordinary language and simple examples. You can start without a technical background.</p></div></details>
   <details><summary>Are the lessons free?</summary><div><p>The introductory lessons on this website are free to read and share.</p></div></details>
   <details><summary>Are community sessions free?</summary><div><p>Many sessions are offered at no cost. When travel is required, a minimum fee may be requested to help cover expenses.</p></div></details>
