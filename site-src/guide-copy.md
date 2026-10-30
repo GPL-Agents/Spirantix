@@ -139,6 +139,20 @@ seal on an item, in plain words. Making a seal happens in the app, later.
 **Hear any answer read aloud.** Every answer can be spoken. If your device has voice turned on, the
 answer is read to you. If you want to hear it again, ask: "Read that to me."
 
+### Your community
+
+If you belong to a senior living community or a community group, you can add it to Spirantix. Open
+About you, choose Add next to Community, type the community's name, and choose Find. If your
+community is listed, check the street address and choose "This is my community". If it is not
+listed, choose "Add this community" and fill in the street address, city, and state. Your community's
+name then appears at the top of your Spirantix pages, and its town sets the place on your page.
+
+What your community brings you:
+
+- When your community manager shares an activity with you, it arrives as an invitation. You see it on your home page and on the Invitations page.
+- Choose "I'm going" and the activity is added to your calendar, next to your own appointments.
+- The invitation stays on your home page until you answer it.
+
 ### What it will not do
 
 - It does not give medical or legal advice. It asks you to speak with a doctor or a lawyer.
