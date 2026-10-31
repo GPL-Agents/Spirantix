@@ -106,23 +106,25 @@ const homeBody = `<section class="hero home-hero">
   <div class="wrap">
     <div class="home-app-card">
       <div class="home-app-copy">
-        <p class="home-app-beta">Now in beta</p>
         <h2 id="home-app-title">A simpler way to keep track of what matters</h2>
         <ul class="home-app-benefits">
-          <li><span class="home-app-icon home-app-icon-people" aria-hidden="true"></span><span>People and memories</span></li>
-          <li><span class="home-app-icon home-app-icon-calendar" aria-hidden="true"></span><span>Appointments and reminders</span></li>
-          <li><span class="home-app-icon home-app-icon-photo" aria-hidden="true"></span><span>Photos and treasured items</span></li>
-          <li><span class="home-app-icon home-app-icon-safe" aria-hidden="true"></span><span>Safe &amp; private chat &amp; web search</span></li>
+          <li><span class="home-app-icon home-app-icon-people" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span>People and memories</span></li>
+          <li><span class="home-app-icon home-app-icon-calendar" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2ZM16 2v4M8 2v4M3 10h18"/></svg></span><span>Appointments and reminders</span></li>
+          <li><span class="home-app-icon home-app-icon-photo" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><span>Photos and treasured items</span></li>
+          <li><span class="home-app-icon home-app-icon-safe" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><span>Safe &amp; private chat &amp; web search</span></li>
         </ul>
-        <a class="btn home-app-cta" href="https://api.spirantix.ai/app">Try Spirantix Concierge</a>
       </div>
-      <div class="home-app-devices" aria-label="Preview of Spirantix Concierge on a tablet and phone">
-        <div class="home-app-tablet">
-          <img src="assets/spirantix-concierge-beta.png" alt="Spirantix Concierge showing the search box, seven day view, daily plan, and recent memories" width="1130" height="1260" loading="lazy">
+      <div class="home-app-media">
+        <p class="home-app-beta">Now in beta</p>
+        <div class="home-app-devices" aria-label="Preview of Spirantix Concierge on a tablet and phone">
+          <div class="home-app-tablet">
+            <img src="assets/spirantix-concierge-beta.png" alt="Spirantix Concierge showing the search box, seven day view, daily plan, and recent memories" width="1130" height="1260" loading="lazy">
+          </div>
+          <div class="home-app-phone" aria-hidden="true">
+            <img src="assets/spirantix-concierge-beta.png" alt="" width="1130" height="1260" loading="lazy">
+          </div>
         </div>
-        <div class="home-app-phone" aria-hidden="true">
-          <img src="assets/spirantix-concierge-beta.png" alt="" width="1130" height="1260" loading="lazy">
-        </div>
+        <a class="btn home-app-cta" href="https://api.spirantix.ai/app">Try Spirantix Concierge</a>
       </div>
     </div>
   </div>
