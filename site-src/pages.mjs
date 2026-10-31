@@ -93,8 +93,9 @@ const homeBody = `<section class="hero home-hero">
           </picture>
         </div>
         <div class="hero-actions">
+          <a class="btn" href="https://api.spirantix.ai/app">Try the App</a>
           <a class="btn" href="learn.html">Start learning</a>
-          <a class="btn btn-secondary" href="contact.html?type=speaking">Request a session</a>
+          <a class="btn btn-secondary" href="contact.html?type=speaking">Request Session</a>
         </div>
         <p class="hero-note">Choose Start learning for self-guided lessons, find a nearby event under Classes &amp; Talks, or request a session for your community.</p>
       </div>
