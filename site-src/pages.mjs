@@ -102,6 +102,32 @@ const homeBody = `<section class="hero home-hero">
   </div>
 </section>
 
+<section class="home-app-promo" aria-labelledby="home-app-title">
+  <div class="wrap">
+    <div class="home-app-card">
+      <div class="home-app-copy">
+        <p class="home-app-beta">Now in beta</p>
+        <h2 id="home-app-title">A simpler way to keep track of what matters</h2>
+        <ul class="home-app-benefits">
+          <li><span class="home-app-icon home-app-icon-people" aria-hidden="true"></span><span>People and memories</span></li>
+          <li><span class="home-app-icon home-app-icon-calendar" aria-hidden="true"></span><span>Appointments and reminders</span></li>
+          <li><span class="home-app-icon home-app-icon-photo" aria-hidden="true"></span><span>Photos and treasured items</span></li>
+          <li><span class="home-app-icon home-app-icon-safe" aria-hidden="true"></span><span>Safe &amp; private chat &amp; web search</span></li>
+        </ul>
+        <a class="btn home-app-cta" href="https://api.spirantix.ai/app">Try Spirantix Concierge</a>
+      </div>
+      <div class="home-app-devices" aria-label="Preview of Spirantix Concierge on a tablet and phone">
+        <div class="home-app-tablet">
+          <img src="assets/spirantix-concierge-beta.png" alt="Spirantix Concierge showing the search box, seven day view, daily plan, and recent memories" width="1130" height="1260" loading="lazy">
+        </div>
+        <div class="home-app-phone" aria-hidden="true">
+          <img src="assets/spirantix-concierge-beta.png" alt="" width="1130" height="1260" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section-soft home-video-section" aria-labelledby="home-video-title">
   <div class="wrap">
     <div class="section-heading center">
