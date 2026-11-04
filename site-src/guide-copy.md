@@ -134,7 +134,7 @@ confirm it.
 **Ask about a seal.** Say: "Is my seal still good?" The concierge tells you what is recorded about the
 seal on an item, in plain words. Making a seal happens in the app, later.
 
-**Add a person who can help you.** A helper is a family member or caregiver you choose. Permission to add calendar events does not by itself allow that person to view your calendar. You can separately allow the helper to view your full daily event calendar. You can remove access at any time.
+**Add friends, family and caregivers.** In People, add a contact and set them as a Friend, Family or Caregiver. Each comes with default permissions, and you can change any of them. Permission to add calendar events does not by itself allow that person to view your calendar. You can separately allow them to view your full daily event calendar. You can remove access at any time.
 
 **Hear any answer read aloud.** Every answer can be spoken. If your device has voice turned on, the
 answer is read to you. If you want to hear it again, ask: "Read that to me."
@@ -179,4 +179,4 @@ account, same data, same voice.
 
 **Phase 3, the app.** The app becomes the main place to use Spirantix, on a tablet or a phone. It adds
 reading everything aloud screen by screen, the community sponsor role, paid storage, read-only library
-sharing, and sealing a document. Sponsor access is separate from helper access: a connected senior living center may add events for its connected members, but must not view their calendars.
+sharing, and sealing a document. Sponsor access is separate from the access you give friends, family and caregivers: a connected senior living center may add events for its connected members, but must not view their calendars.
