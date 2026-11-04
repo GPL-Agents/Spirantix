@@ -125,7 +125,10 @@ const homeBody = `<section class="hero home-hero">
             <img src="assets/spirantix-concierge-beta.png" alt="" width="1130" height="1260" loading="lazy">
           </div>
         </div>
-        <a class="btn home-app-cta" href="https://api.spirantix.ai/app">Try Spirantix Concierge</a>
+        <div class="home-app-actions">
+          <a class="btn home-app-cta" href="https://api.spirantix.ai/app">Try Concierge</a>
+          <a class="btn btn-secondary home-app-cta" href="https://youtu.be/tlx2qYoD9sc" target="_blank" rel="noopener">View Video</a>
+        </div>
       </div>
     </div>
   </div>
@@ -239,10 +242,10 @@ ${pastEvents().length ? `<section class="section section-soft">
       <h2>AI tools designed around real lives</h2>
       <p>Our developing product family helps with memory, stories, authenticity, and family possessions. The experience begins with one concierge, so you do not need to decide which specialist to ask.</p>
     </div>
-    <div class="callout concierge-callout">
-      <picture>
-        <img src="assets/snap-emery-tablet.webp" width="300" height="300" loading="lazy" alt="An older woman comfortably using a tablet at home">
-      </picture>
+    <div class="callout concierge-callout has-video">
+      <div class="callout-video">
+        <iframe src="https://www.youtube-nocookie.com/embed/tlx2qYoD9sc?rel=0" title="Spirantix Concierge: a friendly helper for your day" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
       <div>
         <p class="eyebrow" style="color:var(--mint)">Your starting point</p>
         <h3>Spirantix Concierge</h3>
