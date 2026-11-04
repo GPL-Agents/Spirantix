@@ -257,6 +257,8 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .home-app-icon-photo { background: #fff0de; color: #f05a24; }
 .home-app-icon-safe { background: #e9eefc; color: #315a9f; }
 .home-app-cta { width: min(100%, 390px); text-align: center; }
+.home-app-actions { display: grid; gap: 12px; width: min(100%, 390px); }
+.home-app-actions .home-app-cta { width: 100%; }
 .home-app-devices { position: relative; width: min(100%, 520px); padding-right: 68px; }
 .home-app-tablet, .home-app-phone { position: absolute; overflow: hidden; background: #10171f; box-shadow: 0 20px 46px rgba(31, 42, 68, .24); }
 .home-app-tablet { position: relative; width: 100%; aspect-ratio: 1130 / 1260; border: 12px solid #171c21; border-radius: 30px; }
@@ -445,6 +447,9 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
   border-radius: 22px;
   background: var(--navy);
 }
+.concierge-callout.has-video { grid-template-columns: minmax(220px, 320px) 1fr; }
+.concierge-callout .callout-video { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 22px; background: var(--navy); }
+.concierge-callout .callout-video iframe { display: block; width: 100%; height: 100%; border: 0; }
 .concierge-callout img {
   width: 100%;
   height: 100%;
@@ -813,6 +818,8 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   .real-story-copy { padding: 28px 22px; }
   .concierge-callout { grid-template-columns: 92px 1fr; gap: 20px; padding: 24px; }
   .concierge-callout picture { width: 92px; height: 92px; border-radius: 18px; }
+  .concierge-callout.has-video { grid-template-columns: 1fr; }
+  .concierge-callout.has-video .callout-video { border-radius: 18px; }
   .phishing-step { grid-template-columns: 42px 1fr; padding: 20px; }
   .step-number { width: 42px; height: 42px; }
   .email-row { grid-template-columns: 54px 1fr; }
