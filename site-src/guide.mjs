@@ -21,7 +21,8 @@ export function renderGuide() {
       return '<' + tag + '>' + items.map((s) => '<li>' + inline(s.replace(/^(- |\d+\. )/, '')) + '</li>').join('') + '</' + tag + '>';
     }
     return '<p>' + inline(block.replace(/\r?\n/g, ' ')) + '</p>';
-  }).join('\n');
-  const body = '<section class="lesson-shell"><div class="wrap"><article class="lesson-body concierge-guide">' + content + '<p><a href="support.html">Get help with Spirantix</a></p></article></div></section>';
+  }).join('\n').replace('<h2>You can talk instead of type</h2>', '<h2 class="guide-talk"><picture><source srcset="assets/concierge-listening.webp" type="image/webp"><img src="assets/concierge-listening.png" alt="" width="512" height="512" loading="lazy"></picture>You can talk instead of type</h2>');
+  const portrait = '<picture class="guide-portrait"><source srcset="assets/concierge-portrait.webp" type="image/webp"><img src="assets/concierge-portrait.png" alt="Illustrated portrait of the Spirantix Concierge" width="760" height="912"></picture>';
+  const body = '<section class="lesson-shell"><div class="wrap"><article class="lesson-body concierge-guide">' + portrait + content + '<p><a href="support.html">Get help with Spirantix</a></p></article></div></section>';
   return { path: 'guide.html', html: renderPage({ path: 'guide', title: 'Spirantix Concierge Guide | Spirantix.ai', description: 'How to talk with the Spirantix Concierge, with example prompts and clear limits.', body }) };
 }
