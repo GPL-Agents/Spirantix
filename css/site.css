@@ -314,6 +314,9 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .btn-teal { background: var(--teal-dark); }
 .btn-teal:hover { background: #11665e; }
 .text-link { font-weight: 700; }
+.follow-youtube { margin-top: 10px; }
+.follow-youtube a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 700; }
+.follow-youtube .yt-icon { width: 28px; height: 28px; flex: 0 0 auto; }
 
 .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
