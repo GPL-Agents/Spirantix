@@ -2,12 +2,12 @@
   "redirects": [
     {
       "source": "/app",
-      "destination": "https://app.spirantix.ai/app",
+      "destination": "https://api.spirantix.ai/app",
       "permanent": false
     },
     {
       "source": "/start",
-      "destination": "https://app.spirantix.ai/start",
+      "destination": "https://api.spirantix.ai/start",
       "permanent": false
     },
     {
