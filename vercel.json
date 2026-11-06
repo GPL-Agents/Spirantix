@@ -6,6 +6,11 @@
       "permanent": false
     },
     {
+      "source": "/start",
+      "destination": "https://app.spirantix.ai/app",
+      "permanent": false
+    },
+    {
       "source": "/app/:path*",
       "destination": "https://app.spirantix.ai/app/:path*",
       "permanent": false
