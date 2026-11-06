@@ -7,7 +7,7 @@
     },
     {
       "source": "/start",
-      "destination": "https://app.spirantix.ai/app",
+      "destination": "https://app.spirantix.ai/start",
       "permanent": false
     },
     {
