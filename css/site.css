@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --navy: #1f2a44;
   --ink: #1f2a44;
   --ink-soft: #4a5570;
@@ -1036,3 +1036,12 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
   .concierge-guide .guide-portrait img { width: 130px; margin: 0 0 10px 14px; }
   .concierge-guide .guide-talk img { width: 56px; height: 56px; }
 }
+
+/* Classes: a compact cost column with its own download. */
+.classes-session-grid { display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:70px;align-items:start; }
+.classes-session-grid>div:first-child { max-width:650px; }
+.classes-cost-column { min-width:0; }
+.classes-cost-column .callout { margin:0; }
+.classes-cost-column .btn { max-width:100%;white-space:normal;text-align:center; }
+.classes-pdf-link { margin:20px 0 0;font-size:1rem;line-height:1.6;text-wrap:balance; }
+@media(max-width:800px) { .classes-session-grid { grid-template-columns:minmax(0,1fr);gap:28px; } .classes-cost-column { width:100%;max-width:420px; } }
