@@ -112,7 +112,8 @@ export function renderPage({
   depth = 0,
   jsonLd = null,
   noindex = false,
-  bodyClass = ''
+  bodyClass = '',
+  stylesheets = []
 }) {
   const base = depth ? '../'.repeat(depth) : '';
   const canonical = `https://spirantix.ai/${path === 'index.html' ? '' : path}`;
@@ -141,7 +142,8 @@ ${noindex ? '  <meta name="robots" content="noindex">' : ''}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${base}css/site.css?v=20261001-1">${json}
+  <link rel="stylesheet" href="${base}css/site.css?v=20261001-1">${json}${stylesheets.map(href => `
+  <link rel="stylesheet" href="${base}${href}">`).join('')}
 </head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
   ${header(active, base)}
