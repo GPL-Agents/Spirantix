@@ -275,6 +275,8 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
   .home-app-benefits { width: min(100%, 540px); margin-left: auto; margin-right: auto; text-align: left; }
   .home-app-devices { width: min(100%, 520px); margin: 0 auto; }
   .home-app-logo { position: static; top: auto; margin: 0 auto 18px; height: 34px; }
+  .concierge-callout.has-video .callout-copy { padding-right: 0; }
+  .concierge-callout picture.callout-avatar { position: static; width: 120px; height: 120px; margin: 0 auto 6px; }
 }
 
 @media (max-width: 620px) {
@@ -437,6 +439,7 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
 .real-story-warning { padding: 18px 20px; border-left: 5px solid var(--orange); background: #fff; }
 .real-story-copy .btn { margin-top: 4px; }
 .concierge-callout {
+  position: relative;
   max-width: 840px;
   display: grid;
   grid-template-columns: 148px 1fr;
@@ -462,6 +465,9 @@ p:last-child, ul:last-child, ol:last-child { margin-bottom: 0; }
   object-fit: cover;
   transform: scale(1.1);
 }
+.concierge-callout picture.callout-avatar { position: absolute; top: 24px; right: 24px; width: 150px; height: 150px; border-radius: 50%; overflow: hidden; z-index: 2; }
+.concierge-callout.has-video .callout-copy { padding-right: 160px; }
+.concierge-callout picture.callout-avatar img { transform: none; }
 .notice {
   padding: 22px 24px;
   border-left: 6px solid var(--orange);
