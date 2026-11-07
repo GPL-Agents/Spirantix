@@ -909,10 +909,11 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 
 /* Products hero: the guide buttons sit under the photo, which balances the
    column heights and keeps the description next to the headline. */
-.hero-guides { display: grid; gap: 12px; margin-top: 22px; }
+.hero-guides { display: flex; gap: 12px; margin-top: 22px; }
 .hero-guides-label { margin: 0 0 2px; font-weight: 700; color: var(--ink-soft); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; }
-.hero-guides .btn { width: 100%; margin: 0; }
+.hero-guides .btn { flex: 1 1 0; min-width: 0; width: auto; margin: 0; }
 @media (max-width: 720px) { .hero-guides { max-width: 430px; } }
+@media (max-width: 480px) { .hero-guides .btn { padding-left: 12px; padding-right: 12px; font-size: .95rem; } }
 
 
 
@@ -1017,7 +1018,7 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 /* Concierge pictures: products page and Concierge guide */
 .ways-heading { display: flex; align-items: center; justify-content: center; gap: 28px; text-align: left; }
 .ways-heading h2 { margin-inline: 0; }
-.ways-face { flex: 0 0 auto; width: 150px; height: 150px; margin: 0; border-radius: 50%; background: #eaf3fb; }
+.ways-face { flex: 0 0 auto; width: 150px; height: 150px; margin: 0; border: 3px solid var(--teal); border-radius: 50%; background: #eaf3fb; }
 .feature-portrait { width: min(100%, 300px); height: auto; margin: 0 auto 26px; }
 .concierge-guide .guide-portrait img { float: right; width: 240px; height: auto; margin: 0 0 16px 24px; border: 0; border-radius: 0; }
 .concierge-guide .guide-talk { display: flex; align-items: center; gap: 14px; }
