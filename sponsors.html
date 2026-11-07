@@ -41,6 +41,12 @@
     .compare-dayone { max-width: 900px; margin: 0 auto 22px; text-align: center; color: #3c4753; font-size: 15px; }
     .compare-dayone b { color: #14614a; }
     .compare-note { margin-top: 18px; color: #5b6470; font-size: 14px; max-width: 900px; }
+    .hero-app-preview { margin-top: 20px; justify-items: center; }
+    .hero-app-preview .home-app-devices { width: min(100%, 460px); padding-right: 58px; }
+    .sponsors-hero .media-page-hero-image .hero-app-preview .home-app-tablet img,
+    .sponsors-hero .media-page-hero-image .hero-app-preview .home-app-phone img { aspect-ratio: auto; border-radius: 0; box-shadow: none; }
+    .sponsors-hero .media-page-hero-image .hero-app-preview .home-app-tablet img { width: 100%; height: auto; object-fit: fill; }
+    .sponsors-hero .media-page-hero-image .hero-app-preview .home-app-phone img { width: 275%; max-width: none; height: 100%; object-fit: cover; object-position: top left; }
   </style>
 </head>
 <body>
@@ -89,6 +95,16 @@
     </div>
     <div class="media-page-hero-image">
       <img src="assets/sponsors-tour.webp" alt="A staff member gives an older couple and a family member a tour of a senior living community lounge" width="1411" height="941">
+      <div class="home-app-media hero-app-preview">
+        <div class="home-app-devices" aria-label="Preview of Spirantix Concierge on a tablet and phone">
+          <div class="home-app-tablet">
+            <img src="assets/spirantix-concierge-beta.png" alt="Spirantix Concierge showing the search box, seven day view, daily plan, and recent memories on a tablet" width="1130" height="1260" loading="lazy">
+          </div>
+          <div class="home-app-phone" aria-hidden="true">
+            <img src="assets/spirantix-concierge-beta.png" alt="" width="1130" height="1260" loading="lazy">
+          </div>
+        </div>
+      </div>
     </div>
     </div>
 </section>
