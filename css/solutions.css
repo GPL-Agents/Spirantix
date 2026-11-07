@@ -237,3 +237,13 @@
 .sol-benefit-heading { display:flex;align-items:center;gap:12px;min-height:52px;margin-bottom:18px; }
 .sol-benefit-heading .sol-icon { width:46px;height:46px;background:#fff; }
 .sol-benefit-heading .sol-overline { font-size:.86rem;line-height:1.45;letter-spacing:.025em;margin:0;text-wrap:balance; }
+
+/* Let the sponsor photo caption use the full image width. */
+.solution-page .sol-hero-photo figcaption { width:100%;max-width:none;text-align:left;text-wrap:pretty; }
+
+/* Balance the sponsorship steps and their supporting note. */
+.page-sponsors #how-it-works { padding-bottom:36px; }
+.page-sponsors #how-it-works .sol-steps { margin-bottom:0; }
+.page-sponsors #how-it-works .sol-steps li:last-child { margin-bottom:0; }
+.sol-sponsor-character .sol-connections-note { max-width:340px;margin:18px 0 0;text-align:left; }
+.sol-sponsor-character .sol-connections-note + .sol-text-link { margin-top:14px; }

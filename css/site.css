@@ -1045,3 +1045,11 @@ details > div { padding: 0 24px 22px; color: var(--ink-soft); }
 .classes-cost-column .btn { max-width:100%;white-space:normal;text-align:center; }
 .classes-pdf-link { margin:20px 0 0;font-size:1rem;line-height:1.6;text-wrap:balance; }
 @media(max-width:1000px) { .classes-session-grid { grid-template-columns:minmax(0,1fr);gap:28px; } .classes-cost-column { width:100%;max-width:420px; } }
+
+/* Classes schedule: avoid a large blank gap when no events are listed. */
+.classes-page #upcoming { padding-bottom:28px; }
+.classes-page #upcoming .section-heading { margin-bottom:20px; }
+.classes-page #upcoming .event-list:empty { display:none; }
+.classes-page #upcoming:has(.event-list:empty) .section-heading { margin-bottom:0; }
+.classes-page #upcoming + #past { padding-top:20px; }
+.classes-page #upcoming + #past::before { margin:-20px auto 28px; }
