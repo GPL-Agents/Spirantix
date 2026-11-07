@@ -5,8 +5,10 @@
 .solution-page h2 { font-size:clamp(1.8rem,3.2vw,2.65rem); margin-bottom:20px; }
 .solution-page h3 { line-height:1.35; }
 .solution-page .eyebrow { font-size:.77rem; letter-spacing:.12em; margin-bottom:14px; }
-.solution-page .section-heading { margin-bottom:32px; }
-.solution-page .section-heading p { max-width:740px; margin-inline:auto; }
+.solution-page .section-heading { max-width:none;margin-bottom:32px; }
+.solution-page .section-heading h2 { max-width:none; }
+.solution-page p,.solution-page li,.solution-page h3,.solution-page figcaption { text-wrap:balance; }
+.solution-page .section-heading p { max-width:none;margin-inline:auto; }
 .sol-hero { padding:64px 0 44px; background:linear-gradient(130deg,#eef8f6 0%,#f7fbfc 65%,#eaf3fa 100%); }
 .sol-product-hero,.sol-sponsor-hero { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:46px;align-items:center; }
 .sol-lede { font-size:1.16rem;line-height:1.7;max-width:600px;color:var(--ink-soft);margin-bottom:28px; }
@@ -46,7 +48,7 @@
 .sol-coming .sol-section-top { margin-bottom:24px; }
 .sol-coming h2 { font-size:1.75rem;margin-bottom:0; }
 .sol-section-top { display:block;margin-bottom:28px; }
-.sol-section-top>p { max-width:740px;font-size:.98rem;color:var(--ink-soft);margin:12px 0 0; }
+.sol-section-top>p { max-width:none;font-size:.98rem;color:var(--ink-soft);margin:12px 0 0; }
 .sol-section-top h2 { margin-bottom:0; }
 .sol-coming-grid { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px; }
 .sol-coming-grid .sol-feature { display:grid;grid-template-columns:38px minmax(0,1fr);gap:10px 12px;align-content:start;align-items:center; }
@@ -227,3 +229,11 @@
   .solution-page .button-row { gap:16px; }
 }
 @media(prefers-reduced-motion:reduce) { .sol-jump { transition:none; } }
+
+/* Keep the sponsor introduction compact after its actions. */
+.sol-sponsor-hero { align-items:start; }
+.page-sponsors .sol-hero { padding-bottom:28px; }
+
+.sol-benefit-heading { display:flex;align-items:center;gap:12px;min-height:52px;margin-bottom:18px; }
+.sol-benefit-heading .sol-icon { width:46px;height:46px;background:#fff; }
+.sol-benefit-heading .sol-overline { font-size:.86rem;line-height:1.45;letter-spacing:.025em;margin:0;text-wrap:balance; }
